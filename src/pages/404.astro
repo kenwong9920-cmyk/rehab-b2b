@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { useTranslations } from '@/utils/i18n';
+
+const locale = Astro.url.pathname.split('/')[1];
+const validLocales = ['en', 'fr', 'de', 'es'];
+const actualLocale = validLocales.includes(locale) ? locale : 'en';
+const { t } = useTranslations(actualLocale);
+---
+
+<BaseLayout title={t('common.pageNotFound')} description={t('common.pageNotFoundDesc')} locale={actualLocale}>
+  <div class="container-main section-padding text-center py-32">
+    <div class="text-7xl mb-6">🔍</div>
+    <h1>{t('common.pageNotFound')}</h1>
+    <p class="mt-4 text-lg text-neutral-600 max-w-md mx-auto">
+      {t('common.pageNotFoundDesc')}
+    </p>
+    <div class="mt-8 flex flex-wrap gap-4 justify-center">
+      <a href={`/${actualLocale}/`} class="btn-primary">
+        {t('common.backToHome')}
+      </a>
+      <a href={`/${actualLocale}/contact/`} class="btn-outline">
+        {t('nav.contact')}
+      </a>
+    </div>
+  </div>
+</BaseLayout>

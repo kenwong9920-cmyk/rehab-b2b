@@ -1,0 +1,29 @@
+---
+// CTASection — 通用 Call To Action 区块
+interface Props {
+  title: string;
+  subtitle: string;
+  ctaText: string;
+  ctaHref: string;
+  variant?: 'primary' | 'accent' | 'dark';
+}
+
+const { title, subtitle, ctaText, ctaHref, variant = 'primary' } = Astro.props;
+
+const bgClass = variant === 'accent' ? 'bg-accent-600'
+  : variant === 'dark' ? 'bg-neutral-900'
+  : 'bg-primary-600';
+const btnClass = variant === 'accent' ? 'btn-white'
+  : variant === 'dark' ? 'btn-accent'
+  : 'btn-white';
+---
+
+<section class={`${bgClass} text-white`}>
+  <div class="container-main section-padding text-center max-w-3xl">
+    <h2 class="text-white mb-4">{title}</h2>
+    <p class="text-lg text-white/80 mb-8 leading-relaxed">{subtitle}</p>
+    <a href={ctaHref} class={`${btnClass} text-lg`}>
+      {ctaText}
+    </a>
+  </div>
+</section>

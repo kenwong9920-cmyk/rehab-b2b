@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "RehabPro Medical",
+    "tagline": "Fabricant professionnel d'équipement de réadaptation"
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "factory": "Notre usine",
+    "oem": "OEM/ODM",
+    "solutions": "Solutions",
+    "caseStudies": "Études de cas",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Demander un devis",
+    "downloads": "Téléchargements"
+  },
+  "home": {
+    "heroTitle": "Fabricant professionnel d'équipement de réadaptation",
+    "heroSubtitle": "Plus de 15 ans d'expérience dans la conception et la fabrication d'équipements de réadaptation de haute qualité. Usine certifiée CE, FDA, ISO 13485 desservant plus de 50 pays.",
+    "heroCTA": "Demander un devis",
+    "heroCTA2": "Découvrir nos produits",
+    "categoriesTitle": "Nos catégories de produits",
+    "whyUsTitle": "Pourquoi choisir RehabPro ?",
+    "certifiedFactory": "Usine certifiée",
+    "certifiedFactoryDesc": "Installation de fabrication approuvée ISO 13485, CE, FDA",
+    "oemService": "OEM et personnalisation",
+    "oemServiceDesc": "Personnalisation complète — couleur, matériau, logo, emballage adaptés à votre marque",
+    "globalShipping": "Logistique mondiale",
+    "globalShippingDesc": "Expédition efficace vers plus de 50 pays en Europe, Amériques et Asie du Sud-Est",
+    "qualityControl": "Assurance qualité",
+    "qualityControlDesc": "Tests rigoureux à chaque étape de production avec traçabilité complète",
+    "featuredProducts": "Produits en vedette",
+    "ctaTitle": "Prêt à démarrer votre projet ?",
+    "ctaSubtitle": "Contactez-nous dès aujourd'hui pour une consultation et un devis gratuits. Notre équipe répond sous 24 heures.",
+    "ctaButton": "Envoyer une demande"
+  },
+  "footer": {
+    "company": "Entreprise",
+    "products": "Produits",
+    "resources": "Ressources",
+    "contact": "Contactez-nous",
+    "newsletter": "Abonnez-vous à notre newsletter",
+    "newsletterPlaceholder": "Votre adresse e-mail",
+    "subscribe": "S'abonner",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "product": {
+    "allProducts": "Tous les produits",
+    "searchPlaceholder": "Rechercher des produits...",
+    "filterByCategory": "Filtrer par catégorie",
+    "moq": "Quantité minimum",
+    "deliveryTime": "Délai de livraison",
+    "certifications": "Certifications",
+    "features": "Caractéristiques principales",
+    "specifications": "Spécifications",
+    "customOptions": "Options de personnalisation",
+    "getQuoteForProduct": "Demander un devis pour ce produit",
+    "relatedProducts": "Produits associés",
+    "downloadCatalog": "Télécharger le catalogue"
+  },
+  "form": {
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "company": "Nom de l'entreprise",
+    "phone": "Téléphone / WhatsApp",
+    "productInterest": "Produit intéressé",
+    "quantity": "Quantité estimée",
+    "targetMarket": "Marché cible",
+    "message": "Décrivez vos besoins",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "success": "Merci ! Nous vous contacterons dans les 24 heures.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou nous envoyer un e-mail directement."
+  },
+  "categories": {
+    "walkingAids": "Aides à la marche",
+    "walkingAidsDesc": "Déambulateurs, rollators, béquilles et cannes",
+    "rehabTraining": "Entraînement de réadaptation",
+    "rehabTrainingDesc": "Équipement d'exercice pour la récupération et la thérapie",
+    "nursingCare": "Soins infirmiers",
+    "nursingCareDesc": "Lits d'hôpital, lève-personnes, aides au transfert",
+    "accessibility": "Accessibilité",
+    "accessibilityDesc": "Rampes, monte-escaliers, sécurité de salle de bain",
+    "dailyLiving": "Aides à la vie quotidienne",
+    "dailyLivingDesc": "Aides de salle de bain, aides à l'habillage, aides de cuisine",
+    "physiotherapy": "Physiothérapie",
+    "physiotherapyDesc": "Tables de traitement, électrothérapie, thérapie chaud/froid"
+  },
+  "about": {
+    "title": "À propos de RehabPro Medical",
+    "subtitle": "Votre partenaire de confiance en fabrication d'équipement de réadaptation"
+  },
+  "factory": {
+    "title": "Notre usine",
+    "subtitle": "Installation de fabrication à la pointe de la technologie"
+  },
+  "oem": {
+    "title": "Services OEM et ODM",
+    "subtitle": "Donnez vie à votre marque avec notre fabrication sur mesure"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis de vous entendre"
+  },
+  "blog": {
+    "title": "Blog et perspectives",
+    "subtitle": "Connaissances du secteur et actualités de l'entreprise",
+    "readMore": "Lire la suite",
+    "publishedOn": "Publié le",
+    "relatedPosts": "Articles connexes"
+  },
+  "common": {
+    "viewAll": "Voir tout",
+    "learnMore": "En savoir plus",
+    "backToHome": "Retour à l'accueil",
+    "pageNotFound": "Page non trouvée",
+    "pageNotFoundDesc": "La page que vous recherchez n'existe pas ou a été déplacée."
+  }
+}

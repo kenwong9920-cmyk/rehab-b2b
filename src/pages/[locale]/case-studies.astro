@@ -1,0 +1,56 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import { useTranslations } from '@/utils/i18n';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const cases = [
+  { title: 'German Distributor — Custom Wheelchair Line', desc: 'Developed a private-label electric wheelchair with custom frame design, advanced battery system, and German-language packaging for a leading European medical distributor.', results: '5,000+ units shipped annually | 3-month development cycle' },
+  { title: 'UK Nursing Home Chain — Bed Supply Program', desc: 'Supplied 200+ hospital nursing beds with custom mattress specifications and 5-year warranty to a major UK care home group.', results: '200 beds deployed | 98% satisfaction rate' },
+  { title: 'Southeast Asian Hospital — Rehab Department Setup', desc: 'Complete rehabilitation department equipment package including physiotherapy tables, exercise bikes, and walking aids for a newly built hospital in Thailand.', results: '$150K project value | Full turnkey delivery' },
+  { title: 'US DME Retailer — OEM Rollator Line', desc: 'OEM manufacturing of 3,000 walking rollators with custom branding, color options, and retail-ready packaging for the US home healthcare market.', results: '3,000 units initial order | FDA compliant' },
+];
+---
+
+<BaseLayout title="Case Studies" description="Success stories from our B2B partners worldwide" locale={locale!}>
+  <section class="bg-neutral-900 text-white">
+    <div class="container-main py-20 text-center max-w-3xl">
+      <h1 class="text-white mb-4">Case Studies</h1>
+      <p class="text-xl text-white/70">How we help B2B partners succeed with rehabilitation equipment.</p>
+    </div>
+  </section>
+
+  <section class="container-main section-padding">
+    <div class="max-w-4xl mx-auto space-y-8">
+      {cases.map((c) => (
+        <div class="bg-white rounded-xl border border-neutral-200 p-8 hover:shadow-md transition-shadow">
+          <h3 class="text-xl mb-3">{c.title}</h3>
+          <p class="text-neutral-600 mb-4">{c.desc}</p>
+          <div class="flex items-center gap-4 text-sm">
+            <span class="text-accent-700 font-medium">Results:</span>
+            <span class="text-neutral-500">{c.results}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CTASection
+    title="Want to Be Our Next Success Story?"
+    subtitle="Contact us to discuss your project requirements."
+    ctaText="Start Your Project →"
+    ctaHref={`/${locale}/get-quote/`}
+    variant="primary"
+  />
+</BaseLayout>

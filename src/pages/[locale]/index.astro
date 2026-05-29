@@ -1,0 +1,269 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import FeaturesGrid from '@/components/FeaturesGrid.astro';
+import { useTranslations } from '@/utils/i18n';
+import { SITE, PRODUCT_CATEGORIES } from '@/utils/constants';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+// 占位图片
+const heroBg = 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80'; // Medical equipment
+const productPlaceholder = (name: string) =>
+  `https://placehold.co/600x450/2563eb/ffffff?text=${encodeURIComponent(name.slice(0, 20))}`;
+
+// Why Us features
+const whyUsFeatures = [
+  {
+    icon: '🏭',
+    title: t('home.certifiedFactory'),
+    description: t('home.certifiedFactoryDesc'),
+  },
+  {
+    icon: '🔧',
+    title: t('home.oemService'),
+    description: t('home.oemServiceDesc'),
+  },
+  {
+    icon: '🚢',
+    title: t('home.globalShipping'),
+    description: t('home.globalShippingDesc'),
+  },
+  {
+    icon: '✅',
+    title: t('home.qualityControl'),
+    description: t('home.qualityControlDesc'),
+  },
+];
+
+// 精选产品（静态数据，后续改为从内容集合读取）
+const featuredProducts = [
+  {
+    title: 'Electric Wheelchair EW-2000',
+    description: 'Lightweight aluminum frame, dual motor, 15km range, foldable design. CE & FDA certified.',
+    image: productPlaceholder('Electric Wheelchair'),
+    href: `/${locale}/products/electric-wheelchair/`,
+    category: t('categories.walkingAids'),
+    moq: '10 units',
+  },
+  {
+    title: 'Hospital Nursing Bed NB-500',
+    description: '3-function electric bed with ABS rails, central locking castors. ISO 13485 certified.',
+    image: productPlaceholder('Nursing Bed'),
+    href: `/${locale}/products/hospital-nursing-bed/`,
+    category: t('categories.nursingCare'),
+    moq: '5 units',
+  },
+  {
+    title: 'Rehabilitation Exercise Bike XR-100',
+    description: 'Adjustable resistance, LCD display, pulse sensors. Ideal for physiotherapy clinics.',
+    image: productPlaceholder('Exercise Bike'),
+    href: `/${locale}/products/rehab-exercise-bike/`,
+    category: t('categories.rehabTraining'),
+    moq: '20 units',
+  },
+];
+
+// 客户品牌（图标）
+const clientLogos = ['MediCare', 'HealthPlus', 'OrthoLife', 'RehaWorld', 'MedSupply', 'CareFirst'];
+
+// Schema
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE.name,
+  url: SITE.url,
+  logo: `${SITE.url}/og-image.png`,
+  description: t('home.heroSubtitle'),
+  email: SITE.email,
+  telephone: SITE.phone,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: SITE.address.street,
+    addressLocality: SITE.address.city,
+    addressRegion: SITE.address.province,
+    addressCountry: 'CN',
+  },
+  sameAs: [
+    SITE.social.linkedin,
+    SITE.social.facebook,
+    SITE.social.youtube,
+  ].filter(Boolean),
+};
+---
+
+<BaseLayout title={t('site.name')} description={t('home.heroSubtitle')} locale={locale!} schema={schema}>
+  <!-- ===== Hero ===== -->
+  <section class="relative bg-gradient-to-br from-primary-900 via-primary-800 to-neutral-900 text-white overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 opacity-20">
+      <img
+        src={heroBg}
+        alt=""
+        class="w-full h-full object-cover"
+        loading="eager"
+        width="1600"
+        height="900"
+      />
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent"></div>
+
+    <div class="container-main relative py-24 md:py-36">
+      <div class="max-w-3xl">
+        <h1 class="text-white mb-6 leading-tight">
+          {t('home.heroTitle')}
+        </h1>
+        <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
+          {t('home.heroSubtitle')}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href={`/${locale}/get-quote/`} class="btn-accent text-lg">
+            {t('home.heroCTA')} →
+          </a>
+          <a href={`/${locale}/products/`} class="btn-outline text-lg !border-white !text-white hover:!bg-white hover:!text-primary-700">
+            {t('home.heroCTA2')}
+          </a>
+        </div>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="flex flex-wrap gap-6 mt-16 text-sm text-white/70">
+        {SITE.certifications.map((cert) => (
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            {cert}
+          </span>
+        ))}
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          {SITE.exportCountries}+ Countries Served
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Product Categories ===== -->
+  <section class="container-main section-padding">
+    <div class="text-center mb-12">
+      <h2>{t('home.categoriesTitle')}</h2>
+      <p class="mt-3 text-neutral-500 max-w-2xl mx-auto">
+        From walking aids to physiotherapy equipment — we provide complete rehabilitation solutions for B2B partners worldwide.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {PRODUCT_CATEGORIES.map((cat) => (
+        <a
+          href={`/${locale}/products/${cat.slug}/`}
+          class="group block p-6 bg-white rounded-xl border border-neutral-200 hover:border-primary-300 hover:shadow-md transition-all duration-300 no-underline"
+        >
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
+            {cat.icon}
+          </div>
+          <h3 class="text-lg font-semibold text-neutral-900 group-hover:text-primary-700 transition-colors mb-2">
+            {t(cat.nameKey)}
+          </h3>
+          <p class="text-sm text-neutral-600 leading-relaxed">
+            {t(cat.descriptionKey)}
+          </p>
+          <span class="inline-flex items-center text-sm font-medium text-primary-600 mt-4 group-hover:gap-2 transition-all">
+            {t('common.learnMore')} →
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- ===== Why Choose Us ===== -->
+  <section class="bg-neutral-50">
+    <div class="container-main section-padding">
+      <div class="text-center mb-12">
+        <h2>{t('home.whyUsTitle')}</h2>
+      </div>
+      <FeaturesGrid features={whyUsFeatures} columns={4} />
+    </div>
+  </section>
+
+  <!-- ===== Featured Products ===== -->
+  <section class="container-main section-padding">
+    <div class="text-center mb-12">
+      <h2>{t('home.featuredProducts')}</h2>
+      <p class="mt-3 text-neutral-500">
+        Our most popular rehabilitation equipment trusted by B2B clients worldwide.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {featuredProducts.map((product) => (
+        <div class="bg-white rounded-xl border border-neutral-200 overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300 group flex flex-col">
+          <a href={product.href} class="block aspect-[4/3] overflow-hidden bg-neutral-100">
+            <img
+              src={product.image}
+              alt={product.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              width="400"
+              height="300"
+            />
+          </a>
+          <div class="p-5 flex flex-col flex-1">
+            {product.category && <span class="text-xs font-medium text-primary-600 uppercase tracking-wide mb-2">{product.category}</span>}
+            <a href={product.href} class="no-underline">
+              <h3 class="text-lg font-semibold text-neutral-900 group-hover:text-primary-700 transition-colors mb-2">
+                {product.title}
+              </h3>
+            </a>
+            <p class="text-sm text-neutral-600 leading-relaxed flex-1 mb-4">{product.description}</p>
+            <div class="flex items-center justify-between pt-3 border-t border-neutral-100">
+              <span class="text-xs text-neutral-500">MOQ: {product.moq}</span>
+              <a href={`/${locale}/get-quote/?product=${encodeURIComponent(product.title)}`} class="btn-primary btn-sm">
+                Get Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-10">
+      <a href={`/${locale}/products/`} class="btn-outline">
+        {t('common.viewAll')} {t('nav.products')} →
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Client Logo Wall ===== -->
+  <section class="bg-neutral-50">
+    <div class="container-main py-16">
+      <p class="text-center text-sm font-medium text-neutral-400 uppercase tracking-wider mb-8">
+        Trusted by Healthcare Companies Worldwide
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-50">
+        {clientLogos.map((logo) => (
+          <span class="text-2xl font-bold text-neutral-400">{logo}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <CTASection
+    title={t('home.ctaTitle')}
+    subtitle={t('home.ctaSubtitle')}
+    ctaText={t('home.ctaButton')}
+    ctaHref={`/${locale}/get-quote/`}
+    variant="primary"
+  />
+</BaseLayout>

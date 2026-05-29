@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "RehabPro Medical",
+    "tagline": "Fabricante profesional de equipos de rehabilitación"
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Sobre nosotros",
+    "factory": "Nuestra fábrica",
+    "oem": "OEM/ODM",
+    "solutions": "Soluciones",
+    "caseStudies": "Casos de estudio",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "getQuote": "Solicitar cotización",
+    "downloads": "Descargas"
+  },
+  "home": {
+    "heroTitle": "Fabricante profesional de equipos de rehabilitación",
+    "heroSubtitle": "Más de 15 años de experiencia en diseño y fabricación de equipos de rehabilitación de alta calidad. Fábrica certificada CE, FDA, ISO 13485 que abastece a más de 50 países.",
+    "heroCTA": "Solicitar cotización",
+    "heroCTA2": "Explorar productos",
+    "categoriesTitle": "Nuestras categorías de productos",
+    "whyUsTitle": "¿Por qué elegir RehabPro?",
+    "certifiedFactory": "Fábrica certificada",
+    "certifiedFactoryDesc": "Instalación de fabricación aprobada ISO 13485, CE, FDA",
+    "oemService": "OEM y personalización",
+    "oemServiceDesc": "Personalización completa — color, material, logotipo, embalaje adaptado a su marca",
+    "globalShipping": "Logística global",
+    "globalShippingDesc": "Envío eficiente a más de 50 países en Europa, América y el sudeste asiático",
+    "qualityControl": "Control de calidad",
+    "qualityControlDesc": "Pruebas rigurosas en cada etapa de producción con trazabilidad completa",
+    "featuredProducts": "Productos destacados",
+    "ctaTitle": "¿Listo para comenzar su proyecto?",
+    "ctaSubtitle": "Contáctenos hoy para una consulta y cotización gratuitas. Nuestro equipo responde en 24 horas.",
+    "ctaButton": "Enviar consulta ahora"
+  },
+  "footer": {
+    "company": "Empresa",
+    "products": "Productos",
+    "resources": "Recursos",
+    "contact": "Contáctenos",
+    "newsletter": "Suscríbase a nuestro boletín",
+    "newsletterPlaceholder": "Su dirección de correo",
+    "subscribe": "Suscribirse",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  },
+  "product": {
+    "allProducts": "Todos los productos",
+    "searchPlaceholder": "Buscar productos...",
+    "filterByCategory": "Filtrar por categoría",
+    "moq": "Cantidad mínima",
+    "deliveryTime": "Tiempo de entrega",
+    "certifications": "Certificaciones",
+    "features": "Características principales",
+    "specifications": "Especificaciones",
+    "customOptions": "Opciones de personalización",
+    "getQuoteForProduct": "Solicitar cotización para este producto",
+    "relatedProducts": "Productos relacionados",
+    "downloadCatalog": "Descargar catálogo"
+  },
+  "form": {
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "company": "Nombre de la empresa",
+    "phone": "Teléfono / WhatsApp",
+    "productInterest": "Producto de interés",
+    "quantity": "Cantidad estimada",
+    "targetMarket": "Mercado objetivo",
+    "message": "Describa sus requisitos",
+    "submit": "Enviar consulta",
+    "submitting": "Enviando...",
+    "success": "¡Gracias! Lo contactaremos dentro de 24 horas.",
+    "error": "Algo salió mal. Intente de nuevo o envíenos un correo directamente."
+  },
+  "categories": {
+    "walkingAids": "Ayudas para caminar",
+    "walkingAidsDesc": "Andadores, rollators, muletas y bastones",
+    "rehabTraining": "Entrenamiento de rehabilitación",
+    "rehabTrainingDesc": "Equipo de ejercicio para recuperación y terapia",
+    "nursingCare": "Cuidado de enfermería",
+    "nursingCareDesc": "Camas de hospital, elevadores de pacientes, ayudas de transferencia",
+    "accessibility": "Accesibilidad",
+    "accessibilityDesc": "Rampas, salvaescaleras, seguridad en el baño",
+    "dailyLiving": "Ayudas para la vida diaria",
+    "dailyLivingDesc": "Ayudas de baño, ayudas para vestirse, ayudas de cocina",
+    "physiotherapy": "Fisioterapia",
+    "physiotherapyDesc": "Camillas de tratamiento, electroterapia, terapia de calor/frío"
+  },
+  "about": {
+    "title": "Sobre RehabPro Medical",
+    "subtitle": "Su socio de confianza en la fabricación de equipos de rehabilitación"
+  },
+  "factory": {
+    "title": "Nuestra fábrica",
+    "subtitle": "Instalación de fabricación de última generación"
+  },
+  "oem": {
+    "title": "Servicios OEM y ODM",
+    "subtitle": "Dé vida a su marca con nuestra fabricación personalizada"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Nos encantaría saber de usted"
+  },
+  "blog": {
+    "title": "Blog y perspectivas",
+    "subtitle": "Conocimiento de la industria y actualizaciones de la empresa",
+    "readMore": "Leer más",
+    "publishedOn": "Publicado el",
+    "relatedPosts": "Artículos relacionados"
+  },
+  "common": {
+    "viewAll": "Ver todo",
+    "learnMore": "Más información",
+    "backToHome": "Volver al inicio",
+    "pageNotFound": "Página no encontrada",
+    "pageNotFoundDesc": "La página que busca no existe o ha sido movida."
+  }
+}

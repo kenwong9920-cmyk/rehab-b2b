@@ -1,0 +1,51 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactForm from '@/components/ContactForm.astro';
+import { useTranslations } from '@/utils/i18n';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+// Get product param from URL
+const productParam = Astro.url.searchParams.get('product') || '';
+---
+
+<BaseLayout title={t('nav.getQuote')} description="Request a customized quote for rehabilitation equipment" locale={locale!}>
+  <section class="bg-gradient-to-br from-primary-700 to-primary-900 text-white">
+    <div class="container-main py-16 text-center max-w-3xl">
+      <h1 class="text-white mb-4">{t('nav.getQuote')}</h1>
+      <p class="text-xl text-white/80">Fill in the form below and our team will respond within 24 hours with a detailed quotation.</p>
+    </div>
+  </section>
+
+  <section class="container-main py-16">
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white rounded-xl shadow-sm border border-neutral-200 p-8">
+        <h2 class="mb-6 text-2xl text-center">Request a Quote</h2>
+        <ContactForm
+          productName={productParam}
+          showProductField={true}
+          showQuantityField={true}
+        />
+      </div>
+
+      <div class="mt-8 text-center text-sm text-neutral-500">
+        <p>Prefer to talk directly?</p>
+        <p class="mt-1">
+          Email us at <a href="mailto:info@rehabpro-med.com" class="text-primary-600">info@rehabpro-med.com</a>
+          {' or '}
+          <a href="https://wa.me/86XXXXXXXXXXX" class="text-accent-600" target="_blank" rel="noopener">WhatsApp Us →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

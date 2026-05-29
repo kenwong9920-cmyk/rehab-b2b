@@ -1,0 +1,31 @@
+---
+// FeaturesGrid — 为什么选择我们的网格展示
+interface Feature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  features: Feature[];
+  columns?: 2 | 3 | 4;
+}
+
+const { features, columns = 4 } = Astro.props;
+
+const colClass = columns === 2 ? 'md:grid-cols-2'
+  : columns === 3 ? 'md:grid-cols-3'
+  : 'sm:grid-cols-2 lg:grid-cols-4';
+---
+
+<div class={`grid grid-cols-1 ${colClass} gap-8`}>
+  {features.map((feature) => (
+    <div class="text-center group">
+      <div class="text-4xl mb-4 inline-block group-hover:scale-110 transition-transform">
+        {feature.icon}
+      </div>
+      <h3 class="text-lg mb-2">{feature.title}</h3>
+      <p class="text-sm text-neutral-600 leading-relaxed">{feature.description}</p>
+    </div>
+  ))}
+</div>

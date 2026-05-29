@@ -1,0 +1,138 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { useTranslations } from '@/utils/i18n';
+import { PRODUCT_CATEGORIES } from '@/utils/constants';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+// 获取当前语言的产品
+const allProducts = await getCollection('products', (entry) => {
+  return entry.id.startsWith(`${locale}/`);
+});
+
+// 获取当前 URL 中的分类筛选参数
+const urlParams = Astro.url.searchParams;
+const activeCategory = urlParams.get('category') || '';
+
+// 按分类筛选
+const filteredProducts = activeCategory
+  ? allProducts.filter((p) => p.data.category === activeCategory)
+  : allProducts;
+
+// SEO
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: t('nav.products'),
+  description: `All rehabilitation products by ${t('site.name')}`,
+};
+---
+
+<BaseLayout title={t('nav.products')} description={`All rehabilitation products by ${t('site.name')}`} locale={locale!} schema={schema}>
+  <div class="container-main section-padding">
+    <!-- Header -->
+    <div class="mb-10">
+      <h1>{t('nav.products')}</h1>
+      <p class="mt-3 text-neutral-600">
+        {allProducts.length} products available for wholesale and OEM customization
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex flex-wrap gap-2 mb-10">
+      <a
+        href={`/${locale}/products/`}
+        class={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+          !activeCategory
+            ? 'bg-primary-600 text-white'
+            : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+        }`}
+      >
+        {t('product.allProducts')}
+      </a>
+      {PRODUCT_CATEGORIES.map((cat) => (
+        <a
+          href={`/${locale}/products/?category=${cat.slug}`}
+          class={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+            activeCategory === cat.slug
+              ? 'bg-primary-600 text-white'
+              : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+          }`}
+        >
+          {cat.icon} {t(cat.nameKey)}
+        </a>
+      ))}
+    </div>
+
+    <!-- Results -->
+    {filteredProducts.length === 0 ? (
+      <div class="text-center py-20">
+        <p class="text-neutral-500 text-lg">No products found in this category yet.</p>
+        <a href={`/${locale}/products/`} class="btn-outline mt-4 inline-flex">
+          {t('product.allProducts')}
+        </a>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProducts.map((product) => (
+          <div class="bg-white rounded-xl border border-neutral-200 overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300 group flex flex-col">
+            <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="block aspect-[4/3] overflow-hidden bg-neutral-100">
+              <img
+                src={product.data.image}
+                alt={product.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </a>
+            <div class="p-5 flex flex-col flex-1">
+              {product.data.category && (
+                <span class="text-xs font-medium text-primary-600 uppercase tracking-wide mb-2">
+                  {t(`categories.${PRODUCT_CATEGORIES.find(c => c.slug === product.data.category)?.nameKey.split('.').pop() || ''}`)}
+                </span>
+              )}
+              <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="no-underline">
+                <h3 class="text-lg font-semibold text-neutral-900 group-hover:text-primary-700 transition-colors mb-2">
+                  {product.data.title}
+                </h3>
+              </a>
+              <p class="text-sm text-neutral-600 leading-relaxed flex-1 mb-4 line-clamp-2">
+                {product.data.description}
+              </p>
+              <div class="flex items-center justify-between pt-3 border-t border-neutral-100">
+                {product.data.moq && <span class="text-xs text-neutral-500">MOQ: {product.data.moq}</span>}
+                <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="btn-primary btn-sm ml-auto">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+
+    <!-- CTA -->
+    <div class="mt-16 text-center bg-neutral-50 rounded-2xl p-10">
+      <h3 class="mb-2">Need a Custom Solution?</h3>
+      <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
+        We provide OEM and ODM services to tailor our products to your specific requirements.
+        Contact us for a personalized quote.
+      </p>
+      <a href={`/${locale}/get-quote/`} class="btn-accent">
+        {t('nav.getQuote')} →
+      </a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,87 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import { useTranslations } from '@/utils/i18n';
+import { SITE } from '@/utils/constants';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const facilities = [
+  { icon: '🏗️', title: '15,000 m² Modern Facility', desc: 'State-of-the-art manufacturing and assembly lines with climate-controlled production zones.' },
+  { icon: '🤖', title: 'Automated Production', desc: 'CNC machining centers, robotic welding stations, and automated powder coating lines.' },
+  { icon: '🔬', title: 'In-House Testing Lab', desc: 'Complete physical and electrical testing equipment — load, endurance, EMC, and safety testing.' },
+  { icon: '📦', title: 'In-House Logistics', desc: 'Dedicated warehouse with container loading dock — efficient FCL and LCL shipping worldwide.' },
+];
+---
+
+<BaseLayout title={t('factory.title')} description={t('factory.subtitle')} locale={locale!}>
+  <section class="bg-neutral-900 text-white">
+    <div class="container-main py-20 text-center max-w-3xl">
+      <h1 class="text-white mb-4">{t('factory.title')}</h1>
+      <p class="text-xl text-white/70">{t('factory.subtitle')}</p>
+    </div>
+  </section>
+
+  <section class="container-main section-padding">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <h2>Manufacturing Excellence</h2>
+      <p class="mt-4 text-neutral-600">
+        Our {SITE.factoryArea} facility in Hangzhou is equipped with modern production lines,
+        rigorous quality control systems, and certified to ISO 13485 for medical device manufacturing.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      {facilities.map((f) => (
+        <div class="flex gap-4 p-6 bg-neutral-50 rounded-xl">
+          <div class="text-3xl shrink-0">{f.icon}</div>
+          <div>
+            <h3 class="text-lg mb-1">{f.title}</h3>
+            <p class="text-sm text-neutral-600">{f.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Quality Control -->
+  <section class="bg-neutral-50">
+    <div class="container-main section-padding">
+      <h2 class="text-center mb-12">Quality Control Process</h2>
+      <div class="max-w-3xl mx-auto">
+        {[
+          { step: '01', title: 'Incoming Material Inspection', desc: 'All raw materials and components inspected against specifications before production.' },
+          { step: '02', title: 'In-Process Quality Checks', desc: 'Multiple checkpoints during assembly, welding, and finishing stages.' },
+          { step: '03', title: 'Final Product Testing', desc: '100% functional testing — load, electrical safety, endurance, and visual inspection.' },
+          { step: '04', title: 'Pre-Shipment Inspection', desc: 'Random sampling per AQL standards. Documentation and certification review before release.' },
+        ].map((q, i) => (
+          <div class="flex gap-6 pb-8 relative">
+            {i < 3 && <div class="absolute left-[27px] top-12 bottom-0 w-px bg-neutral-300"></div>}
+            <div class="w-14 h-14 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-lg shrink-0">{q.step}</div>
+            <div>
+              <h3 class="text-lg mb-1">{q.title}</h3>
+              <p class="text-sm text-neutral-600">{q.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Want to Visit Our Factory?"
+    subtitle="We welcome potential partners to tour our facility. Contact us to schedule a visit."
+    ctaText="Schedule a Visit →"
+    ctaHref={`/${locale}/contact/`}
+    variant="primary"
+  />
+</BaseLayout>

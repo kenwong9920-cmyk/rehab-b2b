@@ -1,0 +1,85 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import { useTranslations } from '@/utils/i18n';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const processSteps = [
+  { step: '01', icon: '💡', title: 'Consultation & Requirements', desc: 'Share your product ideas, specifications, target market, and branding requirements with our team.' },
+  { step: '02', icon: '🎨', title: 'Design & Prototyping', desc: 'Our R&D team creates 3D designs and prototypes. We iterate until the product meets your exact specifications.' },
+  { step: '03', icon: '📋', title: 'Sample Approval', desc: 'You receive pre-production samples for evaluation. We revise based on your feedback before mass production.' },
+  { step: '04', icon: '🏭', title: 'Mass Production', desc: 'Full-scale manufacturing with rigorous QC at every stage. We keep you updated with production progress.' },
+  { step: '05', icon: '✅', title: 'Quality Inspection', desc: 'Final inspection per AQL standards. All certifications and test reports provided before shipping.' },
+  { step: '06', icon: '🚢', title: 'Logistics & Delivery', desc: 'Professional packing, container loading, and shipping to your destination port or door-to-door delivery.' },
+];
+
+const customizationOptions = [
+  { icon: '🎨', title: 'Colors & Materials', desc: 'Any RAL color for frames and components. Material upgrades to stainless steel, carbon fiber, or premium fabrics.' },
+  { icon: '🏷️', title: 'Branding & Logo', desc: 'Custom logo printing, embroidery, laser engraving on all products. Full OEM packaging design.' },
+  { icon: '📐', title: 'Dimensions & Design', desc: 'Product size adjustments to meet regional ergonomic standards. Custom structural modifications.' },
+  { icon: '📦', title: 'Packaging & Manuals', desc: 'Custom branded packaging, user manuals in your language, and assembly instructions tailored to your market.' },
+  { icon: '⚙️', title: 'Feature Customization', desc: 'Motor power, battery capacity, controller settings — we adjust technical specs to your requirements.' },
+  { icon: '📄', title: 'Certification Support', desc: 'We assist with documentation for local certification requirements — FDA 510(k), UKCA, TGA, and more.' },
+];
+---
+
+<BaseLayout title={t('oem.title')} description={t('oem.subtitle')} locale={locale!}>
+  <section class="bg-gradient-to-br from-accent-700 to-accent-900 text-white">
+    <div class="container-main py-20 text-center max-w-3xl">
+      <h1 class="text-white mb-4">{t('oem.title')}</h1>
+      <p class="text-xl text-white/80">{t('oem.subtitle')}</p>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="container-main section-padding">
+    <h2 class="text-center mb-12">Our OEM/ODM Process</h2>
+    <div class="max-w-3xl mx-auto">
+      {processSteps.map((s, i) => (
+        <div class="flex gap-5 pb-8 relative">
+          {i < processSteps.length - 1 && <div class="absolute left-[27px] top-12 bottom-0 w-px bg-neutral-200"></div>}
+          <div class="w-14 h-14 rounded-full bg-accent-100 text-accent-700 flex items-center justify-center font-bold text-lg shrink-0">{s.step}</div>
+          <div class="flex-1">
+            <h3 class="text-lg mb-1 flex items-center gap-2">{s.icon} {s.title}</h3>
+            <p class="text-sm text-neutral-600">{s.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Customization Options -->
+  <section class="bg-neutral-50">
+    <div class="container-main section-padding">
+      <h2 class="text-center mb-12">What We Can Customize</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {customizationOptions.map((opt) => (
+          <div class="bg-white p-6 rounded-xl border border-neutral-200">
+            <div class="text-2xl mb-3">{opt.icon}</div>
+            <h3 class="text-base font-semibold mb-2">{opt.title}</h3>
+            <p class="text-sm text-neutral-600">{opt.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Start Your OEM Project"
+    subtitle="Tell us about your product requirements and we'll provide a customized solution and quote."
+    ctaText="Request OEM Quote →"
+    ctaHref={`/${locale}/get-quote/`}
+    variant="accent"
+  />
+</BaseLayout>

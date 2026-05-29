@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "RehabPro Medical",
+    "tagline": "Professioneller Hersteller von Rehabilitationsausrüstung"
+  },
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "about": "Über uns",
+    "factory": "Fabrikbesichtigung",
+    "oem": "OEM/ODM",
+    "solutions": "Lösungen",
+    "caseStudies": "Fallstudien",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getQuote": "Angebot anfordern",
+    "downloads": "Downloads"
+  },
+  "home": {
+    "heroTitle": "Professioneller Hersteller von Rehabilitationsausrüstung",
+    "heroSubtitle": "Über 15 Jahre Erfahrung in der Entwicklung und Herstellung hochwertiger Rehabilitations- und Medizinausrüstung. CE-, FDA-, ISO 13485-zertifizierte Fabrik mit Lieferungen in über 50 Länder weltweit.",
+    "heroCTA": "Angebot anfordern",
+    "heroCTA2": "Produkte entdecken",
+    "categoriesTitle": "Unsere Produktkategorien",
+    "whyUsTitle": "Warum RehabPro wählen?",
+    "certifiedFactory": "Zertifizierte Fabrik",
+    "certifiedFactoryDesc": "ISO 13485, CE, FDA zugelassene Produktionsstätte",
+    "oemService": "OEM & Individualisierung",
+    "oemServiceDesc": "Vollständige Anpassung — Farbe, Material, Logo, Verpackung maßgeschneidert für Ihre Marke",
+    "globalShipping": "Globale Logistik",
+    "globalShippingDesc": "Effizienter Versand in über 50 Länder in Europa, Amerika und Südostasien",
+    "qualityControl": "Qualitätssicherung",
+    "qualityControlDesc": "Strenge Prüfungen in jeder Produktionsphase mit vollständiger Rückverfolgbarkeit",
+    "featuredProducts": "Ausgewählte Produkte",
+    "ctaTitle": "Bereit für Ihr Projekt?",
+    "ctaSubtitle": "Kontaktieren Sie uns noch heute für eine kostenlose Beratung und ein Angebot. Unser Team antwortet innerhalb von 24 Stunden.",
+    "ctaButton": "Jetzt anfragen"
+  },
+  "footer": {
+    "company": "Unternehmen",
+    "products": "Produkte",
+    "resources": "Ressourcen",
+    "contact": "Kontakt",
+    "newsletter": "Newsletter abonnieren",
+    "newsletterPlaceholder": "Ihre E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "product": {
+    "allProducts": "Alle Produkte",
+    "searchPlaceholder": "Produkte suchen...",
+    "filterByCategory": "Nach Kategorie filtern",
+    "moq": "Mindestbestellmenge",
+    "deliveryTime": "Lieferzeit",
+    "certifications": "Zertifizierungen",
+    "features": "Hauptmerkmale",
+    "specifications": "Spezifikationen",
+    "customOptions": "Anpassungsoptionen",
+    "getQuoteForProduct": "Angebot für dieses Produkt anfordern",
+    "relatedProducts": "Ähnliche Produkte",
+    "downloadCatalog": "Katalog herunterladen"
+  },
+  "form": {
+    "name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "company": "Firmenname",
+    "phone": "Telefon / WhatsApp",
+    "productInterest": "Gewünschtes Produkt",
+    "quantity": "Geschätzte Menge",
+    "targetMarket": "Zielmarkt",
+    "message": "Beschreiben Sie Ihre Anforderungen",
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet...",
+    "success": "Vielen Dank! Wir werden Sie innerhalb von 24 Stunden kontaktieren.",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut oder senden Sie uns direkt eine E-Mail."
+  },
+  "categories": {
+    "walkingAids": "Gehhilfen",
+    "walkingAidsDesc": "Gehwagen, Rollatoren, Krücken und Gehstöcke",
+    "rehabTraining": "Rehabilitationstraining",
+    "rehabTrainingDesc": "Trainingsgeräte für Genesung und Therapie",
+    "nursingCare": "Pflegeprodukte",
+    "nursingCareDesc": "Krankenhausbetten, Patientenlifter, Transfersysteme",
+    "accessibility": "Barrierefreiheit",
+    "accessibilityDesc": "Rampen, Treppenlifte, Badsicherheit",
+    "dailyLiving": "Alltagshilfen",
+    "dailyLivingDesc": "Badhilfen, Anziehhilfen, Küchenhelfer",
+    "physiotherapy": "Physiotherapie",
+    "physiotherapyDesc": "Behandlungsliegen, Elektrotherapie, Wärme-/Kältetherapie"
+  },
+  "about": {
+    "title": "Über RehabPro Medical",
+    "subtitle": "Ihr vertrauenswürdiger Partner für die Herstellung von Rehabilitationsausrüstung"
+  },
+  "factory": {
+    "title": "Unsere Fabrik",
+    "subtitle": "Hochmoderne Produktionsstätte"
+  },
+  "oem": {
+    "title": "OEM & ODM Dienstleistungen",
+    "subtitle": "Verwirklichen Sie Ihre Markenvision mit unserer kundenspezifischen Fertigung"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wir freuen uns auf Ihre Nachricht"
+  },
+  "blog": {
+    "title": "Blog & Einblicke",
+    "subtitle": "Branchenwissen und Unternehmensaktualisierungen",
+    "readMore": "Weiterlesen",
+    "publishedOn": "Veröffentlicht am",
+    "relatedPosts": "Verwandte Artikel"
+  },
+  "common": {
+    "viewAll": "Alle anzeigen",
+    "learnMore": "Mehr erfahren",
+    "backToHome": "Zurück zur Startseite",
+    "pageNotFound": "Seite nicht gefunden",
+    "pageNotFoundDesc": "Die gesuchte Seite existiert nicht oder wurde verschoben."
+  }
+}

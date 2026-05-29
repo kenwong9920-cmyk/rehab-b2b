@@ -1,0 +1,134 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import { useTranslations } from '@/utils/i18n';
+import { SITE } from '@/utils/constants';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const milestones = [
+  { year: '2010', event: 'RehabPro Medical founded in Hangzhou, China' },
+  { year: '2013', event: 'First CE certification obtained for walking aids product line' },
+  { year: '2015', event: 'FDA registration approved for US market entry' },
+  { year: '2017', event: 'ISO 13485 certification achieved — medical device quality management' },
+  { year: '2019', event: 'New 15,000 m² factory facility opened with expanded production lines' },
+  { year: '2022', event: 'Expanded to 50+ export countries with dedicated OEM service division' },
+  { year: '2025', event: 'Launched new physiotherapy and smart rehabilitation product lines' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: t('about.title'),
+  description: t('about.subtitle'),
+};
+---
+
+<BaseLayout title={t('about.title')} description={t('about.subtitle')} locale={locale!} schema={schema}>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary-800 to-primary-900 text-white">
+    <div class="container-main py-20 text-center max-w-3xl">
+      <h1 class="text-white mb-4">{t('about.title')}</h1>
+      <p class="text-xl text-white/80">{t('about.subtitle')}</p>
+    </div>
+  </section>
+
+  <!-- Company Intro -->
+  <section class="container-main section-padding">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-center mb-6">Your Trusted Rehabilitation Equipment Partner</h2>
+      <div class="prose prose-neutral max-w-none text-neutral-600 leading-relaxed space-y-4">
+        <p>
+          RehabPro Medical is a leading manufacturer of rehabilitation and medical equipment based in Hangzhou, China.
+          With over 15 years of industry experience, we specialize in designing, manufacturing, and exporting high-quality
+          rehabilitation products to healthcare distributors, hospitals, nursing homes, and retail chains across 50+ countries.
+        </p>
+        <p>
+          Our 15,000 m² state-of-the-art facility is certified to ISO 13485 (Medical Device Quality Management),
+          ISO 9001, and our products carry CE and FDA certifications. We employ over 200 skilled professionals including
+          R&D engineers, quality control specialists, and export service teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Stats -->
+  <section class="bg-neutral-50">
+    <div class="container-main py-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {[
+          { value: `${new Date().getFullYear() - SITE.foundedYear}+`, label: 'Years Experience' },
+          { value: SITE.employees, label: 'Team Members' },
+          { value: SITE.factoryArea, label: 'Factory Area' },
+          { value: SITE.exportCountries, label: 'Countries Served' },
+        ].map((stat) => (
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">{stat.value}</div>
+            <div class="text-sm text-neutral-500">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="container-main section-padding">
+    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-4xl mb-4">🎯</div>
+        <h3 class="mb-2">Our Mission</h3>
+        <p class="text-sm text-neutral-600">To provide affordable, high-quality rehabilitation equipment that improves the quality of life for people worldwide.</p>
+      </div>
+      <div>
+        <div class="text-4xl mb-4">🔭</div>
+        <h3 class="mb-2">Our Vision</h3>
+        <p class="text-sm text-neutral-600">To become the world's most trusted OEM partner for rehabilitation and medical equipment brands.</p>
+      </div>
+      <div>
+        <div class="text-4xl mb-4">💎</div>
+        <h3 class="mb-2">Our Values</h3>
+        <p class="text-sm text-neutral-600">Quality, innovation, integrity, and customer-first service in everything we manufacture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="bg-neutral-50">
+    <div class="container-main section-padding">
+      <h2 class="text-center mb-12">Our Journey</h2>
+      <div class="max-w-2xl mx-auto">
+        {milestones.map((m, i) => (
+          <div class="flex gap-6 pb-8 relative">
+            {i < milestones.length - 1 && (
+              <div class="absolute left-[39px] top-12 bottom-0 w-px bg-neutral-300"></div>
+            )}
+            <div class="w-20 text-right shrink-0">
+              <span class="text-sm font-bold text-primary-600">{m.year}</span>
+            </div>
+            <div class="flex-1 pb-2">
+              <p class="text-neutral-700">{m.event}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Ready to Partner with Us?"
+    subtitle="Contact us to discuss your rehabilitation equipment needs. We respond within 24 hours."
+    ctaText="Contact Us →"
+    ctaHref={`/${locale}/contact/`}
+    variant="primary"
+  />
+</BaseLayout>

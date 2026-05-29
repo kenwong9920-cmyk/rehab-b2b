@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "RehabPro Medical",
+    "tagline": "Professional Rehabilitation Equipment Manufacturer"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "factory": "Factory Tour",
+    "oem": "OEM/ODM",
+    "solutions": "Solutions",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get Quote",
+    "downloads": "Downloads"
+  },
+  "home": {
+    "heroTitle": "Professional Rehabilitation Equipment Manufacturer",
+    "heroSubtitle": "15+ years of experience in designing and manufacturing high-quality rehabilitation and medical equipment. CE, FDA, ISO 13485 certified factory serving 50+ countries worldwide.",
+    "heroCTA": "Request a Quote",
+    "heroCTA2": "Explore Products",
+    "categoriesTitle": "Our Product Categories",
+    "whyUsTitle": "Why Choose RehabPro?",
+    "certifiedFactory": "Certified Factory",
+    "certifiedFactoryDesc": "ISO 13485, CE, FDA approved manufacturing facility",
+    "oemService": "OEM & Customization",
+    "oemServiceDesc": "Full customization — color, material, logo, packaging tailored to your brand",
+    "globalShipping": "Global Logistics",
+    "globalShippingDesc": "Efficient shipping to 50+ countries across Europe, Americas & Southeast Asia",
+    "qualityControl": "Quality Assurance",
+    "qualityControlDesc": "Rigorous testing at every production stage with full traceability",
+    "featuredProducts": "Featured Products",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Contact us today for a free consultation and quote. Our team responds within 24 hours.",
+    "ctaButton": "Send Inquiry Now"
+  },
+  "footer": {
+    "company": "Company",
+    "products": "Products",
+    "resources": "Resources",
+    "contact": "Contact Us",
+    "newsletter": "Subscribe to our newsletter",
+    "newsletterPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "product": {
+    "allProducts": "All Products",
+    "searchPlaceholder": "Search products...",
+    "filterByCategory": "Filter by category",
+    "moq": "MOQ",
+    "deliveryTime": "Delivery Time",
+    "certifications": "Certifications",
+    "features": "Key Features",
+    "specifications": "Specifications",
+    "customOptions": "Customization Options",
+    "getQuoteForProduct": "Get Quote for This Product",
+    "relatedProducts": "Related Products",
+    "downloadCatalog": "Download Catalog"
+  },
+  "form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "company": "Company Name",
+    "phone": "Phone / WhatsApp",
+    "productInterest": "Product of Interest",
+    "quantity": "Estimated Quantity",
+    "targetMarket": "Target Market",
+    "message": "Tell us about your requirements",
+    "submit": "Submit Inquiry",
+    "submitting": "Sending...",
+    "success": "Thank you! We will contact you within 24 hours.",
+    "error": "Something went wrong. Please try again or email us directly."
+  },
+  "categories": {
+    "walkingAids": "Walking Aids",
+    "walkingAidsDesc": "Walkers, rollators, crutches and canes",
+    "rehabTraining": "Rehabilitation Training",
+    "rehabTrainingDesc": "Exercise equipment for recovery and therapy",
+    "nursingCare": "Nursing Care",
+    "nursingCareDesc": "Hospital beds, patient lifts, transfer aids",
+    "accessibility": "Accessibility",
+    "accessibilityDesc": "Ramps, stair lifts, bathroom safety",
+    "dailyLiving": "Daily Living Aids",
+    "dailyLivingDesc": "Bathroom aids, dressing aids, kitchen helpers",
+    "physiotherapy": "Physiotherapy",
+    "physiotherapyDesc": "Treatment tables, electrotherapy, hot/cold therapy"
+  },
+  "about": {
+    "title": "About RehabPro Medical",
+    "subtitle": "Your trusted partner in rehabilitation equipment manufacturing"
+  },
+  "factory": {
+    "title": "Our Factory",
+    "subtitle": "State-of-the-art manufacturing facility"
+  },
+  "oem": {
+    "title": "OEM & ODM Services",
+    "subtitle": "Bring your brand vision to life with our custom manufacturing"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you"
+  },
+  "blog": {
+    "title": "Blog & Insights",
+    "subtitle": "Industry knowledge and company updates",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "relatedPosts": "Related Articles"
+  },
+  "common": {
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "backToHome": "Back to Home",
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDesc": "The page you're looking for doesn't exist or has been moved."
+  }
+}

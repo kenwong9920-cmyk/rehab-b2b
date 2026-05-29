@@ -1,0 +1,55 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTASection from '@/components/CTASection.astro';
+import { useTranslations } from '@/utils/i18n';
+
+export async function getStaticPaths() {
+  return [
+    { params: { locale: 'en' } },
+    { params: { locale: 'fr' } },
+    { params: { locale: 'de' } },
+    { params: { locale: 'es' } },
+  ];
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const solutions = [
+  { icon: '🏥', title: 'Hospital & Clinic Solutions', desc: 'Complete ward equipment packages including beds, patient lifts, and rehabilitation stations for hospitals and clinics.' },
+  { icon: '🏠', title: 'Home Care Solutions', desc: 'Affordable, easy-to-use rehabilitation products for home care providers and elderly care facilities.' },
+  { icon: '🏋️', title: 'Physiotherapy Centers', desc: 'Treatment tables, exercise equipment, and therapy devices for professional physiotherapy practices.' },
+  { icon: '♿', title: 'Mobility Retail', desc: 'Walking aids, wheelchairs, and daily living aids for retail chains and DME distributors.' },
+  { icon: '🏗️', title: 'Government Tenders', desc: 'Large-scale supply for public healthcare systems, with full documentation and competitive pricing.' },
+  { icon: '🌍', title: 'Export Distribution', desc: 'OEM and wholesale supply for international distributors, with region-specific certifications.' },
+];
+---
+
+<BaseLayout title="Solutions" description="Rehabilitation equipment solutions for every healthcare sector" locale={locale!}>
+  <section class="bg-primary-700 text-white">
+    <div class="container-main py-20 text-center max-w-3xl">
+      <h1 class="text-white mb-4">Industry Solutions</h1>
+      <p class="text-xl text-white/80">Tailored rehabilitation equipment packages for every healthcare sector.</p>
+    </div>
+  </section>
+
+  <section class="container-main section-padding">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {solutions.map((s) => (
+        <div class="bg-white rounded-xl border border-neutral-200 p-6 hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-4">{s.icon}</div>
+          <h3 class="text-lg font-semibold mb-2">{s.title}</h3>
+          <p class="text-sm text-neutral-600">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CTASection
+    title="Need a Custom Solution?"
+    subtitle="Contact us to discuss your specific needs. We design packages tailored to your market and budget."
+    ctaText="Request Consultation →"
+    ctaHref={`/${locale}/get-quote/`}
+    variant="accent"
+  />
+</BaseLayout>
