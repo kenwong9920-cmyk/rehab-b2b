@@ -125,8 +125,9 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
       <!-- Images -->
       <div>
-        <div class="aspect-square rounded-xl overflow-hidden bg-white mb-4">
+        <div class="aspect-square rounded-xl overflow-hidden bg-white mb-4 cursor-zoom-in" id="mainImageContainer">
           <img
+            id="mainImage"
             src={p.image}
             alt={p.title}
             class="w-full h-full object-contain p-4"
@@ -135,9 +136,9 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
           />
         </div>
         {p.images && p.images.length > 0 && (
-          <div class="grid grid-cols-4 gap-3">
+          <div class="grid grid-cols-4 gap-3" id="thumbnailList">
             {p.images.map((img, i) => (
-              <div class="aspect-square rounded-lg overflow-hidden bg-neutral-100 border-2 border-transparent hover:border-primary-400 cursor-pointer transition-colors">
+              <div class="aspect-square rounded-lg overflow-hidden bg-neutral-100 border-2 border-transparent hover:border-primary-400 cursor-pointer transition-colors thumbnail-item" data-src={img}>
                 <img
                   src={img}
                   alt={`${p.title} - View ${i + 2}`}
@@ -150,6 +151,15 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
             ))}
           </div>
         )}
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden flex-col items-center justify-center" style="display:none;">
+        <button id="lightboxClose" class="absolute top-4 right-4 text-white/80 hover:text-white text-3xl leading-none cursor-pointer z-10">&times;</button>
+        <button id="lightboxPrev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white text-3xl leading-none cursor-pointer z-10">&lsaquo;</button>
+        <button id="lightboxNext" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white text-3xl leading-none cursor-pointer z-10">&rsaquo;</button>
+        <img id="lightboxImage" src="" alt={p.title} class="max-w-[90vw] max-h-[85vh] object-contain" />
+        <span id="lightboxCounter" class="text-white/60 text-sm mt-4"></span>
       </div>
 
       <!-- Product Info -->
@@ -296,3 +306,92 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  // --- Product Image Gallery ---
+  const mainImg = document.getElementById('mainImage') as HTMLImageElement | null;
+  const mainContainer = document.getElementById('mainImageContainer');
+  const thumbnails = document.querySelectorAll('.thumbnail-item');
+  const allImages: string[] = [];
+
+  // Collect all image URLs (main + thumbnails)
+  if (mainImg) allImages.push(mainImg.src);
+  thumbnails.forEach((t) => {
+    const src = (t as HTMLElement).dataset.src;
+    if (src) allImages.push(src);
+  });
+
+  let currentIndex = 0;
+
+  // Thumbnail click → switch main image
+  thumbnails.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      const src = (thumb as HTMLElement).dataset.src;
+      if (src && mainImg) {
+        mainImg.src = src;
+        mainImg.style.opacity = '0';
+        setTimeout(() => { mainImg.style.opacity = '1'; }, 50);
+        mainImg.style.transition = 'opacity 0.3s ease';
+
+        // Highlight active thumbnail
+        thumbnails.forEach(t => (t as HTMLElement).style.borderColor = 'transparent');
+        (thumb as HTMLElement).style.borderColor = '#2563eb';
+      }
+    });
+  });
+
+  // --- Lightbox ---
+  const lightbox = document.getElementById('lightbox') as HTMLElement | null;
+  const lightboxImg = document.getElementById('lightboxImage') as HTMLImageElement | null;
+  const lightboxCounter = document.getElementById('lightboxCounter');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+
+  function openLightbox(index: number) {
+    if (!lightbox || !lightboxImg) return;
+    currentIndex = index;
+    lightboxImg.src = allImages[currentIndex];
+    if (lightboxCounter) lightboxCounter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Main image click → open lightbox
+  mainContainer?.addEventListener('click', () => {
+    // Find current index
+    const idx = mainImg ? allImages.indexOf(mainImg.src) : 0;
+    openLightbox(idx >= 0 ? idx : 0);
+  });
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  lightboxPrev?.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+    if (lightboxImg) lightboxImg.src = allImages[currentIndex];
+    if (lightboxCounter) lightboxCounter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+  });
+
+  lightboxNext?.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % allImages.length;
+    if (lightboxImg) lightboxImg.src = allImages[currentIndex];
+    if (lightboxCounter) lightboxCounter.textContent = `${currentIndex + 1} / ${allImages.length}`;
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox || lightbox.style.display === 'none') return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lightboxPrev?.click();
+    if (e.key === 'ArrowRight') lightboxNext?.click();
+  });
+</script>
