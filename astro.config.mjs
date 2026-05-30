@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rehab-b2b.vercel.app',
+  site: 'https://www.jdrehab.com',
 
   // i18n 多语言路由配置
   i18n: {
