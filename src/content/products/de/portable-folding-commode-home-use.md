@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode for Home Use"
-description: "Heavy-duty high-carbon steel folding commode with extra-wide HD-PE double-layer blow-molded seat designed for bariatric users. Features 150kg capacity, PP armrests, 5-level height adjustment, and anti-slip rubber feet with metal plates. Quick-fold portable design for bedside home care."
+title: "Tragbarer Faltbarer Toilettenstuhl für Heimgebrauch"
+description: "Schwerlast-Falttoilettenstuhl aus Kohlenstoffstahl mit extra-breitem doppelschichtigem HD-PE-Sitz für bariatrische Nutzer. 150kg Kapazität, PP-Armlehnen, 5-fache Höhenverstellung und rutschfeste Gummifüße mit Metallplatten."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

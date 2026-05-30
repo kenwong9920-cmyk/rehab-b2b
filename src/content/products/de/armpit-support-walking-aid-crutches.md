@@ -1,6 +1,6 @@
 ---
-title: "Armpit Support Walking Aid Crutches"
-description: "Three-section folding aluminum alloy axillary crutches with anti-slip rubber tips and dual-support balance design. Comfortable armpit padding reduces shoulder pressure during extended recovery use. Adjustable height for home, hospital, and rehab."
+title: "Achselstütze Gehhilfe Krücken"
+description: "Dreiteilige faltbare Aluminium-Achselkrücken mit rutschfesten Gummifüßen und ausgewogenem Doppelstütz-Design. Bequeme Achselpolsterung reduziert Druck. Höhenverstellbar für Zuhause, Krankenhaus und Rehabilitation."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"
 images:

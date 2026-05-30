@@ -1,6 +1,6 @@
 ---
-title: "Carbon Fiber 100kg Load Capacity Outdoor Cane"
-description: "Incredibly lightweight carbon fiber outdoor cane at just 0.36kg with 100kg max load. Features premium rosewood handle, 5-height push-button adjustment, 34.5cm folded length, and TPR ferrule with internal steel plate for maximum grip."
+title: "Bastón de Exterior de Fibra de Carbono 100kg"
+description: "Bastón exterior de fibra de carbono increíblemente ligero de 0,36kg con carga máxima 100kg. Mango premium de palo de rosa, ajuste de 5 alturas con pulsador, longitud plegada 34,5cm, contera TPR con placa de acero interna para máximo agarre."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:

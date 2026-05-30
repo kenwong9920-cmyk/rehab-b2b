@@ -1,6 +1,6 @@
 ---
-title: "Non-Slip Folding Elbow Crutch for Young Adults"
-description: "Dual-support aluminum alloy elbow crutches combining underarm pad and forearm crutch functions. 8-level height adjustment, breathable padding, textured non-slip grips, and multi-layer rubber tips. Quick-fold design for active young adults up to 100kg."
+title: "Muleta de Antebrazo Plegable Antideslizante para Jóvenes Adultos"
+description: "Muletas de antebrazo de aleación de aluminio con sistema de doble soporte que combina almohadilla axilar y muleta de antebrazo. Ajuste de 8 niveles, acolchado transpirable, empuñaduras texturizadas antideslizantes y puntas de goma multicapa. Para jóvenes activos hasta 100kg."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"
 images:

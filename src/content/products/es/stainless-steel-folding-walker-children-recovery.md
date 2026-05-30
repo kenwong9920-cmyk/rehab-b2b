@@ -1,6 +1,6 @@
 ---
-title: "Stainless Steel Folding Walker for Children's Recovery"
-description: "High-quality stainless steel pediatric folding walker designed for children's injury recovery, post-surgery rehabilitation, and neurological condition support. Features non-slip rubber grips, height-adjustable design, compact foldable frame, and child-focused ergonomics with softer grips."
+title: "Andador Plegable de Acero Inoxidable para Recuperación Infantil"
+description: "Andador plegable pediátrico de acero inoxidable diseñado para recuperación de lesiones, cirugía y condiciones neurológicas. Puños de goma antideslizantes, altura ajustable, marco plegable compacto y ergonomía adaptada a niños."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Carbon Fiber Folding Walking Cane"
-description: "Premium carbon fiber folding cane for seniors — ultra-lightweight, adjustable height, ergonomic non-slip grip, and stable anti-slip base. Perfect for daily mobility and travel."
+title: "Leichter Faltstock aus Kohlefaser für Senioren"
+description: "Ultraleichter 100% Kohlefaser-Faltstock mit ergonomischem Rosenholzgriff. 10-fach höhenverstellbar (72,5–95,5cm), rutschfeste TPR-Basis mit Metalleinsatz für maximale Stabilität. Perfekt für Reisen."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Aluminum Alloy Double Crutch for Medical Rehabilitation"
-description: "High-strength aluminum alloy folding elbow crutches with 12-level height adjustment, carbon fiber finish, contoured PP forearm cuffs, and thickened TPR tips with metal inserts. 200 LB load capacity, folds to 61.5cm. Ideal for medical rehabilitation."
+title: "Muleta Doble de Aleación de Aluminio para Rehabilitación Médica"
+description: "Muletas de antebrazo plegables de aleación de aluminio de alta resistencia con ajuste de 12 niveles, acabado de fibra de carbono, puños de antebrazo PP contorneados y puntas TPR engrosadas con insertos metálicos. Capacidad 200 LB, plegada a 61,5cm."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
 images:

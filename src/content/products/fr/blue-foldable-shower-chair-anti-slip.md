@@ -1,6 +1,6 @@
 ---
-title: "Blue Foldable Shower Chair for Elderly Anti-Slip"
-description: "Lightweight foldable shower chair with white aluminum frame, blue flip-back leather backrest, and white molded plastic seat. Features 5 adjustable height levels, blue non-slip pads, flip-back backrest design, and waterproof materials. Bright blue color for visibility in wet environments."
+title: "Chaise de Douche Pliante Bleue Antidérapante"
+description: "Chaise de douche pliante légère avec cadre aluminium blanc, dossier cuir rabattable bleu et siège plastique moulé blanc. 5 niveaux de hauteur réglables, patins antidérapants bleus, design à dossier rabattable et matériaux imperméables."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

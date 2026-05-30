@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Colorful Walking Cane High-Quality Carbon Fiber"
-description: "Vibrant multi-color carbon fiber folding cane with high load capacity and reinforced joints. Features ergonomic non-slip handle, adjustable height, compact foldable design, and wear-resistant corrosion-proof finish. Suitable for all ages."
+title: "Canne Colorée Réglable en Fibre de Carbone Haute Qualité"
+description: "Canne pliante en fibre de carbone multicolore avec joints renforcés et haute capacité de charge. Poignée ergonomique antidérapante, hauteur réglable, design compact pliable et finition résistante à l'usure et à la corrosion. Pour tous les âges."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:

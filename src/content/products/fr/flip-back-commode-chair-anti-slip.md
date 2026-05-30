@@ -1,6 +1,6 @@
 ---
-title: "Flip-Back Commode Chair with Anti-Slip Feet"
-description: "High-carbon steel white powder-coated folding commode chair with patented flip-back adjustable leather backrest, contoured gray leather seat, PP armrests, and removable oval PP bucket (33×28×13cm). 5-level height adjustment, anti-slip rubber feet with metal washers. Supports bedside, portable, and elderly care use."
+title: "Chaise Percée à Dossier Rabattable avec Pieds Antidérapants"
+description: "Chaise percée pliante en acier haute teneur en carbone avec dossier cuir rabattable breveté, siège cuir gris profilé, accoudoirs PP et seau PP ovale amovible (33×28×13cm). Réglage 5 niveaux, pieds caoutchouc antidérapants avec rondelles métalliques."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

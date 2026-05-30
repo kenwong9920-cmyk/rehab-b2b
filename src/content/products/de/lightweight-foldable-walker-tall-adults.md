@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Foldable Walker for Tall Adults"
-description: "Extended-height foldable walker specifically designed for tall adults. Features dual-function design serving as both walking frame and lower limb training chair. Soft padded seat, height-adjustable handles, non-slip rubber tips, and quick-folding mechanism. Ideal for seniors and post-surgery recovery."
+title: "Leichter Faltbarer Rollator für Große Erwachsene"
+description: "Faltbarer Rollator mit erweiterter Höhe für große Erwachsene. Doppelfunktion als Gehrahmen und Trainingsstuhl. Weicher gepolsterter Sitz, höhenverstellbare Griffe, rutschfeste Gummifüße und Schnellfaltung."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:

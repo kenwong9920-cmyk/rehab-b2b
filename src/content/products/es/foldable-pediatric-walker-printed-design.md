@@ -1,6 +1,6 @@
 ---
-title: "Foldable Pediatric Walker with Printed Design"
-description: "Children's foldable walker with stainless steel powder-coated frame and carbon fiber legs featuring playful printed patterns. Soft-grip padded handles gentle on little hands. Lightweight, rust-resistant design perfect for pediatric recovery and daily mobility adventures."
+title: "Andador Pediátrico Plegable con Diseño Impreso"
+description: "Andador plegable infantil con marco de acero inoxidable con recubrimiento en polvo y patas de fibra de carbono con divertidos patrones impresos. Puños suaves acolchados. Diseño ligero antioxidante para recuperación pediátrica y aventuras diarias."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"
 images:

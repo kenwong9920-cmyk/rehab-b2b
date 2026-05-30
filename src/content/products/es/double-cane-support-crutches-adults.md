@@ -1,6 +1,6 @@
 ---
-title: "Double Cane Support Crutches for Adults"
-description: "Aluminum alloy double axillary crutches with non-slip thickened sponge pads, reinforced lightweight frame, and ergonomic handles. Three-section foldable design for easy storage. Suitable for indoor and outdoor rehabilitation use in clinics and home settings."
+title: "Muletas de Doble Bastón de Apoyo para Adultos"
+description: "Muletas axilares dobles de aleación de aluminio con almohadillas de espuma engrosadas antideslizantes, marco ligero reforzado y mangos ergonómicos. Diseño plegable de tres secciones. Para uso interior y exterior en clínica y hogar."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:

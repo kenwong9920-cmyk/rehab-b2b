@@ -1,6 +1,6 @@
 ---
-title: "Safe and Portable Foldable Walker for Kids"
-description: "Pediatric foldable walker with scratch-resistant powder-coated stainless steel frame in black and yellow. Features soft fabric sleeve grips, non-slip leg caps, and compact foldable design. Lightweight yet strong construction for children's safe mobility support."
+title: "Sicherer Tragbarer Faltrollator für Kinder"
+description: "Pädiatrischer Faltrollator mit kratzfestem pulverbeschichtetem Edelstahlrahmen in Schwarz und Gelb. Weiche Stoffgriffe, rutschfeste Kappen und kompaktes Faltdesign. Leichte Konstruktion für sichere Kindermobilität."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:

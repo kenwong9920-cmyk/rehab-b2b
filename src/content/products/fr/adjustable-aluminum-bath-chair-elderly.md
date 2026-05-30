@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Aluminum Bath Chair for Elderly Use"
-description: "Lightweight 3.2kg aluminum folding bath chair with foam-padded armrests. AL6063 powder-coated frame, blow-molded HDPE seat and backrest, 6-level leg adjustment, angled rubber feet with steel inserts. Tool-free assembly and quick-fold design for bathroom safety."
+title: "Chaise de Bain Réglable en Aluminium pour Seniors"
+description: "Chaise de bain pliante légère de 3,2kg en aluminium avec accoudoirs rembourrés en mousse. Cadre AL6063 revêtu par poudre, siège et dossier HDPE moulé, pieds réglables 6 niveaux, pieds caoutchouc inclinés avec inserts acier. Montage sans outil."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/47/9b/ab/eed408f65ce659f67b288020c8.jpg"
 images:

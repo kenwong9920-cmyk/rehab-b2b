@@ -1,6 +1,6 @@
 ---
-title: "Modern Foldable Walking Stick for Men and Women"
-description: "Stylish carbon fiber folding walking stick suitable for all adults. Ultra-lightweight aerospace-grade carbon fiber frame, foldable design for travel, adjustable height, ergonomic non-slip handle, reinforced joints, and customizable color options."
+title: "Bastón de Marcha Plegable Moderno Unisex"
+description: "Bastón plegable elegante de fibra de carbono para todos los adultos. Marco aeroespacial ultraligero, diseño plegable para viajes, altura ajustable, empuñadura ergonómica antideslizante, juntas reforzadas y opciones de color personalizables."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

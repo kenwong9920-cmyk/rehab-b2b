@@ -1,6 +1,6 @@
 ---
-title: "Foldable Stainless Steel Medical Walker with Seat"
-description: "Premium matte black stainless steel medical walker with built-in leather seat for resting. Features soft navy blue fabric grip sleeves, sturdy legs for indoor/outdoor stability, and quick-fold design. Ideal for seniors, post-surgery recovery, and balance support."
+title: "Déambulateur Médical Pliable en Acier Inoxydable avec Siège"
+description: "Déambulateur médical premium en acier inoxydable noir mat avec siège en cuir intégré. Poignées en tissu bleu marine, pieds robustes pour stabilité intérieure/extérieure et pliage rapide. Idéal pour seniors, récupération post-opératoire et soutien à l'équilibre."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

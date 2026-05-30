@@ -1,6 +1,6 @@
 ---
-title: "High-Capacity Toilet Safety Rail with Cushioned Grip"
-description: "Cream matte stainless steel toilet safety rail with soft fabric-covered cushioned grip. Features double-clamp tool-free mounting, threaded anti-slip feet, wobble-free adjustable design, and included reinforcement strap. Slim flat-tube front rail blends into bathroom decor."
+title: "Hochleistungs-WC-Sicherheitsgriff mit Gepolstertem Griff"
+description: "Cremefarbener matter Edelstahl-WC-Sicherheitsgriff mit weichem stoffbezogenem Griff. Werkzeuglose Doppelklemm-Montage, rutschfeste Gewindefüße, einstellbares kippfreies Design und Verstärkungsgurt. Fügt sich dezent ins Badezimmerdekor ein."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/b9/63/06/a7136a408771e0558b070902b2.jpg"
 images:

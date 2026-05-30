@@ -1,6 +1,6 @@
 ---
-title: "Stylish Folding Shower Chair with 150kg Weight Support"
-description: "Elegant black folding shower chair with high-end wood grain aluminum alloy frame. Supports 150kg (330lb), features non-slip seat and footrest surfaces, easy-fold mechanism, adjustable height, and moisture-resistant finish. Combines bathroom safety with premium aesthetics."
+title: "Stilvoller Faltbarer Duschstuhl 150kg"
+description: "Eleganter schwarzer Faltduschstuhl mit hochwertigem Holzmaserung-Aluminiumrahmen. 150kg Belastbarkeit, rutschfeste Oberflächen, einfacher Faltmechanismus, höhenverstellbar und feuchtigkeitsbeständige Oberfläche. Sicherheit trifft Premium-Ästhetik."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/ad/bd/3f/b177b6a7f160022521e2d7e7df.jpg"
 images:

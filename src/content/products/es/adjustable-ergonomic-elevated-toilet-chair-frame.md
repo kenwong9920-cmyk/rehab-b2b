@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Ergonomic Elevated Toilet Chair Frame for Seniors"
-description: "Elevated toilet chair frame with adjustable ergonomic design for seniors and individuals with limited mobility. Helps maintain an upright position, supports natural body alignment, and reduces lower back pressure. Ideal for home bathrooms and care facilities."
+title: "Marco Elevado Ergonómico Ajustable para Silla de WC"
+description: "Marco de WC elevado con diseño ergonómico ajustable para mayores y personas con movilidad reducida. Ayuda a mantener una posición erguida, apoya la alineación corporal natural y reduce la presión lumbar. Ideal para baño doméstico y centros de cuidado."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/c3/87/be/02a46a89fb40a6755779515afc.jpeg"
 images:

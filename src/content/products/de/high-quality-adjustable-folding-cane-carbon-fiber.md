@@ -1,6 +1,6 @@
 ---
-title: "High-Quality Adjustable Folding Cane Carbon Fiber"
-description: "Premium carbon fiber folding cane with ergonomic contoured handle, adjustable height, and multiple color options. Features non-slip rubber tip, compact foldable design for travel, and wear-resistant corrosion-proof frame. Ideal for active seniors and adults."
+title: "Hochwertiger Verstellbarer Faltstock aus Kohlefaser"
+description: "Premium Kohlefaser-Faltstock mit ergonomischem Griff, höhenverstellbar und mehreren Farboptionen. Rutschfeste Gummispitze, kompaktes Faltdesign für Reisen, verschleißfester und korrosionsbeständiger Rahmen."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Durable 300lbs Load-Bearing Commode Chair"
-description: "Heavy-duty high-carbon steel commode chair with 150kg (300lbs) capacity. Features patented flip-backrest, waterproof leather seat, 5-level height adjustment, anti-slip rubber feet, and removable bucket. Tool-free folding to 17cm width for portable bedside elderly care."
+title: "Silla de Baño Robusta con Capacidad 300lbs"
+description: "Silla de baño resistente de acero al carbono con capacidad 150kg. Respaldo abatible patentado, asiento de cuero impermeable, ajuste de altura de 5 niveles, pies de goma antideslizantes y cubo extraíble. Plegado sin herramientas a 17cm para cuidados portátiles junto a la cama."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/b5/7b/e1/8bfaf98185f4faa41bf6dd7476.jpg"
 images:

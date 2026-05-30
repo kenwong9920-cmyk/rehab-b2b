@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Carbon Fiber Walking Cane for Disabled Users"
-description: "100% pure carbon fiber folding cane designed specifically for disabled users. Features tool-free push-button height adjustment, anatomically contoured grip to reduce palm pressure, compact foldable design, and high-gloss carbon fiber luxury finish."
+title: "Canne en Fibre de Carbone Réglable pour Personnes Handicapées"
+description: "Canne pliante en fibre de carbone 100% pure conçue pour les utilisateurs handicapés. Réglage en hauteur par bouton-poussoir sans outil, poignée anatomique réduisant la pression de la paume, design compact pliable et finition carbone brillant de luxe."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:

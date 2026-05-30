@@ -1,6 +1,6 @@
 ---
-title: "Adjustable 150kg Foldable Commode Chair"
-description: "Durable stainless steel folding commode chair with 150kg capacity. Features patented flip-adjust leather backrest, double-layer HD-PE flip-up seat, PP armrests, 5-level height adjustment, and anti-slip rubber feet with reinforced metal inserts. Quick-fold corrosion-resistant frame for bedside and elderly care."
+title: "Silla de Baño Plegable Ajustable 150kg"
+description: "Silla de baño plegable de acero inoxidable duradera con capacidad 150kg. Respaldo de cuero abatible patentado, asiento HD-PE de doble capa abatible, reposabrazos PP, ajuste de altura de 5 niveles y pies de goma antideslizantes con insertos metálicos reforzados."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

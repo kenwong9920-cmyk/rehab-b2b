@@ -1,6 +1,6 @@
 ---
-title: "500lbs Capacity Adjustable Anti-Slip Shower Chair"
-description: "Heavy-duty aluminum alloy shower chair supporting up to 500 lbs. Features PU seat with drainage holes and anti-slip texture, PU backrest adjustable in 2 levels, foam-wrapped armrests with width adjustment, 7-level height adjustable legs, and slanted rubber non-slip foot pads. Foldable design."
+title: "Chaise de Douche Antidérapante Capacité 500lbs"
+description: "Chaise de douche robuste en alliage d'aluminium supportant jusqu'à 500 lbs. Siège PU avec trous de drainage et texture antidérapante, dossier PU réglable 2 niveaux, accoudoirs en mousse, pieds réglables 7 niveaux et patins caoutchouc antidérapants inclinés."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a0/53/4b/73101d2742f62b421068596f2b.jpg"
 images:

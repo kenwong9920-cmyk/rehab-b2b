@@ -1,6 +1,6 @@
 ---
-title: "Non-Slip Foldable Shower Chair for Elderly"
-description: "Foldable shower chair with reinforced anti-slip frame supporting 300 lbs. Features non-slip seat surface, rust-resistant corrosion-proof materials, height-adjustable ergonomic design, and compact foldable storage. Ideal for elderly users seeking bathroom safety and independence."
+title: "Chaise de Douche Pliante Antidérapante pour Seniors"
+description: "Chaise de douche pliante avec cadre antidérapant renforcé supportant 300 lbs. Surface d'assise antidérapante, matériaux anticorrosion, design ergonomique réglable en hauteur et rangement pliable compact. Idéal pour sécurité et autonomie des seniors."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/55/75/da/39ac28cf8e4f4f849159a07b68.jpg"
 images:

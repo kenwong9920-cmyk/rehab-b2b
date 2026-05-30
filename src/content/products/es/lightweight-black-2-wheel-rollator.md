@@ -1,6 +1,6 @@
 ---
-title: "Adults and Seniors Lightweight Black 2-Wheel Rollator"
-description: "Lightweight 2-wheel rollator with rubber wheels suitable for carpets, tile, and outdoor surfaces. Features height-adjustable handles, padded seat, hand-operated braking system, and quick-fold design. Ideal for seniors and adults with limited mobility."
+title: "Rollator Ligero Negro de 2 Ruedas para Adultos y Mayores"
+description: "Rollator ligero de 2 ruedas con ruedas de goma aptas para alfombras, baldosas y superficies exteriores. Mangos ajustables en altura, asiento acolchado, sistema de freno manual y plegado rápido. Ideal para mayores y adultos con movilidad reducida."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ca/7a/2b/13ecba8608845251139a5080f6.jpg"
 images:

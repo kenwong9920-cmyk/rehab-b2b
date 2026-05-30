@@ -1,6 +1,6 @@
 ---
-title: "Durable and Comfortable Aluminum Axillary Crutches"
-description: "Lightweight aluminum alloy axillary crutches with padded armpit rests and handles. Adjustable height for various users, non-slip rubber tips for stability on all surfaces, and ergonomic design promoting natural gait. Rust-resistant frame for long service life."
+title: "Béquilles Axillaires Durables et Confortables en Aluminium"
+description: "Béquilles axillaires légères en alliage d'aluminium avec repose-aisselles et poignées rembourrés. Hauteur réglable, embouts caoutchouc antidérapants pour stabilité sur toutes surfaces, design ergonomique favorisant une démarche naturelle. Cadre antirouille."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:

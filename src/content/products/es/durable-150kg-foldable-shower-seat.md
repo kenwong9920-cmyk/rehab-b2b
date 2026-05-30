@@ -1,6 +1,6 @@
 ---
-title: "Durable 150kg Capacity Foldable Shower Seat"
-description: "Lightweight 1.9kg aluminum folding shower seat with 150kg capacity. AL6063 powder-coated frame, blow-molded HDPE anti-slip seat, 6-level height adjustment, high-friction rubber feet with steel inserts. Quick-fold, tool-free design ideal for bathroom safety."
+title: "Asiento de Ducha Plegable Duradero 150kg"
+description: "Asiento de ducha plegable de aluminio de 1,9kg con capacidad 150kg. Marco AL6063 con recubrimiento en polvo, asiento HDPE moldeado antideslizante, patas ajustables 6 niveles, pies de goma de alta fricción con insertos de acero. Plegado rápido sin herramientas."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

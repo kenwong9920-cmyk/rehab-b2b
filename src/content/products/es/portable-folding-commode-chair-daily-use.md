@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode Chair for Daily Use"
-description: "Versatile high-carbon steel folding commode chair with 150kg capacity. Functions as bedside commode, over-toilet chair, and shower chair. Features seamless waterproof leather seat, adjustable-angle backrest, removable PP bucket, anti-slip rubber feet with metal washers, and 5-level height adjustment."
+title: "Silla de Baño Plegable Portátil para Uso Diario"
+description: "Silla de baño plegable versátil de acero al carbono con capacidad 150kg. Funciona como silla de baño junto a la cama, silla sobre WC y silla de ducha. Asiento de cuero impermeable, respaldo ajustable, cubo PP extraíble y pies antideslizantes."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/a8/c8/a0/4e41e8659dd549881c675bff4d.jpg"
 images:

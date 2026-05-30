@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Ergonomic Elevated Toilet Chair Frame for Seniors"
-description: "Elevated toilet chair frame with adjustable ergonomic design for seniors and individuals with limited mobility. Helps maintain an upright position, supports natural body alignment, and reduces lower back pressure. Ideal for home bathrooms and care facilities."
+title: "Verstellbarer Ergonomischer Erhöhter Toilettenstuhlrahmen"
+description: "Erhöhter Toilettenrahmen mit verstellbarem ergonomischem Design für Senioren und Personen mit eingeschränkter Mobilität. Hilft aufrechte Haltung zu bewahren, unterstützt natürliche Körperausrichtung und reduziert Lendenwirbeldruck. Ideal für Heimbad und Pflegeeinrichtungen."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/c3/87/be/02a46a89fb40a6755779515afc.jpeg"
 images:

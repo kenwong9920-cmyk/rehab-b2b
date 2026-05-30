@@ -1,6 +1,6 @@
 ---
-title: "Foldable Backrest Toilet Chair for Bedroom Use"
-description: "High-carbon steel folding commode chair with patented flip-backrest, waterproof leather seat, and 150kg capacity. 5-level height adjustment, tool-free folding to just 17cm wide, and removable bucket. Ideal bedside toilet solution for elderly and mobility-impaired users."
+title: "Faltbarer Toilettenstuhl mit Rückenlehne fürs Schlafzimmer"
+description: "Faltbarer Kohlenstoffstahl-Toilettenstuhl mit patentierter klappbarer Rückenlehne, wasserdichtem Ledersitz und 150kg Kapazität. 5-fache Höhenverstellung, werkzeugloses Falten auf nur 17cm Breite und herausnehmbarer Eimer. Ideale Bett-Toilettenlösung."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/1e/fc/d8/c012e65601ee1808db5641221c.jpg"
 images:

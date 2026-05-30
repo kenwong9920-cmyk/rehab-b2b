@@ -1,6 +1,6 @@
 ---
-title: "Foldable Stainless Steel Medical Walker with Seat"
-description: "Premium matte black stainless steel medical walker with built-in leather seat for resting. Features soft navy blue fabric grip sleeves, sturdy legs for indoor/outdoor stability, and quick-fold design. Ideal for seniors, post-surgery recovery, and balance support."
+title: "Faltbarer Medizinischer Edelstahl-Rollator mit Sitz"
+description: "Premium matt-schwarzer Edelstahl-Rollator mit integriertem Ledersitz. Marineblaue Stoffgriffe, stabile Beine für Innen-/Außenstabilität und Schnellfaltung. Ideal für Senioren, postoperative Genesung und Gleichgewichtsunterstützung."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

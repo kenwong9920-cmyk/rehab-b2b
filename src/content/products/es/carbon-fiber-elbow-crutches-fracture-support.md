@@ -1,6 +1,6 @@
 ---
-title: "Carbon Fiber Elbow Crutches for Fracture Support"
-description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm), ergonomic PP elbow rest, thickened TPR tips with steel inserts. Folds to 44.5×15×17cm for travel."
+title: "Muletas de Antebrazo de Fibra de Carbono para Soporte de Fracturas"
+description: "Muletas de antebrazo de fibra de carbono de alta resistencia que soportan hasta 100kg con solo 1,13kg por par. Ajuste de 12 niveles (91-118cm), reposacodo PP ergonómico, puntas TPR engrosadas con insertos de acero. Plegada a 44,5×15×17cm."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

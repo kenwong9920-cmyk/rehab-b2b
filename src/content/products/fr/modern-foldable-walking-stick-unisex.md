@@ -1,6 +1,6 @@
 ---
-title: "Modern Foldable Walking Stick for Men and Women"
-description: "Stylish carbon fiber folding walking stick suitable for all adults. Ultra-lightweight aerospace-grade carbon fiber frame, foldable design for travel, adjustable height, ergonomic non-slip handle, reinforced joints, and customizable color options."
+title: "Canne de Marche Pliante Moderne Unisexe"
+description: "Canne pliante élégante en fibre de carbone pour tous les adultes. Cadre aérospatial ultra-léger, design pliable pour voyage, hauteur réglable, poignée ergonomique antidérapante, joints renforcés et options de couleur personnalisables."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

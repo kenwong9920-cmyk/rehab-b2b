@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Carbon Fiber Adult Walking Stick"
-description: "Ultra-lightweight 0.33kg carbon fiber walking stick with 100kg max load. Features 5-height push-button adjustment, 34cm folded length, ergonomic PP handle, and TPR ferrule with steel insert. Ideal for daily use and travel."
+title: "Leichter Kohlefaser-Gehstock für Erwachsene"
+description: "Ultraleichter 0,33kg Kohlefaser-Gehstock mit 100kg Belastbarkeit. 5-fache Druckknopf-Höhenverstellung, 34cm gefaltet, ergonomischer PP-Griff und TPR-Spitze mit Stahleinsatz. Ideal für Alltag und Reisen."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:

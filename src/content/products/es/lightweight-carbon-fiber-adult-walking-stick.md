@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Carbon Fiber Adult Walking Stick"
-description: "Ultra-lightweight 0.33kg carbon fiber walking stick with 100kg max load. Features 5-height push-button adjustment, 34cm folded length, ergonomic PP handle, and TPR ferrule with steel insert. Ideal for daily use and travel."
+title: "Bastón de Marcha Ligero de Fibra de Carbono para Adultos"
+description: "Bastón de marcha ultraligero de 0,33kg en fibra de carbono con carga máxima 100kg. Ajuste de 5 alturas con pulsador, longitud plegada 34cm, empuñadura PP ergonómica y contera TPR con inserto de acero. Ideal para uso diario y viajes."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:

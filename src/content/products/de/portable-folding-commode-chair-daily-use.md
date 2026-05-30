@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode Chair for Daily Use"
-description: "Versatile high-carbon steel folding commode chair with 150kg capacity. Functions as bedside commode, over-toilet chair, and shower chair. Features seamless waterproof leather seat, adjustable-angle backrest, removable PP bucket, anti-slip rubber feet with metal washers, and 5-level height adjustment."
+title: "Tragbarer Faltbarer Toilettenstuhl für Täglichen Gebrauch"
+description: "Vielseitiger faltbarer Kohlenstoffstahl-Toilettenstuhl mit 150kg Kapazität. Funktioniert als Bett-Toilettenstuhl, Über-WC-Stuhl und Duschstuhl. Wasserdichter Ledersitz, verstellbare Rückenlehne, herausnehmbarer PP-Eimer und rutschfeste Füße."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/a8/c8/a0/4e41e8659dd549881c675bff4d.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Black Foldable Ergonomic Cane with Armrest"
-description: "Premium carbon fiber folding cane with retractable PP armrest and natural rosewood handle. 10 height settings (74.5–97.5cm), 0.75kg weight, 100kg max load. Multiple reinforced TPR base options for enhanced stability."
+title: "Bastón Ergonómico Plegable Negro con Reposabrazos"
+description: "Bastón plegable de fibra de carbono premium con reposabrazos PP retráctil y mango de palo de rosa natural. 10 ajustes de altura (74,5–97,5cm), 0,75kg, carga máxima 100kg. Opciones de base TPR reforzadas para estabilidad óptima."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

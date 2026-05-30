@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Anti-Slip Crutches for All Ages"
-description: "Lightweight aluminum alloy axillary crutches with multiple height settings suitable for all ages. Features non-slip rubber tips for wet surface traction, ergonomic contoured handles, and foldable design. Ideal for post-op patients, seniors, and injury recovery."
+title: "Muletas Antideslizantes Ajustables para Todas las Edades"
+description: "Muletas axilares ligeras de aleación de aluminio con múltiples ajustes de altura para todas las edades. Puntas de goma antideslizantes, mangos ergonómicos contorneados, diseño plegable. Ideal para pacientes postoperatorios, ancianos y recuperación."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:

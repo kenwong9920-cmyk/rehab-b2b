@@ -1,6 +1,6 @@
 ---
-title: "High Quality Carbon Fiber Cane for Every Age"
-description: "Versatile aerospace-grade carbon fiber folding cane suitable for all age groups. Features ergonomic handle, compact foldable design, maximum traction non-slip rubber tip, adjustable height, and modern B2B-ready finish with minimal maintenance."
+title: "Canne en Fibre de Carbone Haute Qualité pour Tous les Âges"
+description: "Canne pliante polyvalente en fibre de carbone aérospatiale pour tous les groupes d'âge. Poignée ergonomique, design compact pliable, embout caoutchouc antidérapant à traction maximale, hauteur réglable et finition moderne prête pour B2B."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:

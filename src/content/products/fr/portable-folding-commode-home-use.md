@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode for Home Use"
-description: "Heavy-duty high-carbon steel folding commode with extra-wide HD-PE double-layer blow-molded seat designed for bariatric users. Features 150kg capacity, PP armrests, 5-level height adjustment, and anti-slip rubber feet with metal plates. Quick-fold portable design for bedside home care."
+title: "Chaise Percée Pliante Portable pour Usage Domestique"
+description: "Chaise percée pliante robuste en acier haute teneur en carbone avec siège extra-large HD-PE double couche moulé pour utilisateurs bariatriques. Capacité 150kg, accoudoirs PP, réglage hauteur 5 niveaux et pieds caoutchouc antidérapants avec plaques métalliques."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

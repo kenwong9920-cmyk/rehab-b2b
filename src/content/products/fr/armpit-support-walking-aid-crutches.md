@@ -1,6 +1,6 @@
 ---
-title: "Armpit Support Walking Aid Crutches"
-description: "Three-section folding aluminum alloy axillary crutches with anti-slip rubber tips and dual-support balance design. Comfortable armpit padding reduces shoulder pressure during extended recovery use. Adjustable height for home, hospital, and rehab."
+title: "Béquilles d'Aide à la Marche avec Support Axillaire"
+description: "Béquilles axillaires pliantes en alliage d'aluminium à trois sections avec embouts caoutchouc antidérapants et design à double support équilibré. Rembourrage axillaire confortable réduisant la pression. Hauteur réglable pour domicile, hôpital et rééducation."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"
 images:

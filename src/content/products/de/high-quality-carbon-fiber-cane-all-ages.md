@@ -1,6 +1,6 @@
 ---
-title: "High Quality Carbon Fiber Cane for Every Age"
-description: "Versatile aerospace-grade carbon fiber folding cane suitable for all age groups. Features ergonomic handle, compact foldable design, maximum traction non-slip rubber tip, adjustable height, and modern B2B-ready finish with minimal maintenance."
+title: "Hochwertiger Kohlefaser-Gehstock für Alle Altersgruppen"
+description: "Vielseitiger Luftfahrt-Kohlefaser-Faltstock für alle Altersgruppen. Ergonomischer Griff, kompaktes Faltdesign, rutschfeste Gummispitze mit maximaler Traktion, höhenverstellbar und modernes B2B-Finish."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:

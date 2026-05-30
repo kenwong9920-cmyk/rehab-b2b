@@ -1,6 +1,6 @@
 ---
-title: "Safe and Portable Foldable Walker for Kids"
-description: "Pediatric foldable walker with scratch-resistant powder-coated stainless steel frame in black and yellow. Features soft fabric sleeve grips, non-slip leg caps, and compact foldable design. Lightweight yet strong construction for children's safe mobility support."
+title: "Andador Plegable Portátil y Seguro para Niños"
+description: "Andador plegable pediátrico con marco de acero inoxidable con recubrimiento en polvo resistente a arañazos en negro y amarillo. Puños de tela suave, tapas antideslizantes y diseño plegable compacto. Construcción ligera para movilidad infantil segura."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Carbon Fiber Elbow Crutches for Fracture Support"
-description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm), ergonomic PP elbow rest, thickened TPR tips with steel inserts. Folds to 44.5×15×17cm for travel."
+title: "Béquilles d'Avant-Bras en Fibre de Carbone pour Support de Fracture"
+description: "Béquilles d'avant-bras en fibre de carbone haute résistance supportant jusqu'à 100kg pour seulement 1,13kg la paire. Réglage 12 niveaux (91-118cm), coque PP ergonomique, embouts TPR épaissis avec inserts acier. Pliée à 44,5×15×17cm."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

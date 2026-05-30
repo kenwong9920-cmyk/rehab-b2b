@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode for Home Use"
-description: "Heavy-duty high-carbon steel folding commode with extra-wide HD-PE double-layer blow-molded seat designed for bariatric users. Features 150kg capacity, PP armrests, 5-level height adjustment, and anti-slip rubber feet with metal plates. Quick-fold portable design for bedside home care."
+title: "Silla de Baño Plegable Portátil para Uso Doméstico"
+description: "Silla de baño plegable resistente de acero al carbono con asiento extra ancho HD-PE de doble capa moldeado para usuarios bariátricos. Capacidad 150kg, reposabrazos PP, ajuste de altura de 5 niveles y pies de goma antideslizantes con placas metálicas."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

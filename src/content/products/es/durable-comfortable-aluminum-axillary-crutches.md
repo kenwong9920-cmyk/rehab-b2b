@@ -1,6 +1,6 @@
 ---
-title: "Durable and Comfortable Aluminum Axillary Crutches"
-description: "Lightweight aluminum alloy axillary crutches with padded armpit rests and handles. Adjustable height for various users, non-slip rubber tips for stability on all surfaces, and ergonomic design promoting natural gait. Rust-resistant frame for long service life."
+title: "Muletas Axilares de Aluminio Duraderas y Cómodas"
+description: "Muletas axilares ligeras de aleación de aluminio con reposa axilas y mangos acolchados. Altura ajustable, puntas de goma antideslizantes para estabilidad en todas las superficies, diseño ergonómico que promueve marcha natural. Marco resistente al óxido."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Black Foldable Ergonomic Cane"
-description: "Ultra-lightweight 100% carbon fiber folding cane at just 0.42kg. Features natural rosewood ergonomic handle, 10-step height adjustment (72.5–95.5cm), TPR anti-slip base with metal insert, and 100kg max load. Perfect travel companion."
+title: "Bastón Ergonómico Plegable Negro Ligero"
+description: "Bastón plegable de fibra de carbono 100% ultraligero de solo 0,42kg. Mango ergonómico de palo de rosa natural, ajuste de altura de 10 niveles (72,5–95,5cm), base antideslizante TPR con inserto metálico. Compañero de viaje perfecto."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

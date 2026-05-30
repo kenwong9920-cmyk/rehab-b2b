@@ -1,6 +1,6 @@
 ---
-title: "White Extra-Wide Heavy-Duty Stainless Steel Shower Chair"
-description: "Extra-wide bariatric shower chair with reinforced white stainless steel frame supporting up to 350kg (770lb). Features white blow-molded seat, white leather backrest, gray fabric-sleeved handles, 6-level flat-tube height adjustment, angled non-slip feet, and EVA thermal mat. Foldable for compact storage."
+title: "Weißer Extra-Breiter Schwerlast-Duschstuhl aus Edelstahl"
+description: "Extra-breiter Bariatric-Duschstuhl mit verstärktem weißem Edelstahlrahmen für bis zu 350kg. Weißer Kunststoffsitz, weißer Lederrücken, graue Stoffgriffe, 6-fache Höhenverstellung, abgewinkelte rutschfeste Füße und EVA-Thermomatte."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a6/3d/33/02de2dee49aba871ef7a9dbc38.jpg"
 images:

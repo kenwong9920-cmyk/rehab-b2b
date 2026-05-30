@@ -1,6 +1,6 @@
 ---
-title: "Durable 300lbs Load-Bearing Commode Chair"
-description: "Heavy-duty high-carbon steel commode chair with 150kg (300lbs) capacity. Features patented flip-backrest, waterproof leather seat, 5-level height adjustment, anti-slip rubber feet, and removable bucket. Tool-free folding to 17cm width for portable bedside elderly care."
+title: "Robuster Toilettenstuhl mit 300lbs Tragfähigkeit"
+description: "Schwerlast-Kohlenstoffstahl-Toilettenstuhl mit 150kg Kapazität. Patentierte klappbare Rückenlehne, wasserdichter Ledersitz, 5-fache Höhenverstellung, rutschfeste Gummifüße und herausnehmbarer Eimer. Werkzeugloses Falten auf 17cm für tragbare Bettpflege."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/b5/7b/e1/8bfaf98185f4faa41bf6dd7476.jpg"
 images:

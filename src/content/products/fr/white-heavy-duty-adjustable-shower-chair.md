@@ -1,6 +1,6 @@
 ---
-title: "White Heavy-Duty Adjustable Shower Chair"
-description: "Heavy-duty white stainless steel shower chair with 350kg (770lb) capacity. Features white leather backrest, white blow-molded seat, gray fabric-sleeved handles, 6-level flat-tube height adjustment, angled non-slip feet, and EVA thermal mat. Extra-wide reinforced frame with metallic cool gray steel bar."
+title: "Chaise de Douche Blanche Réglable Renforcée"
+description: "Chaise de douche robuste en acier inoxydable blanc avec capacité 350kg. Dossier cuir blanc, siège moulé blanc, poignées gainées tissu gris, réglage hauteur 6 niveaux, pieds antidérapants inclinés et tapis thermique EVA. Barre d'acier gris métallisé renforcée."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/7f/69/ec/ae51380653fa33c76a0e22e7e0.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Foldable Stainless Steel Medical Walker with Seat"
-description: "Premium matte black stainless steel medical walker with built-in leather seat for resting. Features soft navy blue fabric grip sleeves, sturdy legs for indoor/outdoor stability, and quick-fold design. Ideal for seniors, post-surgery recovery, and balance support."
+title: "Andador Médico Plegable de Acero Inoxidable con Asiento"
+description: "Andador médico premium de acero inoxidable negro mate con asiento de cuero integrado. Puños de tela azul marino, patas robustas para estabilidad interior/exterior y plegado rápido. Ideal para mayores, recuperación postoperatoria y apoyo al equilibrio."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

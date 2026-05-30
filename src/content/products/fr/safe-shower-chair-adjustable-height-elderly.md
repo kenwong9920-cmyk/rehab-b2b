@@ -1,6 +1,6 @@
 ---
-title: "Safe Shower Chair with Adjustable Height for Elderly"
-description: "Adjustable-height shower chair with backrest support designed for elderly and pregnant users. Features heavy-duty high-friction rubber feet, contoured ergonomic seat, tool-free height adjustment, and wide stable base. Provides safety and comfort during daily bathing routines."
+title: "Chaise de Douche Sécurisée Réglable en Hauteur pour Seniors"
+description: "Chaise de douche à hauteur réglable avec support dorsal conçue pour seniors et femmes enceintes. Pieds caoutchouc haute friction robustes, siège ergonomique profilé, réglage sans outil et large base stable. Sécurité et confort pour le bain quotidien."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/24/b2/41/bbb0d7c58eb07700973203a543.jpeg"
 images:

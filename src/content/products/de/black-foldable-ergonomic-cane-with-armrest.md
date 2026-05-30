@@ -1,6 +1,6 @@
 ---
-title: "Black Foldable Ergonomic Cane with Armrest"
-description: "Premium carbon fiber folding cane with retractable PP armrest and natural rosewood handle. 10 height settings (74.5–97.5cm), 0.75kg weight, 100kg max load. Multiple reinforced TPR base options for enhanced stability."
+title: "Schwarzer Ergonomischer Faltstock mit Armlehne"
+description: "Premium Kohlefaser-Faltstock mit einziehbarer PP-Armlehne und natürlichem Rosenholzgriff. 10 Höheneinstellungen (74,5–97,5cm), 0,75kg, 100kg Belastbarkeit. Verstärkte TPR-Basisoptionen für optimale Stabilität."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

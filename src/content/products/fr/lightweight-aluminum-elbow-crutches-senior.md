@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Aluminum Elbow Crutches for Seniors"
-description: "Premium aluminum alloy folding elbow crutches with 12-position height adjustment, ergonomic PP elbow pads, reinforced TPR foot tips with iron inserts, and compact foldable design. Lightweight yet durable — ideal for seniors and rehabilitation patients."
+title: "Béquilles d'Avant-Bras Légères en Aluminium pour Seniors"
+description: "Béquilles d'avant-bras pliantes en alliage d'aluminium premium avec réglage 12 positions, coussinets de coude PP ergonomiques, embouts TPR renforcés avec inserts en fer et design compact pliable. Léger mais durable pour seniors et patients."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"
 images:

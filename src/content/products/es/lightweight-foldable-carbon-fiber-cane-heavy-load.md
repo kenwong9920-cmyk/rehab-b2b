@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Foldable Carbon Fiber Cane for Heavy Load"
-description: "Reinforced carbon fiber folding cane supporting up to 100kg while remaining ultra-lightweight. Features ergonomic handle designed for arthritis users, oversized anti-slip rubber tip, folds flat to ~14 inches in seconds."
+title: "Bastón Ligero Plegable de Fibra de Carbono para Carga Pesada"
+description: "Bastón plegable de fibra de carbono reforzada que soporta hasta 100kg manteniéndose ultraligero. Empuñadura ergonómica diseñada para usuarios con artritis, punta de goma antideslizante sobredimensionada, se pliega plano a ~35cm."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

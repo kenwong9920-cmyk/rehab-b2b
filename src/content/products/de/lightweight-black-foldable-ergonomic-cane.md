@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Black Foldable Ergonomic Cane"
-description: "Ultra-lightweight 100% carbon fiber folding cane at just 0.42kg. Features natural rosewood ergonomic handle, 10-step height adjustment (72.5–95.5cm), TPR anti-slip base with metal insert, and 100kg max load. Perfect travel companion."
+title: "Leichter Schwarzer Ergonomischer Faltstock"
+description: "Ultraleichter 100% Kohlefaser-Faltstock mit nur 0,42kg. Natürlicher Rosenholz-Ergonomiegriff, 10-stufige Höhenverstellung (72,5–95,5cm), rutschfeste TPR-Basis mit Metalleinsatz. Perfekter Reisebegleiter."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

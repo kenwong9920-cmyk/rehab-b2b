@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Anti-Slip Crutches for All Ages"
-description: "Lightweight aluminum alloy axillary crutches with multiple height settings suitable for all ages. Features non-slip rubber tips for wet surface traction, ergonomic contoured handles, and foldable design. Ideal for post-op patients, seniors, and injury recovery."
+title: "Verstellbare Rutschfeste Krücken für Alle Altersgruppen"
+description: "Leichte Aluminium-Achselkrücken mit mehreren Höheneinstellungen für alle Altersgruppen. Rutschfeste Gummifüße, ergonomische Griffe, faltbares Design. Ideal für postoperative Patienten, Senioren und Genesung."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:

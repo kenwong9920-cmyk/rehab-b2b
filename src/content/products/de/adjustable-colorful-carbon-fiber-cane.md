@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Colorful Walking Cane High-Quality Carbon Fiber"
-description: "Vibrant multi-color carbon fiber folding cane with high load capacity and reinforced joints. Features ergonomic non-slip handle, adjustable height, compact foldable design, and wear-resistant corrosion-proof finish. Suitable for all ages."
+title: "Verstellbarer Bunter Kohlefaser-Gehstock"
+description: "Mehrfarbiger Kohlefaser-Faltstock mit hoher Belastbarkeit und verstärkten Gelenken. Ergonomischer rutschfester Griff, höhenverstellbar, kompaktes Faltdesign und verschleißfeste, korrosionsbeständige Oberfläche. Für alle Altersgruppen."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:
