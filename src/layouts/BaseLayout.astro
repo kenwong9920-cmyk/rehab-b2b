@@ -25,9 +25,17 @@ const imageUrl = new URL(image, Astro.url).href;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="canonical" href={currentUrl} />
 
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href={currentUrl.replace(`/${locale}/`, '/en/')} />
+  <link rel="alternate" hreflang="fr" href={currentUrl.replace(`/${locale}/`, '/fr/')} />
+  <link rel="alternate" hreflang="de" href={currentUrl.replace(`/${locale}/`, '/de/')} />
+  <link rel="alternate" hreflang="es" href={currentUrl.replace(`/${locale}/`, '/es/')} />
+  <link rel="alternate" hreflang="x-default" href={currentUrl.replace(`/${locale}/`, '/en/')} />
+
   <!-- Primary Meta -->
   <title>{title} | {siteName}</title>
   <meta name="description" content={description} />
+  <meta name="keywords" content="rehabilitation equipment manufacturer, medical equipment wholesale, walking aids, shower chair, commode chair, OEM rehabilitation products, {title}" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
