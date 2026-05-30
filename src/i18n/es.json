@@ -77,18 +77,12 @@
     "error": "Algo salió mal. Intente de nuevo o envíenos un correo directamente."
   },
   "categories": {
-    "walkingAids": "Ayudas para caminar",
-    "walkingAidsDesc": "Andadores, rollators, muletas y bastones",
-    "rehabTraining": "Entrenamiento de rehabilitación",
-    "rehabTrainingDesc": "Equipo de ejercicio para recuperación y terapia",
-    "nursingCare": "Cuidado de enfermería",
-    "nursingCareDesc": "Camas de hospital, elevadores de pacientes, ayudas de transferencia",
-    "accessibility": "Accesibilidad",
-    "accessibilityDesc": "Rampas, salvaescaleras, seguridad en el baño",
-    "dailyLiving": "Ayudas para la vida diaria",
-    "dailyLivingDesc": "Ayudas de baño, ayudas para vestirse, ayudas de cocina",
-    "physiotherapy": "Fisioterapia",
-    "physiotherapyDesc": "Camillas de tratamiento, electroterapia, terapia de calor/frío"
+    "walkingAids": "Ayudas para Caminar",
+    "walkingAidsDesc": "Bastones, muletas, andadores y rollators",
+    "bathSafety": "Seguridad en Baño y Ducha",
+    "bathSafetyDesc": "Sillas de ducha, taburetes de baño, barras de seguridad para WC",
+    "commodeChairs": "Sillas de Baño",
+    "commodeChairsDesc": "Inodoros portátiles plegables y sillas de baño para cama"
   },
   "about": {
     "title": "Sobre JinDa Rehab Medical",

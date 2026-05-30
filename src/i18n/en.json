@@ -78,17 +78,11 @@
   },
   "categories": {
     "walkingAids": "Walking Aids",
-    "walkingAidsDesc": "Walkers, rollators, crutches and canes",
-    "rehabTraining": "Rehabilitation Training",
-    "rehabTrainingDesc": "Exercise equipment for recovery and therapy",
-    "nursingCare": "Nursing Care",
-    "nursingCareDesc": "Hospital beds, patient lifts, transfer aids",
-    "accessibility": "Accessibility",
-    "accessibilityDesc": "Ramps, stair lifts, bathroom safety",
-    "dailyLiving": "Daily Living Aids",
-    "dailyLivingDesc": "Bathroom aids, dressing aids, kitchen helpers",
-    "physiotherapy": "Physiotherapy",
-    "physiotherapyDesc": "Treatment tables, electrotherapy, hot/cold therapy"
+    "walkingAidsDesc": "Canes, crutches, walkers and rollators",
+    "bathSafety": "Bath & Shower Safety",
+    "bathSafetyDesc": "Shower chairs, bath stools, toilet safety rails",
+    "commodeChairs": "Commode Chairs",
+    "commodeChairsDesc": "Portable folding commodes and bedside toilet chairs"
   },
   "about": {
     "title": "About JinDa Rehab Medical",

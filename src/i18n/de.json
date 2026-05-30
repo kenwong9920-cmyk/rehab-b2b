@@ -78,17 +78,11 @@
   },
   "categories": {
     "walkingAids": "Gehhilfen",
-    "walkingAidsDesc": "Gehwagen, Rollatoren, Krücken und Gehstöcke",
-    "rehabTraining": "Rehabilitationstraining",
-    "rehabTrainingDesc": "Trainingsgeräte für Genesung und Therapie",
-    "nursingCare": "Pflegeprodukte",
-    "nursingCareDesc": "Krankenhausbetten, Patientenlifter, Transfersysteme",
-    "accessibility": "Barrierefreiheit",
-    "accessibilityDesc": "Rampen, Treppenlifte, Badsicherheit",
-    "dailyLiving": "Alltagshilfen",
-    "dailyLivingDesc": "Badhilfen, Anziehhilfen, Küchenhelfer",
-    "physiotherapy": "Physiotherapie",
-    "physiotherapyDesc": "Behandlungsliegen, Elektrotherapie, Wärme-/Kältetherapie"
+    "walkingAidsDesc": "Gehstöcke, Krücken, Gehwagen und Rollatoren",
+    "bathSafety": "Bad- & Dusch-Sicherheit",
+    "bathSafetyDesc": "Duschstühle, Badsitze, WC-Sicherheitsgriffe",
+    "commodeChairs": "Toilettenstühle",
+    "commodeChairsDesc": "Tragbare klappbare Toilettenstühle und Bettsitztoiletten"
   },
   "about": {
     "title": "Über JinDa Rehab Medical",

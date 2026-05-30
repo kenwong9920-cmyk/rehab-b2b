@@ -32,39 +32,21 @@ export const SITE = {
 export const PRODUCT_CATEGORIES = [
   {
     slug: 'walking-aids',
-    icon: '🚶',
+    icon: '🦯',
     nameKey: 'categories.walkingAids',
     descriptionKey: 'categories.walkingAidsDesc',
   },
   {
-    slug: 'rehabilitation-training',
-    icon: '💪',
-    nameKey: 'categories.rehabTraining',
-    descriptionKey: 'categories.rehabTrainingDesc',
+    slug: 'bath-safety',
+    icon: '🛁',
+    nameKey: 'categories.bathSafety',
+    descriptionKey: 'categories.bathSafetyDesc',
   },
   {
-    slug: 'nursing-care',
-    icon: '🏥',
-    nameKey: 'categories.nursingCare',
-    descriptionKey: 'categories.nursingCareDesc',
-  },
-  {
-    slug: 'accessibility',
+    slug: 'commode-chairs',
     icon: '♿',
-    nameKey: 'categories.accessibility',
-    descriptionKey: 'categories.accessibilityDesc',
-  },
-  {
-    slug: 'daily-living',
-    icon: '🏠',
-    nameKey: 'categories.dailyLiving',
-    descriptionKey: 'categories.dailyLivingDesc',
-  },
-  {
-    slug: 'physiotherapy',
-    icon: '🔬',
-    nameKey: 'categories.physiotherapy',
-    descriptionKey: 'categories.physiotherapyDesc',
+    nameKey: 'categories.commodeChairs',
+    descriptionKey: 'categories.commodeChairsDesc',
   },
 ] as const;
 
