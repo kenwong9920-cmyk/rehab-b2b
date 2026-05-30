@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "RehabPro Medical",
+    "name": "JinDa Rehab Medical",
     "tagline": "Fabricante profesional de equipos de rehabilitación"
   },
   "nav": {
@@ -22,7 +22,7 @@
     "heroCTA": "Solicitar cotización",
     "heroCTA2": "Explorar productos",
     "categoriesTitle": "Nuestras categorías de productos",
-    "whyUsTitle": "¿Por qué elegir RehabPro?",
+    "whyUsTitle": "¿Por qué elegir JinDa Rehab Medical?",
     "certifiedFactory": "Fábrica certificada",
     "certifiedFactoryDesc": "Instalación de fabricación aprobada ISO 13485, CE, FDA",
     "oemService": "OEM y personalización",
@@ -91,7 +91,7 @@
     "physiotherapyDesc": "Camillas de tratamiento, electroterapia, terapia de calor/frío"
   },
   "about": {
-    "title": "Sobre RehabPro Medical",
+    "title": "Sobre JinDa Rehab Medical",
     "subtitle": "Su socio de confianza en la fabricación de equipos de rehabilitación"
   },
   "factory": {

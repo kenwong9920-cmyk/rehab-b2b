@@ -4,7 +4,7 @@ description: "Key market trends shaping the rehabilitation equipment industry an
 image: "https://placehold.co/1200x630/7c3aed/ffffff?text=Market+Trends+2026"
 category: "Industry Insights"
 tags: ["market trends", "2026", "B2B", "rehabilitation"]
-author: "RehabPro Medical Team"
+author: "JinDa Rehab Medical Team"
 date: 2026-05-05
 featured: false
 ---
@@ -61,7 +61,7 @@ This requires:
 
 **B2B Opportunity**: Request retail-ready packaging and marketing assets from your OEM manufacturer.
 
-## How RehabPro Medical Is Positioned
+## How JinDa Rehab Medical Is Positioned
 
 We're actively investing in:
 - Smart rehabilitation product R&D

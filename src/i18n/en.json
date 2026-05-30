@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "RehabPro Medical",
+    "name": "JinDa Rehab Medical",
     "tagline": "Professional Rehabilitation Equipment Manufacturer"
   },
   "nav": {
@@ -22,7 +22,7 @@
     "heroCTA": "Request a Quote",
     "heroCTA2": "Explore Products",
     "categoriesTitle": "Our Product Categories",
-    "whyUsTitle": "Why Choose RehabPro?",
+    "whyUsTitle": "Why Choose JinDa Rehab Medical?",
     "certifiedFactory": "Certified Factory",
     "certifiedFactoryDesc": "ISO 13485, CE, FDA approved manufacturing facility",
     "oemService": "OEM & Customization",
@@ -91,7 +91,7 @@
     "physiotherapyDesc": "Treatment tables, electrotherapy, hot/cold therapy"
   },
   "about": {
-    "title": "About RehabPro Medical",
+    "title": "About JinDa Rehab Medical",
     "subtitle": "Your trusted partner in rehabilitation equipment manufacturing"
   },
   "factory": {

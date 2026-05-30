@@ -4,7 +4,7 @@ description: "A comprehensive guide for B2B buyers on selecting electric wheelch
 image: "https://placehold.co/1200x630/2563eb/ffffff?text=Electric+Wheelchair+Guide"
 category: "Buying Guides"
 tags: ["wheelchair", "electric wheelchair", "buying guide", "B2B"]
-author: "RehabPro Medical Team"
+author: "JinDa Rehab Medical Team"
 date: 2026-05-15
 featured: true
 ---
@@ -83,7 +83,7 @@ Before placing an order, ask:
 
 Choosing the right electric wheelchair for B2B supply requires balancing specifications,
 certifications, customization options, and pricing. Working with an experienced, certified
-manufacturer with strong OEM capabilities — like RehabPro Medical — can give you a significant
+manufacturer with strong OEM capabilities — like JinDa Rehab Medical — can give you a significant
 competitive advantage in your market.
 
 **Ready to discuss your electric wheelchair requirements? [Contact us for a quote →](/en/get-quote/)**

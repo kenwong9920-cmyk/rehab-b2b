@@ -34,7 +34,7 @@ const blog = defineCollection({
     image: z.string().optional(),
     category: z.string().optional(),
     tags: z.array(z.string()).optional().default([]),
-    author: z.string().optional().default('RehabPro Medical'),
+    author: z.string().optional().default('JinDa Rehab Medical'),
     date: z.date(),
     updated: z.date().optional(),
     featured: z.boolean().optional().default(false),

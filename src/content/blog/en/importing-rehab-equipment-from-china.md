@@ -4,7 +4,7 @@ description: "Practical tips for B2B buyers importing rehabilitation and medical
 image: "https://placehold.co/1200x630/ea580c/ffffff?text=Import+Tips+from+China"
 category: "Buying Guides"
 tags: ["import", "China", "sourcing", "logistics", "B2B"]
-author: "RehabPro Medical Team"
+author: "JinDa Rehab Medical Team"
 date: 2026-04-28
 featured: true
 ---
@@ -91,5 +91,5 @@ Discuss before ordering:
 
 ## Ready to Start Importing?
 
-RehabPro Medical has 15+ years of experience serving B2B importers in 50+ countries.
+JinDa Rehab Medical has 15+ years of experience serving B2B importers in 50+ countries.
 [Contact us for a consultation and quote →](/en/get-quote/)

@@ -4,7 +4,7 @@ description: "Understand the key differences between medical device certificatio
 image: "https://placehold.co/1200x630/16a34a/ffffff?text=Medical+Certifications+Guide"
 category: "Regulatory Guide"
 tags: ["certification", "CE", "FDA", "ISO 13485", "regulatory"]
-author: "RehabPro Medical Team"
+author: "JinDa Rehab Medical Team"
 date: 2026-05-10
 featured: true
 ---
@@ -69,5 +69,5 @@ Always request:
 - FDA Owner/Operator Number (for FDA)
 - ISO 13485 certificate with scope of registration
 
-At RehabPro Medical, all our rehabilitation products are CE, FDA, and ISO 13485 certified.
+At JinDa Rehab Medical, all our rehabilitation products are CE, FDA, and ISO 13485 certified.
 [Contact us](/en/contact/) for certification documentation.

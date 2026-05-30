@@ -2,7 +2,7 @@
  * 全站常量 — 公司信息、社交链接等
  */
 export const SITE = {
-  name: 'RehabPro Medical',
+  name: 'JinDa Rehab Medical',
   tagline: 'Professional Rehabilitation Equipment Manufacturer',
   url: 'https://www.jdrehab.com',
   email: 'info@jdrehab.com',

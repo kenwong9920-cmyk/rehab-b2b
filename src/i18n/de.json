@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "RehabPro Medical",
+    "name": "JinDa Rehab Medical",
     "tagline": "Professioneller Hersteller von Rehabilitationsausrüstung"
   },
   "nav": {
@@ -22,7 +22,7 @@
     "heroCTA": "Angebot anfordern",
     "heroCTA2": "Produkte entdecken",
     "categoriesTitle": "Unsere Produktkategorien",
-    "whyUsTitle": "Warum RehabPro wählen?",
+    "whyUsTitle": "Warum JinDa Rehab Medical wählen?",
     "certifiedFactory": "Zertifizierte Fabrik",
     "certifiedFactoryDesc": "ISO 13485, CE, FDA zugelassene Produktionsstätte",
     "oemService": "OEM & Individualisierung",
@@ -91,7 +91,7 @@
     "physiotherapyDesc": "Behandlungsliegen, Elektrotherapie, Wärme-/Kältetherapie"
   },
   "about": {
-    "title": "Über RehabPro Medical",
+    "title": "Über JinDa Rehab Medical",
     "subtitle": "Ihr vertrauenswürdiger Partner für die Herstellung von Rehabilitationsausrüstung"
   },
   "factory": {
