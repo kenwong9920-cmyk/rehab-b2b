@@ -125,13 +125,13 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
       <!-- Images -->
       <div>
-        <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 mb-4">
+        <div class="aspect-square rounded-xl overflow-hidden bg-white mb-4">
           <img
             src={p.image}
             alt={p.title}
-            class="w-full h-full object-cover"
+            class="w-full h-full object-contain p-4"
             width="800"
-            height="600"
+            height="800"
           />
         </div>
         {p.images && p.images.length > 0 && (

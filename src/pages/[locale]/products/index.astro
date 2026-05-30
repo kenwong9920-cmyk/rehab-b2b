@@ -87,14 +87,14 @@ const schema = {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProducts.map((product) => (
           <div class="bg-white rounded-xl border border-neutral-200 overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300 group flex flex-col">
-            <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="block aspect-[4/3] overflow-hidden bg-neutral-100">
+            <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="block aspect-square overflow-hidden bg-white">
               <img
                 src={product.data.image}
                 alt={product.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-4"
                 loading="lazy"
                 width="400"
-                height="300"
+                height="400"
               />
             </a>
             <div class="p-5 flex flex-col flex-1">
