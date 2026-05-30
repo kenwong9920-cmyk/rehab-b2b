@@ -6,6 +6,7 @@ export const SITE = {
   tagline: 'Professional Rehabilitation Equipment Manufacturer',
   url: 'https://www.jdrehab.com',
   email: 'info@jdrehab.com',
+  salesEmail: 'sales@jdrehab.com',
   phone: '+8613710405041',
   whatsapp: '+85257044967',
   address: {
