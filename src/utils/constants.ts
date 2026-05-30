@@ -5,7 +5,7 @@ export const SITE = {
   name: 'RehabPro Medical',
   tagline: 'Professional Rehabilitation Equipment Manufacturer',
   url: 'https://www.jdrehab.com',
-  email: 'info@rehabpro-med.com',
+  email: 'info@jdrehab.com',
   phone: '+8613710405041',
   whatsapp: '+85257044967',
   address: {
