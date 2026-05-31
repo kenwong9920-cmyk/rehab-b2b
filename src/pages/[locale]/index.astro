@@ -18,13 +18,12 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
-// Hero 轮动图
+// Hero 轮动图（3张）
 const heroImages = [
   '/images/hero1-clean-product-right-final.webp',
   '/images/hero1.webp',
+  '/images/GettyImages-1224307067-scaled-e1671537836990.jpeg',
 ];
-// 如果你添加第三张，取消下一行的注释并放图片
-// const heroImages = ['/images/hero1-clean-product-right-final.webp', '/images/hero1.webp', '/images/hero3.webp'];
 
 // Why Us features
 const whyUsFeatures = [
