@@ -44,6 +44,12 @@ export const PRODUCT_CATEGORIES = [
     descriptionKey: 'categories.bathSafetyDesc',
   },
   {
+    slug: 'toilet-safety',
+    icon: '🚽',
+    nameKey: 'categories.toiletSafety',
+    descriptionKey: 'categories.toiletSafetyDesc',
+  },
+  {
     slug: 'commode-chairs',
     icon: '♿',
     nameKey: 'categories.commodeChairs',

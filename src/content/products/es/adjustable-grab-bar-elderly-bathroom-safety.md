@@ -1,7 +1,7 @@
 ---
 title: "Barra de Apoyo Ajustable para Seguridad en Baño de Mayores"
 description: "Barra de apoyo cromada moderna ajustable en altura que soporta hasta 150kg. Pesa 4kg con instalación sin herramientas, mecanismo de bloqueo fiable, base antideslizante y acabado sin manchas. Garantía de 1 año — ideal para hogar y centros de cuidado."
-category: "bath-safety"
+category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"

@@ -80,9 +80,11 @@
     "walkingAids": "Aides à la Marche",
     "walkingAidsDesc": "Cannes, béquilles, déambulateurs et rollators",
     "bathSafety": "Sécurité Bain & Douche",
-    "bathSafetyDesc": "Chaises de douche, tabourets de bain, barres de sécurité WC",
+    "bathSafetyDesc": "Chaises de douche, tabourets de bain et aides pour salle de bain",
     "commodeChairs": "Chaises Percées",
-    "commodeChairsDesc": "Commodes pliantes portables et chaises de toilette de chevet"
+    "commodeChairsDesc": "Commodes pliantes portables et chaises de toilette de chevet",
+    "toiletSafety": "Sécurité WC",
+    "toiletSafetyDesc": "Barres de sécurité WC, barres d'appui et sièges de toilette surélevés"
   },
   "about": {
     "title": "À propos de JinDa Rehab Medical",

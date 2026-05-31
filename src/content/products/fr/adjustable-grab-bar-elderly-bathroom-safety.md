@@ -1,7 +1,7 @@
 ---
 title: "Barre d'Appui Réglable pour Sécurité Salle de Bain Seniors"
 description: "Barre d'appui chromée moderne réglable en hauteur supportant jusqu'à 150kg. Pèse 4kg avec installation sans outil, mécanisme de verrouillage fiable, base antidérapante et finition sans tache. Garantie 1 an — idéal pour domicile et établissements de soins."
-category: "bath-safety"
+category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"

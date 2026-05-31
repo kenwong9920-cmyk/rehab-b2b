@@ -1,7 +1,7 @@
 ---
 title: "Ayuda de Seguridad Antideslizante para Baño de Mayores"
 description: "Barra de seguridad para WC violeta ajustable en altura con empuñadura perfilada antideslizante. Marco reforzado de alta capacidad, compatibilidad universal con WC estándar, instalación sin herramientas. Diseñada para reducir riesgos de caída y fomentar la independencia de los mayores."
-category: "bath-safety"
+category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/84/8a/280bdc130d732a79bf9b11d2dc.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/d3/84/8a/280bdc130d732a79bf9b11d2dc.jpg"

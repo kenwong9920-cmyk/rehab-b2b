@@ -1,7 +1,7 @@
 ---
 title: "Marco Elevado Ergonómico Ajustable para Silla de WC"
 description: "Marco de WC elevado con diseño ergonómico ajustable para mayores y personas con movilidad reducida. Ayuda a mantener una posición erguida, apoya la alineación corporal natural y reduce la presión lumbar. Ideal para baño doméstico y centros de cuidado."
-category: "bath-safety"
+category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/c3/87/be/02a46a89fb40a6755779515afc.jpeg"
 images:
   - "https://bsg-i.nbxc.com/product/c3/87/be/02a46a89fb40a6755779515afc.jpeg"

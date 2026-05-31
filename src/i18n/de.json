@@ -79,10 +79,12 @@
   "categories": {
     "walkingAids": "Gehhilfen",
     "walkingAidsDesc": "Gehstöcke, Krücken, Gehwagen und Rollatoren",
-    "bathSafety": "Bad- & Dusch-Sicherheit",
-    "bathSafetyDesc": "Duschstühle, Badsitze, WC-Sicherheitsgriffe",
+    "bathSafety": "Bad- & Duschsicherheit",
+    "bathSafetyDesc": "Duschstühle, Badsitze und Badezimmerhilfen",
     "commodeChairs": "Toilettenstühle",
-    "commodeChairsDesc": "Tragbare klappbare Toilettenstühle und Bettsitztoiletten"
+    "commodeChairsDesc": "Tragbare klappbare Toilettenstühle und Bettsitztoiletten",
+    "toiletSafety": "WC-Sicherheit",
+    "toiletSafetyDesc": "WC-Sicherheitsgriffe, Haltegriffe und erhöhte Toilettensitze"
   },
   "about": {
     "title": "Über JinDa Rehab Medical",

@@ -80,9 +80,11 @@
     "walkingAids": "Walking Aids",
     "walkingAidsDesc": "Canes, crutches, walkers and rollators",
     "bathSafety": "Bath & Shower Safety",
-    "bathSafetyDesc": "Shower chairs, bath stools, toilet safety rails",
+    "bathSafetyDesc": "Shower chairs, bath stools and bathroom aids",
     "commodeChairs": "Commode Chairs",
-    "commodeChairsDesc": "Portable folding commodes and bedside toilet chairs"
+    "commodeChairsDesc": "Portable folding commodes and bedside toilet chairs",
+    "toiletSafety": "Toilet Safety",
+    "toiletSafetyDesc": "Toilet safety rails, grab bars and elevated toilet seats"
   },
   "about": {
     "title": "About JinDa Rehab Medical",
