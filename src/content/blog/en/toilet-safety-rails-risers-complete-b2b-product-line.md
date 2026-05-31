@@ -43,17 +43,17 @@ The clamp design uses engineered plastic contact surfaces rather than exposed me
 
 ### FAQ
 
-Will these rails fit my toilet?
+**Q: Will these rails fit my toilet?**
 
-Our standard rails accommodate toilet widths of 35–48 cm. Adjustable-clamp models cover an even wider range. For non-standard toilets, please contact us with your toilet dimensions.
+A: Our standard rails accommodate toilet widths of 35–48 cm. Adjustable-clamp models cover an even wider range. For non-standard toilets, please contact us with your toilet dimensions.
 
-Is installation reversible? Does removal leave any marks?
+**Q: Is installation reversible? Does removal leave any marks?**
 
-Yes. The clamp design leaves no marks on the toilet or floor. This is particularly important for rental properties and care facilities that may need to reconfigure rooms.
+A: Yes. The clamp design leaves no marks on the toilet or floor. This is particularly important for rental properties and care facilities that may need to reconfigure rooms.
 
-Do you offer wall-mounted grab bars?
+**Q: Do you offer wall-mounted grab bars?**
 
-Our current product line focuses on floor-standing toilet frames. Wall-mounted grab bars are under development.
+A: Our current product line focuses on floor-standing toilet frames. Wall-mounted grab bars are under development.
 
 ---
 

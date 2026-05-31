@@ -39,17 +39,17 @@ Our toilet chairs ship in flat-fold packaging optimized for container loading. S
 
 ### FAQ
 
-In humid environments, is stainless steel or high-carbon steel the better choice?
+**Q: In humid environments, is stainless steel or high-carbon steel the better choice?**
 
-Stainless steel offers inherently superior corrosion resistance. However, our high-carbon steel chairs undergo a multi-stage powder coating process including phosphate pretreatment, providing excellent corrosion protection for normal bathroom environments. For coastal or consistently high-humidity settings, stainless steel is recommended.
+A: Stainless steel offers inherently superior corrosion resistance. However, our high-carbon steel chairs undergo a multi-stage powder coating process including phosphate pretreatment, providing excellent corrosion protection for normal bathroom environments. For coastal or consistently high-humidity settings, stainless steel is recommended.
 
-Can replacement parts be ordered?
+**Q: Can replacement parts be ordered?**
 
-Yes. We maintain inventory of all components — seats, backrests, foot pads, commode buckets — which can ship alongside your next bulk order or as a standalone shipment.
+A: Yes. We maintain inventory of all components — seats, backrests, foot pads, commode buckets — which can ship alongside your next bulk order or as a standalone shipment.
 
-What's the difference between gourd-shaped and U-shaped seats?
+**Q: What's the difference between gourd-shaped and U-shaped seats?**
 
-The gourd shape follows the natural seated body contour, providing better weight distribution and comfort during extended use. The U-shape offers a more open front, which some users find easier for cleaning. Both shapes are available across multiple models.
+A: The gourd shape follows the natural seated body contour, providing better weight distribution and comfort during extended use. The U-shape offers a more open front, which some users find easier for cleaning. Both shapes are available across multiple models.
 
 ---
 

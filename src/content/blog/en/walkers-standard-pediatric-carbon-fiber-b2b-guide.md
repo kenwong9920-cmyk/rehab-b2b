@@ -39,17 +39,17 @@ For B2B buyers serving pediatric rehabilitation, children's hospitals, or specia
 
 ### FAQ
 
-What is the weight capacity of the standard walker?
+**Q: What is the weight capacity of the standard walker?**
 
-135 kg (300 lbs) for standard models. Contact us for bariatric requirements.
+A: 135 kg (300 lbs) for standard models. Contact us for bariatric requirements.
 
-Can walkers and canes be shipped together in a single order?
+**Q: Can walkers and canes be shipped together in a single order?**
 
-Yes. Mixed orders across the entire rehabilitation aids product line are standard practice. One purchase order, one container, one shipment.
+A: Yes. Mixed orders across the entire rehabilitation aids product line are standard practice. One purchase order, one container, one shipment.
 
-Are the carbon fiber leg tubes replaceable?
+**Q: Are the carbon fiber leg tubes replaceable?**
 
-Yes. Leg tubes are independent components and can be replaced if damaged. We maintain spare leg tube inventory for all current models.
+A: Yes. Leg tubes are independent components and can be replaced if damaged. We maintain spare leg tube inventory for all current models.
 
 ---
 

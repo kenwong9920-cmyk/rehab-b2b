@@ -43,17 +43,17 @@ Our cross-border compact packaging series (LM5107–5110) is purpose-designed fo
 
 ### FAQ
 
-What's the difference between threaded tips and suction cup tips?
+**Q: What's the difference between threaded tips and suction cup tips?**
 
-Threaded tips allow fine height adjustment by screwing in or out. Suction cup tips grip more securely on smooth surfaces but require a clean, flat floor to adhere effectively. For textured or uneven bathroom floors, threaded tips are more reliable.
+A: Threaded tips allow fine height adjustment by screwing in or out. Suction cup tips grip more securely on smooth surfaces but require a clean, flat floor to adhere effectively. For textured or uneven bathroom floors, threaded tips are more reliable.
 
-Are your shower chairs rust-proof?
+**Q: Are your shower chairs rust-proof?**
 
-Aluminum alloy main frames are inherently corrosion-resistant and will not rust. Properly powder-coated stainless steel frames are equally rust-proof. We subject our coated steel frames to 48-hour salt spray testing with zero corrosion points.
+A: Aluminum alloy main frames are inherently corrosion-resistant and will not rust. Properly powder-coated stainless steel frames are equally rust-proof. We subject our coated steel frames to 48-hour salt spray testing with zero corrosion points.
 
-What certifications do your shower chairs carry?
+**Q: What certifications do your shower chairs carry?**
 
-CE certification covers the entire range. ISO 13485 covers our manufacturing facility. Select models hold additional certifications — please contact us with your market access requirements.
+A: CE certification covers the entire range. ISO 13485 covers our manufacturing facility. Select models hold additional certifications — please contact us with your market access requirements.
 
 ---
 

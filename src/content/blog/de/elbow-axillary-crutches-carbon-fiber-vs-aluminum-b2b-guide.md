@@ -37,14 +37,14 @@ All crutch products are manufactured under ISO 9001 and ISO 13485 quality manage
 
 ### FAQ
 
-What is the MOQ for mixed crutch orders?
+**Q: What is the MOQ for mixed crutch orders?**
 
-You may mix elbow crutches, axillary crutches, and accessories within a single purchase order. The standard MOQ for mixed orders is 100 units total.
+A: You may mix elbow crutches, axillary crutches, and accessories within a single purchase order. The standard MOQ for mixed orders is 100 units total.
 
-How do I choose between two-section and three-section axillary crutches?
+**Q: How do I choose between two-section and three-section axillary crutches?**
 
-Two-section models are simpler, lighter, and slightly less expensive. Three-section models fold more compactly — the reduced package dimensions lower per-unit freight costs for cross-border e-commerce. For Amazon FBA sellers, the compact packaging of the three-section model is generally the better choice.
+A: Two-section models are simpler, lighter, and slightly less expensive. Three-section models fold more compactly — the reduced package dimensions lower per-unit freight costs for cross-border e-commerce. For Amazon FBA sellers, the compact packaging of the three-section model is generally the better choice.
 
-Are your crutches sold by the pair or individually?
+**Q: Are your crutches sold by the pair or individually?**
 
-Elbow crutches: available as a pair or individually. Axillary crutches: sold by the pair. Please specify your preference when requesting a quote.
+A: Elbow crutches: available as a pair or individually. Axillary crutches: sold by the pair. Please specify your preference when requesting a quote.

@@ -41,15 +41,15 @@ For e-commerce sellers, ease of installation correlates directly with return rat
 
 ### FAQ
 
-Can these rails fit adjustable beds?
+**Q: Can these rails fit adjustable beds?**
 
-It depends on bed frame thickness and whether there are obstruction points. Our clamps accommodate bed frame thicknesses of 25–45 mm. For electric adjustable beds, confirm that the clamp mounting positions do not interfere with the bed's movement mechanism.
+A: It depends on bed frame thickness and whether there are obstruction points. Our clamps accommodate bed frame thicknesses of 25–45 mm. For electric adjustable beds, confirm that the clamp mounting positions do not interfere with the bed's movement mechanism.
 
-Are the rails suitable for use with air mattresses or memory foam mattresses?
+**Q: Are the rails suitable for use with air mattresses or memory foam mattresses?**
 
-Yes, provided the mattress height does not reduce the effective rail height to below 300 mm above the mattress surface. Measure from the top of the compressed mattress (with the user lying on it) to the top of the rail.
+A: Yes, provided the mattress height does not reduce the effective rail height to below 300 mm above the mattress surface. Measure from the top of the compressed mattress (with the user lying on it) to the top of the rail.
 
-What is the minimum order quantity for bed rails?
+**Q: What is the minimum order quantity for bed rails?**
 
-50 units for standard models. 100 units for custom-branded orders. Bed rails can be mixed with toilet safety products and shower chairs on a single purchase order.
+A: 50 units for standard models. 100 units for custom-branded orders. Bed rails can be mixed with toilet safety products and shower chairs on a single purchase order.
 ---

@@ -51,18 +51,18 @@ All products are tested to GB/T 19545.1-2012 standards. CE certification documen
 
 ### FAQ
 
-What is the difference between glossy and matte carbon fiber finishes?
+**Q: What is the difference between glossy and matte carbon fiber finishes?**
 
-The underlying material is identical. Glossy uses a high-gloss clear lacquer that accentuates the 3K weave pattern. Matte uses a satin clear lacquer that reduces reflections. Performance and weight are exactly the same.
+A: The underlying material is identical. Glossy uses a high-gloss clear lacquer that accentuates the 3K weave pattern. Matte uses a satin clear lacquer that reduces reflections. Performance and weight are exactly the same.
 
-Can I customize leather handle colors to a specific shade?
+**Q: Can I customize leather handle colors to a specific shade?**
 
-Yes. MOQ of 200 units per color. Leather handle colors can be matched to Pantone numbers.
+A: Yes. MOQ of 200 units per color. Leather handle colors can be matched to Pantone numbers.
 
-What is the lead time for custom-printed carbon fiber patterns?
+**Q: What is the lead time for custom-printed carbon fiber patterns?**
 
-Artwork confirmation takes 3–5 business days. Production takes 15–25 days, depending on order volume.
+A: Artwork confirmation takes 3–5 business days. Production takes 15–25 days, depending on order volume.
 
-Do your canes meet FDA requirements for the U.S. market?
+**Q: Do your canes meet FDA requirements for the U.S. market?**
 
-Our products are manufactured in an ISO 13485-certified facility. FDA registration documentation is available for specific models. Please contact us with your requirements.
+A: Our products are manufactured in an ISO 13485-certified facility. FDA registration documentation is available for specific models. Please contact us with your requirements.
