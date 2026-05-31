@@ -16,10 +16,8 @@ const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
 const downloads = [
-  { icon: '📄', title: 'Product Catalog 2026', desc: 'Complete product catalog with specifications and pricing guide.', size: 'PDF · 8.2 MB', href: '#' },
-  { icon: '📋', title: 'Company Profile', desc: 'Company introduction, certifications, and factory overview.', size: 'PDF · 3.1 MB', href: '#' },
-  { icon: '🔧', title: 'OEM Capabilities Guide', desc: 'Custom manufacturing capabilities, MOQ, and process documentation.', size: 'PDF · 1.8 MB', href: '#' },
-  { icon: '📊', title: 'Technical Specifications Pack', desc: 'Detailed technical specifications for all product categories.', size: 'ZIP · 15.4 MB', href: '#' },
+  { icon: '📄', title: 'Product Catalog 2026', desc: 'Complete product catalog with specifications and pricing guide.', size: 'PDF · 8.2 MB', slug: 'product-catalog-2026' },
+  { icon: '📋', title: 'Company Profile', desc: 'Company introduction, certifications, and factory overview.', size: 'PDF · 3.1 MB', slug: 'company-profile' },
 ];
 ---
 
@@ -40,7 +38,7 @@ const downloads = [
               <p class="text-sm text-neutral-600 mt-1">{d.desc}</p>
               <span class="text-xs text-neutral-400 mt-1 block">{d.size}</span>
             </div>
-            <a href={d.href} class="btn-primary btn-sm shrink-0">
+            <a href={`/${locale}/get-quote/?source=download&file=${encodeURIComponent(d.title)}`} class="btn-primary btn-sm shrink-0">
               Download
             </a>
           </div>

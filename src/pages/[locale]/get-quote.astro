@@ -17,6 +17,8 @@ const { t } = useTranslations(locale!);
 
 // Get product param from URL
 const productParam = Astro.url.searchParams.get('product') || '';
+const sourceParam = Astro.url.searchParams.get('source') || '';
+const isDownload = sourceParam === 'download';
 ---
 
 <BaseLayout title={t('nav.getQuote')} description="Request a customized quote for rehabilitation equipment" locale={locale!}>
@@ -30,7 +32,14 @@ const productParam = Astro.url.searchParams.get('product') || '';
   <section class="container-main py-16">
     <div class="max-w-2xl mx-auto">
       <div class="bg-white rounded-xl shadow-sm border border-neutral-200 p-8">
-        <h2 class="mb-6 text-2xl text-center">Request a Quote</h2>
+        <h2 class="mb-6 text-2xl text-center">
+          {isDownload ? 'Download Request' : 'Request a Quote'}
+        </h2>
+        {isDownload && (
+          <p class="text-center text-sm text-primary-600 bg-primary-50 rounded-lg p-3 mb-6 -mt-4">
+            📥 You've requested: <strong>{productParam}</strong>.<br/>Please enter your details below and we'll send you the download link right away.
+          </p>
+        )}
         <ContactForm
           productName={productParam}
           showProductField={true}
