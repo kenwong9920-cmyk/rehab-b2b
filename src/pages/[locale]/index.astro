@@ -18,8 +18,13 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
-// Hero 背景图
-const heroBg = '/images/hero1-clean-product-right-final.webp';
+// Hero 轮动图
+const heroImages = [
+  '/images/hero1-clean-product-right-final.webp',
+  '/images/hero1.webp',
+];
+// 如果你添加第三张，取消下一行的注释并放图片
+// const heroImages = ['/images/hero1-clean-product-right-final.webp', '/images/hero1.webp', '/images/hero3.webp'];
 
 // Why Us features
 const whyUsFeatures = [
@@ -89,21 +94,24 @@ const schema = {
 ---
 
 <BaseLayout title={t('site.name')} description={t('home.heroSubtitle')} locale={locale!} schema={schema}>
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero Carousel ===== -->
   <section class="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden">
-    <!-- Background Image with Overlay -->
-    <div class="absolute inset-0 opacity-[0.85]">
-      <img
-        src={heroBg}
-        alt=""
-        class="w-full h-full object-cover"
-        loading="eager"
-        width="1600"
-        height="900"
-      />
-    </div>
+    <!-- Carousel Slides -->
+    {heroImages.map((img, i) => (
+      <div class={`hero-slide absolute inset-0 opacity-[0.85] transition-opacity duration-1000 ${i === 0 ? 'opacity-[0.85]' : 'opacity-0'}`} data-index={i}>
+        <img
+          src={img}
+          alt=""
+          class="w-full h-full object-cover"
+          loading={i === 0 ? 'eager' : 'lazy'}
+          width="1600"
+          height="900"
+        />
+      </div>
+    ))}
     <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
 
+    <!-- Content -->
     <div class="container-main relative py-24 md:py-36">
       <div class="max-w-3xl">
         <h1 class="text-white mb-6 leading-tight text-2xl md:text-3xl lg:text-4xl max-w-2xl">
@@ -120,6 +128,13 @@ const schema = {
             {t('home.heroCTA2')}
           </a>
         </div>
+      </div>
+
+      <!-- Carousel Dots -->
+      <div class="flex gap-2 mt-16" id="heroDots">
+        {heroImages.map((_, i) => (
+          <button class={`hero-dot w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === 0 ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/60'}`} data-index={i} aria-label={`Slide ${i + 1}`}></button>
+        ))}
       </div>
 
       <!-- Trust badges -->
@@ -253,3 +268,59 @@ const schema = {
     variant="primary"
   />
 </BaseLayout>
+
+<script>
+  // Hero Carousel
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  let currentSlide = 0;
+  const totalSlides = slides.length;
+  let autoplayTimer: ReturnType<typeof setInterval>;
+
+  function goToSlide(index: number) {
+    slides.forEach((s, i) => {
+      if (i === index) {
+        (s as HTMLElement).style.opacity = '0.85';
+      } else {
+        (s as HTMLElement).style.opacity = '0';
+      }
+    });
+    dots.forEach((d, i) => {
+      if (i === index) {
+        d.classList.add('bg-white', 'w-8');
+        d.classList.remove('bg-white/40', 'w-2.5');
+      } else {
+        d.classList.remove('bg-white', 'w-8');
+        d.classList.add('bg-white/40', 'w-2.5');
+      }
+    });
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    goToSlide((currentSlide + 1) % totalSlides);
+  }
+
+  // Dot click handlers
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt((dot as HTMLElement).dataset.index || '0');
+      goToSlide(idx);
+      resetAutoplay();
+    });
+  });
+
+  // Autoplay
+  function startAutoplay() {
+    autoplayTimer = setInterval(nextSlide, 5000);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
+
+  if (totalSlides > 1) {
+    startAutoplay();
+  }
+</script>
