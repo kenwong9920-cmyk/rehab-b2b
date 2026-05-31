@@ -18,10 +18,11 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
-// Hero 轮动图（3张）
+// Hero 轮动图（4张）
 const heroImages = [
   '/images/hero1-clean-product-right-final.webp',
-  '/images/hero1.webp',
+  '/images/1780219316.webp',
+  '/images/Gemini_Generated_Image_a6ak9ja6ak9ja6ak.webp',
   '/images/hero3.webp',
 ];
 
@@ -311,7 +312,7 @@ const schema = {
 
   // Autoplay
   function startAutoplay() {
-    autoplayTimer = setInterval(nextSlide, 5000);
+    autoplayTimer = setInterval(nextSlide, 5500);
   }
 
   function resetAutoplay() {
