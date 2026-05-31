@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ContactForm from '@/components/ContactForm.astro';
 import { useTranslations } from '@/utils/i18n';
+import { SITE } from '@/utils/constants';
 
 export async function getStaticPaths() {
   return [
@@ -50,9 +51,9 @@ const isDownload = sourceParam === 'download';
       <div class="mt-8 text-center text-sm text-neutral-500">
         <p>Prefer to talk directly?</p>
         <p class="mt-1">
-          Email us at <a href="mailto:info@rehabpro-med.com" class="text-primary-600">info@rehabpro-med.com</a>
+          Email us at <a href="mailto:info@jdrehab.com" class="text-primary-600">info@jdrehab.com</a>
           {' or '}
-          <a href="https://wa.me/86XXXXXXXXXXX" class="text-accent-600" target="_blank" rel="noopener">WhatsApp Us →</a>
+          <a href={`https://wa.me/${SITE.whatsapp.replace(/\+/g, '')}`} class="text-accent-600" target="_blank" rel="noopener">WhatsApp Us →</a>
         </p>
       </div>
     </div>
