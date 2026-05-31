@@ -1,7 +1,7 @@
 ---
 title: "Déambulateur Pliable Léger pour Adultes de Grande Taille"
 description: "Déambulateur pliable à hauteur étendue conçu pour adultes de grande taille. Double fonction comme cadre de marche et chaise d'entraînement. Siège rembourré doux, poignées réglables, embouts caoutchouc antidérapants et pliage rapide."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"

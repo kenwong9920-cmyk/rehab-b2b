@@ -78,13 +78,15 @@
   },
   "categories": {
     "walkingAids": "Ayudas para Caminar",
-    "walkingAidsDesc": "Bastones, muletas, andadores y rollators",
+    "walkingAidsDesc": "Bastones, muletas y bastones de marcha",
     "bathSafety": "Seguridad en Baño y Ducha",
     "bathSafetyDesc": "Sillas de ducha, taburetes de baño y ayudas para el baño",
     "commodeChairs": "Sillas de Baño",
     "commodeChairsDesc": "Inodoros portátiles plegables y sillas de baño para cama",
     "toiletSafety": "Seguridad para WC",
-    "toiletSafetyDesc": "Barras de seguridad para WC, barras de apoyo y asientos de inodoro elevados"
+    "toiletSafetyDesc": "Barras de seguridad para WC, barras de apoyo y asientos de inodoro elevados",
+    "walkers": "Andadores & Rollators",
+    "walkersDesc": "Andadores plegables, rollators y andadores pediátricos"
   },
   "about": {
     "title": "Sobre JinDa Rehab Medical",

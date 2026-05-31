@@ -1,7 +1,7 @@
 ---
 title: "Edelstahl-Faltrollator für Kindliche Genesung"
 description: "Pädiatrischer Edelstahl-Faltrollator für Genesung nach Verletzungen, Operationen und neurologischen Erkrankungen. Rutschfeste Gummigriffe, höhenverstellbar, kompakter Faltrahmen und kinderfreundliche Ergonomie."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"

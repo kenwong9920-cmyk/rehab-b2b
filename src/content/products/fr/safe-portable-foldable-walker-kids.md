@@ -1,7 +1,7 @@
 ---
 title: "Déambulateur Pliable Portable et Sûr pour Enfants"
 description: "Déambulateur pliant pédiatrique avec cadre en acier inoxydable revêtu par poudre résistant aux rayures en noir et jaune. Poignées en tissu doux, embouts antidérapants et design pliant compact. Construction légère pour la mobilité sécurisée des enfants."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"

@@ -38,6 +38,12 @@ export const PRODUCT_CATEGORIES = [
     descriptionKey: 'categories.walkingAidsDesc',
   },
   {
+    slug: 'walkers',
+    icon: '🚶',
+    nameKey: 'categories.walkers',
+    descriptionKey: 'categories.walkersDesc',
+  },
+  {
     slug: 'bath-safety',
     icon: '🛁',
     nameKey: 'categories.bathSafety',

@@ -1,7 +1,7 @@
 ---
 title: "Andador Médico Plegable de Acero Inoxidable con Asiento"
 description: "Andador médico premium de acero inoxidable negro mate con asiento de cuero integrado. Puños de tela azul marino, patas robustas para estabilidad interior/exterior y plegado rápido. Ideal para mayores, recuperación postoperatoria y apoyo al equilibrio."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"

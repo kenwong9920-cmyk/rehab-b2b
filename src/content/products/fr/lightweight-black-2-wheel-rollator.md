@@ -1,7 +1,7 @@
 ---
 title: "Rollator Léger Noir à 2 Roues pour Adultes et Seniors"
 description: "Rollator léger à 2 roues avec roues caoutchouc adaptées aux tapis, carrelage et surfaces extérieures. Poignées réglables en hauteur, siège rembourré, système de freinage manuel et pliage rapide. Idéal pour seniors et adultes à mobilité réduite."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ca/7a/2b/13ecba8608845251139a5080f6.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ca/7a/2b/13ecba8608845251139a5080f6.jpg"

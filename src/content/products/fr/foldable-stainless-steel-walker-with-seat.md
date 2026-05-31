@@ -1,7 +1,7 @@
 ---
 title: "Déambulateur Médical Pliable en Acier Inoxydable avec Siège"
 description: "Déambulateur médical premium en acier inoxydable noir mat avec siège en cuir intégré. Poignées en tissu bleu marine, pieds robustes pour stabilité intérieure/extérieure et pliage rapide. Idéal pour seniors, récupération post-opératoire et soutien à l'équilibre."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"

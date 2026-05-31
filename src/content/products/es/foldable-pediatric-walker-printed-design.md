@@ -1,7 +1,7 @@
 ---
 title: "Andador Pediátrico Plegable con Diseño Impreso"
 description: "Andador plegable infantil con marco de acero inoxidable con recubrimiento en polvo y patas de fibra de carbono con divertidos patrones impresos. Puños suaves acolchados. Diseño ligero antioxidante para recuperación pediátrica y aventuras diarias."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"

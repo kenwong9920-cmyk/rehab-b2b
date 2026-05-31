@@ -1,7 +1,7 @@
 ---
 title: "Déambulateur Pédiatrique Pliable avec Design Imprimé"
 description: "Déambulateur pliable pour enfants avec cadre en acier inoxydable revêtu par poudre et pieds en fibre de carbone aux motifs ludiques imprimés. Poignées douces rembourrées. Design léger antirouille pour la récupération pédiatrique et les aventures quotidiennes."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"

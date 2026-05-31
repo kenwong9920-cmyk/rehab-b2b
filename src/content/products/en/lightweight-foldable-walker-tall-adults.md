@@ -1,7 +1,7 @@
 ---
 title: "Lightweight Foldable Walker for Tall Adults"
 description: "Extended-height foldable walker specifically designed for tall adults. Features dual-function design serving as both walking frame and lower limb training chair. Soft padded seat, height-adjustable handles, non-slip rubber tips, and quick-folding mechanism. Ideal for seniors and post-surgery recovery."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"

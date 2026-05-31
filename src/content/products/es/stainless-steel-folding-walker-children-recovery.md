@@ -1,7 +1,7 @@
 ---
 title: "Andador Plegable de Acero Inoxidable para Recuperación Infantil"
 description: "Andador plegable pediátrico de acero inoxidable diseñado para recuperación de lesiones, cirugía y condiciones neurológicas. Puños de goma antideslizantes, altura ajustable, marco plegable compacto y ergonomía adaptada a niños."
-category: "walking-aids"
+category: "walkers"
 image: "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
