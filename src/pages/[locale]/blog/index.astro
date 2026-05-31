@@ -75,14 +75,14 @@ function formatDate(date: Date): string {
           return (
             <article class="bg-white rounded-xl border border-neutral-200 overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300 group flex flex-col">
               {post.data.image && (
-                <a href={`/${locale}/blog/${slug}/`} class="block aspect-[16/9] overflow-hidden bg-neutral-100">
+                <a href={`/${locale}/blog/${slug}/`} class="block aspect-square overflow-hidden bg-white">
                   <img
                     src={post.data.image}
                     alt={post.data.title}
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-4"
                     loading="lazy"
                     width="600"
-                    height="338"
+                    height="600"
                   />
                 </a>
               )}
