@@ -28,9 +28,23 @@ const milestones = [
 
 const schema = {
   '@context': 'https://schema.org',
-  '@type': 'AboutPage',
-  name: t('about.title'),
-  description: t('about.subtitle'),
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      name: t('about.title'),
+      description: t('about.subtitle'),
+    },
+    {
+      '@type': 'VideoObject',
+      name: 'JinDa Rehab Medical Factory Tour',
+      description: 'Take a tour of JinDa Rehab Medical\'s 15,000 m² state-of-the-art manufacturing facility.',
+      thumbnailUrl: ['https://img.youtube.com/vi/zotxhYfMRBY/maxresdefault.jpg'],
+      contentUrl: 'https://www.youtube.com/watch?v=zotxhYfMRBY',
+      embedUrl: 'https://www.youtube.com/embed/zotxhYfMRBY',
+      uploadDate: '2026-05-31',
+      duration: 'PT5M',
+    },
+  ],
 };
 ---
 
@@ -58,6 +72,32 @@ const schema = {
           ISO 9001, and our products carry CE and FDA certifications. We employ over 200 skilled professionals including
           R&D engineers, quality control specialists, and export service teams.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Factory Video (Lazy Load YouTube) ===== -->
+  <section class="container-main section-padding">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-center mb-6">See Our Factory in Action</h2>
+      <div class="relative aspect-video rounded-xl overflow-hidden bg-neutral-900 shadow-lg" id="videoContainer">
+        <!-- Click-to-play facade — only loads YouTube when clicked -->
+        <button id="videoPlayBtn" class="absolute inset-0 z-10 flex flex-col items-center justify-center group cursor-pointer">
+          <img
+            src="https://img.youtube.com/vi/zotxhYfMRBY/maxresdefault.jpg"
+            alt="JinDa Rehab Medical Factory Tour"
+            class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-50 transition-opacity"
+            loading="lazy"
+            width="1280"
+            height="720"
+          />
+          <div class="relative w-20 h-20 rounded-full bg-primary-600 flex items-center justify-center group-hover:bg-primary-500 group-hover:scale-110 transition-all shadow-xl">
+            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="relative mt-4 text-white text-sm font-medium opacity-80">Click to play video</span>
+        </button>
+        <!-- YouTube iframe placeholder (replaces button on click) -->
+        <div id="videoIframe" class="absolute inset-0 hidden"></div>
       </div>
     </div>
   </section>
@@ -132,3 +172,17 @@ const schema = {
     variant="primary"
   />
 </BaseLayout>
+
+<script>
+  // Lazy-load YouTube video on click
+  const playBtn = document.getElementById('videoPlayBtn');
+  const iframeContainer = document.getElementById('videoIframe');
+
+  playBtn?.addEventListener('click', () => {
+    playBtn.style.display = 'none';
+    if (iframeContainer) {
+      iframeContainer.classList.remove('hidden');
+      iframeContainer.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/zotxhYfMRBY?autoplay=1&rel=0" class="w-full h-full" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="JinDa Rehab Medical Factory Tour"></iframe>`;
+    }
+  });
+</script>
