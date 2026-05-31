@@ -91,5 +91,5 @@ Discuss before ordering:
 
 ## Ready to Start Importing?
 
-JinDa Rehab Medical has 15+ years of experience serving B2B importers in 50+ countries.
+JinDa Rehab Medical has 16+ years of experience serving B2B importers in 50+ countries.
 [Contact us for a consultation and quote →](/en/get-quote/)
