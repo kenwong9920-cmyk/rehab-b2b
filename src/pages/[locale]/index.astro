@@ -18,10 +18,11 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
-// Hero 轮动图
+// Hero 轮动图（3张）
 const heroImages = [
   '/images/hero1-clean-product-right-final.webp',
   '/images/hero1.webp',
+  '/images/hero3.webp',
 ];
 
 // Why Us features
