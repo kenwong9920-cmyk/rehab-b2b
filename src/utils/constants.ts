@@ -17,7 +17,7 @@ export const SITE = {
     full: 'No. 41 Jiajing Road, the Second Industrial Zone, Nanlang Sub-district, Zhongshan, Guangdong, China',
   },
   social: {
-    linkedin: 'https://linkedin.com/company/guangdong-jinda-health-care',
+    linkedin: 'https://www.linkedin.com/company/110253002',
     instagram: 'https://instagram.com/guandongjindahealthcare',
   },
   foundedYear: 2010,
