@@ -17,10 +17,8 @@ export const SITE = {
     full: 'No. 41 Jiajing Road, the Second Industrial Zone, Nanlang Sub-district, Zhongshan, Guangdong, China',
   },
   social: {
-    linkedin: 'https://linkedin.com/company/jinda-rehab-medical',
-    facebook: 'https://facebook.com/jindarehab',
-    youtube: 'https://youtube.com/@jindarehab',
-    twitter: 'https://twitter.com/jindarehab',
+    linkedin: 'https://linkedin.com/company/guangdong-jinda-health-care',
+    instagram: 'https://instagram.com/guandongjindahealthcare',
   },
   foundedYear: 2010,
   employees: '200+',
