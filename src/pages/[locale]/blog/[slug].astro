@@ -8,7 +8,7 @@ import { SITE } from '@/utils/constants';
 const blogModules = import.meta.glob('@/content/blog/**/*.md', { eager: true });
 
 export async function getStaticPaths() {
-  const locales = ['en', 'fr', 'de', 'es'];
+  const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja'];
   const paths: { params: { locale: string; slug: string } }[] = [];
 
   for (const locale of locales) {

@@ -5,7 +5,7 @@ import { SITE, PRODUCT_CATEGORIES } from '@/utils/constants';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-  const locales = ['en', 'fr', 'de', 'es'];
+  const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja'];
   const paths: { params: { locale: string; slug: string } }[] = [];
 
   for (const locale of locales) {

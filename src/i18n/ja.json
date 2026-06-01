@@ -1,0 +1,121 @@
+{
+  "site": {
+    "name": "JinDa Rehab Medical",
+    "tagline": "専門リハビリテーション機器メーカー"
+  },
+  "nav": {
+    "home": "ホーム",
+    "products": "製品",
+    "about": "会社概要",
+    "factory": "工場見学",
+    "oem": "OEM/ODM",
+    "solutions": "ソリューション",
+    "caseStudies": "事例紹介",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "getQuote": "見積依頼",
+    "downloads": "ダウンロード"
+  },
+  "home": {
+    "heroTitle": "専門リハビリテーション機器メーカー",
+    "heroSubtitle": "16年以上の高品質リハビリ・医療機器の設計・製造経験。CE、FDA、ISO 13485認証工場が50カ国以上にサービスを提供しています。",
+    "heroCTA": "見積を依頼",
+    "heroCTA2": "製品を見る",
+    "categoriesTitle": "製品カテゴリー",
+    "whyUsTitle": "JinDa Rehab Medicalを選ぶ理由",
+    "certifiedFactory": "認証工場",
+    "certifiedFactoryDesc": "ISO 13485、CE、FDA承認の製造施設",
+    "oemService": "OEMとカスタマイズ",
+    "oemServiceDesc": "色、素材、ロゴ、パッケージまでブランドに合わせた完全カスタマイズ",
+    "globalShipping": "グローバル物流",
+    "globalShippingDesc": "欧州、南北アメリカ、東南アジア50カ国以上への効率的な配送",
+    "qualityControl": "品質保証",
+    "qualityControlDesc": "全生産段階での厳格なテストと完全なトレーサビリティ",
+    "featuredProducts": "おすすめ製品",
+    "ctaTitle": "プロジェクトを始める準備はできましたか？",
+    "ctaSubtitle": "無料相談と見積もりについて今すぐお問い合わせください。24時間以内にご返信いたします。",
+    "ctaButton": "今すぐ問い合わせ"
+  },
+  "footer": {
+    "company": "会社",
+    "products": "製品",
+    "resources": "資料",
+    "contact": "お問い合わせ",
+    "newsletter": "ニュースレター購読",
+    "newsletterPlaceholder": "メールアドレス",
+    "subscribe": "購読",
+    "rights": "全著作権所有。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "product": {
+    "allProducts": "全製品",
+    "searchPlaceholder": "製品を検索...",
+    "filterByCategory": "カテゴリーで絞り込む",
+    "moq": "最小注文数",
+    "deliveryTime": "納期",
+    "certifications": "認証",
+    "features": "主な特徴",
+    "specifications": "仕様",
+    "customOptions": "カスタマイズオプション",
+    "getQuoteForProduct": "この製品の見積を依頼",
+    "relatedProducts": "関連製品",
+    "downloadCatalog": "カタログをダウンロード"
+  },
+  "form": {
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "phone": "電話 / WhatsApp",
+    "productInterest": "ご興味のある製品",
+    "quantity": "推定数量",
+    "targetMarket": "対象市場",
+    "message": "ご要望をお知らせください",
+    "submit": "問い合わせを送信",
+    "submitting": "送信中...",
+    "success": "ありがとうございます！24時間以内にご連絡いたします。",
+    "error": "問題が発生しました。再度お試しいただくか、メールで直接ご連絡ください。"
+  },
+  "categories": {
+    "walkingAids": "歩行補助具",
+    "walkingAidsDesc": "杖、松葉杖、歩行器、ロレーター",
+    "bathSafety": "浴室安全",
+    "bathSafetyDesc": "シャワーチェア、バススツール、浴室補助具",
+    "toiletSafety": "トイレ安全",
+    "toiletSafetyDesc": "トイレ安全レール、手すり、高座便座",
+    "commodeChairs": "ポータブルトイレ",
+    "commodeChairsDesc": "折りたたみ式ポータブルトイレとベッドサイドトイレチェア",
+    "walkers": "歩行器・ロレーター",
+    "walkersDesc": "折りたたみ歩行器、ロレーター、小児用歩行器"
+  },
+  "about": {
+    "title": "JinDa Rehab Medicalについて",
+    "subtitle": "リハビリ機器製造の信頼できるパートナー"
+  },
+  "factory": {
+    "title": "私たちの工場",
+    "subtitle": "最先端の製造施設"
+  },
+  "oem": {
+    "title": "OEM & ODMサービス",
+    "subtitle": "カスタム製造でブランドビジョンを実現"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご連絡をお待ちしております"
+  },
+  "blog": {
+    "title": "ブログとインサイト",
+    "subtitle": "業界知識と会社の最新情報",
+    "readMore": "続きを読む",
+    "publishedOn": "公開日",
+    "relatedPosts": "関連記事"
+  },
+  "common": {
+    "viewAll": "すべて見る",
+    "learnMore": "詳細を見る",
+    "backToHome": "ホームに戻る",
+    "pageNotFound": "ページが見つかりません",
+    "pageNotFoundDesc": "お探しのページは存在しないか、移動されました。"
+  }
+}

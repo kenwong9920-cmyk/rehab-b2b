@@ -9,7 +9,7 @@ export default defineConfig({
 
   // i18n 多语言路由配置
   i18n: {
-    locales: ['en', 'fr', 'de', 'es'],
+    locales: ['en', 'fr', 'de', 'es', 'ko', 'ja'],
     defaultLocale: 'en',
     routing: {
       prefixDefaultLocale: true,
