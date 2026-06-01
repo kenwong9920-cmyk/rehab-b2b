@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   title: string;
@@ -113,5 +114,8 @@ const imageUrl = new URL(image, Astro.url).href;
     s0.parentNode.insertBefore(s1,s0);
     })();
   </script>
+
+  <!-- Vercel Speed Insights -->
+  <SpeedInsights />
 </body>
 </html>
