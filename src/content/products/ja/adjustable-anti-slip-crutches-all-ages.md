@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Anti-Slip Crutches for All Ages"
-description: "Lightweight aluminum alloy axillary crutches with multiple height settings suitable for all ages. Features non-slip rubber tips for wet surface traction, ergonomic contoured handles, and foldable design. Ideal for post-op patients, seniors, and injury recovery."
+title: "全年齢向け調節式滑り止め松葉杖"
+description: "全年齢層に適した複数の高さ設定を持つ軽量アルミ合金脇松葉杖。濡れた表面トラクションのための滑り止めゴムチップ、エルゴノミック輪郭ハンドル、折りたたみデザイン。術後患者、高齢者および怪我の回復に最適。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:

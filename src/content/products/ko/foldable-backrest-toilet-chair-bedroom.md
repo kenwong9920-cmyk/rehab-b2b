@@ -1,6 +1,6 @@
 ---
-title: "Foldable Backrest Toilet Chair for Bedroom Use"
-description: "High-carbon steel folding commode chair with patented flip-backrest, waterproof leather seat, and 150kg capacity. 5-level height adjustment, tool-free folding to just 17cm wide, and removable bucket. Ideal bedside toilet solution for elderly and mobility-impaired users."
+title: "침실용 접이식 등받이 화장실 의자"
+description: "특허 받은 플립백 등받이, 방수 가죽 시트, 150kg 용량의 고탄소강 접이식 변기 의자. 5단계 높이 조절, 도구 없이 단 17cm 너비로 접힘, 분리 가능한 버킷. 노인 및 이동 장애 사용자를 위한 이상적인 침대 옆 화장실 솔루션."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/1e/fc/d8/c012e65601ee1808db5641221c.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Ergonomic Shower Stool with Flip-Up Backrest and U-Seat Design"
-description: "Innovative U-seat shower stool with flip-up backrest, non-slip surfaces, adjustable height, and wide reinforced base. Moisture-resistant materials prevent mold and mildew. Lightweight yet sturdy design compatible with most bathroom layouts. Tool-free assembly for elderly and disabled users."
+title: "플립업 등받이와 U시트 디자인의 인체공학적 샤워 스툴"
+description: "U시트, 플립업 등받이, 미끄럼 방지 표면, 조절 가능한 높이, 넓은 강화 베이스를 갖춘 혁신적인 샤워 스툴. 곰팡이 방지 습기 저항 소재. 대부분의 욕실 레이아웃과 호환되는 가볍고 튼튼한 디자인."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/0c/9e/16/3dc2fafa54f643a81f97f1d90f.jpg"
 images:

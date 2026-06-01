@@ -1,6 +1,6 @@
 ---
-title: "Foldable Stainless Steel Medical Walker with Seat"
-description: "Premium matte black stainless steel medical walker with built-in leather seat for resting. Features soft navy blue fabric grip sleeves, sturdy legs for indoor/outdoor stability, and quick-fold design. Ideal for seniors, post-surgery recovery, and balance support."
+title: "시트가 있는 접이식 스테인리스 스틸 보행기"
+description: "내장 가죽 시트가 있는 프리미엄 매트 블랙 스테인리스 스틸 의료용 보행기. 네이비 블루 패브릭 그립 슬리브, 실내외 안정성을 위한 튼튼한 다리, 빠른 접이식 디자인. 노인, 수술 후 회복 및 균형 지원에 이상적."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

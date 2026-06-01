@@ -1,6 +1,6 @@
 ---
-title: "Sturdy Aluminum Axillary Crutches for Everyday Use"
-description: "High-strength lightweight aluminum alloy axillary crutches with ergonomic textured grips, non-slip rubber tips for all-terrain safety, and corrosion-resistant finish. Foldable for travel and storage. Ideal for post-injury recovery and daily mobility."
+title: "튼튼한 알루미늄 겨드랑이 목발"
+description: "인체공학적 질감 그립, 전 지형 안전을 위한 미끄럼 방지 고무 팁, 내식성 마감을 갖춘 고강도 경량 알루미늄 합금 겨드랑이 목발. 여행 및 보관을 위한 접이식. 부상 후 회복 및 일상 이동에 이상적."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/41/06/2a/26e2ccd50e984e2c5a627b2015.jpg"
 images:

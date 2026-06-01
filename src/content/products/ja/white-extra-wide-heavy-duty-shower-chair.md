@@ -1,6 +1,6 @@
 ---
-title: "ホワイト超ワイドヘビーデューティーシャワーチェア"
-description: "Extra-wide bariatric shower chair with reinforced white stainless steel frame supporting up to 350kg (770lb). Features white blow-molded seat, white leather backrest, gray fabric-sleeved handles, 6-level flat-tube height adjustment, angled non-slip feet, and EVA thermal mat. Foldable for compact storage."
+title: "ホワイト超ワイドヘビーデューティーステンレススチールシャワーチェア"
+description: "最大350kg(770lb)をサポートする強化ホワイトステンレススチールフレームの超ワイドバリアトリックシャワーチェア。ホワイトブローモールドシート、ホワイトレザーバックレスト、グレーファブリックスリーブハンドル、6段階フラットチューブ高さ調節、角度付き滑り止め足、EVAサーマルマット。"
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a6/3d/33/02de2dee49aba871ef7a9dbc38.jpg"
 images:

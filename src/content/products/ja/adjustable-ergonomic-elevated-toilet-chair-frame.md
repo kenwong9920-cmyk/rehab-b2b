@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Ergonomic Elevated Toilet Chair Frame for Seniors"
-description: "Elevated toilet chair frame with adjustable ergonomic design for seniors and individuals with limited mobility. Helps maintain an upright position, supports natural body alignment, and reduces lower back pressure. Ideal for home bathrooms and care facilities."
+title: "高齢者用調節式エルゴノミック高座便座フレーム"
+description: "高齢者および移動制限のある個人のための調節式エルゴノミックデザインの高座便座フレーム。直立姿勢の維持をサポート、自然な身体アライメントを支援、腰への圧力を軽減。家庭用バスルームおよびケア施設に最適。"
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/c3/87/be/02a46a89fb40a6755779515afc.jpeg"
 images:

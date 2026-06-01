@@ -1,6 +1,6 @@
 ---
-title: "Durable and Comfortable Aluminum Axillary Crutches"
-description: "Lightweight aluminum alloy axillary crutches with padded armpit rests and handles. Adjustable height for various users, non-slip rubber tips for stability on all surfaces, and ergonomic design promoting natural gait. Rust-resistant frame for long service life."
+title: "내구성 있고 편안한 알루미늄 겨드랑이 목발"
+description: "패딩 처리된 겨드랑이 레스트와 손잡이가 있는 경량 알루미늄 합금 겨드랑이 목발. 다양한 사용자를 위한 조절 가능한 높이, 모든 표면에서 안정성을 위한 미끄럼 방지 고무 팁, 자연스러운 보행을 촉진하는 인체공학적 디자인. 녹 방지 프레임."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:

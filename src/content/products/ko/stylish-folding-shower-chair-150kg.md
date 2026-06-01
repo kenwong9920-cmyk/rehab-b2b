@@ -1,6 +1,6 @@
 ---
-title: "Stylish Folding Shower Chair with 150kg Weight Support"
-description: "Elegant black folding shower chair with high-end wood grain aluminum alloy frame. Supports 150kg (330lb), features non-slip seat and footrest surfaces, easy-fold mechanism, adjustable height, and moisture-resistant finish. Combines bathroom safety with premium aesthetics."
+title: "세련된 접이식 샤워 의자 150kg"
+description: "고급 우드 그레인 알루미늄 합금 프레임의 엘레강트한 블랙 접이식 샤워 의자. 150kg(330lb) 지지, 미끄럼 방지 시트 및 풋레스트, 쉬운 접이식 메커니즘, 조절 가능한 높이, 방습 마감. 욕실 안전과 프리미엄 미학의 결합."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/ad/bd/3f/b177b6a7f160022521e2d7e7df.jpg"
 images:

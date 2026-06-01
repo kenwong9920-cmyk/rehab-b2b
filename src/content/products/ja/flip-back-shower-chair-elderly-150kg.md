@@ -1,6 +1,6 @@
 ---
-title: "Flip-Back Shower Chair for Elderly 150kg Capacity"
-description: "Orange-accented foldable shower chair with flip-back backrest, 150kg (330lb) capacity. White aluminum alloy frame, orange flip-back leather backrest, white molded seat, 5 height levels, and orange non-slip pads. Bright color for visibility — ideal for elderly bathroom safety."
+title: "高齢者用フリップバックシャワーチェア150kg"
+description: "オレンジアクセントの折りたたみシャワーチェア、150kg(330lb)容量。ホワイトアルミ合金フレーム、オレンジフリップバックレザーバックレスト、ホワイトモールドシート、5段階高さ、オレンジ滑り止めパッド。視認性のための明るいカラー — 高齢者バスルーム安全に最適。"
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/3c/bb/65/c85e7aea78c427b2b179b288d4.jpg"
 images:

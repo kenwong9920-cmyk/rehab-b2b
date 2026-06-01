@@ -1,6 +1,6 @@
 ---
-title: "Black Foldable Ergonomic Cane with Armrest"
-description: "Premium carbon fiber folding cane with retractable PP armrest and natural rosewood handle. 10 height settings (74.5–97.5cm), 0.75kg weight, 100kg max load. Multiple reinforced TPR base options for enhanced stability."
+title: "팔걸이가 있는 블랙 접이식 인체공학 지팡이"
+description: "수납식 PP 팔걸이와 천연 자단나무 손잡이가 있는 프리미엄 탄소 섬유 접이식 지팡이. 10단계 높이 설정(74.5-97.5cm), 0.75kg, 최대 하중 100kg. 최적의 안정성을 위한 강화 TPR 베이스 옵션."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

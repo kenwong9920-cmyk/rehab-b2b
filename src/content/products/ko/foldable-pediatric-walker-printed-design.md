@@ -1,6 +1,6 @@
 ---
-title: "Foldable Pediatric Walker with Printed Design"
-description: "Children's foldable walker with stainless steel powder-coated frame and carbon fiber legs featuring playful printed patterns. Soft-grip padded handles gentle on little hands. Lightweight, rust-resistant design perfect for pediatric recovery and daily mobility adventures."
+title: "인쇄 디자인 접이식 소아용 보행기"
+description: "분체 도장 스테인리스 스틸 프레임과 재미있는 인쇄 패턴의 탄소 섬유 다리가 있는 어린이용 접이식 보행기. 부드러운 그립 패딩 손잡이. 소아 회복 및 일상 모험을 위한 가볍고 녹 방지 디자인."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/9c/3f/3d/8205421f56e3d423f6051c1688.jpg"
 images:

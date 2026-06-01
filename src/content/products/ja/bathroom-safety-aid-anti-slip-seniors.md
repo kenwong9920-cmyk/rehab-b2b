@@ -1,6 +1,6 @@
 ---
-title: "Bathroom Safety Aid Anti-Slip Toilet Rail for Seniors"
-description: "Purple adjustable-height toilet safety rail with contoured non-slip grip. Features reinforced high-load capacity frame, universal compatibility with standard toilets, tool-free installation, and adjustable height. Designed to reduce fall risks and support independent living for seniors."
+title: "高齢者用滑り止め浴室安全補助レール"
+description: "輪郭滑り止めグリップ付きパープル調節式高さトイレ安全レール。強化高荷重フレーム、標準トイレとのユニバーサル互換性、ツール不要の設置、調節可能な高さ。転倒リスクの軽減と高齢者の自立生活支援。"
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/84/8a/280bdc130d732a79bf9b11d2dc.jpg"
 images:

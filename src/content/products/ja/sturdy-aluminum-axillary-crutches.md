@@ -1,6 +1,6 @@
 ---
-title: "Sturdy Aluminum Axillary Crutches for Everyday Use"
-description: "High-strength lightweight aluminum alloy axillary crutches with ergonomic textured grips, non-slip rubber tips for all-terrain safety, and corrosion-resistant finish. Foldable for travel and storage. Ideal for post-injury recovery and daily mobility."
+title: "頑丈なアルミニウム脇松葉杖"
+description: "エルゴノミックテクスチャードグリップ、全地形安全のための滑り止めゴムチップ、耐食性仕上げを備えた高強度軽量アルミ合金脇松葉杖。旅行および収納用に折りたたみ可能。怪我後の回復と日常の移動に最適。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/41/06/2a/26e2ccd50e984e2c5a627b2015.jpg"
 images:

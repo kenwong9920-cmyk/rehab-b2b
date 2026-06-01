@@ -1,6 +1,6 @@
 ---
-title: "Safe Shower Chair with Adjustable Height for Elderly"
-description: "Adjustable-height shower chair with backrest support designed for elderly and pregnant users. Features heavy-duty high-friction rubber feet, contoured ergonomic seat, tool-free height adjustment, and wide stable base. Provides safety and comfort during daily bathing routines."
+title: "노인용 안전한 높이 조절 샤워 의자"
+description: "노인 및 임산부를 위해 설계된 등받이 지지대가 있는 높이 조절식 샤워 의자. 헤비듀티 고마찰 고무 발, 윤곽 인체공학적 시트, 도구 없는 높이 조절, 넓은 안정적인 베이스. 일상 목욕 중 안전과 편안함 제공."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/24/b2/41/bbb0d7c58eb07700973203a543.jpeg"
 images:

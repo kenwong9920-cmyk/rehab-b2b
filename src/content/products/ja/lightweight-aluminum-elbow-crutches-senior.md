@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Aluminum Elbow Crutches for Seniors"
-description: "Premium aluminum alloy folding elbow crutches with 12-position height adjustment, ergonomic PP elbow pads, reinforced TPR foot tips with iron inserts, and compact foldable design. Lightweight yet durable — ideal for seniors and rehabilitation patients."
+title: "高齢者用軽量アルミニウム肘松葉杖"
+description: "12段階高さ調節、エルゴノミックPP肘パッド、鉄インサート付き強化TPRフットチップ、コンパクト折りたたみデザインのプレミアムアルミ合金折りたたみ肘松葉杖。高齢者およびリハビリ患者に最適。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"
 images:

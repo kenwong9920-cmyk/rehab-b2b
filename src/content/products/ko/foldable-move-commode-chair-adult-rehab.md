@@ -1,6 +1,6 @@
 ---
-title: "Foldable Multi-Use Commode Chair for Adult Rehabilitation"
-description: "Ready-to-use folding commode and shower chair combo — no installation required. Features non-slip feet, reinforced sturdy frame, wide seat with adjustable backrest, water-resistant surfaces, and removable basin. Lightweight foldable design for portable bedside, bathroom, and travel use."
+title: "성인 재활용 접이식 이동식 변기 의자"
+description: "설치가 필요 없는 접이식 변기 및 샤워 의자 콤보. 미끄럼 방지 발, 강화 튼튼한 프레임, 조절 가능한 등받이가 있는 넓은 시트, 방수 표면, 분리 가능한 세면대. 휴대용 침대 옆, 욕실 및 여행용 경량 접이식 디자인."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/99/d7/b1/06f9f457e6a53e7875aee36a7d.jpg"
 images:

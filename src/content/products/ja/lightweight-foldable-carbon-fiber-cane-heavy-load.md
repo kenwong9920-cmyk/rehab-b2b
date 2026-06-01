@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Foldable Carbon Fiber Cane for Heavy Load"
-description: "Reinforced carbon fiber folding cane supporting up to 100kg while remaining ultra-lightweight. Features ergonomic handle designed for arthritis users, oversized anti-slip rubber tip, folds flat to ~14 inches in seconds."
+title: "高荷重用軽量折りたたみカーボンファイバー杖"
+description: "超軽量を維持しながら最大100kgをサポートする強化カーボンファイバー折りたたみ杖。関節炎ユーザー向けに設計されたエルゴノミックハンドル、大型滑り止めゴムチップ、約35cmにフラット折りたたみ。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

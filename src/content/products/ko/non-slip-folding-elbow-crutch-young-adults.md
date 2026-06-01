@@ -1,6 +1,6 @@
 ---
-title: "Non-Slip Folding Elbow Crutch for Young Adults"
-description: "Dual-support aluminum alloy elbow crutches combining underarm pad and forearm crutch functions. 8-level height adjustment, breathable padding, textured non-slip grips, and multi-layer rubber tips. Quick-fold design for active young adults up to 100kg."
+title: "젊은 성인용 미끄럼 방지 접이식 팔꿈치 목발"
+description: "겨드랑이 패드와 팔꿈치 목발 기능을 결합한 이중 지지 알루미늄 합금 팔꿈치 목발. 8단계 높이 조절, 통기성 패딩, 질감 있는 미끄럼 방지 그립, 다층 고무 팁. 최대 100kg의 활동적인 젊은 성인용."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"
 images:

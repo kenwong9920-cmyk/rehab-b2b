@@ -1,6 +1,6 @@
 ---
-title: "High Quality Carbon Fiber Cane for Every Age"
-description: "Versatile aerospace-grade carbon fiber folding cane suitable for all age groups. Features ergonomic handle, compact foldable design, maximum traction non-slip rubber tip, adjustable height, and modern B2B-ready finish with minimal maintenance."
+title: "모든 연령대를 위한 고품질 탄소 섬유 지팡이"
+description: "모든 연령대에 적합한 다용도 항공우주 등급 탄소 섬유 접이식 지팡이. 인체공학적 손잡이, 컴팩트 접이식 디자인, 최대 트랙션 미끄럼 방지 고무 팁, 조절 가능한 높이, 모던한 B2B 레디 마감."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:

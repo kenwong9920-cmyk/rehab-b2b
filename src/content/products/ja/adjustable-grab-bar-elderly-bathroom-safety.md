@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Grab Bar for Elderly Bathroom Safety"
-description: "Modern chrome-plated adjustable-height bathroom grab bar supporting up to 150kg. Weighs 4kg with tool-free installation, reliable locking mechanism, non-slip base, and seamless stain-resistant finish. 1-year warranty — ideal for home and professional care settings."
+title: "高齢者バスルーム安全用調節式グラブバー"
+description: "最大150kgをサポートするモダンクロムメッキ調節式高さバスルームグラブバー。ツール不要の設置、信頼性の高いロック機構、滑り止めベース、継ぎ目のない防汚仕上げで4kg。1年保証 — 家庭および専門ケア環境に最適。"
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"
 images:

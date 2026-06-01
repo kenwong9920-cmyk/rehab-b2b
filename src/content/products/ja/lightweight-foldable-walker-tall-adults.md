@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Foldable Walker for Tall Adults"
-description: "Extended-height foldable walker specifically designed for tall adults. Features dual-function design serving as both walking frame and lower limb training chair. Soft padded seat, height-adjustable handles, non-slip rubber tips, and quick-folding mechanism. Ideal for seniors and post-surgery recovery."
+title: "背の高い成人用軽量折りたたみ歩行器"
+description: "背の高い成人向けに特別に設計された拡張高さ折りたたみ歩行器。歩行フレームと下肢訓練椅子として使用可能なデュアル機能。ソフトパッド入りシート、高さ調節可能なハンドル、滑り止めゴムチップ、クイック折りたたみ機構。"
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:

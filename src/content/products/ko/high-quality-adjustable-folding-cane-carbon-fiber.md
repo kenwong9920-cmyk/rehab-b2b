@@ -1,6 +1,6 @@
 ---
-title: "High-Quality Adjustable Folding Cane Carbon Fiber"
-description: "Premium carbon fiber folding cane with ergonomic contoured handle, adjustable height, and multiple color options. Features non-slip rubber tip, compact foldable design for travel, and wear-resistant corrosion-proof frame. Ideal for active seniors and adults."
+title: "고품질 조절식 접이식 탄소 섬유 지팡이"
+description: "인체공학적 윤곽 손잡이, 조절 가능한 높이, 다양한 색상 옵션을 갖춘 프리미엄 탄소 섬유 접이식 지팡이. 미끄럼 방지 고무 팁, 여행용 컴팩트 접이식 디자인, 내마모성 부식 방지 프레임."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:

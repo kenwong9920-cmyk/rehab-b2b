@@ -1,6 +1,6 @@
 ---
-title: "Stylish Adjustable Plastic Grip Cane for Elderly"
-description: "Lightweight 0.36kg carbon fiber folding cane with integrated LED light in handle. Features 5-height push-button adjustment, ergonomic PP grip, 34.5cm folded length, and reinforced TPR ferrule. Perfect for elderly users needing visibility at night."
+title: "高齢者用スタイリッシュ調節式プラスチックグリップ杖"
+description: "ハンドルにLEDライト内蔵の0.36kg軽量カーボンファイバー折りたたみ杖。5段階プッシュボタン高さ調節、エルゴノミックPPグリップ、34.5cm折りたたみ長、強化TPRフェルール。夜間の視認性が必要な高齢者に最適。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/09/a4/6e/61ee2620443facf6773d9eb2c0.jpg"
 images:

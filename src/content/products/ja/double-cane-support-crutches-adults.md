@@ -1,6 +1,6 @@
 ---
-title: "Double Cane Support Crutches for Adults"
-description: "Aluminum alloy double axillary crutches with non-slip thickened sponge pads, reinforced lightweight frame, and ergonomic handles. Three-section foldable design for easy storage. Suitable for indoor and outdoor rehabilitation use in clinics and home settings."
+title: "成人用ダブルケインサポート松葉杖"
+description: "滑り止め厚手スポンジパッド、強化軽量フレーム、エルゴノミックハンドル付きアルミ合金ダブル脇松葉杖。簡単収納のための3セクション折りたたみデザイン。クリニックおよび家庭環境での屋内屋外リハビリ使用に適しています。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Aluminum Alloy Double Crutch for Medical Rehabilitation"
-description: "High-strength aluminum alloy folding elbow crutches with 12-level height adjustment, carbon fiber finish, contoured PP forearm cuffs, and thickened TPR tips with metal inserts. 200 LB load capacity, folds to 61.5cm. Ideal for medical rehabilitation."
+title: "의료 재활용 알루미늄 합금 더블 목발"
+description: "12단계 높이 조절, 카본 파이버 마감, 윤곽 PP 팔뚝 커프스, 금속 인서트가 있는 두꺼운 TPR 팁을 갖춘 고강도 알루미늄 합금 접이식 팔꿈치 목발. 200 LB 하중 용량, 61.5cm로 접힘."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
 images:

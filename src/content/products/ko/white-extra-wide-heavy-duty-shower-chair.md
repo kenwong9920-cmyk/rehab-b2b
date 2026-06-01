@@ -1,6 +1,6 @@
 ---
-title: "화이트 초광폭 헤비듀티 샤워 의자"
-description: "Extra-wide bariatric shower chair with reinforced white stainless steel frame supporting up to 350kg (770lb). Features white blow-molded seat, white leather backrest, gray fabric-sleeved handles, 6-level flat-tube height adjustment, angled non-slip feet, and EVA thermal mat. Foldable for compact storage."
+title: "화이트 초광폭 헤비듀티 스테인리스 스틸 샤워 의자"
+description: "최대 350kg(770lb)을 지지하는 강화 화이트 스테인리스 스틸 프레임의 초광폭 비만 환자용 샤워 의자. 화이트 블로우 몰드 시트, 화이트 가죽 등받이, 그레이 패브릭 슬리브 손잡이, 6단계 플랫 튜브 높이 조절, 각진 미끄럼 방지 발, EVA 써멀 매트."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a6/3d/33/02de2dee49aba871ef7a9dbc38.jpg"
 images:

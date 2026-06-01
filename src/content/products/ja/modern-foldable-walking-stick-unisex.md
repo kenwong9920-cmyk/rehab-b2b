@@ -1,6 +1,6 @@
 ---
-title: "Modern Foldable Walking Stick for Men and Women"
-description: "Stylish carbon fiber folding walking stick suitable for all adults. Ultra-lightweight aerospace-grade carbon fiber frame, foldable design for travel, adjustable height, ergonomic non-slip handle, reinforced joints, and customizable color options."
+title: "ユニセックスモダン折りたたみウォーキングスティック"
+description: "すべての大人のためのスタイリッシュなカーボンファイバー折りたたみウォーキングスティック。超軽量航空宇宙グレードフレーム、旅行用折りたたみデザイン、調節可能な高さ、エルゴノミック滑り止めグリップ、強化ジョイントとカスタマイズ可能なカラーオプション。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

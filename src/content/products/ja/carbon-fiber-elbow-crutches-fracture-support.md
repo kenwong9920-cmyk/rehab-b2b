@@ -1,6 +1,6 @@
 ---
-title: "Carbon Fiber Elbow Crutches for Fracture Support"
-description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm), ergonomic PP elbow rest, thickened TPR tips with steel inserts. Folds to 44.5×15×17cm for travel."
+title: "骨折サポート用カーボンファイバー肘松葉杖"
+description: "1ペアあたりわずか1.13kgで最大100kgをサポートする高強度カーボンファイバー肘松葉杖。12段階ピンロック高さ調節(91-118cm)、エルゴノミックPP肘レスト、スチールインサート付き厚手TPRチップ。44.5×15×17cmに折りたたみ。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

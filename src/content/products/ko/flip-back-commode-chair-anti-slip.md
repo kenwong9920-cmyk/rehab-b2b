@@ -1,6 +1,6 @@
 ---
-title: "등받이 접이식 미끄럼 방지 변기 의자"
-description: "High-carbon steel white powder-coated folding commode chair with patented flip-back adjustable leather backrest, contoured gray leather seat, PP armrests, and removable oval PP bucket (33×28×13cm). 5-level height adjustment, anti-slip rubber feet with metal washers. Supports bedside, portable, and elderly care use."
+title: "미끄럼 방지 플립백 변기 의자"
+description: "특허 받은 플립백 조절식 가죽 등받이, 윤곽 그레이 가죽 시트, PP 팔걸이, 분리 가능한 타원형 PP 버킷(33×28×13cm)이 있는 고탄소강 화이트 분체 도장 접이식 변기 의자. 5단계 높이 조절, 금속 와셔가 있는 미끄럼 방지 고무 발."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

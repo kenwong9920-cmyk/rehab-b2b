@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Colorful Walking Cane High-Quality Carbon Fiber"
-description: "Vibrant multi-color carbon fiber folding cane with high load capacity and reinforced joints. Features ergonomic non-slip handle, adjustable height, compact foldable design, and wear-resistant corrosion-proof finish. Suitable for all ages."
+title: "조절식 다채로운 고품질 탄소 섬유 지팡이"
+description: "고하중 용량과 강화 조인트를 갖춘 다채로운 탄소 섬유 접이식 지팡이. 인체공학적 미끄럼 방지 손잡이, 조절 가능한 높이, 컴팩트 접이식 디자인, 내마모성 부식 방지 마감. 모든 연령대에 적합."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:

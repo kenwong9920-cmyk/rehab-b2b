@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Black Foldable Ergonomic Cane"
-description: "Ultra-lightweight 100% carbon fiber folding cane at just 0.42kg. Features natural rosewood ergonomic handle, 10-step height adjustment (72.5–95.5cm), TPR anti-slip base with metal insert, and 100kg max load. Perfect travel companion."
+title: "경량 블랙 접이식 인체공학 지팡이"
+description: "0.42kg의 초경량 100% 탄소 섬유 접이식 지팡이. 천연 자단나무 인체공학 손잡이, 10단계 높이 조절(72.5-95.5cm), 금속 인서트가 있는 TPR 미끄럼 방지 베이스. 완벽한 여행 동반자."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Stainless Steel Folding Walker for Children's Recovery"
-description: "High-quality stainless steel pediatric folding walker designed for children's injury recovery, post-surgery rehabilitation, and neurological condition support. Features non-slip rubber grips, height-adjustable design, compact foldable frame, and child-focused ergonomics with softer grips."
+title: "子供の回復用ステンレススチール折りたたみ歩行器"
+description: "怪我、手術、神経学的状態から回復する子供向けに設計された高品質ステンレススチール小児用折りたたみ歩行器。滑り止めゴムグリップ、高さ調節可能、コンパクト折りたたみフレーム、子供中心のエルゴノミクス。"
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
 images:

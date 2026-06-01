@@ -1,6 +1,6 @@
 ---
-title: "Armpit Support Walking Aid Crutches"
-description: "Three-section folding aluminum alloy axillary crutches with anti-slip rubber tips and dual-support balance design. Comfortable armpit padding reduces shoulder pressure during extended recovery use. Adjustable height for home, hospital, and rehab."
+title: "겨드랑이 지지 보행 보조 목발"
+description: "미끄럼 방지 고무 팁과 이중 지지 균형 디자인을 갖춘 3단 접이식 알루미늄 합금 겨드랑이 목발. 장시간 회복 사용 시 어깨 압력을 줄이는 편안한 겨드랑이 패딩. 가정, 병원 및 재활용 조절 가능한 높이."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"
 images:

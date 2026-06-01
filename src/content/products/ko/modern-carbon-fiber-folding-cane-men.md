@@ -1,6 +1,6 @@
 ---
-title: "Modern Carbon Fiber Folding Cane for Men"
-description: "Masculine-designed carbon fiber folding cane with tailored grip dimensions for larger hands. Aerospace-grade ultra-lightweight, folds to ~14 inches, available in multiple finishes including carbon weave and metallic tones. A stylish mobility statement."
+title: "남성용 모던 탄소 섬유 접이식 지팡이"
+description: "큰 손에 맞는 그립 치수를 갖춘 남성적 디자인의 접이식 지팡이. 초경량 항공우주 등급 탄소 섬유, 약 35cm로 접힘, 카본 위브 및 메탈릭 톤을 포함한 다양한 마감. 스타일리시한 모빌리티 스테이트먼트."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:

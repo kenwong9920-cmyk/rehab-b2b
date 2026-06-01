@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Aluminum Bath Chair for Elderly Use"
-description: "Lightweight 3.2kg aluminum folding bath chair with foam-padded armrests. AL6063 powder-coated frame, blow-molded HDPE seat and backrest, 6-level leg adjustment, angled rubber feet with steel inserts. Tool-free assembly and quick-fold design for bathroom safety."
+title: "노인용 조절식 알루미늄 목욕 의자"
+description: "폼 패딩 팔걸이가 있는 3.2kg 경량 알루미늄 접이식 목욕 의자. 분체 도장 AL6063 프레임, 블로우 몰드 HDPE 시트 및 등받이, 6단계 다리 조절, 강철 인서트가 있는 각진 고무 발. 도구 없는 조립 및 빠른 접이식 디자인."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/47/9b/ab/eed408f65ce659f67b288020c8.jpg"
 images:

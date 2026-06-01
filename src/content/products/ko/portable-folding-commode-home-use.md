@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode for Home Use"
-description: "Heavy-duty high-carbon steel folding commode with extra-wide HD-PE double-layer blow-molded seat designed for bariatric users. Features 150kg capacity, PP armrests, 5-level height adjustment, and anti-slip rubber feet with metal plates. Quick-fold portable design for bedside home care."
+title: "가정용 휴대용 접이식 변기"
+description: "비만 사용자를 위해 설계된 초광폭 HD-PE 이중층 블로우 몰드 시트가 있는 헤비듀티 고탄소강 접이식 변기. 150kg 용량, PP 팔걸이, 5단계 높이 조절, 금속 플레이트가 있는 미끄럼 방지 고무 발. 침대 옆 가정 간호용 빠른 접이식 휴대용 디자인."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

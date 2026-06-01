@@ -1,6 +1,6 @@
 ---
-title: "Durable 300lbs Load-Bearing Commode Chair"
-description: "Heavy-duty high-carbon steel commode chair with 150kg (300lbs) capacity. Features patented flip-backrest, waterproof leather seat, 5-level height adjustment, anti-slip rubber feet, and removable bucket. Tool-free folding to 17cm width for portable bedside elderly care."
+title: "내구성 있는 300lbs 하중 지지 변기 의자"
+description: "150kg(300lbs) 용량의 헤비듀티 고탄소강 변기 의자. 특허 받은 플립백 등받이, 방수 가죽 시트, 5단계 높이 조절, 미끄럼 방지 고무 발, 분리 가능한 버킷. 휴대용 침대 옆 노인 케어를 위해 17cm 너비로 도구 없이 접힘."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/b5/7b/e1/8bfaf98185f4faa41bf6dd7476.jpg"
 images:

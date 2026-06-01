@@ -1,6 +1,6 @@
 ---
 title: "경량 탄소 섬유 접이식 지팡이"
-description: "Premium carbon fiber folding cane for seniors — ultra-lightweight, adjustable height, ergonomic non-slip grip, and stable anti-slip base. Perfect for daily mobility and travel."
+description: "0.42kg의 초경량 100% 탄소 섬유 접이식 지팡이. 천연 자단나무 인체공학 손잡이, 10단계 높이 조절(72.5-95.5cm), 금속 인서트가 있는 TPR 미끄럼 방지 베이스. 완벽한 여행 동반자."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Foldable Stainless Steel Medical Walker with Seat"
-description: "Premium matte black stainless steel medical walker with built-in leather seat for resting. Features soft navy blue fabric grip sleeves, sturdy legs for indoor/outdoor stability, and quick-fold design. Ideal for seniors, post-surgery recovery, and balance support."
+title: "シート付き折りたたみステンレススチール歩行器"
+description: "内蔵レザーシート付きプレミアムマットブラックステンレススチール医療用歩行器。ネイビーブルーファブリックグリップスリーブ、屋内屋外安定性のための頑丈な脚、クイック折りたたみデザイン。高齢者、術後回復、バランスサポートに最適。"
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

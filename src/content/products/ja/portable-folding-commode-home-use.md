@@ -1,6 +1,6 @@
 ---
-title: "Portable Folding Commode for Home Use"
-description: "Heavy-duty high-carbon steel folding commode with extra-wide HD-PE double-layer blow-molded seat designed for bariatric users. Features 150kg capacity, PP armrests, 5-level height adjustment, and anti-slip rubber feet with metal plates. Quick-fold portable design for bedside home care."
+title: "家庭用ポータブル折りたたみポータブルトイレ"
+description: "肥満ユーザー向けに設計された超ワイドHD-PE二層ブローモールドシート付きヘビーデューティー高炭素鋼折りたたみポータブルトイレ。150kg容量、PPアームレスト、5段階高さ調節、金属プレート付き滑り止めゴム足。ベッドサイド家庭介護用クイック折りたたみポータブルデザイン。"
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

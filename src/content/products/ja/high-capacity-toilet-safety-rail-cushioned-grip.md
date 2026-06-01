@@ -1,6 +1,6 @@
 ---
-title: "High-Capacity Toilet Safety Rail with Cushioned Grip"
-description: "Cream matte stainless steel toilet safety rail with soft fabric-covered cushioned grip. Features double-clamp tool-free mounting, threaded anti-slip feet, wobble-free adjustable design, and included reinforcement strap. Slim flat-tube front rail blends into bathroom decor."
+title: "クッショングリップ付き高容量トイレ安全レール"
+description: "ソフトファブリックカバークッショングリップ付きクリームマットステンレススチールトイレ安全レール。ツール不要のダブルクランプ取り付け、ネジ式滑り止め足、ぐらつき防止調節式デザイン、補強ストラップ付き。バスルームの装飾に溶け込むスリムフラットチューブデザイン。"
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/b9/63/06/a7136a408771e0558b070902b2.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "White Heavy-Duty Adjustable Shower Chair"
-description: "Heavy-duty white stainless steel shower chair with 350kg (770lb) capacity. Features white leather backrest, white blow-molded seat, gray fabric-sleeved handles, 6-level flat-tube height adjustment, angled non-slip feet, and EVA thermal mat. Extra-wide reinforced frame with metallic cool gray steel bar."
+title: "화이트 헤비듀티 조절식 샤워 의자"
+description: "350kg(770lb) 용량의 화이트 스테인리스 스틸 샤워 의자. 화이트 가죽 등받이, 화이트 블로우 몰드 시트, 그레이 패브릭 슬리브 손잡이, 6단계 플랫 튜브 높이 조절, 각진 미끄럼 방지 발, EVA 써멀 매트. 메탈릭 쿨 그레이 강철 바 강화."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/7f/69/ec/ae51380653fa33c76a0e22e7e0.jpg"
 images:

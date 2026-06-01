@@ -1,6 +1,6 @@
 ---
-title: "Double Cane Support Crutches for Adults"
-description: "Aluminum alloy double axillary crutches with non-slip thickened sponge pads, reinforced lightweight frame, and ergonomic handles. Three-section foldable design for easy storage. Suitable for indoor and outdoor rehabilitation use in clinics and home settings."
+title: "성인용 더블 케인 지지 목발"
+description: "미끄럼 방지 두꺼운 스펀지 패드, 강화 경량 프레임, 인체공학적 손잡이가 있는 알루미늄 합금 더블 겨드랑이 목발. 쉬운 보관을 위한 3단 접이식 디자인. 클리닉 및 가정 환경에서 실내외 재활 사용에 적합."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:

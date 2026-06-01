@@ -1,6 +1,6 @@
 ---
-title: "Non-Slip Foldable Shower Chair for Elderly"
-description: "Foldable shower chair with reinforced anti-slip frame supporting 300 lbs. Features non-slip seat surface, rust-resistant corrosion-proof materials, height-adjustable ergonomic design, and compact foldable storage. Ideal for elderly users seeking bathroom safety and independence."
+title: "노인용 미끄럼 방지 접이식 샤워 의자"
+description: "300 lbs를 지지하는 강화 미끄럼 방지 프레임의 접이식 샤워 의자. 미끄럼 방지 시트 표면, 녹 방지 내식성 소재, 높이 조절 가능한 인체공학적 디자인, 컴팩트 접이식 보관. 욕실 안전과 독립성을 원하는 노인 사용자에게 이상적."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/55/75/da/39ac28cf8e4f4f849159a07b68.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Rust-Proof Folding Shower Chair"
-description: "Rust-proof aluminum alloy folding shower chair with 265-330lb capacity. Features contoured ergonomic seat, non-slip armrests, wide non-skid feet, and galvanized steel/aluminum frame for humid environments. No-tool assembly — ready to use straight out of the box."
+title: "경량 녹 방지 접이식 샤워 의자"
+description: "265-330lbs 용량의 녹 방지 알루미늄 합금 접이식 샤워 의자. 윤곽 인체공학적 시트, 미끄럼 방지 팔걸이, 넓은 미끄럼 방지 발, 습한 환경을 위한 아연 도금 강철/알루미늄 프레임. 도구 없는 조립 — 상자에서 꺼내 바로 사용 가능."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/74/16/49/6e4c7af599fef88a821d8b4b7c.jpg"
 images:

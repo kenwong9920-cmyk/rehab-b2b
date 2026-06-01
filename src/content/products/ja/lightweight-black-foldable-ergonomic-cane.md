@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Black Foldable Ergonomic Cane"
-description: "Ultra-lightweight 100% carbon fiber folding cane at just 0.42kg. Features natural rosewood ergonomic handle, 10-step height adjustment (72.5–95.5cm), TPR anti-slip base with metal insert, and 100kg max load. Perfect travel companion."
+title: "軽量ブラック折りたたみエルゴノミック杖"
+description: "わずか0.42kgの超軽量100%カーボンファイバー折りたたみ杖。天然紫檀エルゴノミックハンドル、10段階高さ調節(72.5-95.5cm)、金属インサート付きTPR滑り止めベース。完璧な旅行のお供。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
-title: "Carbon Fiber Elbow Crutches for Fracture Support"
-description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm), ergonomic PP elbow rest, thickened TPR tips with steel inserts. Folds to 44.5×15×17cm for travel."
+title: "골절 지지용 탄소 섬유 팔꿈치 목발"
+description: "한 쌍당 1.13kg으로 최대 100kg을 지지하는 고강도 탄소 섬유 팔꿈치 목발. 12단계 핀 잠금 높이 조절(91-118cm), 인체공학적 PP 팔꿈치 레스트, 강철 인서트가 있는 두꺼운 TPR 팁. 44.5×15×17cm로 접힘."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

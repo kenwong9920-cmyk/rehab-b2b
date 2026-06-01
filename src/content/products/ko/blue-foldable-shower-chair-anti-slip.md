@@ -1,6 +1,6 @@
 ---
-title: "Blue Foldable Shower Chair for Elderly Anti-Slip"
-description: "Lightweight foldable shower chair with white aluminum frame, blue flip-back leather backrest, and white molded plastic seat. Features 5 adjustable height levels, blue non-slip pads, flip-back backrest design, and waterproof materials. Bright blue color for visibility in wet environments."
+title: "블루 접이식 미끄럼 방지 샤워 의자"
+description: "화이트 알루미늄 프레임, 블루 플립백 가죽 등받이, 화이트 몰드 플라스틱 시트를 갖춘 경량 접이식 샤워 의자. 5단계 조절 가능한 높이, 블루 미끄럼 방지 패드, 플립백 등받이 디자인, 방수 소재. 습한 환경에서의 가시성을 위한 밝은 블루 색상."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

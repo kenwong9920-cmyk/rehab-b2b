@@ -1,6 +1,6 @@
 ---
-title: "Durable 150kg Capacity Foldable Shower Seat"
-description: "Lightweight 1.9kg aluminum folding shower seat with 150kg capacity. AL6063 powder-coated frame, blow-molded HDPE anti-slip seat, 6-level height adjustment, high-friction rubber feet with steel inserts. Quick-fold, tool-free design ideal for bathroom safety."
+title: "耐久性のある150kg折りたたみシャワーシート"
+description: "150kg容量の1.9kg軽量アルミ折りたたみシャワーシート。粉体塗装AL6063フレーム、ブローモールドHDPE滑り止めシート、6段階高さ調節、スチールインサート付き高摩擦ゴム足。クイック折りたたみ、ツール不要。"
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

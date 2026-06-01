@@ -1,6 +1,6 @@
 ---
-title: "フリップバック滑り止めポータブルトイレ"
-description: "High-carbon steel white powder-coated folding commode chair with patented flip-back adjustable leather backrest, contoured gray leather seat, PP armrests, and removable oval PP bucket (33×28×13cm). 5-level height adjustment, anti-slip rubber feet with metal washers. Supports bedside, portable, and elderly care use."
+title: "滑り止めフリップバックポータブルトイレ"
+description: "特許取得済みフリップバック調節式レザーバックレスト、輪郭グレーレザーシート、PPアームレスト、取り外し可能な楕円形PPバケット(33×28×13cm)付き高炭素鋼ホワイト粉体塗装折りたたみポータブルトイレ。5段階高さ調節、金属ワッシャー付き滑り止めゴム足。"
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

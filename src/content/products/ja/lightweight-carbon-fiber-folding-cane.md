@@ -1,6 +1,6 @@
 ---
 title: "軽量カーボンファイバー折りたたみ杖"
-description: "Premium carbon fiber folding cane for seniors — ultra-lightweight, adjustable height, ergonomic non-slip grip, and stable anti-slip base. Perfect for daily mobility and travel."
+description: "わずか0.42kgの超軽量100%カーボンファイバー折りたたみ杖。天然紫檀エルゴノミックハンドル、10段階高さ調節(72.5-95.5cm)、金属インサート付きTPR滑り止めベース。完璧な旅行のお供。"
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

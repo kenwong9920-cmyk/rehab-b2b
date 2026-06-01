@@ -1,6 +1,6 @@
 ---
-title: "Safe and Portable Foldable Walker for Kids"
-description: "Pediatric foldable walker with scratch-resistant powder-coated stainless steel frame in black and yellow. Features soft fabric sleeve grips, non-slip leg caps, and compact foldable design. Lightweight yet strong construction for children's safe mobility support."
+title: "어린이용 안전한 휴대용 접이식 보행기"
+description: "블랙과 옐로우의 스크래치 방지 분체 도장 스테인리스 스틸 프레임을 갖춘 소아용 접이식 보행기. 부드러운 패브릭 슬리브 그립, 미끄럼 방지 레그 캡, 컴팩트 접이식 디자인. 어린이의 안전한 이동 지원을 위한 가볍고 강한 구조."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:

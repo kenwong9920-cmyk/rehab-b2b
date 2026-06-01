@@ -1,6 +1,6 @@
 ---
-title: "Adjustable Carbon Fiber Walking Cane for Disabled Users"
-description: "100% pure carbon fiber folding cane designed specifically for disabled users. Features tool-free push-button height adjustment, anatomically contoured grip to reduce palm pressure, compact foldable design, and high-gloss carbon fiber luxury finish."
+title: "장애인용 조절식 탄소 섬유 지팡이"
+description: "장애인 사용자를 위해 설계된 100% 순수 탄소 섬유 접이식 지팡이. 도구 없이 푸시 버튼 높이 조절, 손바닥 압력을 줄이는 해부학적 그립, 컴팩트 접이식 디자인 및 고광택 카본 마감."
 category: "walking-aids"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:
