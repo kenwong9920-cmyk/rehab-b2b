@@ -5,9 +5,11 @@ import en from '@/i18n/en.json';
 import fr from '@/i18n/fr.json';
 import de from '@/i18n/de.json';
 import es from '@/i18n/es.json';
+import ko from '@/i18n/ko.json';
+import ja from '@/i18n/ja.json';
 import type { LocaleCode } from '@/utils/constants';
 
-const DICTIONARIES: Record<string, Record<string, unknown>> = { en, fr, de, es };
+const DICTIONARIES: Record<string, Record<string, unknown>> = { en, fr, de, es, ko, ja };
 
 type TranslationDict = typeof en;
 
@@ -64,7 +66,7 @@ export function useNav(locale: string) {
  * 获取 hreflang 链接列表
  */
 export function getAlternateLinks(currentPath: string, currentLocale: string) {
-  const locales: LocaleCode[] = ['en', 'fr', 'de', 'es'];
+  const locales: LocaleCode[] = ['en', 'fr', 'de', 'es', 'ko', 'ja'];
   const pathWithoutLocale = currentPath.replace(new RegExp(`^/${currentLocale}`), '');
 
   return locales.map((locale) => ({
