@@ -180,29 +180,29 @@ const schema = {
         <!-- Right: Stats + trust -->
         <div class="flex-1 text-center lg:text-left">
           <h2 class="text-xl md:text-2xl font-bold text-neutral-900 mb-2">
-            ISO 13485 Certified Manufacturer Since 2010
+            {t('home.trustTitle')}
           </h2>
           <p class="text-sm text-neutral-600 mb-6 max-w-xl">
-            We operate a 15,000 m² facility in Guangdong, China — equipped with modern production lines, in-house R&D, and rigorous quality control at every stage. Every product ships with full traceability and CE / FDA documentation.
+            {t('home.trustDesc')}
           </p>
 
           <!-- Key stats -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
             <div class="text-center lg:text-left">
               <div class="text-2xl font-bold text-primary-600">{new Date().getFullYear() - SITE.foundedYear}+</div>
-              <div class="text-xs text-neutral-500 mt-1">Years Experience</div>
+              <div class="text-xs text-neutral-500 mt-1">{t('home.yearsExperience')}</div>
             </div>
             <div class="text-center lg:text-left">
               <div class="text-2xl font-bold text-primary-600">{SITE.factoryArea}</div>
-              <div class="text-xs text-neutral-500 mt-1">Factory Area</div>
+              <div class="text-xs text-neutral-500 mt-1">{t('home.factoryArea')}</div>
             </div>
             <div class="text-center lg:text-left">
               <div class="text-2xl font-bold text-primary-600">{SITE.employees}</div>
-              <div class="text-xs text-neutral-500 mt-1">Team Members</div>
+              <div class="text-xs text-neutral-500 mt-1">{t('home.teamMembers')}</div>
             </div>
             <div class="text-center lg:text-left">
               <div class="text-2xl font-bold text-primary-600">{SITE.exportCountries}+</div>
-              <div class="text-xs text-neutral-500 mt-1">Countries Served</div>
+              <div class="text-xs text-neutral-500 mt-1">{t('home.countriesServed')}</div>
             </div>
           </div>
 
@@ -215,7 +215,7 @@ const schema = {
               </span>
             ))}
             <a href={`/${locale}/about/`} class="text-sm font-medium text-primary-600 hover:text-primary-700 ml-2">
-              About Our Factory →
+              {t('home.aboutFactory')}
             </a>
           </div>
         </div>

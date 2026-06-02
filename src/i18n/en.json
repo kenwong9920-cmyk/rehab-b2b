@@ -34,7 +34,14 @@
     "featuredProducts": "Featured Products",
     "ctaTitle": "Ready to Start Your Project?",
     "ctaSubtitle": "Contact us today for a free consultation and quote. Our team responds within 24 hours.",
-    "ctaButton": "Send Inquiry Now"
+    "ctaButton": "Send Inquiry Now",
+    "trustTitle": "ISO 13485 Certified Manufacturer Since 2010",
+    "trustDesc": "We operate a 15,000 m² facility in Guangdong, China — equipped with modern production lines, in-house R&D, and rigorous quality control at every stage. Every product ships with full traceability and CE / FDA documentation.",
+    "yearsExperience": "Years Experience",
+    "factoryArea": "Factory Area",
+    "teamMembers": "Team Members",
+    "countriesServed": "Countries Served",
+    "aboutFactory": "About Our Factory →"
   },
   "footer": {
     "company": "Company",

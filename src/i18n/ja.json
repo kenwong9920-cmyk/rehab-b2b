@@ -34,7 +34,14 @@
     "featuredProducts": "おすすめ製品",
     "ctaTitle": "プロジェクトを始める準備はできましたか？",
     "ctaSubtitle": "無料相談と見積もりについて今すぐお問い合わせください。24時間以内にご返信いたします。",
-    "ctaButton": "今すぐ問い合わせ"
+    "ctaButton": "今すぐ問い合わせ",
+    "trustTitle": "2010年からISO 13485認証取得メーカー",
+    "trustDesc": "中国広東省にある15,000m²の施設で、最新の生産ライン、自社R&D、そして全段階での厳格な品質管理を備えています。すべての製品は完全なトレーサビリティとCE / FDA文書とともに出荷されます。",
+    "yearsExperience": "創業年数",
+    "factoryArea": "工場面積",
+    "teamMembers": "チームメンバー",
+    "countriesServed": "輸出国",
+    "aboutFactory": "工場について →"
   },
   "footer": {
     "company": "会社",

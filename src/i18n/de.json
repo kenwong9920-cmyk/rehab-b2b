@@ -34,7 +34,14 @@
     "featuredProducts": "Ausgewählte Produkte",
     "ctaTitle": "Bereit für Ihr Projekt?",
     "ctaSubtitle": "Kontaktieren Sie uns noch heute für eine kostenlose Beratung und ein Angebot. Unser Team antwortet innerhalb von 24 Stunden.",
-    "ctaButton": "Jetzt anfragen"
+    "ctaButton": "Jetzt anfragen",
+    "trustTitle": "ISO 13485 Zertifizierter Hersteller Seit 2010",
+    "trustDesc": "Wir betreiben eine 15.000 m² große Anlage in Guangdong, China — ausgestattet mit modernen Produktionslinien, interner F&E und strenger Qualitätskontrolle in jeder Phase. Jedes Produkt wird mit vollständiger Rückverfolgbarkeit und CE / FDA Dokumentation geliefert.",
+    "yearsExperience": "Jahre Erfahrung",
+    "factoryArea": "Fabrikfläche",
+    "teamMembers": "Teammitglieder",
+    "countriesServed": "Belieferte Länder",
+    "aboutFactory": "Über Unsere Fabrik →"
   },
   "footer": {
     "company": "Unternehmen",

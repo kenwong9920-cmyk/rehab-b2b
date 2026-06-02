@@ -34,7 +34,14 @@
     "featuredProducts": "Produits en vedette",
     "ctaTitle": "Prêt à démarrer votre projet ?",
     "ctaSubtitle": "Contactez-nous dès aujourd'hui pour une consultation et un devis gratuits. Notre équipe répond sous 24 heures.",
-    "ctaButton": "Envoyer une demande"
+    "ctaButton": "Envoyer une demande",
+    "trustTitle": "Fabricant Certifié ISO 13485 Depuis 2010",
+    "trustDesc": "Nous exploitons une usine de 15 000 m² dans le Guangdong, en Chine — équipée de lignes de production modernes, d'une R&D interne et d'un contrôle qualité rigoureux à chaque étape. Chaque produit est livré avec une traçabilité complète et la documentation CE / FDA.",
+    "yearsExperience": "Années d'Expérience",
+    "factoryArea": "Surface de l'Usine",
+    "teamMembers": "Membres de l'Équipe",
+    "countriesServed": "Pays Desservis",
+    "aboutFactory": "À Propos de Notre Usine →"
   },
   "footer": {
     "company": "Entreprise",
