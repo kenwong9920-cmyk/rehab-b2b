@@ -41,7 +41,21 @@
     "factoryArea": "Factory Area",
     "teamMembers": "Team Members",
     "countriesServed": "Countries Served",
-    "aboutFactory": "About Our Factory →"
+    "aboutFactory": "About Our Factory →",
+    "whatWeOffer": "What We Offer",
+    "whatWeOfferSubtitle": "End-to-end manufacturing services for rehabilitation equipment brands worldwide.",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "Custom products with your branding, colors, and specifications",
+    "offerQuality": "Quality Control",
+    "offerQualityDesc": "ISO 13485 certified, rigorous testing at every production stage",
+    "offerShipping": "Global Shipping",
+    "offerShippingDesc": "Efficient logistics to 50+ countries across 6 continents",
+    "offerPackaging": "Custom Packaging",
+    "offerPackagingDesc": "Branded retail-ready packaging for your target market",
+    "offerRD": "R&D Innovation",
+    "offerRDDesc": "In-house engineering team for new product development",
+    "offerSupport": "After-Sales Support",
+    "offerSupportDesc": "Technical support, spare parts, and warranty service"
   },
   "footer": {
     "company": "Company",

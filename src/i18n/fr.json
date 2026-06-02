@@ -41,7 +41,21 @@
     "factoryArea": "Surface de l'Usine",
     "teamMembers": "Membres de l'Équipe",
     "countriesServed": "Pays Desservis",
-    "aboutFactory": "À Propos de Notre Usine →"
+    "aboutFactory": "À Propos de Notre Usine →",
+    "whatWeOffer": "Ce Que Nous Offrons",
+    "whatWeOfferSubtitle": "Services de fabrication complets pour les marques d'équipement de réadaptation dans le monde entier.",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "Produits personnalisés avec votre marque, couleurs et spécifications",
+    "offerQuality": "Contrôle Qualité",
+    "offerQualityDesc": "Certifié ISO 13485, tests rigoureux à chaque étape de production",
+    "offerShipping": "Expédition Mondiale",
+    "offerShippingDesc": "Logistique efficace vers plus de 50 pays sur 6 continents",
+    "offerPackaging": "Emballage Personnalisé",
+    "offerPackagingDesc": "Emballage prêt pour la vente au détail adapté à votre marché cible",
+    "offerRD": "R&D Innovation",
+    "offerRDDesc": "Équipe d'ingénierie interne pour le développement de nouveaux produits",
+    "offerSupport": "Support Après-Vente",
+    "offerSupportDesc": "Support technique, pièces détachées et service de garantie"
   },
   "footer": {
     "company": "Entreprise",

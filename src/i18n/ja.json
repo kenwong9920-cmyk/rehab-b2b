@@ -41,7 +41,21 @@
     "factoryArea": "工場面積",
     "teamMembers": "チームメンバー",
     "countriesServed": "輸出国",
-    "aboutFactory": "工場について →"
+    "aboutFactory": "工場について →",
+    "whatWeOffer": "提供サービス",
+    "whatWeOfferSubtitle": "世界中のリハビリ機器ブランドのためのエンドツーエンドの製造サービス。",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "ブランディング、色、仕様をカスタマイズした製品",
+    "offerQuality": "品質管理",
+    "offerQualityDesc": "ISO 13485認証、全生産段階での厳格なテスト",
+    "offerShipping": "グローバル配送",
+    "offerShippingDesc": "6大陸50カ国以上への効率的なロジスティクス",
+    "offerPackaging": "カスタム包装",
+    "offerPackagingDesc": "ターゲット市場に合わせたブランド小売対応パッケージ",
+    "offerRD": "R&Dイノベーション",
+    "offerRDDesc": "新製品開発のための社内エンジニアリングチーム",
+    "offerSupport": "アフターサポート",
+    "offerSupportDesc": "技術サポート、スペアパーツ、保証サービス"
   },
   "footer": {
     "company": "会社",

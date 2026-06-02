@@ -41,7 +41,21 @@
     "factoryArea": "Fabrikfläche",
     "teamMembers": "Teammitglieder",
     "countriesServed": "Belieferte Länder",
-    "aboutFactory": "Über Unsere Fabrik →"
+    "aboutFactory": "Über Unsere Fabrik →",
+    "whatWeOffer": "Was Wir Bieten",
+    "whatWeOfferSubtitle": "Komplette Fertigungsdienstleistungen für Rehabilitationsgerätemarken weltweit.",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "Maßgeschneiderte Produkte mit Ihrem Branding, Farben und Spezifikationen",
+    "offerQuality": "Qualitätskontrolle",
+    "offerQualityDesc": "ISO 13485 zertifiziert, strenge Prüfungen in jeder Produktionsphase",
+    "offerShipping": "Weltweiter Versand",
+    "offerShippingDesc": "Effiziente Logistik in über 50 Länder auf 6 Kontinenten",
+    "offerPackaging": "Individuelle Verpackung",
+    "offerPackagingDesc": "Markenverpackung für den Einzelhandel, zugeschnitten auf Ihren Zielmarkt",
+    "offerRD": "F&E Innovation",
+    "offerRDDesc": "Internes Ingenieurteam für neue Produktentwicklung",
+    "offerSupport": "After-Sales-Support",
+    "offerSupportDesc": "Technischer Support, Ersatzteile und Garantieservice"
   },
   "footer": {
     "company": "Unternehmen",

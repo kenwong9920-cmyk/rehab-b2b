@@ -41,7 +41,21 @@
     "factoryArea": "공장 면적",
     "teamMembers": "팀 구성원",
     "countriesServed": "수출 국가",
-    "aboutFactory": "공장 소개 →"
+    "aboutFactory": "공장 소개 →",
+    "whatWeOffer": "제공 서비스",
+    "whatWeOfferSubtitle": "전 세계 재활 장비 브랜드를 위한 엔드투엔드 제조 서비스.",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "브랜딩, 색상 및 사양을 맞춤 제작한 제품",
+    "offerQuality": "품질 관리",
+    "offerQualityDesc": "ISO 13485 인증, 모든 생산 단계에서 엄격한 테스트",
+    "offerShipping": "글로벌 배송",
+    "offerShippingDesc": "6대륙 50개국 이상으로의 효율적인 물류",
+    "offerPackaging": "맞춤 포장",
+    "offerPackagingDesc": "목표 시장에 맞춘 브랜드 소매용 포장",
+    "offerRD": "R&D 혁신",
+    "offerRDDesc": "신제품 개발을 위한 사내 엔지니어링 팀",
+    "offerSupport": "사후 지원",
+    "offerSupportDesc": "기술 지원, 예비 부품 및 보증 서비스"
   },
   "footer": {
     "company": "회사",

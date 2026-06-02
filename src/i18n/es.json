@@ -41,7 +41,21 @@
     "factoryArea": "Área de Fábrica",
     "teamMembers": "Miembros del Equipo",
     "countriesServed": "Países Atendidos",
-    "aboutFactory": "Sobre Nuestra Fábrica →"
+    "aboutFactory": "Sobre Nuestra Fábrica →",
+    "whatWeOffer": "Lo Que Ofrecemos",
+    "whatWeOfferSubtitle": "Servicios de fabricación integrales para marcas de equipos de rehabilitación en todo el mundo.",
+    "offerOEM": "OEM / ODM",
+    "offerOEMDesc": "Productos personalizados con su marca, colores y especificaciones",
+    "offerQuality": "Control de Calidad",
+    "offerQualityDesc": "Certificado ISO 13485, pruebas rigurosas en cada etapa de producción",
+    "offerShipping": "Envío Global",
+    "offerShippingDesc": "Logística eficiente a más de 50 países en 6 continentes",
+    "offerPackaging": "Embalaje Personalizado",
+    "offerPackagingDesc": "Embalaje listo para venta minorista adaptado a su mercado objetivo",
+    "offerRD": "Innovación I+D",
+    "offerRDDesc": "Equipo de ingeniería interno para desarrollo de nuevos productos",
+    "offerSupport": "Soporte Postventa",
+    "offerSupportDesc": "Soporte técnico, repuestos y servicio de garantía"
   },
   "footer": {
     "company": "Empresa",
