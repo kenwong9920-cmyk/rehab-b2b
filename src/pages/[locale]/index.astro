@@ -156,6 +156,73 @@ const schema = {
     </div>
   </section>
 
+  <!-- ===== Company Strength Snapshot ===== -->
+  <section class="bg-white border-y border-neutral-100">
+    <div class="container-main py-10">
+      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <!-- Left: Factory thumbnail -->
+        <a href={`/${locale}/about/`} class="shrink-0 w-full lg:w-64 aspect-video rounded-lg overflow-hidden bg-neutral-200 relative group">
+          <img
+            src="/images/factory-banner.webp"
+            alt="JinDa Rehab Medical Factory"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+            width="640"
+            height="360"
+          />
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <svg class="w-5 h-5 text-primary-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- Right: Stats + trust -->
+        <div class="flex-1 text-center lg:text-left">
+          <h2 class="text-xl md:text-2xl font-bold text-neutral-900 mb-2">
+            ISO 13485 Certified Manufacturer Since 2010
+          </h2>
+          <p class="text-sm text-neutral-600 mb-6 max-w-xl">
+            We operate a 15,000 m² facility in Guangdong, China — equipped with modern production lines, in-house R&D, and rigorous quality control at every stage. Every product ships with full traceability and CE / FDA documentation.
+          </p>
+
+          <!-- Key stats -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+            <div class="text-center lg:text-left">
+              <div class="text-2xl font-bold text-primary-600">{new Date().getFullYear() - SITE.foundedYear}+</div>
+              <div class="text-xs text-neutral-500 mt-1">Years Experience</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="text-2xl font-bold text-primary-600">{SITE.factoryArea}</div>
+              <div class="text-xs text-neutral-500 mt-1">Factory Area</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="text-2xl font-bold text-primary-600">{SITE.employees}</div>
+              <div class="text-xs text-neutral-500 mt-1">Team Members</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="text-2xl font-bold text-primary-600">{SITE.exportCountries}+</div>
+              <div class="text-xs text-neutral-500 mt-1">Countries Served</div>
+            </div>
+          </div>
+
+          <!-- Cert badges + CTA -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+            {SITE.certifications.map((cert) => (
+              <span class="inline-flex items-center gap-1 text-xs font-medium bg-green-50 text-green-700 px-2.5 py-1 rounded-full border border-green-200">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                {cert}
+              </span>
+            ))}
+            <a href={`/${locale}/about/`} class="text-sm font-medium text-primary-600 hover:text-primary-700 ml-2">
+              About Our Factory →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Product Categories ===== -->
   <section class="container-main section-padding">
     <div class="text-center mb-12">
