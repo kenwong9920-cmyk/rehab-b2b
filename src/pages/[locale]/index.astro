@@ -54,7 +54,7 @@ const whyUsFeatures = [
 
 // 精选产品 — 从内容集合中选三个代表产品（每类目一个）
 const allProducts = await getCollection('products', (entry) => entry.id.startsWith(`${locale}/`));
-const featuredSlugs = ['lightweight-carbon-fiber-folding-cane', 'white-extra-wide-heavy-duty-shower-chair', 'flip-back-commode-chair-anti-slip'];
+const featuredSlugs = ['lightweight-carbon-fiber-folding-cane', 'white-extra-wide-heavy-duty-shower-chair', 'flip-back-commode-chair-anti-slip', 'lightweight-black-2-wheel-rollator', 'high-capacity-toilet-safety-rail-cushioned-grip'];
 const featuredProducts = featuredSlugs
   .map(slug => allProducts.find(p => p.id === `${locale}/${slug}`))
   .filter(Boolean)
