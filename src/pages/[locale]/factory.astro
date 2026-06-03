@@ -19,10 +19,17 @@ const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
 const facilities = [
-  { icon: '🏗️', title: '15,000 m² Modern Facility', desc: 'State-of-the-art manufacturing and assembly lines with climate-controlled production zones.' },
-  { icon: '🤖', title: 'Automated Production', desc: 'CNC machining centers, robotic welding stations, and automated powder coating lines.' },
-  { icon: '🔬', title: 'In-House Testing Lab', desc: 'Complete physical and electrical testing equipment — load, endurance, EMC, and safety testing.' },
-  { icon: '📦', title: 'In-House Logistics', desc: 'Dedicated warehouse with container loading dock — efficient FCL and LCL shipping worldwide.' },
+  { icon: '🏗️', title: t('factory.facility1Title'), desc: t('factory.facility1Desc') },
+  { icon: '🤖', title: t('factory.facility2Title'), desc: t('factory.facility2Desc') },
+  { icon: '🔬', title: t('factory.facility3Title'), desc: t('factory.facility3Desc') },
+  { icon: '📦', title: t('factory.facility4Title'), desc: t('factory.facility4Desc') },
+];
+
+const qualitySteps = [
+  { step: '01', title: t('factory.quality1Title'), desc: t('factory.quality1Desc') },
+  { step: '02', title: t('factory.quality2Title'), desc: t('factory.quality2Desc') },
+  { step: '03', title: t('factory.quality3Title'), desc: t('factory.quality3Desc') },
+  { step: '04', title: t('factory.quality4Title'), desc: t('factory.quality4Desc') },
 ];
 ---
 
@@ -36,11 +43,8 @@ const facilities = [
 
   <section class="container-main section-padding">
     <div class="max-w-3xl mx-auto text-center mb-12">
-      <h2>Manufacturing Excellence</h2>
-      <p class="mt-4 text-neutral-600">
-        Our {SITE.factoryArea} facility in Guangdong is equipped with modern production lines,
-        rigorous quality control systems, and certified to ISO 13485 for medical device manufacturing.
-      </p>
+      <h2>{t('factory.excellenceTitle')}</h2>
+      <p class="mt-4 text-neutral-600">{t('factory.excellenceDesc')}</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
       {facilities.map((f) => (
@@ -59,11 +63,8 @@ const facilities = [
   <section class="container-main section-padding">
     <div class="text-center mb-12">
       <h2>{t('factory.factoryGalleryTitle')}</h2>
-      <p class="mt-3 text-neutral-500 max-w-2xl mx-auto">
-        {t('factory.factoryGallerySubtitle')}
-      </p>
+      <p class="mt-3 text-neutral-500 max-w-2xl mx-auto">{t('factory.factoryGallerySubtitle')}</p>
     </div>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
       {[
         { img: '/images/factory-production-line.webp', label: t('factory.factoryLabel1') },
@@ -75,14 +76,7 @@ const facilities = [
       ].map((photo) => (
         <div class="group">
           <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200 border border-neutral-200 group-hover:border-primary-300 transition-colors">
-            <img
-              src={photo.img}
-              alt={`JinDa Rehab Medical — ${photo.label}`}
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-              width="640"
-              height="480"
-            />
+            <img src={photo.img} alt={`JinDa Rehab Medical — ${photo.label}`} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="640" height="480" />
           </div>
           <p class="mt-2 text-sm font-medium text-neutral-600 text-center">{photo.label}</p>
         </div>
@@ -93,14 +87,9 @@ const facilities = [
   <!-- Quality Control -->
   <section class="bg-neutral-50">
     <div class="container-main section-padding">
-      <h2 class="text-center mb-12">Quality Control Process</h2>
+      <h2 class="text-center mb-12">{t('factory.qualityTitle')}</h2>
       <div class="max-w-3xl mx-auto">
-        {[
-          { step: '01', title: 'Incoming Material Inspection', desc: 'All raw materials and components inspected against specifications before production.' },
-          { step: '02', title: 'In-Process Quality Checks', desc: 'Multiple checkpoints during assembly, welding, and finishing stages.' },
-          { step: '03', title: 'Final Product Testing', desc: '100% functional testing — load, electrical safety, endurance, and visual inspection.' },
-          { step: '04', title: 'Pre-Shipment Inspection', desc: 'Random sampling per AQL standards. Documentation and certification review before release.' },
-        ].map((q, i) => (
+        {qualitySteps.map((q, i) => (
           <div class="flex gap-6 pb-8 relative">
             {i < 3 && <div class="absolute left-[27px] top-12 bottom-0 w-px bg-neutral-300"></div>}
             <div class="w-14 h-14 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-lg shrink-0">{q.step}</div>
@@ -115,9 +104,9 @@ const facilities = [
   </section>
 
   <CTASection
-    title="Want to Visit Our Factory?"
-    subtitle="We welcome potential partners to tour our facility. Contact us to schedule a visit."
-    ctaText="Schedule a Visit →"
+    title={t('factory.ctaTitle')}
+    subtitle={t('factory.ctaSubtitle')}
+    ctaText={t('factory.ctaText')}
     ctaHref={`/${locale}/contact/`}
     variant="primary"
   />
