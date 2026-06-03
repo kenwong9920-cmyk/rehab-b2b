@@ -55,6 +55,41 @@ const facilities = [
     </div>
   </section>
 
+  <!-- ===== Factory Photo Gallery ===== -->
+  <section class="container-main section-padding">
+    <div class="text-center mb-12">
+      <h2>Inside Our Factory</h2>
+      <p class="mt-3 text-neutral-500 max-w-2xl mx-auto">
+        A glimpse into our 15,000 m² manufacturing facility — where quality rehabilitation equipment is made.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
+      {[
+        { img: '/images/factory-production-line.webp', label: 'Production Line' },
+        { img: '/images/factory-quality-testing.webp', label: 'Quality Testing' },
+        { img: '/images/factory-warehouse.webp', label: 'Warehouse & Logistics' },
+        { img: '/images/factory-welding.webp', label: 'Welding & Assembly' },
+        { img: '/images/factory-packaging.webp', label: 'Packaging Line' },
+        { img: '/images/factory-rd-lab.webp', label: 'R&D Laboratory' },
+      ].map((photo) => (
+        <div class="group">
+          <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200 border border-neutral-200 group-hover:border-primary-300 transition-colors">
+            <img
+              src={photo.img}
+              alt={`JinDa Rehab Medical — ${photo.label}`}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              width="640"
+              height="480"
+            />
+          </div>
+          <p class="mt-2 text-sm font-medium text-neutral-600 text-center">{photo.label}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
   <!-- Quality Control -->
   <section class="bg-neutral-50">
     <div class="container-main section-padding">
