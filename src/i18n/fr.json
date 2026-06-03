@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "Notre usine",
-    "subtitle": "Installation de fabrication à la pointe de la technologie"
+    "subtitle": "Installation de fabrication à la pointe de la technologie",
+    "factoryGalleryTitle": "À l'Intérieur de Notre Usine",
+    "factoryGallerySubtitle": "Un aperçu de notre installation de fabrication de 15 000 m² — où sont fabriqués des équipements de réadaptation de qualité.",
+    "factoryLabel1": "Ligne de Production",
+    "factoryLabel2": "Contrôle Qualité",
+    "factoryLabel3": "Entrepôt & Logistique",
+    "factoryLabel4": "Soudure & Assemblage",
+    "factoryLabel5": "Ligne d'Emballage",
+    "factoryLabel6": "Laboratoire R&D"
   },
   "oem": {
     "title": "Services OEM et ODM",

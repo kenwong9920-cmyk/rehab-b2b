@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "Unsere Fabrik",
-    "subtitle": "Hochmoderne Produktionsstätte"
+    "subtitle": "Hochmoderne Produktionsstätte",
+    "factoryGalleryTitle": "In Unserer Fabrik",
+    "factoryGallerySubtitle": "Ein Blick in unsere 15.000 m² große Produktionsstätte — wo hochwertige Rehabilitationsgeräte hergestellt werden.",
+    "factoryLabel1": "Produktionslinie",
+    "factoryLabel2": "Qualitätsprüfung",
+    "factoryLabel3": "Lager & Logistik",
+    "factoryLabel4": "Schweißen & Montage",
+    "factoryLabel5": "Verpackungslinie",
+    "factoryLabel6": "F&E-Labor"
   },
   "oem": {
     "title": "OEM & ODM Dienstleistungen",

@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "Our Factory",
-    "subtitle": "State-of-the-art manufacturing facility"
+    "subtitle": "State-of-the-art manufacturing facility",
+    "factoryGalleryTitle": "Inside Our Factory",
+    "factoryGallerySubtitle": "A glimpse into our 15,000 m² manufacturing facility — where quality rehabilitation equipment is made.",
+    "factoryLabel1": "Production Line",
+    "factoryLabel2": "Quality Testing",
+    "factoryLabel3": "Warehouse & Logistics",
+    "factoryLabel4": "Welding & Assembly",
+    "factoryLabel5": "Packaging Line",
+    "factoryLabel6": "R&D Laboratory"
   },
   "oem": {
     "title": "OEM & ODM Services",

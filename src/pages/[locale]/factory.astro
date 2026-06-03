@@ -58,20 +58,20 @@ const facilities = [
   <!-- ===== Factory Photo Gallery ===== -->
   <section class="container-main section-padding">
     <div class="text-center mb-12">
-      <h2>Inside Our Factory</h2>
+      <h2>{t('factory.factoryGalleryTitle')}</h2>
       <p class="mt-3 text-neutral-500 max-w-2xl mx-auto">
-        A glimpse into our 15,000 m² manufacturing facility — where quality rehabilitation equipment is made.
+        {t('factory.factoryGallerySubtitle')}
       </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
       {[
-        { img: '/images/factory-production-line.webp', label: 'Production Line' },
-        { img: '/images/factory-quality-testing.webp', label: 'Quality Testing' },
-        { img: '/images/factory-warehouse.webp', label: 'Warehouse & Logistics' },
-        { img: '/images/factory-welding.webp', label: 'Welding & Assembly' },
-        { img: '/images/factory-packaging.webp', label: 'Packaging Line' },
-        { img: '/images/factory-rd-lab.webp', label: 'R&D Laboratory' },
+        { img: '/images/factory-production-line.webp', label: t('factory.factoryLabel1') },
+        { img: '/images/factory-quality-testing.webp', label: t('factory.factoryLabel2') },
+        { img: '/images/factory-warehouse.webp', label: t('factory.factoryLabel3') },
+        { img: '/images/factory-welding.webp', label: t('factory.factoryLabel4') },
+        { img: '/images/factory-packaging.webp', label: t('factory.factoryLabel5') },
+        { img: '/images/factory-rd-lab.webp', label: t('factory.factoryLabel6') },
       ].map((photo) => (
         <div class="group">
           <div class="aspect-[4/3] rounded-xl overflow-hidden bg-neutral-200 border border-neutral-200 group-hover:border-primary-300 transition-colors">

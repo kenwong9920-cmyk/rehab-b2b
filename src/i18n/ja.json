@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "私たちの工場",
-    "subtitle": "最先端の製造施設"
+    "subtitle": "最先端の製造施設",
+    "factoryGalleryTitle": "工場内部",
+    "factoryGallerySubtitle": "15,000m²の製造施設の内部 — 高品質なリハビリ機器が作られる場所です。",
+    "factoryLabel1": "生産ライン",
+    "factoryLabel2": "品質テスト",
+    "factoryLabel3": "倉庫・物流",
+    "factoryLabel4": "溶接・組立",
+    "factoryLabel5": "包装ライン",
+    "factoryLabel6": "R&Dラボ"
   },
   "oem": {
     "title": "OEM & ODMサービス",

@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "우리 공장",
-    "subtitle": "최첨단 제조 시설"
+    "subtitle": "최첨단 제조 시설",
+    "factoryGalleryTitle": "공장 내부",
+    "factoryGallerySubtitle": "15,000m² 규모의 제조 시설 내부 — 고품질 재활 장비가 만들어지는 곳입니다.",
+    "factoryLabel1": "생산 라인",
+    "factoryLabel2": "품질 테스트",
+    "factoryLabel3": "창고 및 물류",
+    "factoryLabel4": "용접 및 조립",
+    "factoryLabel5": "포장 라인",
+    "factoryLabel6": "R&D 연구소"
   },
   "oem": {
     "title": "OEM 및 ODM 서비스",

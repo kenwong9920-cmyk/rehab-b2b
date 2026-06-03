@@ -115,7 +115,15 @@
   },
   "factory": {
     "title": "Nuestra fábrica",
-    "subtitle": "Instalación de fabricación de última generación"
+    "subtitle": "Instalación de fabricación de última generación",
+    "factoryGalleryTitle": "Dentro de Nuestra Fábrica",
+    "factoryGallerySubtitle": "Un vistazo a nuestra instalación de fabricación de 15.000 m² — donde se fabrican equipos de rehabilitación de calidad.",
+    "factoryLabel1": "Línea de Producción",
+    "factoryLabel2": "Control de Calidad",
+    "factoryLabel3": "Almacén y Logística",
+    "factoryLabel4": "Soldadura y Montaje",
+    "factoryLabel5": "Línea de Embalaje",
+    "factoryLabel6": "Laboratorio de I+D"
   },
   "oem": {
     "title": "Servicios OEM y ODM",
