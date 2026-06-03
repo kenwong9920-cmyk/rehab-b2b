@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { useTranslations } from '@/utils/i18n';
 
 const locale = Astro.url.pathname.split('/')[1];
-const validLocales = ['en', 'fr', 'de', 'es', 'ko', 'ja'];
+const validLocales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'];
 const actualLocale = validLocales.includes(locale) ? locale : 'en';
 const { t } = useTranslations(actualLocale);
 ---

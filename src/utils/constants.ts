@@ -68,6 +68,7 @@ export const LANGUAGES = [
   { code: 'es', label: 'Español', flag: '🇪🇸' },
   { code: 'ko', label: '한국어', flag: '🇰🇷' },
   { code: 'ja', label: '日本語', flag: '🇯🇵' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
 ] as const;
 
 export type LocaleCode = (typeof LANGUAGES)[number]['code'];
