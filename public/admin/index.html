@@ -1,24 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JinDa Rehab Medical — CMS Admin</title>
-  <link href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" rel="stylesheet">
-  <style>
-    /* Customize CMS header to match brand */
-    [class*="AppHeader"], [class*="css-"] { --custom-color: #1a365d; }
-    body { background: #f5f7fa; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JinDa Rehab — CMS</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f7fa; color: #1a202c; }
+  header { background: #1a365d; color: white; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 20px; } header a { color: #93c5fd; text-decoration: none; font-size: 14px; }
+  .container { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; }
+  .tab { padding: 8px 20px; border: none; border-radius: 8px 8px 0 0; cursor: pointer; font-size: 14px; background: #e2e8f0; color: #4a5568; }
+  .tab.active { background: white; color: #1a365d; font-weight: 600; box-shadow: 0 -2px 4px rgba(0,0,0,0.05); }
+  .panel { background: white; border-radius: 0 8px 8px 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: none; }
+  .panel.active { display: block; }
+  .file-list { display: grid; gap: 6px; max-height: 600px; overflow-y: auto; }
+  .file-item { padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 6px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+  .file-item:hover { background: #f7fafc; border-color: #3182ce; }
+  .file-item small { color: #a0aec0; }
+  .editor-area { display: none; margin-top: 20px; }
+  .editor-area.show { display: block; }
+  textarea { width: 100%; min-height: 400px; font-family: monospace; font-size: 13px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px; resize: vertical; line-height: 1.6; }
+  label { display: block; font-size: 13px; font-weight: 600; color: #4a5568; margin-bottom: 4px; margin-top: 12px; }
+  .actions { display: flex; gap: 8px; margin-top: 16px; }
+  button { padding: 8px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; }
+  .btn-save { background: #1a365d; color: white; } .btn-save:hover { opacity: 0.9; }
+  .btn-back { background: #e2e8f0; color: #4a5568; margin-right: 8px; }
+  .btn-new { background: #38a169; color: white; margin-bottom: 12px; }
+  .toast { position: fixed; bottom: 24px; right: 24px; padding: 12px 24px; border-radius: 8px; color: white; font-size: 14px; z-index: 9999; display: none; }
+  .toast.success { background: #38a169; }
+  .toast.error { background: #e53e3e; }
+  .loading { text-align: center; padding: 40px; color: #a0aec0; }
+  .login-box { max-width: 400px; margin: 80px auto; text-align: center; }
+  .login-box input { width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 14px; margin: 12px 0; }
+  .login-box button { background: #1a365d; color: white; width: 100%; padding: 10px; }
+</style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-    // Auto-redirect to homepage when logging out
-    CMS.registerEventListener({
-      name: 'preUnpublish',
-      handler: () => {},
+<header>
+  <h1>JinDa Rehab Medical — CMS</h1>
+  <span style="font-size:13px;opacity:0.7" id="auth-status"></span>
+</header>
+
+<div class="container">
+  <!-- Login -->
+  <div id="login-screen" class="login-box">
+    <h2 style="margin-bottom:8px">Admin Login</h2>
+    <p style="color:#718096;font-size:14px;margin-bottom:16px">Enter the admin password to access the CMS.</p>
+    <input type="password" id="pass-input" placeholder="Password" onkeydown="if(event.key==='Enter')login()">
+    <button onclick="login()">Login</button>
+    <p id="login-error" style="color:#e53e3e;font-size:13px;margin-top:8px;display:none"></p>
+  </div>
+
+  <!-- Main UI -->
+  <div id="main-ui" style="display:none">
+    <div class="tabs">
+      <button class="tab active" data-tab="products">Products</button>
+      <button class="tab" data-tab="blog">Blog</button>
+      <button class="tab" data-tab="settings">Company Info</button>
+    </div>
+    <div class="panel active" id="panel-products">
+      <button class="btn-new" onclick="newProduct()">+ New Product</button>
+      <div class="file-list" id="product-list"></div>
+      <div class="editor-area" id="product-editor"></div>
+    </div>
+    <div class="panel" id="panel-blog">
+      <button class="btn-new" onclick="newPost()">+ New Post</button>
+      <div class="file-list" id="blog-list"></div>
+      <div class="editor-area" id="blog-editor"></div>
+    </div>
+    <div class="panel" id="panel-settings">
+      <div class="file-list" id="settings-list"></div>
+      <div class="editor-area" id="settings-editor"></div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const PROXY = '/api/github';
+let currentFile = null;
+const ADMIN_PASS = 'jinda2026'; // Simple password — change this!
+
+// --- Login ---
+function login() {
+  const p = document.getElementById('pass-input').value;
+  if (p === ADMIN_PASS) {
+    sessionStorage.setItem('cms_auth', '1');
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('main-ui').style.display = '';
+    document.getElementById('auth-status').textContent = '✓ Logged in';
+    loadAll();
+  } else {
+    document.getElementById('login-error').style.display = '';
+    document.getElementById('login-error').textContent = 'Invalid password';
+  }
+}
+if (sessionStorage.getItem('cms_auth') === '1') {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('main-ui').style.display = '';
+  document.getElementById('auth-status').textContent = '✓ Logged in';
+  loadAll();
+}
+
+async function proxy(method, path, content, message, sha) {
+  const r = await fetch(PROXY, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path, content, message, sha, _method: method })
+  });
+  const data = await r.json();
+  if (!r.ok) throw new Error(data.error || 'API error');
+  return data;
+}
+
+async function listDir(dirPath) {
+  const r = await fetch(PROXY, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ path: dirPath, _method: 'LIST' })
+  });
+  const data = await r.json();
+  if (!r.ok) throw new Error(data.error || 'API error');
+  return Array.isArray(data) ? data : [];
+}
+
+function showToast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.className = 'toast ' + type; t.style.display = 'block';
+  setTimeout(() => t.style.display = 'none', 3000);
+}
+
+async function loadAll() {
+  loadFileList('products', 'product-list', 'src/content/products/en');
+  loadFileList('blog', 'blog-list', 'src/content/blog/en');
+  loadSettings();
+}
+
+async function loadFileList(type, listId, dirPath) {
+  const list = document.getElementById(listId);
+  list.innerHTML = '<span class="loading">Loading...</span>';
+  try {
+    const files = await listDir(dirPath);
+    if (!files.length) { list.innerHTML = '<span class="loading">No files yet</span>'; return; }
+    list.innerHTML = files.filter(f => f.name && f.name.endsWith('.md')).map(f =>
+      `<div class="file-item">
+        <span style="cursor:pointer" onclick="editFile('${type}', '${dirPath}', '${f.name}', '${f.sha}')">📄 ${f.name.replace('.md','')}</span>
+        <button class="btn-danger" style="padding:2px 10px;font-size:12px" onclick="deleteItem('${type}', '${dirPath}', '${f.name}', '${f.sha}')">✕</button>
+      </div>`
+    ).join('');
+  } catch(e) { list.innerHTML = '<span class="loading">Error loading: ' + e.message + '</span>'; }
+}
+
+async function editFile(type, dir, name, sha) {
+  try {
+    const r = await fetch(PROXY, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ path: dir + '/' + name, _method: 'GET' })
     });
-  </script>
+    const data = await r.json();
+    const content = data.content ? decodeURIComponent(escape(atob(data.content))) : '';
+    currentFile = { type, dir, name, sha: data.sha || sha };
+    const edId = type === 'settings' ? 'settings-editor' : (type === 'products' ? 'product-editor' : 'blog-editor');
+    const ed = document.getElementById(edId);
+    ed.innerHTML = `
+      <label>Editing: ${name}</label>
+      <textarea id="editor-content">${escapeHTML(content)}</textarea>
+      <div class="actions">
+        <button class="btn-back" onclick="closeEditor('${edId}','${type}')">← Back</button>
+        <button class="btn-save" onclick="saveFile('${type}', '${dir}', '${name}')">💾 Save & Commit</button>
+      </div>
+    `;
+    ed.classList.add('show');
+    const listId = type === 'products' ? 'product-list' : (type === 'blog' ? 'blog-list' : 'settings-list');
+    document.getElementById(listId).style.display = 'none';
+  } catch(e) { showToast('Failed to load file', 'error'); console.error(e); }
+}
+
+function escapeHTML(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function closeEditor(edId, type) {
+  document.getElementById(edId).classList.remove('show');
+  const listId = type === 'products' ? 'product-list' : (type === 'blog' ? 'blog-list' : 'settings-list');
+  const el = document.getElementById(listId);
+  if (el) el.style.display = '';
+}
+
+async function saveFile(type, dir, name) {
+  const content = document.getElementById('editor-content').value;
+  try { await proxy('PUT', dir + '/' + name, content, 'cms: update ' + name, currentFile.sha);
+    showToast('✅ Saved — deploying to www.jdrehab.com...', 'success'); } catch(e) { showToast('Save failed: ' + e.message, 'error'); }
+}
+
+function newProduct() {
+  const slug = prompt('Product slug (e.g. carbon-fiber-cane):');
+  if (!slug) return;
+  const template = `---
+title: "New Product"
+description: "Product description"
+category: "walking-aids"
+image: "/images/product.webp"
+images:
+  - "/images/product.webp"
+moq: "100 units"
+deliveryTime: "15-30 days"
+certifications:
+  - "CE"
+  - "FDA"
+  - "ISO 9001"
+  - "ISO 13485"
+features:
+  - "Feature 1"
+specifications:
+  - name: "Material"
+    value: "Aluminum"
+customOptions:
+  - "Custom logo"
+featured: false
+order: 99
+updated: "2026-06-05"
+---`;
+  const ed = document.getElementById('product-editor');
+  currentFile = { type: 'products', dir: 'src/content/products/en', name: slug + '.md', sha: null };
+  ed.innerHTML = `<label>New Product: ${slug}.md</label><textarea id="editor-content">${escapeHTML(template)}</textarea>
+    <div class="actions"><button class="btn-back" onclick="closeEditor('product-editor','products')">← Cancel</button>
+    <button class="btn-save" onclick="createFile('products','src/content/products/en','${slug}.md')">Create & Commit</button></div>`;
+  ed.classList.add('show'); document.getElementById('product-list').style.display = 'none';
+}
+
+function newPost() {
+  const slug = prompt('Post slug (e.g. industry-trends-2026):');
+  if (!slug) return;
+  const template = `---
+title: "New Blog Post"
+description: "Brief excerpt"
+date: "2026-06-05"
+image: "/images/blog-cover.webp"
+---
+
+Write your content here...`;
+  const ed = document.getElementById('blog-editor');
+  currentFile = { type: 'blog', dir: 'src/content/blog/en', name: slug + '.md', sha: null };
+  ed.innerHTML = `<label>New Post: ${slug}.md</label><textarea id="editor-content">${escapeHTML(template)}</textarea>
+    <div class="actions"><button class="btn-back" onclick="closeEditor('blog-editor','blog')">← Cancel</button>
+    <button class="btn-save" onclick="createFile('blog','src/content/blog/en','${slug}.md')">Create & Commit</button></div>`;
+  ed.classList.add('show'); document.getElementById('blog-list').style.display = 'none';
+}
+
+async function createFile(type, dir, name) {
+  const content = document.getElementById('editor-content').value;
+  try { await proxy('PUT', dir + '/' + name, content, 'cms: create ' + name);
+    showToast('✅ Created & deploying!', 'success');
+    closeEditor(type === 'products' ? 'product-editor' : 'blog-editor', type);
+    loadAll(); } catch(e) { showToast('Create failed: ' + e.message, 'error'); }
+}
+
+async function deleteItem(type, dir, name, sha) {
+  if (!confirm('Delete ' + name + '?')) return;
+  try { await proxy('DELETE', dir + '/' + name, '', 'cms: delete ' + name, sha);
+    showToast('🗑️ Deleted', 'success'); loadAll(); } catch(e) { showToast('Delete failed', 'error'); }
+}
+
+async function loadSettings() {
+  const list = document.getElementById('settings-list');
+  list.innerHTML = '<span class="loading">Loading...</span>';
+  try {
+    const files = await listDir('src/i18n');
+    const en = files.find(f => f.name === 'en.json');
+    const ts = files.find(f => f.name === 'constants.ts');
+    list.innerHTML = '';
+    if (en) list.innerHTML += `<div class="file-item" onclick="editFile('settings','src/i18n','en.json','${en.sha}')">🌐 English UI Translations (en.json)</div>`;
+    if (ts) list.innerHTML += `<div class="file-item" onclick="editFile('settings','src/utils','constants.ts','${ts.sha}')">⚙️ Company Info (constants.ts)</div>`;
+  } catch(e) { list.innerHTML = '<span class="loading">Error</span>'; }
+}
+
+// Tab switching
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    t.classList.add('active'); document.getElementById('panel-' + t.dataset.tab).classList.add('active');
+    loadAll();
+}));
+</script>
 </body>
 </html>
