@@ -1,0 +1,89 @@
+backend:
+  name: github
+  repo: kenwong9920-cmyk/rehab-b2b
+  branch: master
+  base_url: https://www.jdrehab.com
+  auth_endpoint: api/auth
+  squash_merges: true
+
+media_folder: "public/images"
+public_folder: "/images"
+
+site_url: https://www.jdrehab.com
+display_url: https://www.jdrehab.com
+logo_url: https://bsg-i.nbxc.com/company/0d/5ba042b08d396dd7b0bd713e390079.jpg@95Q.webp
+
+collections:
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    folder: "src/content/products/en"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["walking-aids", "walkers", "bath-safety", "toilet-safety", "commode-chairs"] }
+      - { label: "Main Image", name: "image", widget: "image" }
+      - { label: "Gallery Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+      - { label: "MOQ", name: "moq", widget: "string", required: false }
+      - { label: "Delivery Time", name: "deliveryTime", widget: "string", required: false }
+      - label: "Certifications"
+        name: "certifications"
+        widget: "list"
+        default: ["CE", "FDA", "ISO 9001", "ISO 13485"]
+        field: { label: "Certification", name: "cert", widget: "string" }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        field: { label: "Feature", name: "feature", widget: "string" }
+      - label: "Specifications"
+        name: "specifications"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Value", name: "value", widget: "string" }
+      - label: "Custom Options"
+        name: "customOptions"
+        widget: "list"
+        field: { label: "Option", name: "option", widget: "string" }
+      - { label: "Featured Product", name: "featured", widget: "boolean", default: false }
+      - { label: "Display Order", name: "order", widget: "number", default: 99, value_type: "int" }
+      - { label: "Last Updated", name: "updated", widget: "date", default: "2026-06-05" }
+
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "src/content/blog/en"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "description", widget: "text" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site Settings"
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    delete: false
+    files:
+      - name: "company"
+        label: "Company Info"
+        file: "src/i18n/en.json"
+        fields:
+          - label: "Site"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "hidden"
