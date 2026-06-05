@@ -1,0 +1,277 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>JinDa Rehab — CMS</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;display:flex;min-height:100vh;background:#f1f5f9}
+.sidebar{width:220px;background:#1e293b;color:#cbd5e1;padding:20px 0;display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:10}
+.sidebar h2{color:#fff;font-size:16px;padding:0 20px 16px;border-bottom:1px solid #334155;margin-bottom:8px}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:10px 20px;color:#94a3b8;text-decoration:none;font-size:14px;cursor:pointer;border-left:3px solid transparent}
+.sidebar a:hover,.sidebar a.active{background:#334155;color:#fff;border-left-color:#3b82f6}
+.sidebar-footer{padding:20px;margin-top:auto;border-top:1px solid #334155;font-size:12px;color:#64748b}
+.sidebar-footer a{display:inline;padding:0;border:none;color:#60a5fa;font-size:12px}
+.main{margin-left:220px;flex:1;padding:24px 32px;max-width:1200px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.header h1{font-size:24px;color:#1e293b}
+.btn{padding:8px 16px;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:#2563eb;color:#fff}.btn-primary:hover{background:#1d4ed8}
+.btn-success{background:#16a34a;color:#fff}.btn-success:hover{background:#15803d}
+.btn-danger{background:#ef4444;color:#fff}.btn-danger:hover{background:#dc2626}
+.btn-outline{background:#fff;color:#475569;border:1px solid #cbd5e1}.btn-outline:hover{background:#f8fafc}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+th,td{padding:10px 14px;text-align:left;font-size:13px;border-bottom:1px solid #f1f5f9}
+th{background:#f8fafc;color:#64748b;font-weight:600;text-transform:uppercase;font-size:11px;letter-spacing:.5px}
+td{color:#334155}tr:hover td{background:#f8fafc}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:100;display:flex;align-items:flex-start;justify-content:center;padding-top:40px;overflow-y:auto}
+.modal{background:#fff;border-radius:12px;width:700px;max-width:95vw;box-shadow:0 20px 60px rgba(0,0,0,.15);margin-bottom:40px}
+.modal-header{padding:16px 20px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center}
+.modal-header h3{font-size:16px;color:#1e293b}
+.modal-body{padding:20px;max-height:70vh;overflow-y:auto}
+.modal-footer{padding:12px 20px;border-top:1px solid #e2e8f0;display:flex;justify-content:flex-end;gap:8px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:#475569;margin-bottom:4px;text-transform:uppercase}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:8px 10px;border:1px solid #cbd5e1;border-radius:6px;font-size:13px;background:#fff;color:#1e293b;font-family:inherit}
+.form-group textarea{resize:vertical;min-height:80px;font-family:monospace;font-size:12px;line-height:1.6}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-dyn{padding:8px 10px;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:6px;margin-bottom:8px}
+.form-dyn-row{display:flex;gap:6px;align-items:center;margin-bottom:4px}
+.form-dyn-row input{flex:1}
+.form-dyn-row button{padding:4px 8px;font-size:12px;background:#ef4444;color:#fff;border:none;border-radius:4px;cursor:pointer}
+.toast{position:fixed;bottom:24px;right:24px;padding:12px 20px;border-radius:8px;color:#fff;font-size:13px;z-index:9999;display:none;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.toast.success{background:#16a34a}.toast.error{background:#ef4444}
+.loading{text-align:center;padding:40px;color:#94a3b8}
+.login-box{max-width:360px;margin:120px auto 0;text-align:center}
+.login-box h2{margin-bottom:16px;color:#1e293b}
+.login-box input{width:100%;padding:10px 14px;border:1px solid #cbd5e1;border-radius:8px;font-size:14px;margin:8px 0}
+.login-box button{width:100%;padding:10px;background:#2563eb;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
+.empty{text-align:center;padding:60px 20px;color:#94a3b8}
+.empty p{font-size:14px}
+</style></head><body>
+
+<!-- LOGIN -->
+<div id="loginScreen" class="login-box">
+  <h2>🔐 JinDa CMS</h2>
+  <input type="password" id="passInput" placeholder="Admin password" onkeydown="if(event.key==='Enter')login()">
+  <button onclick="login()">Login</button>
+  <p id="loginErr" style="color:#ef4444;font-size:13px;margin-top:8px;display:none"></p>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" style="display:none">
+  <nav class="sidebar" id="sidebar"></nav>
+  <main class="main" id="mainContent"></main>
+</div>
+
+<div class="toast" id="toast"></div>
+<div id="modalContainer"></div>
+
+<script>
+const API='/api/admin',PASS='jinda2026';
+let currentTab='products';
+
+function login(){const p=document.getElementById('passInput').value;if(p===PASS){sessionStorage.setItem('jin_auth','1');showApp()}else{document.getElementById('loginErr').style.display='';}}
+if(sessionStorage.getItem('jin_auth')==='1')showApp();
+
+function showApp(){document.getElementById('loginScreen').style.display='none';document.getElementById('app').style.display='flex';renderSidebar();loadTab('products');}
+
+async function api(action,path,extra={}){
+  const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,path,...extra})});
+  const d=await r.json();if(!r.ok)throw new Error(d.error||'API error');return d;
+}
+function toast(msg,t){const el=document.getElementById('toast');el.textContent=msg;el.className='toast '+t;el.style.display='block';setTimeout(()=>el.style.display='none',2500);}
+
+// SIDEBAR
+function renderSidebar(){
+  const tabs=[
+    {id:'products',label:'📦 Products',icon:'📦'},
+    {id:'blog',label:'📝 Blog Posts',icon:'📝'},
+    {id:'settings',label:'⚙️ Company Settings',icon:'⚙️'},
+  ];
+  document.getElementById('sidebar').innerHTML=`
+    <h2>JinDa CMS</h2>
+    ${tabs.map(t=>`<a class="${currentTab===t.id?'active':''}" onclick="loadTab('${t.id}')">${t.icon} ${t.label}</a>`).join('')}
+    <div class="sidebar-footer">
+      <a href="/en/" target="_blank">View Site ↗</a><br>
+      <span style="margin-top:4px;display:block">← Ctrl+Click</span>
+    </div>`;
+}
+
+// TAB SWITCHING
+async function loadTab(tab){
+  currentTab=tab;renderSidebar();
+  const m=document.getElementById('mainContent');
+  if(tab==='products'){m.innerHTML='<div class="loading">Loading products...</div>';await loadProducts();}
+  else if(tab==='blog'){m.innerHTML='<div class="loading">Loading posts...</div>';await loadBlog();}
+  else if(tab==='settings'){m.innerHTML='<div class="loading">Loading settings...</div>';await loadSettings();}
+}
+
+// ======================== PRODUCTS ========================
+async function loadProducts(){try{const files=await api('list','src/content/products/en');const list=Array.isArray(files)?files.filter(f=>f.name.endsWith('.md')):[];document.getElementById('mainContent').innerHTML=`
+  <div class="header"><h1>Products (${list.length})</h1><button class="btn btn-success" onclick="newProduct()">+ New Product</button></div>
+  ${list.length===0?`<div class="empty"><p>No products yet</p></div>`:`
+  <table><thead><tr><th>Order</th><th>Title</th><th>Category</th><th>MOQ</th><th>Featured</th><th style="width:120px">Actions</th></tr></thead><tbody>
+  ${list.map(f=>{return`<tr id="row-${f.name}"><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td style="width:120px"><button class="btn btn-outline" style="padding:4px 8px;font-size:11px" onclick="editProduct('${f.name}','${f.sha}')">Edit</button> <button class="btn btn-danger" style="padding:4px 8px;font-size:11px" onclick="deleteItem('products','src/content/products/en','${f.name}','${f.sha}')">✕</button></td></tr>`}).join('')}
+  </tbody></table>`}`;
+  // Load metadata for each row
+  for(const f of list){try{const d=await api('read','src/content/products/en/'+f.name);if(d._text){const fm=d._text.match(/^---\n([\s\S]*?)\n---/);if(fm){const fields=parseYaml(fm[1]);const row=document.getElementById('row-'+f.name);if(row)row.innerHTML=`<td>${fields.order||'-'}</td><td><strong>${escapeHtml(fields.title||f.name)}</strong></td><td><span style="background:#dbeafe;color:#1e40af;padding:2px 8px;border-radius:12px;font-size:11px">${fields.category||'-'}</span></td><td>${fields.moq||'-'}</td><td>${fields.featured==='true'?'⭐':'-'}</td><td style="width:120px"><button class="btn btn-outline" style="padding:4px 8px;font-size:11px" onclick="editProduct('${f.name}','${f.sha}')">Edit</button> <button class="btn btn-danger" style="padding:4px 8px;font-size:11px" onclick="deleteItem('products','src/content/products/en','${f.name}','${f.sha}')">✕</button></td>`;}}}}catch(e){}}
+}catch(e){document.getElementById('mainContent').innerHTML=`<div class="empty"><p>Error loading products: ${e.message}</p></div>`;}}
+
+function parseYaml(y){const o={};y.split('\n').forEach(l=>{const m=l.match(/^(\w+):\s*["']?(.*)["']?\s*$/);if(m)o[m[1]]=m[2].replace(/['"]$/,'');});return o;}
+
+async function editProduct(name,sha){
+  try{const d=await api('read','src/content/products/en/'+name);
+    const text=d._text||'';
+    document.getElementById('modalContainer').innerHTML=`
+    <div class="modal-overlay" onclick="if(event.target===this)closeModal()">
+      <div class="modal">
+        <div class="modal-header"><h3>${name}</h3><button class="btn btn-outline" style="padding:4px 10px" onclick="closeModal()">✕</button></div>
+        <div class="modal-body"><form id="prodForm">${buildProductForm(text)}</form></div>
+        <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="saveProduct('${name}','${sha}')">💾 Save & Deploy</button></div>
+      </div></div>`;
+  }catch(e){toast('Error: '+e.message,'error');}}
+
+function buildProductForm(t){
+  const fm=t.match(/^---\n([\s\S]*?)\n---/);const raw=fm?fm[1]:'';
+  const f={};raw.split('\n').forEach(l=>{const m=l.match(/^(\w+):\s*['"]?(.*)['"]?$/);if(m&&!['features','specifications','certifications','customOptions','images'].includes(m[1]))f[m[1]]=m[2];});
+  const feats=(raw.match(/features:\n([\s\S]*?)(?=\n\w+:|$)/)||['',''])[1].match(/^\s*- ["']?(.+)/mg)||[];
+  const specsRaw=(raw.match(/specifications:\n([\s\S]*?)(?=\n\w+:|$)/)||['',''])[1];
+  const specs=[],specRe=/^\s*- name:\s*["']?(.*)["']?\s*\n\s+value:\s*["']?(.*)["']?/g;let sm;while(sm=specRe.exec(specsRaw))specs.push({name:sm[1],value:sm[2]});
+  const imgs=(raw.match(/images:\n([\s\S]*?)(?=\n\w+:|$)/)||['',''])[1].match(/^\s*- ["']?(.+)/mg)||[];
+  const custs=(raw.match(/customOptions:\n([\s\S]*?)(?=\n\w+:|$)/)||['',''])[1].match(/^\s*- ["']?(.+)/mg)||[];
+  return `
+    <div class="form-row"><div class="form-group"><label>Title</label><input name="title" value="${escapeAttr(f.title||'')}"></div><div class="form-group"><label>Category</label><select name="category"><option ${f.category==='walking-aids'?'selected':''}>walking-aids</option><option ${f.category==='walkers'?'selected':''}>walkers</option><option ${f.category==='bath-safety'?'selected':''}>bath-safety</option><option ${f.category==='toilet-safety'?'selected':''}>toilet-safety</option><option ${f.category==='commode-chairs'?'selected':''}>commode-chairs</option></select></div></div>
+    <div class="form-group"><label>Description</label><textarea name="description" rows="2">${escapeAttr(f.description||'')}</textarea></div>
+    <div class="form-row"><div class="form-group"><label>Main Image URL</label><input name="image" value="${escapeAttr(f.image||'')}"></div><div class="form-group"><label>MOQ</label><input name="moq" value="${escapeAttr(f.moq||'')}"></div></div>
+    <div class="form-row"><div class="form-group"><label>Delivery Time</label><input name="deliveryTime" value="${escapeAttr(f.deliveryTime||'')}"></div><div class="form-group"><label>Order</label><input name="order" type="number" value="${f.order||'99'}"></div></div>
+    <div class="form-row"><div class="form-group"><label>Featured?</label><select name="featured"><option ${f.featured==='true'?'selected':''}>true</option><option ${f.featured!=='true'?'selected':''}>false</option></select></div><div class="form-group"><label>Updated Date</label><input name="updated" value="${f.updated||'2026-06-05'}"></div></div>
+    <div class="form-group"><label>Gallery Images (one per line)</label><textarea name="images" rows="3">${escapeAttr(imgs.map(i=>i.replace(/^\s*-\s*['"]?/,'').replace(/['"]$/,'')).join('\n'))}</textarea></div>
+    <div class="form-group"><label>Features (one per line)</label><textarea name="features" rows="3">${escapeAttr(feats.map(i=>i.replace(/^\s*-\s*['"]?/,'').replace(/['"]$/,'')).join('\n'))}</textarea></div>
+    <div class="form-group"><label>Specifications (format: Name=Value, one per line)</label><textarea name="specs" rows="4">${escapeAttr(specs.map(s=>s.name+'='+s.value).join('\n'))}</textarea></div>
+    <div class="form-group"><label>Custom Options (one per line)</label><textarea name="customOptions" rows="3">${escapeAttr(custs.map(i=>i.replace(/^\s*-\s*['"]?/,'').replace(/['"]$/,'')).join('\n'))}</textarea></div>`;
+}
+
+function escapeAttr(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+async function saveProduct(name,sha){
+  const fd=new FormData(document.getElementById('prodForm'));const data={};for(const[k,v]of fd.entries())data[k]=v.trim();
+  const specs=data.specs.split('\n').filter(Boolean).map(l=>{const[i,v]=l.split('=');return i&&v?`  - name: "${i.trim()}"\n    value: "${v.trim()}"`:null;}).filter(Boolean);
+  const features=data.features.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n');
+  const images=data.images.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n');
+  const customOpts=data.customOptions.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n');
+  const yml=`---
+title: "${data.title}"
+description: "${data.description}"
+category: "${data.category}"
+image: "${data.image}"
+images:
+${images}
+moq: "${data.moq}"
+deliveryTime: "${data.deliveryTime}"
+certifications:
+  - "CE"
+  - "FDA"
+  - "ISO 9001"
+  - "ISO 13485"
+features:
+${features}
+specifications:
+${specs.join('\n')}
+customOptions:
+${customOpts}
+featured: ${data.featured}
+order: ${data.order}
+updated: ${data.updated}
+---`;
+  try{await api('write','src/content/products/en/'+name,{content:yml,sha,message:'cms: update '+name});toast('✅ Product saved! Deploying...','success');closeModal();loadProducts();}catch(e){toast('Save failed: '+e.message,'error');}
+}
+
+function newProduct(){const slug=prompt('Product slug (e.g. carbon-fiber-cane):');if(!slug)return;
+  const yml=`---
+title: "New Product"
+description: ""
+category: "walking-aids"
+image: ""
+images:
+  - ""
+moq: ""
+deliveryTime: "15-30 days"
+certifications:
+  - "CE"
+  - "FDA"
+  - "ISO 9001"
+  - "ISO 13485"
+features:
+  - ""
+specifications:
+  - name: ""
+    value: ""
+customOptions:
+  - ""
+featured: false
+order: 99
+updated: "2026-06-05"
+---`;
+  document.getElementById('modalContainer').innerHTML=`
+  <div class="modal-overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-header"><h3>New Product: ${slug}.md</h3><button class="btn btn-outline" style="padding:4px 10px" onclick="closeModal()">✕</button></div>
+      <div class="modal-body"><form id="prodForm">${buildProductForm(yml)}</form></div>
+      <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">Cancel</button><button class="btn btn-success" onclick="saveNewProduct('${slug}')">💾 Create & Deploy</button></div>
+    </div></div>`;}
+
+async function saveNewProduct(slug){await api('write','src/content/products/en/'+slug+'.md',{content:document.getElementById('prodForm').querySelector('textarea[name=description]')?await getFormYml():'',message:'cms: create '+slug});closeModal();loadProducts();}
+// Simple save — use the generic form-to-yml
+async function getFormYml(){const fd=new FormData(document.getElementById('prodForm'));const d={};for(const[k,v]of fd.entries())d[k]=v.trim();
+  const specs=d.specs.split('\n').filter(Boolean).map(l=>{const[i,v]=l.split('=');return i&&v?`  - name: "${i.trim()}"\n    value: "${v.trim()}"`:null;}).filter(Boolean);
+  return `---\ntitle: "${d.title}"\ndescription: "${d.description}"\ncategory: "${d.category}"\nimage: "${d.image}"\nimages:\n${d.images.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n')}\nmoq: "${d.moq}"\ndeliveryTime: "${d.deliveryTime}"\ncertifications:\n  - "CE"\n  - "FDA"\n  - "ISO 9001"\n  - "ISO 13485"\nfeatures:\n${d.features.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n')}\nspecifications:\n${specs.join('\n')}\ncustomOptions:\n${d.customOptions.split('\n').filter(Boolean).map(l=>`  - "${l.trim()}"`).join('\n')}\nfeatured: ${d.featured}\norder: ${d.order}\nupdated: ${d.updated}\n---`;}
+
+// ======================== BLOG ========================
+async function loadBlog(){try{const files=await api('list','src/content/blog/en');const list=Array.isArray(files)?files.filter(f=>f.name.endsWith('.md')):[];document.getElementById('mainContent').innerHTML=`
+  <div class="header"><h1>Blog Posts (${list.length})</h1><button class="btn btn-success" onclick="newBlog()">+ New Post</button></div>
+  ${list.length===0?`<div class="empty"><p>No posts yet</p></div>`:`
+  <table><thead><tr><th>Title</th><th>Date</th><th style="width:120px">Actions</th></tr></thead><tbody>
+  ${list.map(f=>`<tr id="brow-${f.name}"><td>-</td><td>-</td><td style="width:120px"><button class="btn btn-outline" style="padding:4px 8px;font-size:11px" onclick="editBlog('${f.name}','${f.sha}')">Edit</button> <button class="btn btn-danger" style="padding:4px 8px;font-size:11px" onclick="deleteItem('blog','src/content/blog/en','${f.name}','${f.sha}')">✕</button></td></tr>`).join('')}
+  </tbody></table>`}`;
+  for(const f of list){try{const d=await api('read','src/content/blog/en/'+f.name);if(d._text){const fm=d._text.match(/^---\n([\s\S]*?)\n---/);if(fm){const fields=parseYaml(fm[1]);const row=document.getElementById('brow-'+f.name);if(row)row.innerHTML=`<td><strong>${escapeHtml(fields.title||f.name)}</strong></td><td>${fields.date||'-'}</td><td style="width:120px"><button class="btn btn-outline" style="padding:4px 8px;font-size:11px" onclick="editBlog('${f.name}','${f.sha}')">Edit</button> <button class="btn btn-danger" style="padding:4px 8px;font-size:11px" onclick="deleteItem('blog','src/content/blog/en','${f.name}','${f.sha}')">✕</button></td>`;}}}}catch(e){}}
+}catch(e){document.getElementById('mainContent').innerHTML=`<div class="empty"><p>Error: ${e.message}</p></div>`;}}
+
+function editBlog(name,sha){api('read','src/content/blog/en/'+name).then(d=>{
+  const text=d._text||'';
+  const fm=text.match(/^---\n([\s\S]*?)\n---/);const f=parseYaml(fm?fm[1]:'');const body=fm?text.slice(fm[0].length).trim():text;
+  document.getElementById('modalContainer').innerHTML=`
+  <div class="modal-overlay" onclick="if(event.target===this)closeModal()">
+    <div class="modal">
+      <div class="modal-header"><h3>${name}</h3><button class="btn btn-outline" style="padding:4px 10px" onclick="closeModal()">✕</button></div>
+      <div class="modal-body">
+        <div class="form-row"><div class="form-group"><label>Title</label><input id="bf-title" value="${escapeAttr(f.title||'')}"></div><div class="form-group"><label>Date</label><input id="bf-date" value="${f.date||'2026-06-05'}"></div></div>
+        <div class="form-group"><label>Excerpt (Meta Description)</label><textarea id="bf-desc" rows="2">${escapeAttr(f.description||'')}</textarea></div>
+        <div class="form-group"><label>Cover Image URL</label><input id="bf-img" value="${escapeAttr(f.image||'')}"></div>
+        <div class="form-group"><label>Body (Markdown)</label><textarea id="bf-body" rows="12">${escapeAttr(body)}</textarea></div>
+      </div>
+      <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="saveBlog('${name}','${sha}')">💾 Save & Deploy</button></div>
+    </div></div>`;}).catch(e=>toast('Error: '+e.message,'error'));}
+
+function saveBlog(name,sha){const title=document.getElementById('bf-title').value;const date=document.getElementById('bf-date').value;const desc=document.getElementById('bf-desc').value;const img=document.getElementById('bf-img').value;const body=document.getElementById('bf-body').value;
+  const yml=`---\ntitle: "${title}"\ndescription: "${desc}"\ndate: ${date}\nimage: "${img}"\n---\n\n${body}`;
+  api('write','src/content/blog/en/'+name,{content:yml,sha,message:'cms: update '+name}).then(()=>{toast('✅ Post saved!','success');closeModal();loadBlog();}).catch(e=>toast('Error: '+e.message,'error'));}
+
+function newBlog(){const slug=prompt('Post slug (e.g. industry-trends-2026):');if(!slug)return;
+  const yml=`---\ntitle: "New Post"\ndescription: ""\ndate: "2026-06-05"\nimage: ""\n---\n\n## Introduction\n\nWrite your content here.`;
+  api('write','src/content/blog/en/'+slug+'.md',{content:yml,message:'cms: create '+slug}).then(()=>{toast('✅ Post created!','success');loadBlog();}).catch(e=>toast('Error: '+e.message,'error'));}
+
+// ======================== SETTINGS ========================
+async function loadSettings(){try{const d=await api('read','src/utils/constants.ts');const text=d._text||'';
+  document.getElementById('mainContent').innerHTML=`
+  <div class="header"><h1>Company Settings</h1><button class="btn btn-primary" onclick="saveSettings('${d.sha}')">💾 Save Changes</button></div>
+  <p style="font-size:12px;color:#94a3b8;margin-bottom:16px">Editing <code>src/utils/constants.ts</code></p>
+  <div class="form-group"><label>Full content (TypeScript)</label><textarea id="settingsContent" rows="20" style="font-family:monospace;font-size:12px;line-height:1.6">${escapeAttr(text)}</textarea></div>`;
+}catch(e){document.getElementById('mainContent').innerHTML=`<div class="empty"><p>Error: ${e.message}</p></div>`;}}
+
+function saveSettings(sha){const content=document.getElementById('settingsContent').value;
+  api('write','src/utils/constants.ts',{content,sha,message:'cms: update company settings'}).then(()=>{toast('✅ Settings saved! Deploying...','success');loadSettings();}).catch(e=>toast('Error: '+e.message,'error'));}
+
+// ======================== COMMON ========================
+function deleteItem(tab,dir,name,sha){if(!confirm('Delete '+name+'? This cannot be undone.'))return;
+  api('delete',dir+'/'+name,{sha,message:'cms: delete '+name}).then(()=>{toast('🗑️ Deleted','success');loadTab(tab);}).catch(e=>toast('Error: '+e.message,'error'));}
+function closeModal(){document.getElementById('modalContainer').innerHTML='';}
+</script>
+</body></html>
