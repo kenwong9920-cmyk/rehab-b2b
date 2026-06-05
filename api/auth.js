@@ -34,7 +34,10 @@ export default async function handler(req) {
       }
 
       // Redirect back to CMS admin with token as hash fragment
-      return Response.redirect(origin + '/admin/#access_token=' + data.access_token + '&token_type=bearer', 302);
+      return new Response('', {
+        status: 302,
+        headers: { 'Location': origin + '/admin/#access_token=' + data.access_token + '&token_type=bearer' },
+      });
     } catch (e) {
       return new Response('OAuth error: ' + e.message, { status: 500 });
     }
@@ -42,16 +45,15 @@ export default async function handler(req) {
 
   // Step 1: Initiate GitHub OAuth
   const provider = url.searchParams.get('provider') || 'github';
-  if (provider !== 'github') {
-    return new Response('Unsupported provider: ' + provider, { status: 400 });
-  }
-
   const redirectParams = new URLSearchParams({
     client_id: clientId,
     scope: 'repo,user',
     redirect_uri: origin + '/api/auth',
   });
-  return Response.redirect('https://github.com/login/oauth/authorize?' + redirectParams.toString(), 302);
+  return new Response('', {
+    status: 302,
+    headers: { 'Location': 'https://github.com/login/oauth/authorize?' + redirectParams.toString() },
+  });
 }
 
 export const config = { runtime: 'edge' };
