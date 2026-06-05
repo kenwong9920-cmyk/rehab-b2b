@@ -2,7 +2,7 @@
  * Decap CMS GitHub OAuth Callback — Vercel Serverless Function
  * Handles PKCE auth flow: exchanges code + code_verifier for access token
  */
-export default async function handler(req: any) {
+export default async function handler(req) {
   const corsHeaders = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
@@ -48,7 +48,7 @@ export default async function handler(req: any) {
       body: params.toString(),
     });
 
-    const data = await res.json() as any;
+    const data = await res.json();
 
     if (data.error) {
       return Response.json({ error: data.error_description || data.error }, {
