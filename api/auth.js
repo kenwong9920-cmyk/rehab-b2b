@@ -1,10 +1,11 @@
 /**
  * Decap CMS GitHub OAuth Callback — Vercel Edge Function
+ * Handles both GET (GitHub callback) and POST (Decap internal proxy)
  */
 export default async function handler(req) {
   const corsHeaders = {
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
 
@@ -12,28 +13,45 @@ export default async function handler(req) {
     return new Response(null, { headers: corsHeaders, status: 204 });
   }
 
-  if (req.method !== 'POST') {
-    return Response.json({ error: 'Use POST' }, { status: 405, headers: corsHeaders });
+  let code, redirect_uri, code_verifier;
+
+  if (req.method === 'GET') {
+    const url = new URL(req.url);
+    code = url.searchParams.get('code');
+    redirect_uri = url.searchParams.get('redirect_uri') || 'https://www.jdrehab.com/admin/';
+    code_verifier = url.searchParams.get('code_verifier');
+  } else if (req.method === 'POST') {
+    try {
+      const body = await req.json();
+      code = body.code;
+      redirect_uri = body.redirect_uri || 'https://www.jdrehab.com/admin/';
+      code_verifier = body.code_verifier;
+    } catch (e) {
+      return Response.json({ error: 'Invalid JSON body' }, { status: 400, headers: corsHeaders });
+    }
+  } else {
+    return new Response('Method not allowed', { status: 405, headers: corsHeaders });
+  }
+
+  if (!code) {
+    return Response.json({ error: 'Missing authorization code' }, { status: 400, headers: corsHeaders });
+  }
+
+  const clientId = process.env.OAUTH_CLIENT_ID;
+  const clientSecret = process.env.OAUTH_CLIENT_SECRET;
+
+  if (!clientId || !clientSecret) {
+    return Response.json({ error: 'OAuth not configured' }, { status: 500, headers: corsHeaders });
   }
 
   try {
-    const body = await req.json();
-    const clientId = process.env.OAUTH_CLIENT_ID;
-    const clientSecret = process.env.OAUTH_CLIENT_SECRET;
-
-    if (!clientId || !clientSecret) {
-      return Response.json({ error: 'OAuth not configured' }, { status: 500, headers: corsHeaders });
-    }
-
     const params = new URLSearchParams({
       client_id: clientId,
       client_secret: clientSecret,
-      code: body.code,
-      redirect_uri: body.redirect_uri || 'https://www.jdrehab.com/admin/',
+      code: code,
+      redirect_uri: redirect_uri,
     });
-
-    // Handle PKCE (optional)
-    if (body.code_verifier) params.append('code_verifier', body.code_verifier);
+    if (code_verifier) params.append('code_verifier', code_verifier);
 
     const ghRes = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
