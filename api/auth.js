@@ -1,71 +1,57 @@
 /**
- * Decap CMS GitHub OAuth — Vercel Edge Function
- * Uses GitHub OAuth App to authenticate users via their own GitHub account
+ * Decap CMS GitHub OAuth Provider — Vercel Edge Function
+ * Handles the complete OAuth flow:
+ *   Step 1: GET /api/auth?provider=github&site_id=... → redirect to GitHub
+ *   Step 2: GitHub callback → GET /api/auth?code=xxx → exchange token → redirect to CMS
  */
 export default async function handler(req) {
-  const corsHeaders = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-  };
-
-  if (req.method === 'OPTIONS') {
-    return new Response(null, { headers: corsHeaders, status: 204 });
-  }
-
-  // Debug: log request info
-  console.log('Auth request:', req.method, req.url);
-
-  let code, code_verifier;
-
-  try {
-    if (req.method === 'GET') {
-      const urlStr = req.url.startsWith('/') ? 'https://placeholder' + req.url : req.url;
-      const url = new URL(urlStr);
-      code = url.searchParams.get('code');
-      code_verifier = url.searchParams.get('code_verifier');
-    } else if (req.method === 'POST') {
-      const body = await req.json();
-      code = body.code;
-      code_verifier = body.code_verifier;
-    } else {
-      return new Response('Method not allowed', { status: 405, headers: corsHeaders });
-    }
-  } catch (e) {
-    return Response.json({ error: 'Failed to parse request: ' + e.message }, { status: 400, headers: corsHeaders });
-  }
-
-  if (!code) {
-    return Response.json({ error: 'Missing authorization code. Request body must contain {code: "..."} ' }, { status: 400, headers: corsHeaders });
-  }
-
   const clientId = process.env.OAUTH_CLIENT_ID;
   const clientSecret = process.env.OAUTH_CLIENT_SECRET;
+  const origin = 'https://www.jdrehab.com';
 
   if (!clientId || !clientSecret) {
-    return Response.json({ error: 'OAuth credentials not configured on server' }, { status: 500, headers: corsHeaders });
+    return new Response('OAuth not configured', { status: 500 });
   }
 
-  const params = new URLSearchParams({ client_id: clientId, client_secret: clientSecret, code });
-  if (code_verifier) params.append('code_verifier', code_verifier);
+  const url = new URL(req.url.startsWith('/') ? origin + req.url : req.url);
+  const code = url.searchParams.get('code');
 
-  const ghRes = await fetch('https://github.com/login/oauth/access_token', {
-    method: 'POST',
-    headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: params.toString(),
+  // Step 2: GitHub OAuth callback — exchange code for token
+  if (code) {
+    try {
+      const params = new URLSearchParams({
+        client_id: clientId, client_secret: clientSecret, code,
+      });
+      const ghRes = await fetch('https://github.com/login/oauth/access_token', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
+      });
+      const data = await ghRes.json();
+
+      if (data.error || !data.access_token) {
+        return new Response('OAuth failed: ' + (data.error_description || 'unknown'), { status: 400 });
+      }
+
+      // Redirect back to CMS admin with token as hash fragment
+      return Response.redirect(origin + '/admin/#access_token=' + data.access_token + '&token_type=bearer', 302);
+    } catch (e) {
+      return new Response('OAuth error: ' + e.message, { status: 500 });
+    }
+  }
+
+  // Step 1: Initiate GitHub OAuth
+  const provider = url.searchParams.get('provider') || 'github';
+  if (provider !== 'github') {
+    return new Response('Unsupported provider: ' + provider, { status: 400 });
+  }
+
+  const redirectParams = new URLSearchParams({
+    client_id: clientId,
+    scope: 'repo,user',
+    redirect_uri: origin + '/api/auth',
   });
-
-  const data = await ghRes.json();
-
-  if (data.error) {
-    return Response.json({ error: data.error_description || data.error }, { status: 400, headers: corsHeaders });
-  }
-
-  if (!data.access_token) {
-    return Response.json({ error: 'No access token in GitHub response', details: data }, { status: 500, headers: corsHeaders });
-  }
-
-  return Response.json({ token: data.access_token, provider: 'github' }, { status: 200, headers: corsHeaders });
+  return Response.redirect('https://github.com/login/oauth/authorize?' + redirectParams.toString(), 302);
 }
 
 export const config = { runtime: 'edge' };
