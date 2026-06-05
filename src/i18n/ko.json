@@ -81,6 +81,14 @@
     "customOptions": "맞춤 옵션",
     "getQuoteForProduct": "이 제품 견적 요청",
     "relatedProducts": "관련 제품",
+    "packagingShipping": "포장 및 배송",
+    "packagingInfo": "포장",
+    "cartonDimensions": "박스 크기",
+    "grossWeight": "총중량",
+    "netWeight": "순중량",
+    "containerLoading": "컨테이너 적재량",
+    "faq": "자주 묻는 질문",
+    "sendInquiry": "문의하기",
     "downloadCatalog": "카탈로그 다운로드"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "더 보기",
     "publishedOn": "게시일",
     "relatedPosts": "관련 기사"
+  },
+  "downloads": {
+    "modalTitle": "자료 다운로드",
+    "modalSubtitle": "이메일을 입력하시면 제품 카탈로그와 회사 소개서를 즉시 받아보실 수 있습니다.",
+    "emailPlaceholder": "your@email.com",
+    "submitButton": "파일 보내기",
+    "successTitle": "이메일을 확인하세요!",
+    "successMessage": "다운로드 링크를 이메일로 보내드렸습니다. 아래에서 직접 다운로드할 수도 있습니다:",
+    "closeButton": "닫기",
+    "privacy": "귀하의 개인정보를 소중히 보호합니다. 이메일은 절대 공유되지 않습니다."
   },
   "common": {
     "viewAll": "전체 보기",

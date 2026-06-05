@@ -81,6 +81,14 @@
     "customOptions": "Anpassungsoptionen",
     "getQuoteForProduct": "Angebot für dieses Produkt anfordern",
     "relatedProducts": "Ähnliche Produkte",
+    "packagingShipping": "Verpackung & Versand",
+    "packagingInfo": "Verpackung",
+    "cartonDimensions": "Kartongröße",
+    "grossWeight": "Bruttogewicht",
+    "netWeight": "Nettogewicht",
+    "containerLoading": "Containerbeladung",
+    "faq": "FAQ",
+    "sendInquiry": "Anfrage senden",
     "downloadCatalog": "Katalog herunterladen"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "Weiterlesen",
     "publishedOn": "Veröffentlicht am",
     "relatedPosts": "Verwandte Artikel"
+  },
+  "downloads": {
+    "modalTitle": "Ressourcen herunterladen",
+    "modalSubtitle": "Geben Sie Ihre E-Mail-Adresse ein, um unseren Produktkatalog und unser Unternehmensprofil sofort zu erhalten.",
+    "emailPlaceholder": "ihre@email.com",
+    "submitButton": "Dateien senden",
+    "successTitle": "Prüfen Sie Ihren Posteingang!",
+    "successMessage": "Wir haben die Download-Links an Ihre E-Mail-Adresse gesendet. Sie können auch direkt unten herunterladen:",
+    "closeButton": "Schließen",
+    "privacy": "Wir respektieren Ihre Privatsphäre. Ihre E-Mail wird niemals weitergegeben."
   },
   "common": {
     "viewAll": "Alle anzeigen",

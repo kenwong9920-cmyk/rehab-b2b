@@ -81,6 +81,14 @@
     "customOptions": "Customization Options",
     "getQuoteForProduct": "Get Quote for This Product",
     "relatedProducts": "Related Products",
+    "packagingShipping": "Packaging & Shipping",
+    "packagingInfo": "Packaging",
+    "cartonDimensions": "Carton Size",
+    "grossWeight": "Gross Weight",
+    "netWeight": "Net Weight",
+    "containerLoading": "Container Loading",
+    "faq": "FAQ",
+    "sendInquiry": "Send an Inquiry",
     "downloadCatalog": "Download Catalog"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "Read More",
     "publishedOn": "Published on",
     "relatedPosts": "Related Articles"
+  },
+  "downloads": {
+    "modalTitle": "Download Resources",
+    "modalSubtitle": "Enter your email to receive our product catalog and company profile instantly.",
+    "emailPlaceholder": "your@email.com",
+    "submitButton": "Send Me the Files",
+    "successTitle": "Check Your Inbox!",
+    "successMessage": "We've sent the download links to your email. You can also download directly below:",
+    "closeButton": "Close",
+    "privacy": "We respect your privacy. Your email will never be shared."
   },
   "common": {
     "viewAll": "View All",

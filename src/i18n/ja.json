@@ -81,6 +81,14 @@
     "customOptions": "カスタマイズオプション",
     "getQuoteForProduct": "この製品の見積を依頼",
     "relatedProducts": "関連製品",
+    "packagingShipping": "梱包・配送",
+    "packagingInfo": "梱包",
+    "cartonDimensions": "カートンサイズ",
+    "grossWeight": "総重量",
+    "netWeight": "正味重量",
+    "containerLoading": "コンテナ積載量",
+    "faq": "よくある質問",
+    "sendInquiry": "お問い合わせ",
     "downloadCatalog": "カタログをダウンロード"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "続きを読む",
     "publishedOn": "公開日",
     "relatedPosts": "関連記事"
+  },
+  "downloads": {
+    "modalTitle": "資料をダウンロード",
+    "modalSubtitle": "メールアドレスを入力すると、製品カタログと会社概要をすぐにお受け取りいただけます。",
+    "emailPlaceholder": "your@email.com",
+    "submitButton": "ファイルを送信",
+    "successTitle": "受信トレイを確認してください！",
+    "successMessage": "ダウンロードリンクをメールで送信しました。以下から直接ダウンロードすることもできます：",
+    "closeButton": "閉じる",
+    "privacy": "お客様のプライバシーを尊重します。メールアドレスが共有されることはありません。"
   },
   "common": {
     "viewAll": "すべて見る",

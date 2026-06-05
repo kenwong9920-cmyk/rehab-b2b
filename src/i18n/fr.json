@@ -81,6 +81,14 @@
     "customOptions": "Options de personnalisation",
     "getQuoteForProduct": "Demander un devis pour ce produit",
     "relatedProducts": "Produits associés",
+    "packagingShipping": "Emballage & Expédition",
+    "packagingInfo": "Emballage",
+    "cartonDimensions": "Taille du carton",
+    "grossWeight": "Poids brut",
+    "netWeight": "Poids net",
+    "containerLoading": "Chargement conteneur",
+    "faq": "FAQ",
+    "sendInquiry": "Envoyer une demande",
     "downloadCatalog": "Télécharger le catalogue"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "Lire la suite",
     "publishedOn": "Publié le",
     "relatedPosts": "Articles connexes"
+  },
+  "downloads": {
+    "modalTitle": "Télécharger les ressources",
+    "modalSubtitle": "Entrez votre email pour recevoir notre catalogue produit et notre profil d'entreprise instantanément.",
+    "emailPlaceholder": "votre@email.com",
+    "submitButton": "Envoyez-moi les fichiers",
+    "successTitle": "Vérifiez votre boîte mail !",
+    "successMessage": "Nous avons envoyé les liens de téléchargement à votre adresse email. Vous pouvez également télécharger directement ci-dessous :",
+    "closeButton": "Fermer",
+    "privacy": "Nous respectons votre vie privée. Votre email ne sera jamais partagé."
   },
   "common": {
     "viewAll": "Voir tout",

@@ -1,0 +1,170 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { useTranslations } from '@/utils/i18n';
+import { PRODUCT_CATEGORIES, SITE } from '@/utils/constants';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'];
+  const paths: { params: { locale: string; category: string } }[] = [];
+
+  for (const locale of locales) {
+    for (const cat of PRODUCT_CATEGORIES) {
+      paths.push({ params: { locale, category: cat.slug } });
+    }
+  }
+
+  return paths;
+}
+
+const { locale, category } = Astro.params;
+const { t } = useTranslations(locale!);
+
+// Find the category metadata
+const categoryMeta = PRODUCT_CATEGORIES.find((c) => c.slug === category);
+
+// 404 if invalid category
+if (!categoryMeta) {
+  return Astro.redirect(`/${locale}/products/`);
+}
+
+// Get products matching this category + locale
+const allProducts = await getCollection('products', (entry) =>
+  entry.id.startsWith(`${locale}/`) && entry.data.category === category
+);
+
+// Sort by order
+const products = [...allProducts].sort((a, b) => (a.data.order || 99) - (b.data.order || 99));
+
+const categoryName = t(categoryMeta.nameKey);
+const categoryDesc = t(categoryMeta.descriptionKey);
+const pageTitle = `${categoryName} — ${t('nav.products')}`;
+
+// SEO: breadcrumb structured data
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description: `${categoryName} — ${categoryDesc}. High-quality rehabilitation equipment by ${SITE.name}, ISO 13485 certified factory.`,
+};
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={`${categoryName} — ${categoryDesc}. Premium wholesale rehabilitation equipment from ${SITE.name}. ISO 13485 certified, CE & FDA approved. Inquire for bulk pricing and OEM customization.`}
+  locale={locale!}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    {/* Breadcrumb */}
+    <nav class="text-sm text-neutral-400 mb-6" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">{t('nav.home')}</a>
+      <span class="mx-2">/</span>
+      <a href={`/${locale}/products/`} class="hover:text-primary-600">{t('nav.products')}</a>
+      <span class="mx-2">/</span>
+      <span class="text-neutral-700 font-medium">{categoryName}</span>
+    </nav>
+
+    {/* Category Hero */}
+    <div class="bg-gradient-to-br from-neutral-50 to-primary-50 rounded-2xl p-8 md:p-12 mb-10">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">{categoryMeta.icon}</span>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-bold text-neutral-900">{categoryName}</h1>
+          <p class="text-neutral-600 mt-1 max-w-2xl">{categoryDesc}</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-4 mt-4 text-sm text-neutral-500">
+        <span class="inline-flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          {products.length} {t('product.allProducts', 'products')}
+        </span>
+        <span class="inline-flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          {SITE.certifications.join(' / ')}
+        </span>
+        <span class="inline-flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          OEM / ODM Available
+        </span>
+      </div>
+    </div>
+
+    {/* Sub-category filter tabs (quick navigation between categories) */}
+    <div class="flex flex-wrap gap-2 mb-10">
+      <a
+        href={`/${locale}/products/`}
+        class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-neutral-100 text-neutral-600 hover:bg-neutral-200 no-underline"
+      >
+        {t('product.allProducts')}
+      </a>
+      {PRODUCT_CATEGORIES.map((cat) => (
+        <a
+          href={`/${locale}/products/category/${cat.slug}/`}
+          class={`px-4 py-2 rounded-full text-sm font-medium transition-all no-underline ${
+            cat.slug === category
+              ? 'bg-primary-600 text-white'
+              : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+          }`}
+        >
+          {cat.icon} {t(cat.nameKey)}
+        </a>
+      ))}
+    </div>
+
+    {/* Product grid or empty state */}
+    {products.length === 0 ? (
+      <div class="text-center py-20">
+        <span class="text-5xl block mb-4">📭</span>
+        <p class="text-neutral-500 text-lg mb-4">No products in this category yet.</p>
+        <a href={`/${locale}/products/`} class="btn-outline inline-flex">
+          {t('product.allProducts')}
+        </a>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {products.map((product) => (
+          <div class="product-card bg-white rounded-xl border border-neutral-200 overflow-hidden hover:shadow-lg hover:border-primary-200 transition-all duration-300 group flex flex-col">
+            <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="block aspect-square overflow-hidden bg-white">
+              <img
+                src={product.data.image}
+                alt={product.data.title}
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-4"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </a>
+            <div class="p-5 flex flex-col flex-1">
+              <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="no-underline">
+                <h3 class="text-lg font-semibold text-neutral-900 group-hover:text-primary-700 transition-colors mb-2">
+                  {product.data.title}
+                </h3>
+              </a>
+              <p class="text-sm text-neutral-600 leading-relaxed flex-1 mb-4 line-clamp-2">
+                {product.data.description}
+              </p>
+              <div class="flex items-center justify-between pt-3 border-t border-neutral-100">
+                {product.data.moq && <span class="text-xs text-neutral-500">MOQ: {product.data.moq}</span>}
+                <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="btn-primary btn-sm ml-auto">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+
+    {/* CTA */}
+    <div class="mt-16 text-center bg-neutral-50 rounded-2xl p-10">
+      <h3 class="mb-2">{t('contact.title', 'Need a Custom Solution?')}</h3>
+      <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
+        We provide OEM and ODM services to tailor {categoryName.toLowerCase()} to your specific requirements. Contact us for a personalized quote.
+      </p>
+      <a href={`/${locale}/get-quote/`} class="btn-accent">
+        {t('nav.getQuote')} →
+      </a>
+    </div>
+  </div>
+</BaseLayout>

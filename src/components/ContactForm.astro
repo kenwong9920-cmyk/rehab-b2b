@@ -4,10 +4,19 @@ interface Props {
   productName?: string;
   showProductField?: boolean;
   showQuantityField?: boolean;
+  source?: string;
 }
 
-const { productName = '', showProductField = false, showQuantityField = false } = Astro.props;
+const { productName = '', showProductField = false, showQuantityField = false, source } = Astro.props;
 const locale = Astro.url.pathname.split('/')[1] || 'en';
+
+// Derive source from prop, or infer from pathname
+const formSource = source || (() => {
+  const path = Astro.url.pathname;
+  if (path.includes('/get-quote/')) return 'get-quote-page';
+  if (path.includes('/contact/')) return 'contact-page';
+  return path.replace(/^\/[a-z]{2}\//, '').replace(/\/$/, '') || 'page';
+})();
 ---
 
 <form
@@ -23,6 +32,11 @@ const locale = Astro.url.pathname.split('/')[1] || 'en';
   {/* Honeypot anti-spam */}
   <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
   <input type="hidden" name="redirect" value="false" />
+
+  {/* Tracking fields */}
+  <input type="hidden" name="locale" value={locale} />
+  <input type="hidden" name="source" value={formSource} />
+  {productName && <input type="hidden" name="product_slug" value={productName} />}
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
     <div>
@@ -142,6 +156,15 @@ const locale = Astro.url.pathname.split('/')[1] || 'en';
 
     try {
       const formData = new FormData(form);
+
+      // Append client-side tracking fields
+      formData.append('page_url', window.location.href);
+      const searchParams = new URLSearchParams(window.location.search);
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach((p) => {
+        const val = searchParams.get(p);
+        if (val) formData.append(p, val);
+      });
+
       const response = await fetch(form.action, {
         method: 'POST',
         body: formData,

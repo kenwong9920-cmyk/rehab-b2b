@@ -1,0 +1,244 @@
+---
+// DownloadsModal — 资料下载邮箱捕获弹窗
+import { useTranslations } from '@/utils/i18n';
+
+const locale = Astro.url.pathname.split('/')[1] || 'en';
+const { t } = useTranslations(locale);
+
+const downloads = [
+  {
+    icon: '📄',
+    title: 'Product Catalog 2026',
+    desc: 'Complete product catalog with specifications and pricing guide.',
+    size: 'PDF · 8.2 MB',
+    slug: 'product-catalog-2026',
+  },
+  {
+    icon: '📋',
+    title: 'Company Profile',
+    desc: 'Company introduction, certifications, and factory overview.',
+    size: 'PDF · 3.1 MB',
+    slug: 'company-profile',
+  },
+];
+---
+
+<div
+  id="downloads-modal-overlay"
+  class="fixed inset-0 z-50 flex items-center justify-center p-4"
+  style="display:none"
+  role="dialog"
+  aria-modal="true"
+  aria-label={t('downloads.modalTitle', 'Download Resources')}
+>
+  {/* Backdrop */}
+  <div id="downloads-modal-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  {/* Card */}
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+    {/* Close button */}
+    <button
+      id="downloads-modal-close"
+      class="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-500 hover:text-neutral-700 transition-colors text-lg leading-none"
+      aria-label={t('downloads.closeButton', 'Close')}
+    >&times;</button>
+
+    {/* Main content */}
+    <div id="downloads-modal-body" class="p-8">
+      <div class="text-center mb-6">
+        <span class="text-4xl block mb-3">📥</span>
+        <h2 class="text-xl font-bold text-neutral-900 mb-2">
+          {t('downloads.modalTitle', 'Download Resources')}
+        </h2>
+        <p class="text-sm text-neutral-600">
+          {t('downloads.modalSubtitle', 'Enter your email to receive our product catalog and company profile instantly.')}
+        </p>
+      </div>
+
+      {/* Download items */}
+      <div class="space-y-3 mb-6">
+        {downloads.map((d) => (
+          <div class="flex items-center gap-4 bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+            <span class="text-2xl shrink-0">{d.icon}</span>
+            <div class="flex-1 min-w-0">
+              <h4 class="text-sm font-semibold text-neutral-900">{d.title}</h4>
+              <p class="text-xs text-neutral-500 mt-0.5 line-clamp-1">{d.desc}</p>
+              <span class="text-xs text-neutral-400 mt-1 inline-block">{d.size}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Email form */}
+      <form
+        id="downloads-modal-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="space-y-3"
+      >
+        <input type="hidden" name="access_key" value="f76d4663-7486-4058-a0b7-8c9e11cb5f79" />
+        <input type="hidden" name="subject" value="Download Request — JinDa Rehab Medical" />
+        <input type="hidden" name="from_name" value="JinDa Rehab Downloads" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+        <input type="hidden" name="redirect" value="false" />
+
+        {/* Tracking fields */}
+        <input type="hidden" name="locale" value={locale} />
+        <input type="hidden" name="source" value="downloads-modal" />
+        <input type="hidden" name="download_material" value="product-catalog-2026,company-profile" />
+
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="downloads-email"
+            required
+            placeholder={t('downloads.emailPlaceholder', 'your@email.com')}
+            class="w-full px-4 py-3 border border-neutral-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
+          />
+        </div>
+
+        <button
+          type="submit"
+          id="downloads-submit-btn"
+          class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors text-sm"
+        >
+          {t('downloads.submitButton', 'Send Me the Files')} →
+        </button>
+      </form>
+
+      <p class="text-xs text-neutral-400 text-center mt-4">
+        {t('downloads.privacy', "We respect your privacy. Your email will never be shared.")}
+      </p>
+    </div>
+
+    {/* Success state (hidden by default) */}
+    <div id="downloads-modal-success" class="p-8" style="display:none">
+      <div class="text-center">
+        <span class="text-5xl block mb-4">✅</span>
+        <h3 class="text-xl font-bold text-neutral-900 mb-2">
+          {t('downloads.successTitle', 'Check Your Inbox!')}
+        </h3>
+        <p class="text-sm text-neutral-600 mb-6">
+          {t('downloads.successMessage', "We've sent the download links to your email. You can also download directly below:")}
+        </p>
+
+        {/* Direct download links */}
+        <div class="space-y-2 mb-6">
+          {downloads.map((d) => (
+            <a
+              href={`/downloads/${d.slug}.pdf`}
+              class="flex items-center gap-3 bg-green-50 hover:bg-green-100 rounded-xl p-4 border border-green-200 transition-colors no-underline text-left"
+              download
+            >
+              <span class="text-2xl shrink-0">{d.icon}</span>
+              <div class="flex-1 min-w-0">
+                <span class="text-sm font-semibold text-green-800 block">{d.title}</span>
+                <span class="text-xs text-green-600">{d.size}</span>
+              </div>
+              <svg class="w-5 h-5 text-green-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </a>
+          ))}
+        </div>
+
+        <button
+          id="downloads-modal-close-success"
+          class="py-2.5 px-8 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-medium rounded-xl transition-colors text-sm"
+        >
+          {t('downloads.closeButton', 'Close')}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initDownloadsModal() {
+    const overlay = document.getElementById('downloads-modal-overlay');
+    if (!overlay) return;
+
+    const backdrop = document.getElementById('downloads-modal-backdrop');
+    const form = document.getElementById('downloads-modal-form') as HTMLFormElement | null;
+    const bodyEl = document.getElementById('downloads-modal-body');
+    const successEl = document.getElementById('downloads-modal-success');
+    const submitBtn = document.getElementById('downloads-submit-btn') as HTMLButtonElement | null;
+
+    function open() {
+      if (overlay) overlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      if (overlay) overlay.style.display = 'none';
+      document.body.style.overflow = '';
+      // Reset state if form was submitted
+      if (bodyEl && successEl) {
+        bodyEl.style.display = '';
+        successEl.style.display = 'none';
+      }
+      if (form) form.reset();
+    }
+
+    // Listen for custom event triggered by Footer button
+    document.addEventListener('open-downloads-modal', open);
+
+    // Close on backdrop click
+    backdrop?.addEventListener('click', close);
+
+    // Close buttons
+    document.getElementById('downloads-modal-close')?.addEventListener('click', close);
+    document.getElementById('downloads-modal-close-success')?.addEventListener('click', close);
+
+    // Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.style.display !== 'none') close();
+    });
+
+    // Form submission
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form || !submitBtn) return;
+
+      const originalText = submitBtn.textContent || 'Send';
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      try {
+        const formData = new FormData(form);
+
+        // Append client-side tracking fields
+        formData.append('page_url', window.location.href);
+        const searchParams = new URLSearchParams(window.location.search);
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach((p) => {
+          const val = searchParams.get(p);
+          if (val) formData.append(p, val);
+        });
+
+        const res = await fetch(form.action, { method: 'POST', body: formData });
+
+        if (res.ok) {
+          // Show success state
+          if (bodyEl) bodyEl.style.display = 'none';
+          if (successEl) successEl.style.display = '';
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch {
+        if (submitBtn) {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }
+        alert('Something went wrong. Please try again or email us at info@jdrehab.com');
+      }
+    });
+  }
+
+  // Run on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDownloadsModal);
+  } else {
+    initDownloadsModal();
+  }
+</script>

@@ -3,6 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { useTranslations } from '@/utils/i18n';
 import { SITE, PRODUCT_CATEGORIES } from '@/utils/constants';
 import { getCollection } from 'astro:content';
+import ContactForm from '@/components/ContactForm.astro';
 
 export async function getStaticPaths() {
   const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'];
@@ -112,7 +113,7 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
       <span>/</span>
       {categoryName && (
         <>
-          <a href={`/${locale}/products/?category=${p.category}`} class="hover:text-primary-600">
+          <a href={`/${locale}/products/category/${p.category}/`} class="hover:text-primary-600">
             {t(categoryName.nameKey)}
           </a>
           <span>/</span>
@@ -277,6 +278,72 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
       </div>
     )}
 
+    <!-- Packaging & Shipping Specs -->
+    {(p.packagingInfo || p.cartonDimensions || p.grossWeight || p.netWeight || p.containerLoading) && (
+      <div class="mb-16">
+        <h2 class="mb-6 text-2xl">{t('product.packagingShipping', 'Packaging & Shipping')}</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {p.packagingInfo && (
+            <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+              <span class="text-2xl block mb-2">📦</span>
+              <span class="text-xs text-neutral-500 uppercase tracking-wide block mb-1">{t('product.packagingInfo', 'Packaging')}</span>
+              <span class="text-sm font-semibold text-neutral-900">{p.packagingInfo}</span>
+            </div>
+          )}
+          {p.cartonDimensions && (
+            <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+              <span class="text-2xl block mb-2">📐</span>
+              <span class="text-xs text-neutral-500 uppercase tracking-wide block mb-1">{t('product.cartonDimensions', 'Carton Size')}</span>
+              <span class="text-sm font-semibold text-neutral-900">{p.cartonDimensions}</span>
+            </div>
+          )}
+          {p.grossWeight && (
+            <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+              <span class="text-2xl block mb-2">⚖️</span>
+              <span class="text-xs text-neutral-500 uppercase tracking-wide block mb-1">{t('product.grossWeight', 'Gross Weight')}</span>
+              <span class="text-sm font-semibold text-neutral-900">{p.grossWeight}</span>
+            </div>
+          )}
+          {p.netWeight && (
+            <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+              <span class="text-2xl block mb-2">🏋️</span>
+              <span class="text-xs text-neutral-500 uppercase tracking-wide block mb-1">{t('product.netWeight', 'Net Weight')}</span>
+              <span class="text-sm font-semibold text-neutral-900">{p.netWeight}</span>
+            </div>
+          )}
+          {p.containerLoading && (
+            <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+              <span class="text-2xl block mb-2">🚢</span>
+              <span class="text-xs text-neutral-500 uppercase tracking-wide block mb-1">{t('product.containerLoading', 'Container Loading')}</span>
+              <span class="text-sm font-semibold text-neutral-900">{p.containerLoading}</span>
+            </div>
+          )}
+        </div>
+      </div>
+    )}
+
+    {/* FAQ */}
+    {p.faqs && p.faqs.length > 0 && (
+      <div class="mb-16">
+        <h2 class="mb-6 text-2xl">{t('product.faq', 'Frequently Asked Questions')}</h2>
+        <div class="space-y-3 max-w-3xl">
+          {p.faqs.map((faq, i) => (
+            <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+                <span class="font-medium text-neutral-900 pr-4">{faq.question}</span>
+                <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </span>
+              </summary>
+              <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">
+                {faq.answer}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    )}
+
     <!-- Related Products -->
     {relatedProducts.length > 0 && (
       <div class="mb-16">
@@ -300,15 +367,17 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
       </div>
     )}
 
-    <!-- Bottom CTA -->
-    <div class="text-center bg-primary-600 text-white rounded-2xl p-10">
-      <h2 class="text-white mb-2">Interested in {p.title}?</h2>
-      <p class="text-white/80 mb-6 max-w-xl mx-auto">
-        Get a customized quote within 24 hours. We offer OEM customizations to match your brand requirements.
-      </p>
-      <a href={`/${locale}/get-quote/?product=${encodeURIComponent(p.title)}`} class="btn-white text-lg">
-        {t('product.getQuoteForProduct')} →
-      </a>
+    <!-- Embedded Inquiry Form -->
+    <div class="mb-16">
+      <h2 class="mb-6 text-2xl">{t('product.sendInquiry', 'Send an Inquiry')}</h2>
+      <div class="bg-neutral-50 rounded-2xl p-8 border border-neutral-200 max-w-2xl">
+        <ContactForm
+          productName={p.title}
+          showProductField={true}
+          showQuantityField={true}
+          source="product-page"
+        />
+      </div>
     </div>
   </div>
 </BaseLayout>

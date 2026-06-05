@@ -81,6 +81,14 @@
     "customOptions": "خيارات التخصيص",
     "getQuoteForProduct": "طلب عرض سعر لهذا المنتج",
     "relatedProducts": "منتجات ذات صلة",
+    "packagingShipping": "التعبئة والشحن",
+    "packagingInfo": "التعبئة",
+    "cartonDimensions": "حجم الكرتون",
+    "grossWeight": "الوزن الإجمالي",
+    "netWeight": "الوزن الصافي",
+    "containerLoading": "تحميل الحاوية",
+    "faq": "الأسئلة الشائعة",
+    "sendInquiry": "إرسال استفسار",
     "downloadCatalog": "تنزيل الكتالوج"
   },
   "form": {
@@ -161,6 +169,16 @@
     "readMore": "اقرأ المزيد",
     "publishedOn": "نُشر في",
     "relatedPosts": "مقالات ذات صلة"
+  },
+  "downloads": {
+    "modalTitle": "تنزيل الموارد",
+    "modalSubtitle": "أدخل بريدك الإلكتروني لاستلام كتالوج المنتجات وملف الشركة فورًا.",
+    "emailPlaceholder": "بريدك@example.com",
+    "submitButton": "أرسل لي الملفات",
+    "successTitle": "تحقق من صندوق الوارد!",
+    "successMessage": "لقد أرسلنا روابط التنزيل إلى بريدك الإلكتروني. يمكنك أيضًا التنزيل مباشرة أدناه:",
+    "closeButton": "إغلاق",
+    "privacy": "نحن نحترم خصوصيتك. لن تتم مشاركة بريدك الإلكتروني أبدًا."
   },
   "common": {
     "viewAll": "عرض الكل",

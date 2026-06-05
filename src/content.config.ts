@@ -19,6 +19,17 @@ const products = defineCollection({
       value: z.string(),
     })).optional().default([]),
     customOptions: z.array(z.string()).optional().default([]),
+    // Packaging & shipping
+    packagingInfo: z.string().optional().default(''),
+    cartonDimensions: z.string().optional().default(''),
+    grossWeight: z.string().optional().default(''),
+    netWeight: z.string().optional().default(''),
+    containerLoading: z.string().optional().default(''),
+    // FAQs
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional().default([]),
     featured: z.boolean().optional().default(false),
     order: z.number().optional().default(0),
     updated: z.date().optional(),

@@ -24,7 +24,8 @@ const currentLocale = Astro.url.pathname.split('/')[1] || 'en';
     {LANGUAGES.map((lang) => {
       const pathParts = Astro.url.pathname.split('/').filter(Boolean);
       // 替换第一个路径段（locale）为目标语言
-      const targetPath = `/${lang.code}/${pathParts.slice(1).join('/')}`;
+      const remaining = pathParts.slice(1).join('/');
+      const targetPath = remaining ? `/${lang.code}/${remaining}/` : `/${lang.code}/`;
       const isActive = lang.code === currentLocale;
       return (
         <a
