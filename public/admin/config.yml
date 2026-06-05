@@ -4,6 +4,9 @@ backend:
   branch: master
   base_url: https://www.jdrehab.com
   auth_endpoint: api/auth
+  auth_scope: repo
+  auth_type: pkce
+  client_id: Ov23liEhNm05xCeSSCVK
   squash_merges: true
 
 media_folder: "public/images"

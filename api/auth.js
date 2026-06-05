@@ -1,26 +1,46 @@
 /**
  * Decap CMS GitHub OAuth Callback — Vercel Serverless Function
- * POST /api/auth — exchange GitHub temp code for access token
+ * Handles PKCE auth flow: exchanges code + code_verifier for access token
  */
 export default async function handler(req: any) {
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
   if (req.method === 'OPTIONS') {
-    return new Response(null, { headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST', 'Access-Control-Allow-Headers': 'Content-Type' }, status: 204 });
+    return new Response(null, { headers: corsHeaders, status: 204 });
   }
 
   if (req.method !== 'POST') {
-    return new Response('Method not allowed', { status: 405 });
+    return new Response('Method not allowed', { status: 405, headers: corsHeaders });
   }
 
   try {
-    const { code, redirect_uri } = await req.json();
-    if (!code) return new Response('Missing code', { status: 400 });
+    const body = await req.json();
+    const { code, code_verifier } = body;
+
+    if (!code) {
+      return Response.json({ error: 'Missing authorization code' }, { status: 400, headers: corsHeaders });
+    }
+
+    const clientId = process.env.OAUTH_CLIENT_ID;
+    const clientSecret = process.env.OAUTH_CLIENT_SECRET;
+
+    if (!clientId || !clientSecret) {
+      return Response.json({ error: 'OAuth not configured' }, { status: 500, headers: corsHeaders });
+    }
 
     const params = new URLSearchParams({
-      client_id: process.env.OAUTH_CLIENT_ID || '',
-      client_secret: process.env.OAUTH_CLIENT_SECRET || '',
+      client_id: clientId,
+      client_secret: clientSecret,
       code,
-      redirect_uri: redirect_uri || 'https://www.jdrehab.com/admin/',
     });
+
+    if (code_verifier) {
+      params.append('code_verifier', code_verifier);
+    }
 
     const res = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
@@ -31,18 +51,25 @@ export default async function handler(req: any) {
     const data = await res.json() as any;
 
     if (data.error) {
-      return Response.json({ error: data.error_description || data.error }, { status: 400,
-        headers: { 'Access-Control-Allow-Origin': '*' },
+      return Response.json({ error: data.error_description || data.error }, {
+        status: 400, headers: corsHeaders,
       });
     }
 
-    return Response.json({ token: data.access_token, provider: 'github' }, {
+    if (!data.access_token) {
+      return Response.json({ error: 'No access token received' }, { status: 500, headers: corsHeaders });
+    }
+
+    return Response.json({
+      token: data.access_token,
+      provider: 'github',
+    }, {
       status: 200,
-      headers: { 'Access-Control-Allow-Origin': '*' },
+      headers: corsHeaders,
     });
   } catch (e: any) {
-    return Response.json({ error: e.message }, { status: 500,
-      headers: { 'Access-Control-Allow-Origin': '*' },
+    return Response.json({ error: e.message || 'Internal error' }, {
+      status: 500, headers: corsHeaders,
     });
   }
 }
