@@ -1,6 +1,5 @@
 /**
- * Decap CMS GitHub OAuth Callback — Vercel Serverless Function
- * Handles PKCE auth flow: exchanges code + code_verifier for access token
+ * Decap CMS GitHub OAuth Callback — Vercel Edge Function
  */
 export default async function handler(req) {
   const corsHeaders = {
@@ -14,17 +13,11 @@ export default async function handler(req) {
   }
 
   if (req.method !== 'POST') {
-    return new Response('Method not allowed', { status: 405, headers: corsHeaders });
+    return Response.json({ error: 'Use POST' }, { status: 405, headers: corsHeaders });
   }
 
   try {
     const body = await req.json();
-    const { code, code_verifier } = body;
-
-    if (!code) {
-      return Response.json({ error: 'Missing authorization code' }, { status: 400, headers: corsHeaders });
-    }
-
     const clientId = process.env.OAUTH_CLIENT_ID;
     const clientSecret = process.env.OAUTH_CLIENT_SECRET;
 
@@ -35,42 +28,31 @@ export default async function handler(req) {
     const params = new URLSearchParams({
       client_id: clientId,
       client_secret: clientSecret,
-      code,
+      code: body.code,
+      redirect_uri: body.redirect_uri || 'https://www.jdrehab.com/admin/',
     });
 
-    if (code_verifier) {
-      params.append('code_verifier', code_verifier);
-    }
+    // Handle PKCE (optional)
+    if (body.code_verifier) params.append('code_verifier', body.code_verifier);
 
-    const res = await fetch('https://github.com/login/oauth/access_token', {
+    const ghRes = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
       headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
       body: params.toString(),
     });
 
-    const data = await res.json();
+    const data = await ghRes.json();
 
     if (data.error) {
-      return Response.json({ error: data.error_description || data.error }, {
-        status: 400, headers: corsHeaders,
-      });
-    }
-
-    if (!data.access_token) {
-      return Response.json({ error: 'No access token received' }, { status: 500, headers: corsHeaders });
+      return Response.json({ error: data.error_description || data.error }, { status: 400, headers: corsHeaders });
     }
 
     return Response.json({
       token: data.access_token,
       provider: 'github',
-    }, {
-      status: 200,
-      headers: corsHeaders,
-    });
+    }, { status: 200, headers: corsHeaders });
   } catch (e) {
-    return Response.json({ error: e.message || 'Internal error' }, {
-      status: 500, headers: corsHeaders,
-    });
+    return Response.json({ error: e.message }, { status: 500, headers: corsHeaders });
   }
 }
 
