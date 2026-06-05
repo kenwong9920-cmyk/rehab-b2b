@@ -67,7 +67,7 @@ export default async function handler(req) {
       status: 200,
       headers: corsHeaders,
     });
-  } catch (e: any) {
+  } catch (e) {
     return Response.json({ error: e.message || 'Internal error' }, {
       status: 500, headers: corsHeaders,
     });
