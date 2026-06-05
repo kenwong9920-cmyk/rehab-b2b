@@ -16,7 +16,12 @@ export default async function handler(req) {
   let code, redirect_uri, code_verifier;
 
   if (req.method === 'GET') {
-    const url = new URL(req.url);
+    // Vercel Edge Function: URL might be relative, add base if needed
+    let urlStr = req.url;
+    if (urlStr.startsWith('/')) {
+      urlStr = 'https://www.jdrehab.com' + urlStr;
+    }
+    const url = new URL(urlStr);
     code = url.searchParams.get('code');
     redirect_uri = url.searchParams.get('redirect_uri') || 'https://www.jdrehab.com/admin/';
     code_verifier = url.searchParams.get('code_verifier');
