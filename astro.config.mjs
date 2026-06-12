@@ -22,7 +22,21 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    // i18n 自动处理 hreflang 在 sitemap 中
+    i18n: {
+      defaultLocale: 'en',
+      locales: {
+        en: 'en-US',
+        fr: 'fr-FR',
+        de: 'de-DE',
+        es: 'es-ES',
+        ko: 'ko-KR',
+        ja: 'ja-JP',
+        ar: 'ar-SA',
+      },
+    },
+  })],
 
   // 图片优化 (Astro 5 内置)
   image: {

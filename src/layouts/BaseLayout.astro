@@ -15,6 +15,13 @@ const { title, description, locale = 'en', image = '/og-image.png', schema } = A
 const siteName = 'JinDa Rehab Medical';
 const currentUrl = Astro.url.href;
 const imageUrl = new URL(image, Astro.url).href;
+
+// Build hreflang alternates with proper URL construction
+// (avoids fragile string-replace that can break on edge cases)
+const origin = Astro.url.origin;
+const currentPath = Astro.url.pathname;
+const pathWithoutLocale = currentPath.replace(new RegExp(`^/${locale}`), '') || '/';
+const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
 ---
 
 <!DOCTYPE html>
@@ -26,14 +33,10 @@ const imageUrl = new URL(image, Astro.url).href;
   <link rel="canonical" href={currentUrl} />
 
   <!-- Hreflang for multilingual SEO -->
-  <link rel="alternate" hreflang="en" href={currentUrl.replace(`/${locale}/`, '/en/')} />
-  <link rel="alternate" hreflang="fr" href={currentUrl.replace(`/${locale}/`, '/fr/')} />
-  <link rel="alternate" hreflang="de" href={currentUrl.replace(`/${locale}/`, '/de/')} />
-  <link rel="alternate" hreflang="es" href={currentUrl.replace(`/${locale}/`, '/es/')} />
-  <link rel="alternate" hreflang="ko" href={currentUrl.replace(`/${locale}/`, '/ko/')} />
-  <link rel="alternate" hreflang="ja" href={currentUrl.replace(`/${locale}/`, '/ja/')} />
-  <link rel="alternate" hreflang="ar" href={currentUrl.replace(`/${locale}/`, '/ar/')} />
-  <link rel="alternate" hreflang="x-default" href={currentUrl.replace(`/${locale}/`, '/en/')} />
+  {locales.map(l => (
+    <link rel="alternate" hreflang={l} href={`${origin}/${l}${pathWithoutLocale}`} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={`${origin}/en${pathWithoutLocale}`} />
 
   <!-- Primary Meta -->
   <title>{title} | {siteName}</title>
