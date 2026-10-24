@@ -6,7 +6,8 @@ export const SITE = {
   tagline: 'Professional Rehabilitation Equipment Manufacturer',
   url: 'https://www.jdrehab.com',
   email: 'info@jdrehab.com',
-  phone: '+8613710405041',
+  phone: '+8613680164002',
+  phoneDisplay: '+86 13680164002',
   whatsapp: '+85257044967',
   address: {
     street: 'No. 41 Jiajing Road, the Second Industrial Zone, Nanlang Sub-district',
