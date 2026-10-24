@@ -55,7 +55,9 @@
     "offerRD": "Innovación I+D",
     "offerRDDesc": "Equipo de ingeniería interno para desarrollo de nuevos productos",
     "offerSupport": "Soporte Postventa",
-    "offerSupportDesc": "Soporte técnico, repuestos y servicio de garantía"
+    "offerSupportDesc": "Soporte técnico, repuestos y servicio de garantía",
+    "seoTitle": "Fabricante de equipos de rehabilitación | JinDa Rehab Medical",
+    "seoDescription": "Fabricante certificado ISO 13485 de ayudas para caminar, sillas de ducha y sillas con orinal. 16+ años, CE y FDA, exportamos a más de 50 países."
   },
   "footer": {
     "company": "Empresa",
@@ -119,7 +121,8 @@
   },
   "about": {
     "title": "Sobre JinDa Rehab Medical",
-    "subtitle": "Su socio de confianza en la fabricación de equipos de rehabilitación"
+    "subtitle": "Su socio de confianza en la fabricación de equipos de rehabilitación",
+    "seoDescription": "Fabricante de equipos de rehabilitación con 16+ años de experiencia OEM/ODM. Fábrica de 15.000 m² en Guangdong, ISO 13485, más de 50 mercados."
   },
   "factory": {
     "title": "Nuestra Fábrica",
@@ -153,22 +156,26 @@
     "quality4Desc": "Muestreo aleatorio según normas AQL. Revisión de documentación y certificación antes de la liberación.",
     "ctaTitle": "¿Quiere Visitar Nuestra Fábrica?",
     "ctaSubtitle": "Damos la bienvenida a socios potenciales para recorrer nuestras instalaciones. Contáctenos para programar una visita.",
-    "ctaText": "Programar una Visita →"
+    "ctaText": "Programar una Visita →",
+    "seoDescription": "Conozca nuestra fábrica de 15.000 m²: líneas automatizadas, I+D propio y pruebas funcionales al 100 % antes de cada envío."
   },
   "oem": {
     "title": "Servicios OEM y ODM",
-    "subtitle": "Dé vida a su marca con nuestra fabricación personalizada"
+    "subtitle": "Dé vida a su marca con nuestra fabricación personalizada",
+    "seoDescription": "Fabricación OEM y ODM de equipos de rehabilitación: marca, colores, embalaje y especificaciones a medida. MOQ bajo, fábrica certificada ISO 13485."
   },
   "contact": {
     "title": "Contáctenos",
-    "subtitle": "Nos encantaría saber de usted"
+    "subtitle": "Nos encantaría saber de usted",
+    "seoDescription": "Contacte con nuestro equipo para precios al por mayor, muestras y proyectos OEM. Respondemos en 24 h. Fábrica en Guangdong, China."
   },
   "blog": {
     "title": "Blog y perspectivas",
     "subtitle": "Guías de compra B2B, comparativas de productos y perspectivas del sector para compradores de equipos de rehabilitación.",
     "readMore": "Leer más",
     "publishedOn": "Publicado el",
-    "relatedPosts": "Artículos relacionados"
+    "relatedPosts": "Artículos relacionados",
+    "seoDescription": "Guías de compra B2B para equipos de rehabilitación: comparativas, requisitos de certificación, MOQ y consejos de abastecimiento para distribuidores."
   },
   "downloads": {
     "modalTitle": "Descargar recursos",
@@ -178,7 +185,8 @@
     "successTitle": "¡Revise su bandeja de entrada!",
     "successMessage": "Hemos enviado los enlaces de descarga a su correo electrónico. También puede descargar directamente a continuación:",
     "closeButton": "Cerrar",
-    "privacy": "Respetamos su privacidad. Su correo electrónico nunca será compartido."
+    "privacy": "Respetamos su privacidad. Su correo electrónico nunca será compartido.",
+    "seoDescription": "Descargue nuestro catálogo de productos, perfil corporativo y certificados. Especificaciones completas, MOQ y embalaje para compradores."
   },
   "common": {
     "viewAll": "Ver todo",
@@ -186,5 +194,17 @@
     "backToHome": "Volver al inicio",
     "pageNotFound": "Página no encontrada",
     "pageNotFoundDesc": "La página que busca no existe o ha sido movida."
+  },
+  "products": {
+    "seoDescription": "Equipos de rehabilitación al por mayor: ayudas para caminar, sillas de ducha, andadores, sillas con orinal y seguridad para WC. ISO 13485, CE y FDA."
+  },
+  "solutions": {
+    "seoDescription": "Soluciones de equipos de rehabilitación para hospitales, residencias, distribuidores y atención domiciliaria — gamas, certificaciones y precios por volumen."
+  },
+  "caseStudies": {
+    "seoDescription": "Casos de éxito B2B: cómo distribuidores y proveedores de cuidados compran equipos de rehabilitación — plazos, volúmenes y personalización reales."
+  },
+  "getQuote": {
+    "seoDescription": "Solicite una cotización al por mayor de equipos de rehabilitación. Envíe sus especificaciones y volumen — respondemos en 24 h con precio y plazos."
   }
 }

@@ -25,7 +25,7 @@ const sourceParam = Astro.url.searchParams.get('source') || '';
 const isDownload = sourceParam === 'download';
 ---
 
-<BaseLayout title={t('nav.getQuote')} description="Request a customized quote for rehabilitation equipment" locale={locale!}>
+<BaseLayout title={t('nav.getQuote')} description={t('getQuote.seoDescription')} locale={locale!}>
   <section class="bg-gradient-to-br from-primary-700 to-primary-900 text-white">
     <div class="container-main py-16 text-center max-w-3xl">
       <h1 class="text-white mb-4">{t('nav.getQuote')}</h1>

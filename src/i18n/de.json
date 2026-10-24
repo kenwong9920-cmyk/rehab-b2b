@@ -55,7 +55,9 @@
     "offerRD": "F&E Innovation",
     "offerRDDesc": "Internes Ingenieurteam für neue Produktentwicklung",
     "offerSupport": "After-Sales-Support",
-    "offerSupportDesc": "Technischer Support, Ersatzteile und Garantieservice"
+    "offerSupportDesc": "Technischer Support, Ersatzteile und Garantieservice",
+    "seoTitle": "Hersteller von Rehabilitationsausrüstung | JinDa Rehab Medical",
+    "seoDescription": "ISO-13485-zertifizierter Hersteller von Gehhilfen, Duschstühlen und Toilettenstühlen. 16+ Jahre Erfahrung, CE und FDA, Export in über 50 Länder."
   },
   "footer": {
     "company": "Unternehmen",
@@ -119,7 +121,8 @@
   },
   "about": {
     "title": "Über JinDa Rehab Medical",
-    "subtitle": "Ihr vertrauenswürdiger Partner für die Herstellung von Rehabilitationsausrüstung"
+    "subtitle": "Ihr vertrauenswürdiger Partner für die Herstellung von Rehabilitationsausrüstung",
+    "seoDescription": "Hersteller von Rehabilitationsausrüstung mit 16+ Jahren OEM/ODM-Erfahrung. 15.000 m² Werk in Guangdong, ISO 13485 zertifiziert, 50+ Exportmärkte."
   },
   "factory": {
     "title": "Unsere Fabrik",
@@ -153,22 +156,26 @@
     "quality4Desc": "Stichproben nach AQL-Standards. Dokumentations- und Zertifizierungsprüfung vor Freigabe.",
     "ctaTitle": "Möchten Sie Unsere Fabrik Besichtigen?",
     "ctaSubtitle": "Wir begrüßen potenzielle Partner zur Besichtigung unserer Anlage. Kontaktieren Sie uns für einen Besuchstermin.",
-    "ctaText": "Besuch Vereinbaren →"
+    "ctaText": "Besuch Vereinbaren →",
+    "seoDescription": "Einblick in unser 15.000 m² Werk: automatisierte Fertigungslinien, eigene Entwicklung und 100 % Funktionsprüfung vor jedem Versand."
   },
   "oem": {
     "title": "OEM & ODM Dienstleistungen",
-    "subtitle": "Verwirklichen Sie Ihre Markenvision mit unserer kundenspezifischen Fertigung"
+    "subtitle": "Verwirklichen Sie Ihre Markenvision mit unserer kundenspezifischen Fertigung",
+    "seoDescription": "OEM- und ODM-Fertigung von Rehabilitationsausrüstung: eigenes Branding, Farben, Verpackung und Spezifikationen. Geringe MOQ, ISO 13485 zertifiziert."
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
-    "subtitle": "Wir freuen uns auf Ihre Nachricht"
+    "subtitle": "Wir freuen uns auf Ihre Nachricht",
+    "seoDescription": "Kontaktieren Sie unser Team für Großhandelspreise, Muster und OEM-Projekte. Antwort innerhalb von 24 Stunden. Werk in Guangdong, China."
   },
   "blog": {
     "title": "Blog & Einblicke",
     "subtitle": "B2B-Einkaufsführer, Produktvergleiche und Brancheneinblicke für Käufer von Rehabilitationsgeräten.",
     "readMore": "Weiterlesen",
     "publishedOn": "Veröffentlicht am",
-    "relatedPosts": "Verwandte Artikel"
+    "relatedPosts": "Verwandte Artikel",
+    "seoDescription": "B2B-Kaufberatung für Rehabilitationsausrüstung: Produktvergleiche, Zertifizierungsanforderungen, MOQ und Beschaffungstipps für Händler und Kliniken."
   },
   "downloads": {
     "modalTitle": "Ressourcen herunterladen",
@@ -178,7 +185,8 @@
     "successTitle": "Prüfen Sie Ihren Posteingang!",
     "successMessage": "Wir haben die Download-Links an Ihre E-Mail-Adresse gesendet. Sie können auch direkt unten herunterladen:",
     "closeButton": "Schließen",
-    "privacy": "Wir respektieren Ihre Privatsphäre. Ihre E-Mail wird niemals weitergegeben."
+    "privacy": "Wir respektieren Ihre Privatsphäre. Ihre E-Mail wird niemals weitergegeben.",
+    "seoDescription": "Produktkatalog, Firmenprofil und Zertifikate herunterladen. Vollständige Spezifikationen, MOQ und Verpackungsdetails für Einkäufer."
   },
   "common": {
     "viewAll": "Alle anzeigen",
@@ -186,5 +194,17 @@
     "backToHome": "Zurück zur Startseite",
     "pageNotFound": "Seite nicht gefunden",
     "pageNotFoundDesc": "Die gesuchte Seite existiert nicht oder wurde verschoben."
+  },
+  "products": {
+    "seoDescription": "Rehabilitationsausrüstung im Großhandel: Gehhilfen, Duschstühle, Rollatoren, Toilettenstühle und WC-Sicherheit. ISO 13485, CE und FDA zertifiziert."
+  },
+  "solutions": {
+    "seoDescription": "Lösungen für Rehabilitationsausrüstung für Kliniken, Pflegeheime, Händler und Häuspflege — passende Sortimente, Zertifikate und Staffelpreise."
+  },
+  "caseStudies": {
+    "seoDescription": "B2B-Fallstudien: Wie Händler und Pflegeanbieter Rehabilitationsausrüstung beschaffen — reale Zeitpläne, Mengen und Individualisierung."
+  },
+  "getQuote": {
+    "seoDescription": "Fordern Sie ein Großhandelsangebot für Rehabilitationsausrüstung an. Senden Sie Spezifikationen und Menge — Antwort in 24 Stunden mit Preis und Lieferzeit."
   }
 }

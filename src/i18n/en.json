@@ -55,7 +55,9 @@
     "offerRD": "R&D Innovation",
     "offerRDDesc": "In-house engineering team for new product development",
     "offerSupport": "After-Sales Support",
-    "offerSupportDesc": "Technical support, spare parts, and warranty service"
+    "offerSupportDesc": "Technical support, spare parts, and warranty service",
+    "seoTitle": "Rehabilitation Equipment Manufacturer | JinDa Rehab Medical",
+    "seoDescription": "ISO 13485 certified manufacturer of walking aids, shower chairs and commode chairs. 16+ years, CE & FDA approved, shipping to 50+ countries."
   },
   "footer": {
     "company": "Company",
@@ -119,7 +121,8 @@
   },
   "about": {
     "title": "About JinDa Rehab Medical",
-    "subtitle": "Your trusted partner in rehabilitation equipment manufacturing"
+    "subtitle": "Your trusted partner in rehabilitation equipment manufacturing",
+    "seoDescription": "Rehabilitation equipment manufacturer with 16+ years of OEM/ODM experience. 15,000 m² factory in Guangdong, ISO 13485 certified, 50+ export markets."
   },
   "factory": {
     "title": "Our Factory",
@@ -153,22 +156,26 @@
     "quality4Desc": "Random sampling per AQL standards. Documentation and certification review before release.",
     "ctaTitle": "Want to Visit Our Factory?",
     "ctaSubtitle": "We welcome potential partners to tour our facility. Contact us to schedule a visit.",
-    "ctaText": "Schedule a Visit →"
+    "ctaText": "Schedule a Visit →",
+    "seoDescription": "Inside our 15,000 m² rehabilitation equipment factory: automated production lines, in-house R&D and 100% functional testing before every shipment."
   },
   "oem": {
     "title": "OEM & ODM Services",
-    "subtitle": "Bring your brand vision to life with our custom manufacturing"
+    "subtitle": "Bring your brand vision to life with our custom manufacturing",
+    "seoDescription": "OEM/ODM rehabilitation equipment manufacturing: custom branding, colors, packaging and specs. Low MOQ from an ISO 13485 certified factory."
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "We'd love to hear from you"
+    "subtitle": "We'd love to hear from you",
+    "seoDescription": "Contact our rehabilitation equipment team for wholesale pricing, samples and OEM projects. We reply within 24 hours. Factory in Guangdong, China."
   },
   "blog": {
     "title": "Blog & Insights",
     "subtitle": "B2B purchasing guides, product comparisons, and industry insights for rehabilitation equipment buyers. From walking aids to shower chairs — expert knowledge from a certified manufacturer.",
     "readMore": "Read More",
     "publishedOn": "Published on",
-    "relatedPosts": "Related Articles"
+    "relatedPosts": "Related Articles",
+    "seoDescription": "B2B buying guides for rehabilitation equipment — product comparisons, certification requirements, MOQ and sourcing advice for distributors worldwide."
   },
   "downloads": {
     "modalTitle": "Download Resources",
@@ -178,7 +185,8 @@
     "successTitle": "Check Your Inbox!",
     "successMessage": "We've sent the download links to your email. You can also download directly below:",
     "closeButton": "Close",
-    "privacy": "We respect your privacy. Your email will never be shared."
+    "privacy": "We respect your privacy. Your email will never be shared.",
+    "seoDescription": "Download our product catalog, company profile and certificates. Full specifications, MOQ and packaging details for rehabilitation equipment buyers."
   },
   "common": {
     "viewAll": "View All",
@@ -186,5 +194,17 @@
     "backToHome": "Back to Home",
     "pageNotFound": "Page Not Found",
     "pageNotFoundDesc": "The page you're looking for doesn't exist or has been moved."
+  },
+  "products": {
+    "seoDescription": "Wholesale rehabilitation equipment: walking aids, shower chairs, walkers, commode chairs and toilet safety. ISO 13485, CE & FDA approved factory."
+  },
+  "solutions": {
+    "seoDescription": "Rehabilitation equipment solutions for hospitals, care homes, distributors and home care — tailored product ranges, certifications and volume pricing."
+  },
+  "caseStudies": {
+    "seoDescription": "B2B case studies showing how distributors and care providers source rehabilitation equipment — real timelines, volumes and customization results."
+  },
+  "getQuote": {
+    "seoDescription": "Request a wholesale quote for rehabilitation equipment. Send your specs and volume — our team replies within 24 hours with pricing and lead times."
   }
 }

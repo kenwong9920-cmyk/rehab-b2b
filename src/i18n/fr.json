@@ -55,7 +55,9 @@
     "offerRD": "R&D Innovation",
     "offerRDDesc": "Équipe d'ingénierie interne pour le développement de nouveaux produits",
     "offerSupport": "Support Après-Vente",
-    "offerSupportDesc": "Support technique, pièces détachées et service de garantie"
+    "offerSupportDesc": "Support technique, pièces détachées et service de garantie",
+    "seoTitle": "Fabricant d'équipements de réadaptation | JinDa Rehab",
+    "seoDescription": "Fabricant certifié ISO 13485 d'aides à la marche, de chaises de douche et de chaises percées. 16 ans d'expérience, CE et FDA, export dans plus de 50 pays."
   },
   "footer": {
     "company": "Entreprise",
@@ -119,7 +121,8 @@
   },
   "about": {
     "title": "À propos de JinDa Rehab Medical",
-    "subtitle": "Votre partenaire de confiance en fabrication d'équipement de réadaptation"
+    "subtitle": "Votre partenaire de confiance en fabrication d'équipement de réadaptation",
+    "seoDescription": "Fabricant d'équipements de réadaptation, 16 ans d'expérience OEM/ODM. Usine de 15 000 m² dans le Guangdong, certifiée ISO 13485, présente dans 50+ pays."
   },
   "factory": {
     "title": "Notre Usine",
@@ -153,22 +156,26 @@
     "quality4Desc": "Échantillonnage aléatoire selon les normes AQL. Examen de la documentation et de la certification avant libération.",
     "ctaTitle": "Vous Voulez Visiter Notre Usine ?",
     "ctaSubtitle": "Nous accueillons les partenaires potentiels pour visiter notre installation. Contactez-nous pour planifier une visite.",
-    "ctaText": "Planifier une Visite →"
+    "ctaText": "Planifier une Visite →",
+    "seoDescription": "Découvrez notre usine de 15 000 m² dédiée aux équipements de réadaptation : lignes automatisées, R&D interne et tests fonctionnels à 100 % avant expédition."
   },
   "oem": {
     "title": "Services OEM et ODM",
-    "subtitle": "Donnez vie à votre marque avec notre fabrication sur mesure"
+    "subtitle": "Donnez vie à votre marque avec notre fabrication sur mesure",
+    "seoDescription": "Fabrication OEM et ODM d'équipements de réadaptation : marque, couleurs, emballage et spécifications sur mesure. MOQ réduit, usine certifiée ISO 13485."
   },
   "contact": {
     "title": "Contactez-nous",
-    "subtitle": "Nous serions ravis de vous entendre"
+    "subtitle": "Nous serions ravis de vous entendre",
+    "seoDescription": "Contactez notre équipe pour tarifs de gros, échantillons et projets OEM. Réponse sous 24 h. Usine dans le Guangdong, en Chine."
   },
   "blog": {
     "title": "Blog et perspectives",
     "subtitle": "Guides d'achat B2B, comparaisons de produits et informations sectorielles pour les acheteurs d'équipements de réadaptation.",
     "readMore": "Lire la suite",
     "publishedOn": "Publié le",
-    "relatedPosts": "Articles connexes"
+    "relatedPosts": "Articles connexes",
+    "seoDescription": "Guides d'achat B2B pour équipements de réadaptation : comparaisons de produits, exigences de certification, MOQ et conseils de sourcing pour distributeurs."
   },
   "downloads": {
     "modalTitle": "Télécharger les ressources",
@@ -178,7 +185,8 @@
     "successTitle": "Vérifiez votre boîte mail !",
     "successMessage": "Nous avons envoyé les liens de téléchargement à votre adresse email. Vous pouvez également télécharger directement ci-dessous :",
     "closeButton": "Fermer",
-    "privacy": "Nous respectons votre vie privée. Votre email ne sera jamais partagé."
+    "privacy": "Nous respectons votre vie privée. Votre email ne sera jamais partagé.",
+    "seoDescription": "Téléchargez notre catalogue produits, profil d'entreprise et certificats. Spécifications complètes, MOQ et emballage pour acheteurs d'équipements."
   },
   "common": {
     "viewAll": "Voir tout",
@@ -186,5 +194,17 @@
     "backToHome": "Retour à l'accueil",
     "pageNotFound": "Page non trouvée",
     "pageNotFoundDesc": "La page que vous recherchez n'existe pas ou a été déplacée."
+  },
+  "products": {
+    "seoDescription": "Équipements de réadaptation en gros : aides à la marche, chaises de douche, déambulateurs, chaises percées et sécurité WC. Usine ISO 13485, CE et FDA."
+  },
+  "solutions": {
+    "seoDescription": "Solutions d'équipement de réadaptation pour hôpitaux, maisons de soins, distributeurs et soins à domicile — gammes, certifications et tarifs volumiques."
+  },
+  "caseStudies": {
+    "seoDescription": "Études de cas B2B : comment distributeurs et soignants s'approvisionnent en équipements de réadaptation — délais, volumes et personnalisation réels."
+  },
+  "getQuote": {
+    "seoDescription": "Demandez un devis en gros pour équipements de réadaptation. Envoyez vos spécifications et volumes — réponse sous 24 h avec prix et délais."
   }
 }

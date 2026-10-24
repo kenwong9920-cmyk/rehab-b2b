@@ -6,13 +6,17 @@ import Footer from '@/components/Footer.astro';
 interface Props {
   title: string;
   description: string;
+  /** 完整 SEO 标题（含品牌）。提供时不再自动拼接 " | JinDa Rehab Medical" */
+  seoTitle?: string;
   locale: string;
   image?: string;
   schema?: object;
 }
 
-const { title, description, locale = 'en', image = '/og-image.png', schema } = Astro.props;
+const { title, description, seoTitle, locale = 'en', image = '/og-image.png', schema } = Astro.props;
 const siteName = 'JinDa Rehab Medical';
+/** 最终输出到 <title> 的文本：优先 seoTitle，否则 title + 品牌名 */
+const pageTitle = seoTitle || `${title} | ${siteName}`;
 const currentUrl = Astro.url.href;
 const imageUrl = new URL(image, Astro.url).href;
 
@@ -39,14 +43,14 @@ const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
   <link rel="alternate" hreflang="x-default" href={`${origin}/en${pathWithoutLocale}`} />
 
   <!-- Primary Meta -->
-  <title>{title} | {siteName}</title>
+  <title>{pageTitle}</title>
   <meta name="description" content={description} />
   <meta name="keywords" content="rehabilitation equipment manufacturer, medical equipment wholesale, walking aids, shower chair, commode chair, OEM rehabilitation products, JinDa Rehab Medical" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={currentUrl} />
-  <meta property="og:title" content={`${title} | ${siteName}`} />
+  <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={imageUrl} />
   <meta property="og:image:width" content="1200" />
@@ -56,7 +60,7 @@ const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${title} | ${siteName}`} />
+  <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={imageUrl} />
 
