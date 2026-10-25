@@ -1,0 +1,215 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE, FACTS, PRODUCT_CATEGORIES } from '@/utils/constants';
+import { MANUFACTURERS } from '@/data/manufacturers';
+import { useTranslations } from '@/utils/i18n';
+import { getCollection } from 'astro:content';
+import ContactForm from '@/components/ContactForm.astro';
+
+const AVAILABLE = ['en'];
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  for (const locale of ['en'] as const) {
+    for (const m of MANUFACTURERS) {
+      paths.push({ params: { locale, slug: m.slug } });
+    }
+  }
+  return paths;
+}
+
+const { locale, slug } = Astro.params;
+const page = MANUFACTURERS.find((m) => m.slug === slug);
+if (!page) throw new Error(`Unknown manufacturer page: ${slug}`);
+
+const { t } = useTranslations(locale!);
+
+// 主推产品（从内容集合取真实数据）
+const all = await getCollection('products', (e) => e.id.startsWith(`${locale}/`));
+const featured = page.featured
+  .map((s) => all.find((p) => p.id === `${locale}/${s}`))
+  .filter(Boolean)
+  .map((p) => ({
+    title: p!.data.title,
+    image: p!.data.image,
+    moq: p!.data.moq,
+    href: `/${locale}/products/${p!.id.split('/').pop()}/`,
+  }));
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      name: page.h1,
+      description: page.description,
+      url: `${SITE.url}/${locale}/manufacturers/${page.slug}/`,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: 'Manufacturers', item: `${SITE.url}/${locale}/manufacturers/` },
+        { '@type': 'ListItem', position: 3, name: page.h1, item: `${SITE.url}/${locale}/manufacturers/${page.slug}/` },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: page.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={page.h1}
+  seoTitle={`${page.h1} | ${SITE.name}`}
+  description={page.description}
+  locale={locale!}
+  availableLocales={AVAILABLE}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-8" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">Home</a>
+      <span>/</span>
+      <a href={`/${locale}/manufacturers/`} class="hover:text-primary-600">Manufacturers</a>
+      <span>/</span>
+      <span class="text-neutral-800 font-medium truncate">{page.keyword}</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-14">
+      <div class="lg:col-span-2">
+        <h1 class="mb-5">{page.h1}</h1>
+        <div class="bg-accent-50 border-l-4 border-accent-400 rounded-r-lg px-5 py-4 mb-6">
+          <p class="text-sm text-neutral-800 leading-relaxed">{page.shortAnswer}</p>
+        </div>
+        {page.body.map((p) => (
+          <p class="text-neutral-600 leading-relaxed mb-4">{p}</p>
+        ))}
+      </div>
+
+      <!-- 询盘卡 -->
+      <aside class="lg:col-span-1">
+        <div class="bg-neutral-50 border border-neutral-200 rounded-xl p-6 sticky top-24">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+            <span class="text-xs font-medium text-neutral-700">Reply within {FACTS.responseHours} hours</span>
+          </div>
+          <h2 class="text-base font-semibold text-neutral-900 mb-2">Send the specification</h2>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-4">
+            Model or drawing, target quantity and destination country. You get an itemised FOB quote,
+            not a range.
+          </p>
+          <ContactForm source={`manufacturer-${page.slug}`} />
+        </div>
+      </aside>
+    </div>
+
+    <!-- 规格 -->
+    <section class="mb-14">
+      <h2 class="mb-5 text-2xl">Specification and MOQ</h2>
+      <div class="border border-neutral-200 rounded-xl overflow-hidden bg-white">
+        <table class="w-full">
+          <tbody>
+            {page.specs.map((s) => (
+              <tr class="border-b border-neutral-100 last:border-0">
+                <td class="px-5 py-3.5 text-sm font-medium text-neutral-700 bg-neutral-50 w-2/5">{s.label}</td>
+                <td class="px-5 py-3.5 text-sm text-neutral-700">{s.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 定制能力 -->
+    <section class="mb-14">
+      <h2 class="mb-5 text-2xl">What can be customised</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {page.customization.map((c) => (
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-sm text-neutral-700">{c}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="text-xs text-neutral-500 mt-4">
+        Certifications held: {SITE.certifications.join(' · ')} —
+        <a href={`/${locale}/certifications/`} class="text-primary-600 hover:text-primary-700">see how to verify each one</a>.
+      </p>
+    </section>
+
+    <!-- 主推产品 -->
+    {featured.length > 0 && (
+      <section class="mb-14">
+        <h2 class="mb-5 text-2xl">Models in this range</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {featured.map((p) => (
+            <a href={p.href} class="group bg-white border border-neutral-200 rounded-xl overflow-hidden hover:border-primary-300 hover:shadow-sm transition-all no-underline">
+              <div class="aspect-square bg-neutral-50 overflow-hidden">
+                <img src={p.image} alt={p.title} class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="400" />
+              </div>
+              <div class="p-4">
+                <h3 class="text-sm font-medium text-neutral-900 group-hover:text-primary-700 transition-colors leading-snug mb-1.5">{p.title}</h3>
+                {p.moq && <p class="text-xs text-neutral-500">MOQ: {p.moq}</p>}
+              </div>
+            </a>
+          ))}
+        </div>
+        <a href={`/${locale}/products/`} class="inline-block mt-5 text-sm font-medium text-primary-600 hover:text-primary-700">View the full catalogue →</a>
+      </section>
+    )}
+
+    <!-- 关联分类 -->
+    <section class="mb-14">
+      <h2 class="mb-4 text-xl">Related categories</h2>
+      <div class="flex flex-wrap gap-3">
+        {page.categories.map((slugCat) => {
+          const cat = PRODUCT_CATEGORIES.find((c) => c.slug === slugCat);
+          if (!cat) return null;
+          return (
+            <a href={`/${locale}/products/category/${cat.slug}/`} class="text-sm bg-white border border-neutral-200 rounded-lg px-3.5 py-2 text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors no-underline">
+              {cat.icon} {t(cat.nameKey)}
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-14">
+      <h2 class="mb-6 text-2xl">Buyer questions on this range</h2>
+      <div class="space-y-3 max-w-3xl">
+        {page.faqs.map((f) => (
+          <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+              <span class="font-medium text-neutral-900 pr-4">{f.question}</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- 其他页面 -->
+    <section class="mb-14">
+      <h2 class="mb-4 text-xl">Other manufacturing pages</h2>
+      <div class="flex flex-wrap gap-2">
+        {MANUFACTURERS.filter((m) => m.slug !== page.slug).map((m) => (
+          <a href={`/${locale}/manufacturers/${m.slug}/`} class="text-sm bg-white border border-neutral-200 rounded-lg px-3.5 py-2 text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors no-underline">
+            {m.keyword}
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>

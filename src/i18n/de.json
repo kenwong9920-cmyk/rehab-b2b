@@ -206,5 +206,24 @@
   },
   "getQuote": {
     "seoDescription": "Fordern Sie ein Großhandelsangebot für Rehabilitationsausrüstung an. Senden Sie Spezifikationen und Menge — Antwort in 24 Stunden mit Preis und Lieferzeit."
+  },
+  "segments": {
+    "segHeading": "Für wen kaufen Sie ein?",
+    "segSub": "Die richtige Antwort hängt davon ab, wo das Produkt eingesetzt wird. Wählen Sie den passenden Weg.",
+    "distTitle": "Importeure & Händler",
+    "distDesc": "Volle Sortimentsabdeckung, Sammelcontainer und Dokumente, die Ihre Kunden akzeptieren.",
+    "instTitle": "Pflegeheime & Apothekenketten",
+    "instDesc": "Mengenlieferung mit Ersatzteilen, gestaffelten Lieferungen und After-Sales-Support.",
+    "shopTitle": "E-Commerce & Amazon-Händler",
+    "shopDesc": "FBA-fertige Verpackung, kleine Erstbestellungen und marktplatzkonforme Kennzeichnung.",
+    "tendTitle": "Ausschreibungen & öffentliche Beschaffung",
+    "tendDesc": "Dokumentenpakete, Autorisierungsschreiben und Prüfung der Spezifikationskonformität.",
+    "segCta": "Unsicher? Sprechen Sie mit einem Spezialisten →"
+  },
+  "promise": {
+    "quote": "Angebotsantwort",
+    "production": "Tage Produktion",
+    "moq": "Stück Mindestmenge",
+    "countries": "Belieferte Länder"
   }
 }

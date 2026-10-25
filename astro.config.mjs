@@ -36,6 +36,14 @@ export default defineConfig({
         ar: 'ar-SA',
       },
     },
+    // 按页型拆分 sitemap，便于在 Search Console 里分类型看收录率
+    // （哪一类页面没被收录，一眼就能定位，而不是在 519 个 URL 里翻）
+    chunks: {
+      products: (item) => (/\/products\//.test(item.url) ? item : undefined),
+      blog: (item) => (/\/blog\//.test(item.url) ? item : undefined),
+      landing: (item) =>
+        /\/(certifications|moq-pricing|manufacturers|markets)\//.test(item.url) ? item : undefined,
+    },
   })],
 
   // 图片优化 (Astro 5 内置)

@@ -206,5 +206,24 @@
   },
   "getQuote": {
     "seoDescription": "Request a wholesale quote for rehabilitation equipment. Send your specs and volume — our team replies within 24 hours with pricing and lead times."
+  },
+  "segments": {
+    "segHeading": "Who are you buying for?",
+    "segSub": "The right answer depends on where the product ends up. Pick the path that matches you.",
+    "distTitle": "Importers & distributors",
+    "distDesc": "Full range coverage, consolidated containers, and documents your customers will accept.",
+    "instTitle": "Care homes & pharmacy chains",
+    "instDesc": "Volume supply with spare parts, staged delivery and after-sales support.",
+    "shopTitle": "E-commerce & Amazon sellers",
+    "shopDesc": "FBA-ready packing, small first orders, and marketplace-compliant labelling.",
+    "tendTitle": "Tenders & public supply",
+    "tendDesc": "Document packages, authorisation letters and specification compliance checks.",
+    "segCta": "Not sure which fits? Talk to a specialist →"
+  },
+  "promise": {
+    "quote": "Quote response",
+    "production": "Days production",
+    "moq": "Units MOQ",
+    "countries": "Countries served"
   }
 }

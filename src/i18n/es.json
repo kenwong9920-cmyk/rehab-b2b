@@ -206,5 +206,24 @@
   },
   "getQuote": {
     "seoDescription": "Solicite una cotización al por mayor de equipos de rehabilitación. Envíe sus especificaciones y volumen — respondemos en 24 h con precio y plazos."
+  },
+  "segments": {
+    "segHeading": "¿Para quién compra?",
+    "segSub": "La respuesta correcta depende del destino final del producto. Elija la vía que le corresponde.",
+    "distTitle": "Importadores y distribuidores",
+    "distDesc": "Cobertura de gama, contenedores consolidados y documentos que sus clientes aceptan.",
+    "instTitle": "Residencias y cadenas de farmacias",
+    "instDesc": "Suministro en volumen con repuestos, entregas escalonadas y posventa.",
+    "shopTitle": "E-commerce y vendedores de Amazon",
+    "shopDesc": "Embalaje listo para FBA, primeros pedidos reducidos y etiquetado conforme.",
+    "tendTitle": "Licitaciones y compra pública",
+    "tendDesc": "Dosieres documentales, cartas de autorización y verificación de especificaciones.",
+    "segCta": "¿No sabe cuál encaja? Hable con un especialista →"
+  },
+  "promise": {
+    "quote": "Respuesta a cotización",
+    "production": "Días de producción",
+    "moq": "Unidades mínimo",
+    "countries": "Países atendidos"
   }
 }

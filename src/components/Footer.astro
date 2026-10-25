@@ -20,6 +20,15 @@ const resourceLinks = [
   { href: `/${locale}/downloads/`, label: t('nav.downloads'), trigger: 'downloads' },
   { href: `/${locale}/solutions/`, label: t('nav.solutions') },
   { href: `/${locale}/get-quote/`, label: t('nav.getQuote') },
+  // 新增落地页目前只有英文版，只在 en 下露出，避免其他语言出现 404 链接
+  ...(locale === 'en'
+    ? [
+        { href: '/en/moq-pricing/', label: 'MOQ & Pricing' },
+        { href: '/en/certifications/', label: 'Certifications' },
+        { href: '/en/manufacturers/', label: 'Manufacturers' },
+        { href: '/en/markets/', label: 'Export Markets' },
+      ]
+    : []),
 ];
 
 const productLinks = PRODUCT_CATEGORIES.slice(0, 4).map((cat) => ({

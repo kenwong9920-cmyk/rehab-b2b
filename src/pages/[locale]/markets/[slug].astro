@@ -1,0 +1,221 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE, FACTS, PRODUCT_CATEGORIES } from '@/utils/constants';
+import { MARKETS } from '@/data/markets';
+import { useTranslations } from '@/utils/i18n';
+
+const AVAILABLE = ['en'];
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  for (const locale of ['en'] as const) {
+    for (const m of MARKETS) {
+      paths.push({ params: { locale, slug: m.slug } });
+    }
+  }
+  return paths;
+}
+
+const { locale, slug } = Astro.params;
+const market = MARKETS.find((m) => m.slug === slug);
+if (!market) throw new Error(`Unknown market: ${slug}`);
+
+const { t } = useTranslations(locale!);
+
+const ownerLabel: Record<string, string> = {
+  manufacturer: 'We provide',
+  importer: 'You / your local entity',
+  both: 'Shared',
+};
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      name: market.h1,
+      description: market.description,
+      url: `${SITE.url}/${locale}/markets/${market.slug}/`,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: 'Export Markets', item: `${SITE.url}/${locale}/markets/` },
+        { '@type': 'ListItem', position: 3, name: market.name, item: `${SITE.url}/${locale}/markets/${market.slug}/` },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: market.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title={`${market.name} — Export Requirements`}
+  seoTitle={`${market.name} — Manufacturing & Compliance Requirements | ${SITE.name}`}
+  description={market.description}
+  locale={locale!}
+  availableLocales={AVAILABLE}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-8" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">Home</a>
+      <span>/</span>
+      <a href={`/${locale}/markets/`} class="hover:text-primary-600">Markets</a>
+      <span>/</span>
+      <span class="text-neutral-800 font-medium">{market.name}</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-3xl mb-12">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-3xl">{market.flag}</span>
+        <span class="text-xs font-semibold uppercase tracking-wide text-primary-600">Export market</span>
+      </div>
+      <h1 class="mb-5">{market.h1}</h1>
+      {market.intro.map((p, i) => (
+        <p class:list={['text-neutral-600 leading-relaxed', i === 0 ? 'text-lg' : 'text-base']}>{p}</p>
+      ))}
+    </div>
+
+    <!-- 分类说明 -->
+    <section class="mb-14 bg-accent-50 border border-accent-200 rounded-xl p-6">
+      <h2 class="text-base font-semibold text-neutral-900 mb-2">How these products are classified</h2>
+      <p class="text-sm text-neutral-700 leading-relaxed">{market.classification}</p>
+      <p class="text-xs text-neutral-500 mt-3">
+        This is general guidance based on how these product types are normally regulated. Final classification
+        for your exact product and claims is decided by your regulatory advisor or the authority.
+      </p>
+    </section>
+
+    <!-- 文件清单 -->
+    <section class="mb-14">
+      <h2 class="mb-2 text-2xl">Documents required, and who files each one</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        Most first-order delays come from a document nobody realised was the importer’s responsibility.
+        This is the split.
+      </p>
+      <div class="border border-neutral-200 rounded-xl overflow-hidden bg-white">
+        <table class="w-full">
+          <thead>
+            <tr class="bg-neutral-50 border-b border-neutral-200">
+              <th class="text-left px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Document</th>
+              <th class="text-left px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 whitespace-nowrap">Responsibility</th>
+              <th class="text-left px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {market.docs.map((d) => (
+              <tr class="border-b border-neutral-100 last:border-0 align-top">
+                <td class="px-5 py-3.5 text-sm font-medium text-neutral-900">{d.document}</td>
+                <td class="px-5 py-3.5 whitespace-nowrap">
+                  <span class:list={[
+                    'text-[11px] font-semibold rounded px-2 py-0.5',
+                    d.owner === 'manufacturer' && 'bg-green-50 text-green-700',
+                    d.owner === 'importer' && 'bg-amber-50 text-amber-800',
+                    d.owner === 'both' && 'bg-neutral-100 text-neutral-700',
+                  ]}>{ownerLabel[d.owner]}</span>
+                </td>
+                <td class="px-5 py-3.5 text-sm text-neutral-600 leading-relaxed">{d.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 物流 -->
+    <section class="mb-14">
+      <h2 class="mb-2 text-2xl">How the goods get there</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        {market.logistics.map((l) => (
+          <div class="bg-white border border-neutral-200 rounded-xl p-5">
+            <div class="text-xs uppercase tracking-wide text-neutral-500 mb-1">{l.label}</div>
+            <div class="text-sm text-neutral-800 leading-relaxed">{l.value}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 常见坑 -->
+    <section class="mb-14 bg-red-50 border border-red-100 rounded-xl p-6">
+      <h2 class="text-base font-semibold text-red-900 mb-3">What usually goes wrong</h2>
+      <ul class="space-y-2">
+        {market.pitfalls.map((p) => (
+          <li class="flex items-start gap-2.5 text-sm text-red-900/90 leading-relaxed">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0"></span>
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- 热销分类 -->
+    <section class="mb-14">
+      <h2 class="mb-2 text-2xl">Categories that move in this market</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-5">
+        {market.hotCategories.map((slugCat) => {
+          const cat = PRODUCT_CATEGORIES.find((c) => c.slug === slugCat);
+          if (!cat) return null;
+          return (
+            <a href={`/${locale}/products/category/${cat.slug}/`} class="group bg-white border border-neutral-200 rounded-xl p-4 text-center hover:border-primary-300 transition-colors no-underline">
+              <div class="text-2xl mb-1.5">{cat.icon}</div>
+              <div class="text-xs font-medium text-neutral-800 group-hover:text-primary-700">{t(cat.nameKey)}</div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-14">
+      <h2 class="mb-6 text-2xl">{market.name} buyer questions</h2>
+      <div class="space-y-3 max-w-3xl">
+        {market.faqs.map((f) => (
+          <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+              <span class="font-medium text-neutral-900 pr-4">{f.question}</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- 其他市场 -->
+    <section class="mb-14">
+      <h2 class="mb-4 text-xl">Other markets</h2>
+      <div class="flex flex-wrap gap-2">
+        {MARKETS.filter((m) => m.slug !== market.slug).map((m) => (
+          <a href={`/${locale}/markets/${m.slug}/`} class="text-sm bg-white border border-neutral-200 rounded-lg px-3.5 py-2 text-neutral-700 hover:border-primary-300 hover:text-primary-700 transition-colors no-underline">
+            {m.flag} {m.name}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary-700 rounded-2xl p-8 md:p-10 text-white">
+      <h2 class="text-2xl mb-3 text-white">Shipping to {market.name}?</h2>
+      <p class="text-white/80 mb-6 max-w-2xl">
+        Send the product and destination. We reply in {FACTS.responseHours} hours with the document list
+        for your market, the responsible party for each item, and an itemised FOB quote.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href={`/${locale}/get-quote/`} class="btn-accent">Request a quote →</a>
+        <a href={`/${locale}/moq-pricing/`} class="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary-700">See MOQ &amp; pricing</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

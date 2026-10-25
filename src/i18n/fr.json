@@ -206,5 +206,24 @@
   },
   "getQuote": {
     "seoDescription": "Demandez un devis en gros pour équipements de réadaptation. Envoyez vos spécifications et volumes — réponse sous 24 h avec prix et délais."
+  },
+  "segments": {
+    "segHeading": "Pour qui achetez-vous ?",
+    "segSub": "La bonne réponse dépend de l’usage final du produit. Choisissez la voie qui vous correspond.",
+    "distTitle": "Importateurs & distributeurs",
+    "distDesc": "Couverture de gamme, conteneurs groupés et documents acceptés par vos clients.",
+    "instTitle": "Maisons de retraite & pharmacies",
+    "instDesc": "Approvisionnement en volume avec pièces détachées, livraisons échelonnées et SAV.",
+    "shopTitle": "E-commerce & vendeurs Amazon",
+    "shopDesc": "Emballage prêt pour FBA, petites premières commandes et étiquetage conforme.",
+    "tendTitle": "Appels d’offres & marchés publics",
+    "tendDesc": "Dossiers administratifs, lettres d’autorisation et vérification de conformité.",
+    "segCta": "Vous hésitez ? Parlez à un spécialiste →"
+  },
+  "promise": {
+    "quote": "Réponse au devis",
+    "production": "Jours de production",
+    "moq": "Unités minimum",
+    "countries": "Pays servis"
   }
 }

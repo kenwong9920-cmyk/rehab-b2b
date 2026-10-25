@@ -1,0 +1,135 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE, FACTS, PRODUCT_CATEGORIES } from '@/utils/constants';
+import { MANUFACTURERS } from '@/data/manufacturers';
+import { useTranslations } from '@/utils/i18n';
+
+const AVAILABLE = ['en'];
+
+export function getStaticPaths() {
+  const paths: any[] = [];
+  for (const locale of ['en'] as const) {
+    for (const m of MANUFACTURERS) {
+      paths.push({ params: { locale, slug: m.slug } });
+    }
+  }
+  return paths;
+}
+
+const { locale } = Astro.params;
+const { t } = useTranslations(locale!);
+
+const pageDesc =
+  'Manufacturer landing pages for walking aids, shower chairs, commode chairs, walkers, toilet safety rails, private label and OEM rehabilitation equipment from China.';
+
+const groups = [
+  { title: 'By product category', items: MANUFACTURERS.slice(0, 5) },
+  { title: 'By working model', items: MANUFACTURERS.slice(5) },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      name: 'Manufacturers',
+      description: pageDesc,
+      url: `${SITE.url}/${locale}/manufacturers/`,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: 'Manufacturers', item: `${SITE.url}/${locale}/manufacturers/` },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Manufacturers"
+  seoTitle={`Rehabilitation Equipment Manufacturers — By Category & Model | ${SITE.name}`}
+  description={pageDesc}
+  locale={locale!}
+  availableLocales={AVAILABLE}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-8" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">Home</a>
+      <span>/</span>
+      <span class="text-neutral-800 font-medium">Manufacturers</span>
+    </nav>
+
+    <div class="max-w-3xl mb-12">
+      <h1 class="mb-5">What we manufacture, page by page</h1>
+      <p class="text-lg text-neutral-600 leading-relaxed">
+        {FACTS.skuCount} models across {FACTS.categories} categories, made in one facility in Zhongshan,
+        Guangdong. Each page below covers one category or one way of working with us — specifications,
+        real MOQ, customisation limits, certification status and the questions buyers ask before ordering.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+      <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">{FACTS.skuCount}</div>
+        <div class="text-xs text-neutral-500 mt-1">Models</div>
+      </div>
+      <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">{FACTS.moqFrom}</div>
+        <div class="text-xs text-neutral-500 mt-1">Lowest MOQ</div>
+      </div>
+      <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">{FACTS.productionDays}</div>
+        <div class="text-xs text-neutral-500 mt-1">Production</div>
+      </div>
+      <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-primary-600">{FACTS.exportCountries}+</div>
+        <div class="text-xs text-neutral-500 mt-1">Countries served</div>
+      </div>
+    </div>
+
+    {groups.map((g) => (
+      <section class="mb-14">
+        <h2 class="mb-5 text-xl">{g.title}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {g.items.map((m) => (
+            <a
+              href={`/${locale}/manufacturers/${m.slug}/`}
+              class="group block bg-white border border-neutral-200 rounded-xl p-6 hover:border-primary-300 hover:shadow-sm transition-all no-underline"
+            >
+              <h3 class="text-base font-semibold text-neutral-900 group-hover:text-primary-700 transition-colors mb-2">{m.h1}</h3>
+              <p class="text-sm text-neutral-600 leading-relaxed mb-3">{m.shortAnswer}</p>
+              <span class="text-sm font-medium text-primary-600">Read the full page →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <section class="mb-14">
+      <h2 class="mb-4 text-xl">Browse by category</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+        {PRODUCT_CATEGORIES.map((cat) => (
+          <a href={`/${locale}/products/category/${cat.slug}/`} class="group bg-white border border-neutral-200 rounded-xl p-4 text-center hover:border-primary-300 transition-colors no-underline">
+            <div class="text-2xl mb-1.5">{cat.icon}</div>
+            <div class="text-xs font-medium text-neutral-800 group-hover:text-primary-700">{t(cat.nameKey)}</div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="bg-primary-700 rounded-2xl p-8 md:p-10 text-white">
+      <h2 class="text-2xl mb-3 text-white">Not sure which category you need?</h2>
+      <p class="text-white/80 mb-6 max-w-2xl">
+        Describe the user and the setting — home care, hospital, pharmacy retail — and we will point you to
+        the right models plus an itemised quote within {FACTS.responseHours} hours.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href={`/${locale}/get-quote/`} class="btn-accent">Request a quote →</a>
+        <a href={`/${locale}/moq-pricing/`} class="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary-700">See MOQ &amp; pricing</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

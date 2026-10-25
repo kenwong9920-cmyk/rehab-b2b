@@ -1,0 +1,234 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE, FACTS } from '@/utils/constants';
+import {
+  CATEGORY_PRICING,
+  MOQ_EXPLAINER,
+  QUOTE_INCLUDES,
+  COST_LEVERS,
+  QUOTE_STEPS,
+  PRICING_FAQS,
+} from '@/data/pricing';
+
+const AVAILABLE = ['en'];
+
+export function getStaticPaths() {
+  return (['en'] as const).map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const pageDesc = `Minimum order quantities for ${FACTS.skuCount} rehabilitation equipment models — real MOQ per category from ${FACTS.moqFrom}, production in ${FACTS.productionDays}, itemised FOB quote within ${FACTS.responseHours} hours.`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      name: 'MOQ & Pricing',
+      description: pageDesc,
+      url: `${SITE.url}/${locale}/moq-pricing/`,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: 'MOQ & Pricing', item: `${SITE.url}/${locale}/moq-pricing/` },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: PRICING_FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="MOQ & Pricing"
+  seoTitle={`MOQ & Pricing — Rehabilitation Equipment Wholesale | ${SITE.name}`}
+  description={pageDesc}
+  locale={locale!}
+  availableLocales={AVAILABLE}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-8" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">Home</a>
+      <span>/</span>
+      <span class="text-neutral-800 font-medium">MOQ &amp; Pricing</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-3xl mb-12">
+      <h1 class="mb-5">MOQ &amp; Pricing</h1>
+      <p class="text-lg text-neutral-600 leading-relaxed">
+        Real numbers instead of “contact us for price”. The minimum order quantities below are taken
+        directly from the {FACTS.skuCount} models in our current catalogue, per category — so you can
+        check whether your first order is even possible before you write to us.
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+        <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+          <div class="text-2xl font-bold text-primary-600">{FACTS.moqFrom}</div>
+          <div class="text-xs text-neutral-500 mt-1">Lowest MOQ</div>
+        </div>
+        <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+          <div class="text-2xl font-bold text-primary-600">{FACTS.productionDays}</div>
+          <div class="text-xs text-neutral-500 mt-1">Production</div>
+        </div>
+        <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+          <div class="text-2xl font-bold text-primary-600">{FACTS.responseHours}h</div>
+          <div class="text-xs text-neutral-500 mt-1">Quote turnaround</div>
+        </div>
+        <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
+          <div class="text-2xl font-bold text-primary-600">{FACTS.skuCount}</div>
+          <div class="text-xs text-neutral-500 mt-1">Models in catalogue</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 分类 MOQ 表 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">Minimum order quantity by category</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        Computed from every product record in our catalogue, not from a sales sheet.
+      </p>
+      <div class="border border-neutral-200 rounded-xl overflow-hidden bg-white">
+        <table class="w-full">
+          <thead>
+            <tr class="bg-neutral-50 border-b border-neutral-200">
+              <th class="text-left px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Category</th>
+              <th class="text-right px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Models</th>
+              <th class="text-right px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">MOQ / SKU</th>
+              <th class="text-left px-5 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">FOB price band</th>
+            </tr>
+          </thead>
+          <tbody>
+            {CATEGORY_PRICING.map((c) => (
+              <tr class="border-b border-neutral-100 last:border-0 align-top">
+                <td class="px-5 py-4">
+                  <a href={`/${locale}/products/category/${c.slug}/`} class="text-sm font-medium text-neutral-900 hover:text-primary-600">{c.name}</a>
+                  <p class="text-xs text-neutral-500 mt-1 max-w-md leading-relaxed">{c.note}</p>
+                </td>
+                <td class="px-5 py-4 text-right text-sm text-neutral-700">{c.skus}</td>
+                <td class="px-5 py-4 text-right text-sm font-semibold text-neutral-900 whitespace-nowrap">
+                  {c.moqFrom === c.moqTo ? `${c.moqFrom} units` : `${c.moqFrom}–${c.moqTo} units`}
+                </td>
+                <td class="px-5 py-4 text-sm text-neutral-600">
+                  {c.priceBand
+                    ? <span class="font-medium text-neutral-900">{c.priceBand}</span>
+                    : <span class="text-neutral-500">Quoted per specification within {FACTS.responseHours}h</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-neutral-500 mt-3 max-w-3xl leading-relaxed">
+        Price band depends on material, frame colour, seating material and carton type — the same model
+        can differ materially between a stock-carton and a printed retail box. We therefore quote per
+        specification rather than publishing one misleading number.
+      </p>
+    </section>
+
+    <!-- MOQ 原理 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">How minimum order quantities actually work</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        Four things worth knowing before you ask for a lower MOQ.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {MOQ_EXPLAINER.map((m) => (
+          <div class="bg-white border border-neutral-200 rounded-xl p-6">
+            <h3 class="text-base font-semibold text-neutral-900 mb-1.5">{m.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{m.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 报价含项 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">What the quote covers</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        No line items appear after the deposit. If it is not on this list, it is not in the price.
+      </p>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {QUOTE_INCLUDES.map((item) => (
+          <li class="flex items-start gap-2.5">
+            <svg class="w-4.5 h-4.5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-sm text-neutral-700">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- 降本三招 -->
+    <section class="mb-16 bg-neutral-50 rounded-2xl p-8">
+      <h2 class="mb-2 text-2xl">Three ways to lower your landed cost</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        In practice these move the number more than negotiating the unit price.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        {COST_LEVERS.map((l) => (
+          <div class="bg-white border border-neutral-200 rounded-xl p-6">
+            <span class="inline-flex w-7 h-7 rounded-lg bg-primary-600 text-white text-xs font-bold items-center justify-center mb-3">{l.n}</span>
+            <h3 class="text-base font-semibold text-neutral-900 mb-1.5">{l.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{l.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 六步 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">From brief to container in six steps</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">The same process whether you order 30 units or 30,000.</p>
+      <ol class="space-y-3">
+        {QUOTE_STEPS.map((s) => (
+          <li class="flex items-start gap-4 bg-white border border-neutral-200 rounded-xl p-5">
+            <span class="w-8 h-8 rounded-lg bg-neutral-900 text-white text-sm font-bold flex items-center justify-center shrink-0">{s.n}</span>
+            <div>
+              <h3 class="text-base font-semibold text-neutral-900 mb-0.5">{s.title}</h3>
+              <p class="text-sm text-neutral-600">{s.desc}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-16">
+      <h2 class="mb-6 text-2xl">MOQ and pricing questions</h2>
+      <div class="space-y-3 max-w-3xl">
+        {PRICING_FAQS.map((f) => (
+          <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+              <span class="font-medium text-neutral-900 pr-4">{f.question}</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary-700 rounded-2xl p-8 md:p-10 text-white">
+      <h2 class="text-2xl mb-3 text-white">Get an itemised quote in {FACTS.responseHours} hours</h2>
+      <p class="text-white/80 mb-6 max-w-2xl">
+        Send the model, quantity and destination country. You will get unit price, carton data,
+        MOQ per SKU and lead time — not a range.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href={`/${locale}/get-quote/`} class="btn-accent">Request a quote →</a>
+        <a href={`/${locale}/certifications/`} class="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary-700">See our certifications</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

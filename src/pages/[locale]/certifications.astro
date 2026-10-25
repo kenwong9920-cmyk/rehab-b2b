@@ -1,0 +1,207 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/utils/constants';
+import { CERTS, DOC_PACKAGE, VERIFY_STEPS, CERT_FAQS } from '@/data/certifications';
+
+// 目前仅英文版；其他语言待翻译后加入此数组（届时 hreflang 会自动补全）
+const AVAILABLE = ['en'];
+
+export function getStaticPaths() {
+  return (['en'] as const).map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+const pageTitle = 'Certifications & Compliance — Verify Every Claim';
+const pageDesc =
+  'ISO 13485, CE (EU MDR), FDA establishment registration and ISO 9001 for rehabilitation equipment — with the certificate numbers and the exact steps to verify each one yourself.';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      name: pageTitle,
+      description: pageDesc,
+      url: `${SITE.url}/${locale}/certifications/`,
+      about: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: 'Certifications', item: `${SITE.url}/${locale}/certifications/` },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: CERT_FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Certifications & Compliance"
+  seoTitle={`Certifications & Compliance — Verify Every Claim | ${SITE.name}`}
+  description={pageDesc}
+  locale={locale!}
+  availableLocales={AVAILABLE}
+  schema={schema}
+>
+  <div class="container-main section-padding">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm text-neutral-500 mb-8" aria-label="Breadcrumb">
+      <a href={`/${locale}/`} class="hover:text-primary-600">Home</a>
+      <span>/</span>
+      <span class="text-neutral-800 font-medium">Certifications</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-3xl mb-14">
+      <h1 class="mb-5">Certifications &amp; Compliance</h1>
+      <p class="text-lg text-neutral-600 leading-relaxed">
+        You should not have to take a supplier’s word for a certificate. Every claim on this page
+        has a number on it, and every number can be checked with the body that issued it —
+        before you send a deposit.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-6">
+        {SITE.certifications.map((c) => (
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-accent-50 text-accent-700 border border-accent-200 px-3 py-1.5 rounded-full">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            {c}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    <!-- 四步核验 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">How to verify a Chinese supplier in four steps</h2>
+      <p class="text-neutral-600 mb-8 max-w-2xl">
+        This is the same checklist we expect our own buyers to run on us. It takes about twenty minutes
+        and it will filter out most of the documentation problems you would otherwise discover after the deposit.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {VERIFY_STEPS.map((s) => (
+          <div class="bg-white border border-neutral-200 rounded-xl p-6">
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-primary-600 text-white text-sm font-bold flex items-center justify-center shrink-0">{s.step}</span>
+              <div>
+                <h3 class="text-base font-semibold text-neutral-900 mb-1.5">{s.title}</h3>
+                <p class="text-sm text-neutral-600 leading-relaxed">{s.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 证书明细 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">What we hold, and what each one covers</h2>
+      <p class="text-neutral-600 mb-8 max-w-2xl">
+        A certificate is only meaningful if its scope covers the product you are buying.
+        The scope wording below is the part to compare, not the logo.
+      </p>
+
+      <div class="space-y-5">
+        {CERTS.map((c) => (
+          <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <div class="px-6 py-5 border-b border-neutral-100 bg-neutral-50 flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-900">{c.name}</h3>
+                <p class="text-xs text-neutral-500 mt-0.5">{c.fullName}</p>
+              </div>
+              <div class="text-right">
+                {c.number ? (
+                  <span class="inline-block font-mono text-xs bg-white border border-neutral-200 rounded px-2.5 py-1 text-neutral-800">
+                    {c.number}
+                  </span>
+                ) : (
+                  <span class="inline-block text-xs text-neutral-500 border border-dashed border-neutral-300 rounded px-2.5 py-1">
+                    Copy on request
+                  </span>
+                )}
+                {(c.issuer || c.validUntil) && (
+                  <p class="text-[11px] text-neutral-500 mt-1.5">
+                    {c.issuer}{c.issuer && c.validUntil ? ' · ' : ''}{c.validUntil ? `valid to ${c.validUntil}` : ''}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div class="px-6 py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">Scope</h4>
+                <p class="text-sm text-neutral-700 leading-relaxed">{c.scope}</p>
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">How to check it</h4>
+                <p class="text-sm text-neutral-700 leading-relaxed">{c.howToVerify}</p>
+                {c.verifyUrl && (
+                  <a href={c.verifyUrl} target="_blank" rel="noopener" class="inline-block mt-2 text-xs font-medium text-primary-600 hover:text-primary-700">
+                    Open the public register →
+                  </a>
+                )}
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">Why it matters to you</h4>
+                <p class="text-sm text-neutral-700 leading-relaxed">{c.whyItMatters}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 随货文件包 -->
+    <section class="mb-16 bg-neutral-50 rounded-2xl p-8">
+      <h2 class="mb-2 text-2xl">Documents that ship with every order</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        Not “available on request after payment” — these are in the carton or in your inbox before the vessel sails.
+      </p>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {DOC_PACKAGE.map((d) => (
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-accent-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="text-sm text-neutral-700"><span class="font-medium text-neutral-900">{d.name}</span> — {d.desc}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-16">
+      <h2 class="mb-6 text-2xl">Questions buyers ask about this page</h2>
+      <div class="space-y-3 max-w-3xl">
+        {CERT_FAQS.map((f) => (
+          <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+              <span class="font-medium text-neutral-900 pr-4">{f.question}</span>
+              <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">{f.answer}</div>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary-700 rounded-2xl p-8 md:p-10 text-white">
+      <h2 class="text-2xl mb-3 text-white">Want the document package for your market?</h2>
+      <p class="text-white/80 mb-6 max-w-2xl">
+        Tell us the destination country and the product category, and we will send the certificates,
+        declaration of conformity and label version that your customs broker will actually ask for.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href={`/${locale}/get-quote/`} class="btn-accent">Request the document package →</a>
+        <a href={`/${locale}/contact/`} class="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary-700">Talk to a specialist</a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

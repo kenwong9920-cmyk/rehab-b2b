@@ -1,5 +1,73 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.jdrehab.com/sitemap-index.xml
 
-# Crawl-delay: 10
+# ─── 纯数据采集型爬虫：不带来买家，只消耗抓取额度 ───
+# 关掉它们，把服务器与抓取配额留给 Googlebot 和真实访客。
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+# ─── AI 引擎：显式放行 ───
+# 2026 年有相当比例的 B2B 采购在 ChatGPT / Perplexity / 豆包里完成初筛，
+# 被这些引擎抓不到，等于在 AI 答案里不存在。
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# 中文 AI / 搜索引擎
+User-agent: Bytespider
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+Sitemap: https://www.jdrehab.com/sitemap-index.xml

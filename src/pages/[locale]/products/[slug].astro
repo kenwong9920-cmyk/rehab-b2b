@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { useTranslations } from '@/utils/i18n';
-import { SITE, PRODUCT_CATEGORIES } from '@/utils/constants';
+import { SITE, PRODUCT_CATEGORIES, FACTS } from '@/utils/constants';
 import { getCollection } from 'astro:content';
 import ContactForm from '@/components/ContactForm.astro';
+import { buildProductFaqs, faqPageSchema } from '@/utils/product-faq';
+import { VERIFY_COPY } from '@/data/verify';
 
 export async function getStaticPaths() {
   const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'];
@@ -38,6 +40,9 @@ if (!product) {
 
 const p = product.data;
 
+// FAQ：优先用手写 frontmatter.faqs，否则由产品真实数据自动组装
+const faqs = buildProductFaqs(p, locale!);
+
 // 关联产品（同分类、不同 slug）
 const relatedProducts = (await getCollection('products', (entry) =>
   entry.id.startsWith(`${locale}/`) &&
@@ -63,7 +68,7 @@ const schema = {
   },
 };
 
-// Schema 组织（带面包屑）
+// Schema 组织（带面包屑 + FAQPage）
 const fullSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -90,6 +95,7 @@ const fullSchema = {
         },
       ],
     },
+    ...(faqs.length > 0 ? [faqPageSchema(faqs)] : []),
   ],
 };
 
@@ -201,6 +207,28 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
             </div>
           )}
         </div>
+
+        <!-- Verifiable before ordering -->
+        {(() => { const v = VERIFY_COPY[locale!] || VERIFY_COPY.en; return (
+          <div class="border border-neutral-200 rounded-xl p-5 mb-4 bg-white">
+            <h3 class="text-sm font-semibold text-neutral-900 mb-3">{v.heading}</h3>
+            <ul class="space-y-2.5">
+              {v.items.map((it) => (
+                <li class="flex gap-2.5">
+                  <span class="text-base leading-6">{it.icon}</span>
+                  <span class="text-xs leading-5 text-neutral-600">
+                    <span class="font-medium text-neutral-800">{it.title}</span> — {it.desc}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            {locale === 'en' && (
+              <a href="/en/certifications/" class="inline-block mt-3 text-xs font-medium text-primary-600 hover:text-primary-700">
+                {v.link}
+              </a>
+            )}
+          </div>
+        ); })()}
 
         <!-- CTA -->
         <div class="bg-accent-50 border border-accent-200 rounded-xl p-5 mb-4">
@@ -323,11 +351,11 @@ const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
     )}
 
     {/* FAQ */}
-    {p.faqs && p.faqs.length > 0 && (
+    {faqs.length > 0 && (
       <div class="mb-16">
         <h2 class="mb-6 text-2xl">{t('product.faq', 'Frequently Asked Questions')}</h2>
         <div class="space-y-3 max-w-3xl">
-          {p.faqs.map((faq, i) => (
+          {faqs.map((faq) => (
             <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
               <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
                 <span class="font-medium text-neutral-900 pr-4">{faq.question}</span>

@@ -11,9 +11,23 @@ interface Props {
   locale: string;
   image?: string;
   schema?: object;
+  /**
+   * 该页面实际存在的语言版本。用于生成 hreflang。
+   * 缺省为全部 7 种语言；若某个新页面目前只有英文，传 ['en']，
+   * 避免 hreflang 指向 404 语言版本（这比缺失 hreflang 更伤）。
+   */
+  availableLocales?: string[];
 }
 
-const { title, description, seoTitle, locale = 'en', image = '/og-image.png', schema } = Astro.props;
+const {
+  title,
+  description,
+  seoTitle,
+  locale = 'en',
+  image = '/og-image.png',
+  schema,
+  availableLocales,
+} = Astro.props;
 const siteName = 'JinDa Rehab Medical';
 /** 最终输出到 <title> 的文本：优先 seoTitle，否则 title + 品牌名 */
 const pageTitle = seoTitle || `${title} | ${siteName}`;
@@ -26,6 +40,10 @@ const origin = Astro.url.origin;
 const currentPath = Astro.url.pathname;
 const pathWithoutLocale = currentPath.replace(new RegExp(`^/${locale}`), '') || '/';
 const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
+/** 只对这些语言输出 hreflang（未提供则全部） */
+const hreflangLocales = (availableLocales && availableLocales.length
+  ? availableLocales
+  : [...locales]) as readonly string[];
 ---
 
 <!DOCTYPE html>
@@ -37,10 +55,10 @@ const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
   <link rel="canonical" href={currentUrl} />
 
   <!-- Hreflang for multilingual SEO -->
-  {locales.map(l => (
+  {hreflangLocales.map(l => (
     <link rel="alternate" hreflang={l} href={`${origin}/${l}${pathWithoutLocale}`} />
   ))}
-  <link rel="alternate" hreflang="x-default" href={`${origin}/en${pathWithoutLocale}`} />
+  <link rel="alternate" hreflang="x-default" href={`${origin}/${hreflangLocales.includes('en') ? 'en' : hreflangLocales[0]}${pathWithoutLocale}`} />
 
   <!-- Primary Meta -->
   <title>{pageTitle}</title>
