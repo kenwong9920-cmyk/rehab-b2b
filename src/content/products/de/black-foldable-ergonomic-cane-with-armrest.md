@@ -1,7 +1,7 @@
 ---
 title: "Schwarzer Ergonomischer Faltstock mit Armlehne"
 description: "Premium Kohlefaser-Faltstock mit einziehbarer PP-Armlehne und natürlichem Rosenholzgriff. 10 Höheneinstellungen (74,5–97,5cm), 0,75kg, 100kg Belastbarkeit. Verstärkte TPR-Basisoptionen für optimale Stabilität."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"

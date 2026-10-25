@@ -1,7 +1,7 @@
 ---
 title: "高品質調節式折りたたみカーボンファイバー杖"
 description: "エルゴノミック輪郭グリップ、調節可能な高さ、複数のカラーオプションを備えたプレミアムカーボンファイバー折りたたみ杖。滑り止めゴムチップ、旅行用コンパクト折りたたみデザイン、耐摩耗性防錆フレーム。"
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:
   - "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"

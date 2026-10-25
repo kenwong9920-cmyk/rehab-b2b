@@ -1,7 +1,7 @@
 ---
 title: "Canne Pliante Réglable Haute Qualité en Fibre de Carbone"
 description: "Canne pliante premium en fibre de carbone avec poignée ergonomique profilée, hauteur réglable et multiples options de couleur. Embout caoutchouc antidérapant, design compact pliable pour voyage, cadre résistant à l'usure et à la corrosion."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:
   - "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"

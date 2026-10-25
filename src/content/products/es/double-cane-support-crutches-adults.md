@@ -1,7 +1,7 @@
 ---
 title: "Muletas de Doble Bastón de Apoyo para Adultos"
 description: "Muletas axilares dobles de aleación de aluminio con almohadillas de espuma engrosadas antideslizantes, marco ligero reforzado y mangos ergonómicos. Diseño plegable de tres secciones. Para uso interior y exterior en clínica y hogar."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"

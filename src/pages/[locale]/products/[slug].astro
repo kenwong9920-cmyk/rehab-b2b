@@ -103,8 +103,14 @@ const fullSchema = {
 const categoryName = PRODUCT_CATEGORIES.find(c => c.slug === p.category);
 ---
 
+{/*
+  产品页 title 不再拼接品牌后缀：产品名本身已含关键词，
+  再拼 " | JinDa Rehab Medical" 会顶到 80 宽度被 Google 截断。
+  Google 会自动在结果里显示站点名，品牌不会丢。
+*/}
 <BaseLayout
   title={p.title}
+  seoTitle={p.title}
   description={p.description}
   locale={locale!}
   image={p.image}

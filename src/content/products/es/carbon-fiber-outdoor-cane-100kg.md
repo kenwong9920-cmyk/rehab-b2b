@@ -1,7 +1,7 @@
 ---
 title: "Bastón de Exterior de Fibra de Carbono 100kg"
 description: "Bastón exterior de fibra de carbono increíblemente ligero de 0,36kg con carga máxima 100kg. Mango premium de palo de rosa, ajuste de 5 alturas con pulsador, longitud plegada 34,5cm, contera TPR con placa de acero interna para máximo agarre."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"

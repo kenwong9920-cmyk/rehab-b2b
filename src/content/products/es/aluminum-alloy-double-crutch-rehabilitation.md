@@ -1,7 +1,7 @@
 ---
 title: "Muleta Doble de Aleación de Aluminio para Rehabilitación Médica"
 description: "Muletas de antebrazo plegables de aleación de aluminio de alta resistencia con ajuste de 12 niveles, acabado de fibra de carbono, puños de antebrazo PP contorneados y puntas TPR engrosadas con insertos metálicos. Capacidad 200 LB, plegada a 61,5cm."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"

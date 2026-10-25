@@ -1,7 +1,7 @@
 ---
 title: "Modern Foldable Walking Stick for Men and Women"
 description: "Stylish carbon fiber folding walking stick suitable for all adults. Ultra-lightweight aerospace-grade carbon fiber frame, foldable design for travel, adjustable height, ergonomic non-slip handle, reinforced joints, and customizable color options."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

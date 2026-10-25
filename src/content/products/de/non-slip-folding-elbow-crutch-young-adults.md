@@ -1,7 +1,7 @@
 ---
 title: "Rutschfeste Faltbare Unterarmkrücke für Junge Erwachsene"
 description: "Aluminium-Unterarmkrücken mit Doppelstützsystem aus Achselpolster und Unterarmkrücke. 8-fache Verstellung, atmungsaktive Polsterung, texturierte rutschfeste Griffe und mehrschichtige Gummispitzen. Für aktive junge Erwachsene bis 100kg."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"

@@ -1,7 +1,7 @@
 ---
 title: "Achselstütze Gehhilfe Krücken"
 description: "Dreiteilige faltbare Aluminium-Achselkrücken mit rutschfesten Gummifüßen und ausgewogenem Doppelstütz-Design. Bequeme Achselpolsterung reduziert Druck. Höhenverstellbar für Zuhause, Krankenhaus und Rehabilitation."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"

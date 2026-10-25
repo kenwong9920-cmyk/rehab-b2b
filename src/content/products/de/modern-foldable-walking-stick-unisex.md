@@ -1,7 +1,7 @@
 ---
 title: "Moderner Faltbarer Gehstock Unisex"
 description: "Stilvoller Kohlefaser-Faltstock für alle Erwachsenen. Ultraleichter Luftfahrt-Rahmen, faltbares Reisedesign, höhenverstellbar, ergonomischer rutschfester Griff, verstärkte Gelenke und anpassbare Farboptionen."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

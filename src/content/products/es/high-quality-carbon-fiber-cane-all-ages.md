@@ -1,7 +1,7 @@
 ---
 title: "Bastón de Fibra de Carbono de Alta Calidad para Todas las Edades"
 description: "Bastón plegable versátil de fibra de carbono aeroespacial para todos los grupos de edad. Empuñadura ergonómica, diseño compacto plegable, punta de goma antideslizante de máxima tracción, altura ajustable y acabado moderno listo para B2B."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:
   - "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"

@@ -1,7 +1,7 @@
 ---
 title: "Bastón Plegable Ajustable de Alta Calidad en Fibra de Carbono"
 description: "Bastón plegable premium de fibra de carbono con empuñadura ergonómica contorneada, altura ajustable y múltiples opciones de color. Punta de goma antideslizante, diseño compacto plegable para viajes, marco resistente al desgaste y corrosión."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:
   - "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"

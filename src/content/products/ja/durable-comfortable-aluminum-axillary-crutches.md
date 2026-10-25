@@ -1,7 +1,7 @@
 ---
 title: "耐久性のある快適なアルミニウム脇松葉杖"
 description: "パッド入り脇レストとハンドル付き軽量アルミ合金脇松葉杖。様々なユーザー向け調節可能な高さ、すべての表面での安定性のための滑り止めゴムチップ、自然な歩行を促進するエルゴノミックデザイン。防錆フレーム。"
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"

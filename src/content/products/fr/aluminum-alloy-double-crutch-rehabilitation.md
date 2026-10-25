@@ -1,7 +1,7 @@
 ---
 title: "Double Béquille en Alliage d'Aluminium pour Rééducation Médicale"
 description: "Béquilles d'avant-bras pliantes en alliage d'aluminium haute résistance avec réglage 12 niveaux, finition fibre de carbone, coques d'avant-bras PP profilées et embouts TPR épaissis avec inserts métalliques. Capacité 200 LB, pliée à 61,5cm."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"

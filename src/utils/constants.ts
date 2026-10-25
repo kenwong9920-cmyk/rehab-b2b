@@ -83,13 +83,31 @@ export const PROMISES = [
   { value: '50+', labelKey: 'promise.countries', fallback: 'Countries served' },
 ] as const;
 
-/** 产品分类 */
+/**
+ * 产品分类
+ *
+ * walking-aids 是「父分类」：自身不挂产品，页面聚合两个子分类。
+ * children 里的 slug 必须同时存在于本数组，否则聚合页会空。
+ */
 export const PRODUCT_CATEGORIES = [
   {
     slug: 'walking-aids',
     icon: '🦯',
     nameKey: 'categories.walkingAids',
     descriptionKey: 'categories.walkingAidsDesc',
+    children: ['crutches', 'walking-canes'],
+  },
+  {
+    slug: 'crutches',
+    icon: '🩼',
+    nameKey: 'categories.crutches',
+    descriptionKey: 'categories.crutchesDesc',
+  },
+  {
+    slug: 'walking-canes',
+    icon: '🦯',
+    nameKey: 'categories.walkingCanes',
+    descriptionKey: 'categories.walkingCanesDesc',
   },
   {
     slug: 'walkers',

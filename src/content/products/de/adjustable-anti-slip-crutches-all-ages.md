@@ -1,7 +1,7 @@
 ---
 title: "Verstellbare Rutschfeste Krücken für Alle Altersgruppen"
 description: "Leichte Aluminium-Achselkrücken mit mehreren Höheneinstellungen für alle Altersgruppen. Rutschfeste Gummifüße, ergonomische Griffe, faltbares Design. Ideal für postoperative Patienten, Senioren und Genesung."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"

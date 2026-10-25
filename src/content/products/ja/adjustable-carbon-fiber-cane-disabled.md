@@ -1,7 +1,7 @@
 ---
 title: "障害者用調節式カーボンファイバー杖"
 description: "障害者ユーザー向けに設計された100%純粋カーボンファイバー折りたたみ杖。ツール不要のプッシュボタン式高さ調節、手のひらの圧力を軽減する解剖学的グリップ、コンパクトな折りたたみデザインと高光沢カーボン仕上げ。"
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:
   - "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"

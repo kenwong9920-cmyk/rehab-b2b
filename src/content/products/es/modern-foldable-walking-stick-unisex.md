@@ -1,7 +1,7 @@
 ---
 title: "Bastón de Marcha Plegable Moderno Unisex"
 description: "Bastón plegable elegante de fibra de carbono para todos los adultos. Marco aeroespacial ultraligero, diseño plegable para viajes, altura ajustable, empuñadura ergonómica antideslizante, juntas reforzadas y opciones de color personalizables."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

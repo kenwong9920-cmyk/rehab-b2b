@@ -1,7 +1,7 @@
 ---
 title: "男性用モダンカーボンファイバー折りたたみ杖"
 description: "大きな手に合わせたグリップ寸法の男性的デザイン折りたたみ杖。超軽量航空宇宙グレードカーボンファイバー、約35cmに折りたたみ、カーボン織りとメタリックトーンを含む様々な仕上げ。スタイリッシュなモビリティステートメント。"
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:
   - "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"

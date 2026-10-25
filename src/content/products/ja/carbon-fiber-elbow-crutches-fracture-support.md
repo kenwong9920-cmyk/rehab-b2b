@@ -1,7 +1,7 @@
 ---
 title: "骨折サポート用カーボンファイバー肘松葉杖"
 description: "1ペアあたりわずか1.13kgで最大100kgをサポートする高強度カーボンファイバー肘松葉杖。12段階ピンロック高さ調節(91-118cm)、エルゴノミックPP肘レスト、スチールインサート付き厚手TPRチップ。44.5×15×17cmに折りたたみ。"
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"

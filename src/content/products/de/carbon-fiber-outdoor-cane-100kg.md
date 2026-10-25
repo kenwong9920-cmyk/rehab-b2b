@@ -1,7 +1,7 @@
 ---
 title: "Kohlefaser-Außenstock 100kg"
 description: "Unglaublich leichter 0,36kg Kohlefaser-Außenstock mit 100kg Belastbarkeit. Premium-Rosenholzgriff, 5-fache Druckknopf-Höhenverstellung, 34,5cm gefaltet, TPR-Ferrule mit interner Stahlplatte für maximalen Halt."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"

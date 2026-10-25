@@ -1,7 +1,7 @@
 ---
 title: "若年成人用滑り止め折りたたみ肘松葉杖"
 description: "脇パッドと肘松葉杖機能を組み合わせたデュアルサポートアルミ合金肘松葉杖。8段階高さ調節、通気性パッド、テクスチャード滑り止めグリップ、多層ゴムチップ。最大100kgのアクティブな若年成人向け。"
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"

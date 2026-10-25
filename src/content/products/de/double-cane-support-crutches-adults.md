@@ -1,7 +1,7 @@
 ---
 title: "Doppelstock-Stützkrücken für Erwachsene"
 description: "Doppelte Aluminium-Achselkrücken mit rutschfesten verdickten Schaumstoffpolstern, verstärktem Leichtbaurahmen und ergonomischen Griffen. Dreiteiliges Faltdesign. Für Innen- und Außeneinsatz in Klinik und Zuhause."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"

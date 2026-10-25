@@ -109,7 +109,7 @@
   },
   "categories": {
     "walkingAids": "歩行補助具",
-    "walkingAidsDesc": "杖、松葉杖、歩行器、ロレーター",
+    "walkingAidsDesc": "松葉杖、歩行杖、ステッキ",
     "bathSafety": "浴室安全",
     "bathSafetyDesc": "シャワーチェア、バススツール、浴室補助具",
     "toiletSafety": "トイレ安全",
@@ -118,7 +118,11 @@
     "commodeChairsDesc": "折りたたみ式ポータブルトイレとベッドサイドトイレチェア",
     "walkers": "歩行器・ロレーター",
     "walkersDesc": "折りたたみ歩行器、ロレーター、小児用歩行器",
-    "seoSuffix": "ISO 13485認証、CEマーキング、FDA登録の工場。卸売価格とOEM対応、サンプル提供可能。"
+    "seoSuffix": "ISO 13485認証、CEマーキング、FDA登録の工場。卸売価格とOEM対応、サンプル提供可能。",
+    "crutches": "松葉杖",
+    "crutchesDesc": "前腕・腋窩・肘当て松葉杖の全モデル",
+    "walkingCanes": "歩行杖",
+    "walkingCanesDesc": "歩行杖、ステッキ、折りたたみ杖"
   },
   "about": {
     "title": "JinDa Rehab Medicalについて",

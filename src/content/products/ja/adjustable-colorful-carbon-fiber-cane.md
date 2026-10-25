@@ -1,7 +1,7 @@
 ---
 title: "調節式カラフル高品質カーボンファイバー杖"
 description: "高荷重容量と強化ジョイントを備えたカラフルなカーボンファイバー折りたたみ杖。エルゴノミック滑り止めグリップ、調節可能な高さ、コンパクトな折りたたみデザイン、耐摩耗性防錆仕上げ。全年齢層に適しています。"
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:
   - "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"

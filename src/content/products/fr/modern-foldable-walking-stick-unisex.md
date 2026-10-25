@@ -1,7 +1,7 @@
 ---
 title: "Canne de Marche Pliante Moderne Unisexe"
 description: "Canne pliante élégante en fibre de carbone pour tous les adultes. Cadre aérospatial ultra-léger, design pliable pour voyage, hauteur réglable, poignée ergonomique antidérapante, joints renforcés et options de couleur personnalisables."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

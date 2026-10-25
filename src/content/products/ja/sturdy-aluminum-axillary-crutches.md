@@ -1,7 +1,7 @@
 ---
 title: "頑丈なアルミニウム脇松葉杖"
 description: "エルゴノミックテクスチャードグリップ、全地形安全のための滑り止めゴムチップ、耐食性仕上げを備えた高強度軽量アルミ合金脇松葉杖。旅行および収納用に折りたたみ可能。怪我後の回復と日常の移動に最適。"
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/41/06/2a/26e2ccd50e984e2c5a627b2015.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/41/06/2a/26e2ccd50e984e2c5a627b2015.jpg"

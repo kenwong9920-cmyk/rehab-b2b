@@ -1,7 +1,7 @@
 ---
 title: "Aluminium-Doppelkrücke für Medizinische Rehabilitation"
 description: "Hochfeste Aluminium-Unterarmkrücken mit 12-facher Höhenverstellung, Carbon-Finish, ergonomischen PP-Unterarmmanschetten und verdickten TPR-Spitzen mit Metalleinsätzen. 200 LB Belastbarkeit, faltbar auf 61,5cm."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"

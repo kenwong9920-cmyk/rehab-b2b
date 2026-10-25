@@ -1,7 +1,7 @@
 ---
 title: "Moderner Kohlefaser-Faltstock für Herren"
 description: "Maskulin gestalteter Faltstock mit Griffabmessungen für größere Hände. Ultraleichte Luftfahrt-Kohlefaser, faltbar auf ~35cm, mehrere Oberflächen inkl. Carbongewebe und Metallic-Töne. Stilvolles Mobilitäts-Statement."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:
   - "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"

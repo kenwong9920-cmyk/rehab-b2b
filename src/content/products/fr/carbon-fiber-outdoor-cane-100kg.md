@@ -1,7 +1,7 @@
 ---
 title: "Canne d'Extérieur en Fibre de Carbone 100kg"
 description: "Canne extérieure en fibre de carbone incroyablement légère à 0,36kg avec charge max 100kg. Poignée premium en bois de rose, réglage 5 hauteurs par bouton-poussoir, longueur pliée 34,5cm, embout TPR avec plaque acier interne pour adhérence maximale."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"

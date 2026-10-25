@@ -1,7 +1,7 @@
 ---
 title: "Bastón de Marcha Ligero de Fibra de Carbono para Adultos"
 description: "Bastón de marcha ultraligero de 0,33kg en fibra de carbono con carga máxima 100kg. Ajuste de 5 alturas con pulsador, longitud plegada 34cm, empuñadura PP ergonómica y contera TPR con inserto de acero. Ideal para uso diario y viajes."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"

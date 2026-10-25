@@ -1,7 +1,7 @@
 ---
 title: "Béquilles à Double Canne de Support pour Adultes"
 description: "Béquilles axillaires doubles en alliage d'aluminium avec coussinets en mousse épaissis antidérapants, cadre léger renforcé et poignées ergonomiques. Design pliable à trois sections. Pour usage intérieur et extérieur en clinique et à domicile."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"

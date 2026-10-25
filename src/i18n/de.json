@@ -109,7 +109,7 @@
   },
   "categories": {
     "walkingAids": "Gehhilfen",
-    "walkingAidsDesc": "Gehstöcke, Krücken und Gehstöcke",
+    "walkingAidsDesc": "Gehstützen, Gehstöcke und Handstöcke",
     "bathSafety": "Bad- & Duschsicherheit",
     "bathSafetyDesc": "Duschstühle, Badsitze und Badezimmerhilfen",
     "commodeChairs": "Toilettenstühle",
@@ -118,7 +118,11 @@
     "toiletSafetyDesc": "WC-Sicherheitsgriffe, Haltegriffe und erhöhte Toilettensitze",
     "walkers": "Rollatoren & Gehwagen",
     "walkersDesc": "Faltbare Rollatoren, Gehwagen und Kinderrollatoren",
-    "seoSuffix": "ISO 13485 zertifiziert, CE-Kennzeichnung, FDA-registriert. Großhandel & OEM."
+    "seoSuffix": "ISO 13485 zertifiziert, CE-Kennzeichnung, FDA-registriert. Großhandel & OEM.",
+    "crutches": "Gehstützen",
+    "crutchesDesc": "Unterarm-, Achsel- und Ellenbogengehstützen",
+    "walkingCanes": "Gehstöcke",
+    "walkingCanesDesc": "Gehstöcke, Handstöcke und Faltstöcke"
   },
   "about": {
     "title": "Über JinDa Rehab Medical",

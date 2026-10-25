@@ -1,7 +1,7 @@
 ---
 title: "고하중용 경량 접이식 탄소 섬유 지팡이"
 description: "초경량을 유지하면서 최대 100kg을 지지하는 강화 탄소 섬유 접이식 지팡이. 관절염 사용자를 위해 설계된 인체공학적 손잡이, 대형 미끄럼 방지 고무 팁, 약 35cm로 평평하게 접힘."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

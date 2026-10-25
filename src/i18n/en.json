@@ -109,7 +109,7 @@
   },
   "categories": {
     "walkingAids": "Walking Aids",
-    "walkingAidsDesc": "Canes, crutches and walking sticks",
+    "walkingAidsDesc": "Crutches, walking canes and walking sticks",
     "bathSafety": "Bath & Shower Safety",
     "bathSafetyDesc": "Shower chairs, bath stools and bathroom aids",
     "commodeChairs": "Commode Chairs",
@@ -118,7 +118,11 @@
     "toiletSafetyDesc": "Toilet safety rails, grab bars and elevated toilet seats",
     "walkers": "Walkers & Rollators",
     "walkersDesc": "Folding walkers, rollators and pediatric walkers",
-    "seoSuffix": "ISO 13485 certified, CE marked, FDA registered. Wholesale pricing and OEM available."
+    "seoSuffix": "ISO 13485 certified, CE marked, FDA registered. Wholesale pricing and OEM available.",
+    "crutches": "Crutches",
+    "crutchesDesc": "Forearm, underarm and elbow crutches",
+    "walkingCanes": "Walking Canes",
+    "walkingCanesDesc": "Walking canes, sticks and folding canes"
   },
   "about": {
     "title": "About JinDa Rehab Medical",

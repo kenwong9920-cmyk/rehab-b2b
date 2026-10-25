@@ -1,7 +1,7 @@
 ---
 title: "Leichte Aluminium-Unterarmkrücken für Senioren"
 description: "Premium Aluminium-Falt-Unterarmkrücken mit 12-facher Höhenverstellung, ergonomischen PP-Ellbogenpolstern, verstärkten TPR-Fußspitzen mit Eiseneinsätzen und kompaktem Faltdesign. Leicht aber langlebig für Senioren und Patienten."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"

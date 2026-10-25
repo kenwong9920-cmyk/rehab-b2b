@@ -1,7 +1,7 @@
 ---
 title: "Lightweight Foldable Carbon Fiber Cane for Heavy Load"
 description: "Reinforced carbon fiber folding cane supporting up to 100kg while remaining ultra-lightweight. Features ergonomic handle designed for arthritis users, oversized anti-slip rubber tip, folds flat to ~14 inches in seconds."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

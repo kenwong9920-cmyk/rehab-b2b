@@ -1,7 +1,7 @@
 ---
 title: "Kohlefaser-Unterarmkrücken für Frakturunterstützung"
 description: "Hochfeste Kohlefaser-Unterarmkrücken mit 100kg Belastbarkeit bei nur 1,13kg pro Paar. 12-fache Pin-Lock-Höhenverstellung (91-118cm), ergonomische PP-Ellbogenstütze, verdickte TPR-Spitzen mit Stahleinsätzen. Gefaltet 44,5×15×17cm."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"

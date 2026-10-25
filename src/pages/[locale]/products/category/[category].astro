@@ -28,9 +28,19 @@ if (!categoryMeta) {
   return Astro.redirect(`/${locale}/products/`);
 }
 
-// Get products matching this category + locale
+// 父分类（walking-aids）自身不挂产品，聚合子分类
+const childSlugs: readonly string[] =
+  (categoryMeta as { children?: readonly string[] }).children ?? [];
+const wanted = [category!, ...childSlugs];
+
+// Get products matching this category (or its children) + locale
 const allProducts = await getCollection('products', (entry) =>
-  entry.id.startsWith(`${locale}/`) && entry.data.category === category
+  entry.id.startsWith(`${locale}/`) && wanted.includes(entry.data.category)
+);
+
+// 子分类入口（父分类页展示）
+const childCategories = PRODUCT_CATEGORIES.filter((c) =>
+  childSlugs.includes(c.slug)
 );
 
 // Sort by order
@@ -111,6 +121,26 @@ const schema = {
         </a>
       ))}
     </div>
+
+    {/* 子分类入口（仅父分类页显示） */}
+    {childCategories.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+        {childCategories.map((c) => (
+          <a
+            href={`/${locale}/products/category/${c.slug}/`}
+            class="group bg-white border border-neutral-200 rounded-xl p-6 hover:border-primary-300 hover:shadow-md transition-all no-underline"
+          >
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-3xl">{c.icon}</span>
+              <h2 class="text-lg font-semibold text-neutral-900 group-hover:text-primary-700 m-0">
+                {t(c.nameKey)}
+              </h2>
+            </div>
+            <p class="text-sm text-neutral-600 mb-0">{t(c.descriptionKey)}</p>
+          </a>
+        ))}
+      </div>
+    )}
 
     {/* Product grid or empty state */}
     {products.length === 0 ? (

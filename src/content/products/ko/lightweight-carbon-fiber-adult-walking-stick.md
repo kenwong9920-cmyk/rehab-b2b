@@ -1,7 +1,7 @@
 ---
 title: "성인용 경량 탄소 섬유 워킹 스틱"
 description: "0.33kg 초경량 탄소 섬유 워킹 스틱, 최대 하중 100kg. 5단계 푸시 버튼 높이 조절, 34cm 접이식 길이, 인체공학적 PP 손잡이, 강철 인서트가 있는 TPR 페럴. 일상 사용 및 여행에 이상적."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"

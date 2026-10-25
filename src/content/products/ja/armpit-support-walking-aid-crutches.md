@@ -1,7 +1,7 @@
 ---
 title: "脇サポート歩行補助松葉杖"
 description: "滑り止めゴムチップとデュアルサポートバランスデザインの3セクション折りたたみアルミ合金脇松葉杖。長時間の回復使用時に肩の圧力を軽減する快適な脇パッド。家庭、病院、リハビリ用の調節可能な高さ。"
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/ff/84/e1/ff457dcf80856d788f83d7974d.jpg"

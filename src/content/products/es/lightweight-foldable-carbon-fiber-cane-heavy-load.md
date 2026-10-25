@@ -1,7 +1,7 @@
 ---
 title: "Bastón Ligero Plegable de Fibra de Carbono para Carga Pesada"
 description: "Bastón plegable de fibra de carbono reforzada que soporta hasta 100kg manteniéndose ultraligero. Empuñadura ergonómica diseñada para usuarios con artritis, punta de goma antideslizante sobredimensionada, se pliega plano a ~35cm."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

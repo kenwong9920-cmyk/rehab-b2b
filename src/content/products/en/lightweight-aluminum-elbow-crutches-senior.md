@@ -1,7 +1,7 @@
 ---
 title: "Lightweight Aluminum Elbow Crutches for Seniors"
 description: "Premium aluminum alloy folding elbow crutches with 12-position height adjustment, ergonomic PP elbow pads, reinforced TPR foot tips with iron inserts, and compact foldable design. Lightweight yet durable — ideal for seniors and rehabilitation patients."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"

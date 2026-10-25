@@ -109,7 +109,7 @@
   },
   "categories": {
     "walkingAids": "보행 보조기",
-    "walkingAidsDesc": "지팡이, 목발, 보행기 및 롤레이터",
+    "walkingAidsDesc": "목발, 보행 지팡이, 보행 스틱 전 제품",
     "bathSafety": "욕실 안전",
     "bathSafetyDesc": "샤워 의자, 목욕 스툴 및 욕실 보조기구",
     "toiletSafety": "화장실 안전",
@@ -118,7 +118,11 @@
     "commodeChairsDesc": "휴대용 접이식 변기 및 침대 옆 변기 의자",
     "walkers": "보행기 및 롤레이터",
     "walkersDesc": "접이식 보행기, 롤레이터 및 소아용 보행기",
-    "seoSuffix": "ISO 13485 인증, CE 마킹, FDA 등록 공장. 도매 가격 및 OEM 공급, 샘플 제공."
+    "seoSuffix": "ISO 13485 인증, CE 마킹, FDA 등록 공장. 도매 가격 및 OEM 공급, 샘플 제공.",
+    "crutches": "목발",
+    "crutchesDesc": "전완, 겨드랑이, 팔꿈치 목발 전 모델 소개",
+    "walkingCanes": "보행 지팡이",
+    "walkingCanesDesc": "지팡이, 보행 스틱, 접이식 지팡이"
   },
   "about": {
     "title": "JinDa Rehab Medical 소개",

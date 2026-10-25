@@ -1,7 +1,7 @@
 ---
 title: "Muletas Axilares de Aluminio Duraderas y Cómodas"
 description: "Muletas axilares ligeras de aleación de aluminio con reposa axilas y mangos acolchados. Altura ajustable, puntas de goma antideslizantes para estabilidad en todas las superficies, diseño ergonómico que promueve marcha natural. Marco resistente al óxido."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"

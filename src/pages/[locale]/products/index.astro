@@ -54,7 +54,11 @@ const schema = {
       >
         {t('product.allProducts')}
       </button>
-      {PRODUCT_CATEGORIES.map((cat) => (
+      {/*
+        筛选项只列「叶子分类」：walking-aids 是聚合父分类，本身不挂产品，
+        列成筛选按钮会筛出 0 条。它的入口在分类页，总览页不重复。
+      */}
+      {PRODUCT_CATEGORIES.filter((cat) => !(cat as { children?: readonly string[] }).children).map((cat) => (
         <button
           data-category={cat.slug}
           class="filter-btn px-4 py-2 rounded-full text-sm font-medium transition-all bg-neutral-100 text-neutral-600 hover:bg-neutral-200"

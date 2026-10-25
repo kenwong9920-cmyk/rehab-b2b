@@ -1,7 +1,7 @@
 ---
 title: "Modern Carbon Fiber Folding Cane for Men"
 description: "Masculine-designed carbon fiber folding cane with tailored grip dimensions for larger hands. Aerospace-grade ultra-lightweight, folds to ~14 inches, available in multiple finishes including carbon weave and metallic tones. A stylish mobility statement."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:
   - "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"

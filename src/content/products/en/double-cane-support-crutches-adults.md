@@ -1,7 +1,7 @@
 ---
 title: "Double Cane Support Crutches for Adults"
 description: "Aluminum alloy double axillary crutches with non-slip thickened sponge pads, reinforced lightweight frame, and ergonomic handles. Three-section foldable design for easy storage. Suitable for indoor and outdoor rehabilitation use in clinics and home settings."
-category: "walking-aids"
+category: "crutches"
 image: "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"
 images:
   - "https://bsg-i.nbxc.com/product/8e/a3/65/a8a21583c95dbc42b1eef6495b.jpg"

@@ -109,7 +109,7 @@
   },
   "categories": {
     "walkingAids": "Aides à la Marche",
-    "walkingAidsDesc": "Cannes, béquilles et bâtons de marche",
+    "walkingAidsDesc": "Béquilles, cannes de marche et bâtons",
     "bathSafety": "Sécurité Bain & Douche",
     "bathSafetyDesc": "Chaises de douche, tabourets de bain et aides pour salle de bain",
     "commodeChairs": "Chaises Percées",
@@ -118,7 +118,11 @@
     "toiletSafetyDesc": "Barres de sécurité WC, barres d'appui et sièges de toilette surélevés",
     "walkers": "Déambulateurs & Rollators",
     "walkersDesc": "Déambulateurs pliants, rollators et déambulateurs pédiatriques",
-    "seoSuffix": "Usine ISO 13485, marquage CE, enregistrée FDA. Prix de gros et OEM."
+    "seoSuffix": "Usine ISO 13485, marquage CE, enregistrée FDA. Prix de gros et OEM.",
+    "crutches": "Béquilles",
+    "crutchesDesc": "Béquilles à avant-bras, axillaires et à coude",
+    "walkingCanes": "Cannes de marche",
+    "walkingCanesDesc": "Cannes, bâtons et cannes pliantes"
   },
   "about": {
     "title": "À propos de JinDa Rehab Medical",

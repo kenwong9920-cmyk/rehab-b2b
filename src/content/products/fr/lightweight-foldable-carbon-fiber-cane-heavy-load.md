@@ -1,7 +1,7 @@
 ---
 title: "Canne Légère Pliante en Fibre de Carbone pour Charge Lourde"
 description: "Canne pliante en fibre de carbone renforcée supportant jusqu'à 100kg tout en restant ultra-légère. Poignée ergonomique conçue pour utilisateurs arthritiques, embout caoutchouc antidérapant surdimensionné, se plie à plat en ~35cm."
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"

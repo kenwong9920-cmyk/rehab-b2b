@@ -1,7 +1,7 @@
 ---
 title: "高荷重用軽量折りたたみカーボンファイバー杖"
 description: "超軽量を維持しながら最大100kgをサポートする強化カーボンファイバー折りたたみ杖。関節炎ユーザー向けに設計されたエルゴノミックハンドル、大型滑り止めゴムチップ、約35cmにフラット折りたたみ。"
-category: "walking-aids"
+category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:
   - "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
