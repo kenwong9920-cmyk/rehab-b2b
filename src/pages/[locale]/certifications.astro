@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { SITE } from '@/utils/constants';
-import { CERTS, DOC_PACKAGE, VERIFY_STEPS, CERT_FAQS } from '@/data/certifications';
+import { DOCS, NOT_IN_FOLDER, DOC_PACKAGE, VERIFY_STEPS, CERT_FAQS } from '@/data/certifications';
 
 // 目前仅英文版；其他语言待翻译后加入此数组（届时 hreflang 会自动补全）
 const AVAILABLE = ['en'];
@@ -13,7 +13,13 @@ export function getStaticPaths() {
 const { locale } = Astro.params;
 const pageTitle = 'Certifications & Compliance — Verify Every Claim';
 const pageDesc =
-  'ISO 13485, CE (EU MDR), FDA establishment registration and ISO 9001 for rehabilitation equipment — with the certificate numbers and the exact steps to verify each one yourself.';
+  'ISO 13485 (8623138319), ISO 9001 (8629985173), EU GPSR certificate TQT1520D368EC, RoHS reports RC2503200748 and RC2503200997, and EUIPO design 015134442-0001 — with the number, the issuer and the exact steps to check each one.';
+
+const GROUPS = [
+  { type: 'qms', label: 'Quality management system', lead: 'How the factory is run.' },
+  { type: 'product', label: 'Product conformity', lead: 'What was tested, on which model, to which standard.' },
+  { type: 'ip', label: 'Intellectual property', lead: 'What is protected, and where.' },
+] as const;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -61,29 +67,25 @@ const schema = {
     </nav>
 
     <!-- Hero -->
-    <div class="max-w-3xl mb-14">
+    <div class="max-w-3xl mb-12">
       <h1 class="mb-5">Certifications &amp; Compliance</h1>
       <p class="text-lg text-neutral-600 leading-relaxed">
-        You should not have to take a supplier’s word for a certificate. Every claim on this page
-        has a number on it, and every number can be checked with the body that issued it —
-        before you send a deposit.
+        Every document below carries a number you can check with the body that issued it — the
+        certificate number, the report number, the design registration number. Nothing on this page
+        asks you to trust a badge.
       </p>
-      <div class="flex flex-wrap gap-3 mt-6">
-        {SITE.certifications.map((c) => (
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-accent-50 text-accent-700 border border-accent-200 px-3 py-1.5 rounded-full">
-            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            {c}
-          </span>
-        ))}
-      </div>
+      <p class="text-neutral-600 leading-relaxed mt-3">
+        We also list what is <strong>not</strong> in the folder, because that is the part buyers
+        normally discover after the deposit.
+      </p>
     </div>
 
     <!-- 四步核验 -->
     <section class="mb-16">
       <h2 class="mb-2 text-2xl">How to verify a Chinese supplier in four steps</h2>
       <p class="text-neutral-600 mb-8 max-w-2xl">
-        This is the same checklist we expect our own buyers to run on us. It takes about twenty minutes
-        and it will filter out most of the documentation problems you would otherwise discover after the deposit.
+        The same checklist we expect our own buyers to run on us. Twenty minutes, and it filters out
+        most of the documentation problems you would otherwise find after payment.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         {VERIFY_STEPS.map((s) => (
@@ -100,60 +102,96 @@ const schema = {
       </div>
     </section>
 
-    <!-- 证书明细 -->
-    <section class="mb-16">
-      <h2 class="mb-2 text-2xl">What we hold, and what each one covers</h2>
-      <p class="text-neutral-600 mb-8 max-w-2xl">
-        A certificate is only meaningful if its scope covers the product you are buying.
-        The scope wording below is the part to compare, not the logo.
-      </p>
-
-      <div class="space-y-5">
-        {CERTS.map((c) => (
-          <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden">
-            <div class="px-6 py-5 border-b border-neutral-100 bg-neutral-50 flex flex-wrap items-start justify-between gap-3">
-              <div>
-                <h3 class="text-lg font-semibold text-neutral-900">{c.name}</h3>
-                <p class="text-xs text-neutral-500 mt-0.5">{c.fullName}</p>
-              </div>
-              <div class="text-right">
-                {c.number ? (
-                  <span class="inline-block font-mono text-xs bg-white border border-neutral-200 rounded px-2.5 py-1 text-neutral-800">
-                    {c.number}
-                  </span>
-                ) : (
-                  <span class="inline-block text-xs text-neutral-500 border border-dashed border-neutral-300 rounded px-2.5 py-1">
-                    Copy on request
-                  </span>
-                )}
-                {(c.issuer || c.validUntil) && (
-                  <p class="text-[11px] text-neutral-500 mt-1.5">
-                    {c.issuer}{c.issuer && c.validUntil ? ' · ' : ''}{c.validUntil ? `valid to ${c.validUntil}` : ''}
-                  </p>
-                )}
-              </div>
-            </div>
-            <div class="px-6 py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div>
-                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">Scope</h4>
-                <p class="text-sm text-neutral-700 leading-relaxed">{c.scope}</p>
-              </div>
-              <div>
-                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">How to check it</h4>
-                <p class="text-sm text-neutral-700 leading-relaxed">{c.howToVerify}</p>
-                {c.verifyUrl && (
-                  <a href={c.verifyUrl} target="_blank" rel="noopener" class="inline-block mt-2 text-xs font-medium text-primary-600 hover:text-primary-700">
-                    Open the public register →
-                  </a>
-                )}
-              </div>
-              <div>
-                <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">Why it matters to you</h4>
-                <p class="text-sm text-neutral-700 leading-relaxed">{c.whyItMatters}</p>
-              </div>
-            </div>
+    <!-- 文档明细（分组） -->
+    {GROUPS.map((g) => {
+      const items = DOCS.filter((d) => d.type === g.type);
+      if (items.length === 0) return null;
+      return (
+        <section class="mb-14">
+          <div class="border-b border-neutral-200 pb-3 mb-6">
+            <h2 class="text-xl m-0">{g.label}</h2>
+            <p class="text-sm text-neutral-500 mt-1 mb-0">{g.lead}</p>
           </div>
-        ))}
+
+          <div class="space-y-5">
+            {items.map((d) => (
+              <div class="bg-white border border-neutral-200 rounded-xl overflow-hidden">
+                <div class="px-6 py-5 border-b border-neutral-100 bg-neutral-50 flex flex-wrap items-start justify-between gap-3">
+                  <div class="min-w-0">
+                    <h3 class="text-base font-semibold text-neutral-900 leading-snug">{d.title}</h3>
+                    <p class="text-xs text-neutral-500 mt-1">{d.issuer}</p>
+                  </div>
+                  <div class="text-right shrink-0">
+                    <span class="inline-block font-mono text-xs bg-white border border-neutral-200 rounded px-2.5 py-1 text-neutral-800">
+                      No. {d.number}
+                    </span>
+                    <p class="text-[11px] text-neutral-500 mt-1.5 tabular-nums">
+                      Issued {d.issued}{d.validUntil ? ` · valid to ${d.validUntil}` : ''}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="px-6 py-5">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">Standard / basis</h4>
+                      <p class="text-sm text-neutral-800 leading-relaxed">{d.standard}</p>
+
+                      <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5 mt-4">Covers</h4>
+                      <p class="text-sm text-neutral-700 leading-relaxed">{d.covers}</p>
+                    </div>
+
+                    <div>
+                      <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">What it is</h4>
+                      <p class="text-sm text-neutral-700 leading-relaxed">{d.whatItIs}</p>
+
+                      {d.whatItIsNot && (
+                        <div class="mt-4 border-l-2 border-amber-300 pl-3">
+                          <h4 class="text-xs font-semibold uppercase tracking-wide text-amber-700 mb-1">What it is not</h4>
+                          <p class="text-sm text-neutral-700 leading-relaxed">{d.whatItIsNot}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div class="mt-5 pt-4 border-t border-neutral-100">
+                    <h4 class="text-xs font-semibold uppercase tracking-wide text-neutral-500 mb-1.5">How to check it yourself</h4>
+                    <p class="text-sm text-neutral-700 leading-relaxed">{d.verify}</p>
+                    {d.verifyUrl && (
+                      <a href={d.verifyUrl} target="_blank" rel="noopener" class="inline-block mt-2 text-xs font-medium text-primary-600 hover:text-primary-700">
+                        Open the public register →
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+
+    <!-- 没有的东西 -->
+    <section class="mb-16">
+      <h2 class="mb-2 text-2xl">What is not in this folder</h2>
+      <p class="text-neutral-600 mb-6 max-w-2xl">
+        Being specific about what we do not hold is the fastest way for you to work out whether we
+        are the right supplier for your market.
+      </p>
+      <div class="bg-amber-50/60 border border-amber-200 rounded-xl overflow-hidden">
+        <table class="w-full">
+          <tbody>
+            {NOT_IN_FOLDER.map((n) => (
+              <tr class="border-b border-amber-100 last:border-0 align-top">
+                <td class="px-5 py-4 w-1/3">
+                  <div class="text-sm font-medium text-neutral-900">{n.name}</div>
+                  <span class="inline-block mt-1.5 text-[11px] font-semibold bg-amber-100 text-amber-800 rounded px-2 py-0.5">{n.status}</span>
+                </td>
+                <td class="px-5 py-4 text-sm text-neutral-700 leading-relaxed">{n.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -161,7 +199,7 @@ const schema = {
     <section class="mb-16 bg-neutral-50 rounded-2xl p-8">
       <h2 class="mb-2 text-2xl">Documents that ship with every order</h2>
       <p class="text-neutral-600 mb-6 max-w-2xl">
-        Not “available on request after payment” — these are in the carton or in your inbox before the vessel sails.
+        Not “available on request after payment” — these reach you before the vessel sails.
       </p>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
         {DOC_PACKAGE.map((d) => (
@@ -195,8 +233,9 @@ const schema = {
     <section class="bg-primary-700 rounded-2xl p-8 md:p-10 text-white">
       <h2 class="text-2xl mb-3 text-white">Want the document package for your market?</h2>
       <p class="text-white/80 mb-6 max-w-2xl">
-        Tell us the destination country and the product category, and we will send the certificates,
-        declaration of conformity and label version that your customs broker will actually ask for.
+        Tell us the destination country and the model. We send the certificate copies, the
+        declaration of conformity and the label version your customs broker will ask for — and we
+        tell you which document does not cover that model, if any.
       </p>
       <div class="flex flex-wrap gap-3">
         <a href={`/${locale}/get-quote/`} class="btn-accent">Request the document package →</a>

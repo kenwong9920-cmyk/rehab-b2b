@@ -32,6 +32,12 @@ export const SITE = {
  * 出现"同一个数字在不同页面不一样"会直接摧毁 B2B 买家的信任。
  */
 export const FACTS = {
+  /** 证书与发票上的法定名称（与 ISO 证书、营业执照一致，勿随意改动） */
+  legalName: 'Guangdong Jinda health care Co., Ltd',
+  legalNameZh: '广东晋大康复护理用品有限公司',
+  /** 统一社会信用代码 —— 买家可在国家企业信用信息公示系统核验 */
+  registrationNo: '91442000MA4W51H52M',
+  postalCode: '528400',
   /** 建立年份（首页显示的年限由此动态计算，不要写死 "15+ years"） */
   foundedYear: SITE.foundedYear,
   factoryArea: SITE.factoryArea,

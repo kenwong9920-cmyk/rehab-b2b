@@ -76,6 +76,13 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: SITE.name,
+  legalName: FACTS.legalName,
+  alternateName: [FACTS.legalNameZh, 'JinDa Rehab', 'Guangdong Jinda health care'],
+  identifier: {
+    '@type': 'PropertyValue',
+    name: 'Unified Social Credit Code',
+    value: FACTS.registrationNo,
+  },
   url: SITE.url,
   logo: `${SITE.url}/og-image.png`,
   description: t('home.heroSubtitle'),

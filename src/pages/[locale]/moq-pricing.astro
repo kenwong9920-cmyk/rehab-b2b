@@ -8,6 +8,8 @@ import {
   COST_LEVERS,
   QUOTE_STEPS,
   PRICING_FAQS,
+  PRICE_BASIS,
+  PRICE_UPDATED,
 } from '@/data/pricing';
 
 const AVAILABLE = ['en'];
@@ -67,8 +69,9 @@ const schema = {
       <h1 class="mb-5">MOQ &amp; Pricing</h1>
       <p class="text-lg text-neutral-600 leading-relaxed">
         Real numbers instead of “contact us for price”. The minimum order quantities below are taken
-        directly from the {FACTS.skuCount} models in our current catalogue, per category — so you can
-        check whether your first order is even possible before you write to us.
+        directly from the {FACTS.skuCount} models in our current catalogue, and the price bands are
+        the ranges we actually quote from at MOQ quantity — so you can check whether your budget and
+        your first order are even possible before you write to us.
       </p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
         <div class="bg-white border border-neutral-200 rounded-xl p-4 text-center">
@@ -128,9 +131,8 @@ const schema = {
         </table>
       </div>
       <p class="text-xs text-neutral-500 mt-3 max-w-3xl leading-relaxed">
-        Price band depends on material, frame colour, seating material and carton type — the same model
-        can differ materially between a stock-carton and a printed retail box. We therefore quote per
-        specification rather than publishing one misleading number.
+        Price basis: {PRICE_BASIS}. Bands last reviewed {PRICE_UPDATED}. Where your specification would
+        push the unit price outside the published band, we say so before quoting — not after.
       </p>
     </section>
 

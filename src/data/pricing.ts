@@ -36,7 +36,7 @@ export const CATEGORY_PRICING: CategoryPricing[] = [
     skus: 22,
     moqFrom: 100,
     moqTo: 500,
-    priceBand: '',
+    priceBand: 'US$15 – US$25',
     note: 'Carbon-fibre and folding canes carry a higher MOQ than fixed aluminium models because the tube set and tip tooling are shared across a full run.',
   },
   {
@@ -45,7 +45,7 @@ export const CATEGORY_PRICING: CategoryPricing[] = [
     skus: 13,
     moqFrom: 30,
     moqTo: 500,
-    priceBand: '',
+    priceBand: 'US$10 – US$15',
     note: 'The widest MOQ range in our catalogue: a standard moulded seat starts at 30 units, while a custom frame colour or a new seat mould moves the entry point up.',
   },
   {
@@ -54,7 +54,7 @@ export const CATEGORY_PRICING: CategoryPricing[] = [
     skus: 6,
     moqFrom: 100,
     moqTo: 100,
-    priceBand: '',
+    priceBand: 'US$12 – US$20',
     note: 'A single flat MOQ of 100 units per SKU — these models share one frame platform, so there is no low-volume variant.',
   },
   {
@@ -63,7 +63,7 @@ export const CATEGORY_PRICING: CategoryPricing[] = [
     skus: 6,
     moqFrom: 30,
     moqTo: 500,
-    priceBand: '',
+    priceBand: 'US$10 – US$15',
     note: 'Steel folding models start low; height-adjustable and padded models with multi-part frames need a longer setup and therefore a higher entry point.',
   },
   {
@@ -72,10 +72,18 @@ export const CATEGORY_PRICING: CategoryPricing[] = [
     skus: 4,
     moqFrom: 50,
     moqTo: 300,
-    priceBand: '',
+    priceBand: 'US$10 – US$15',
     note: 'Small, high-density cartons keep freight cheap, which is why the low end of this category is more accessible than the frame products.',
   },
 ];
+
+/**
+ * 价格区间的口径 —— 不写清口径，买家会拿别家的 FOB 价跟我们的到岸价比。
+ * 数据来源：业务确认（2026-10-25）。
+ */
+export const PRICE_BASIS =
+  'FOB South China · per unit · standard colours · export carton · MOQ quantity, not container volume';
+export const PRICE_UPDATED = '2026-10-25';
 
 /** MOQ 是怎么算出来的 —— 这一段是页面可信度的核心 */
 export const MOQ_EXPLAINER = [
@@ -141,9 +149,14 @@ export const QUOTE_STEPS = [
 
 export const PRICING_FAQS = [
   {
-    question: 'Why do you not publish a single unit price?',
+    question: 'How accurate are the published price bands?',
     answer:
-      'Because the same shower chair can leave the factory at very different unit costs depending on seat material, frame colour, carton type and quantity — publishing one number would be misleading. What we do publish is the real MOQ per category, derived from the 51 models currently in our catalogue, plus an itemised quote within 24 hours.',
+      'They are the range we actually quote from at MOQ quantity, in standard colours and an export carton, FOB South China. Where your order lands inside that band depends on three things: seat and frame material, frame colour (a custom RAL becomes a dedicated coating batch), and carton type. Exceptions are always in the direction of the band, not outside it — if a specification would push the unit price above the published range, we tell you before quoting rather than after.',
+  },
+  {
+    question: 'Why is walking aid pricing higher than bath safety?',
+    answer:
+      'Walking aids carry more assembly and more parts per unit — telescopic tube sets, locking mechanisms, grips and ferrules — and the crutches in that category are the most labour-intensive items we make. Bath safety chairs are a simpler frame plus a seat, so the band is lower even though the carton is heavier.',
   },
   {
     question: 'What is the lowest MOQ you accept?',

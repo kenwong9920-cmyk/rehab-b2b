@@ -1,99 +1,182 @@
 /**
  * 认证与合规数据 —— /en/certifications 单一数据源
  *
- * 设计原则：
- * 1. 每张证书都必须给出「买家可以自己去查」的路径，否则这个页面没有意义。
- * 2. 编号未知时 **不要编造**。留空即可，页面会自动降级为「索取证书副本」。
- *    编一个假编号比不写更糟——买家真去查了会当场失去信任。
- * 3. 填好 number / issuer / validUntil / verifyUrl 之后，页面自动升级为可核验状态。
+ * ⚠️ 事实核查结论（2026-10-25，依据资料库「证书」文件夹内的原件）：
+ *
+ * 1. ISO 13485 / ISO 9001 由华认联（Huarenlian）签发，编号、签发日、有效期齐全。
+ * 2. 「洗澡椅CE报告」「坐便椅CE报告」实际是 **RoHS 测试报告**（2011/65/EU + (EU) 2015/863），
+ *    不是医疗器械 MDR 的符合性评定。
+ * 3. GPSR 证书（TQT1520D368EC）依据 **EN 12520:2024 + EN 1728:2012**（家具座具强度标准），
+ *    可用 CE 标识证明符合 GPSR 2023/988 —— 仍然不是 MDR。
+ * 4. 「碳纤维拐杖专利证书」实际是 **EUIPO 注册式共同体外观设计**（015134442-0001），不是发明专利。
+ * 5. 文件夹内 **没有 FDA 相关文件**。
+ *
+ * 因此本页刻意把「我们有什么」和「我们没有什么」分开写。
+ * 把 GPSR/RoHS 说成 MDR CE，是买家一查就穿的谎，也是这个页面唯一会反噬的写法。
  */
 
-export type CertEntry = {
-  /** 证书简称，用于卡片标题 */
-  name: string;
-  /** 全称 */
-  fullName: string;
-  /** 证书编号（未知留空字符串） */
-  number?: string;
-  /** 发证机构（未知留空） */
-  issuer?: string;
-  /** 有效期至（ISO 日期，未知留空） */
+export type DocType = 'qms' | 'product' | 'ip';
+
+export type CertDoc = {
+  type: DocType;
+  title: string;
+  /** 证书/报告编号 */
+  number: string;
+  issuer: string;
+  /** 签发日 / 注册日（YYYY-MM-DD） */
+  issued: string;
+  /** 有效期至（无固定有效期则留空） */
   validUntil?: string;
-  /** 该证书实际覆盖什么 —— 越具体越可信 */
-  scope: string;
-  /** 买家自查路径说明 */
-  howToVerify: string;
-  /** 官方查询入口（可选） */
+  /** 依据的标准或指令 */
+  standard: string;
+  /** 覆盖范围：尽可能具体到型号 */
+  covers: string;
+  /** 一句话说明这到底是什么 */
+  whatItIs: string;
+  /** 一句话说明它不是什么（防止过度解读） */
+  whatItIsNot?: string;
+  /** 买家如何自查 */
+  verify: string;
   verifyUrl?: string;
-  /** 与康复器械买家的相关性说明 */
-  whyItMatters: string;
 };
 
-export const CERTS: CertEntry[] = [
+export const DOCS: CertDoc[] = [
+  // ── 质量管理体系 ──
   {
-    name: 'ISO 13485:2016',
-    fullName: 'Medical devices — Quality management systems',
-    number: '',
-    issuer: '',
-    validUntil: '',
-    scope:
-      'Design and manufacture of rehabilitation equipment: walking aids, walkers, bath safety seating, commode chairs and toilet safety rails.',
-    howToVerify:
-      'Ask us for the certificate PDF, then check the certificate number and scope wording against the certification body’s own online certificate register. The legal entity name on the certificate must match our business licence.',
-    verifyUrl: '',
-    whyItMatters:
-      'ISO 13485 is the quality system most EU and Middle East importers require before they will place a first order. It is not the same thing as ISO 9001 — ISO 9001 alone is usually rejected for medical devices.',
+    type: 'qms',
+    title: 'ISO 13485:2016 — Medical device quality management system',
+    number: '8623138319',
+    issuer: 'Huarenlian Certification Service Co., Ltd. (华认联)',
+    issued: '2025-06-19',
+    validUntil: '2028-06-18',
+    standard: 'GB/T 42061-2022 / ISO 13485:2016',
+    covers:
+      'Guangdong Jinda health care Co., Ltd — sales and production of Class I medical devices, including walking aids, bath safety seating, commode chairs and toilet safety rails.',
+    whatItIs:
+      'The quality system certificate most EU and Middle East importers require before a first order. It speaks to how the factory is run, not just to how one sample tested.',
+    whatItIsNot:
+      'It is not a product certificate. It does not certify any individual model, and it does not replace a Declaration of Conformity.',
+    verify:
+      'Check the number and the scope wording against the certification body’s register, and confirm the legal entity on the certificate matches the business licence. Ask for the PDF and the licence side by side.',
   },
   {
-    name: 'CE marking (EU MDR)',
-    fullName: 'Regulation (EU) 2017/745 on medical devices',
-    number: '',
-    issuer: '',
-    validUntil: '',
-    scope:
-      'Class I rehabilitation equipment (non-sterile, no measuring function), covered by an EU Declaration of Conformity issued under our quality system.',
-    howToVerify:
-      'Request the EU Declaration of Conformity and the technical documentation index. Check that the class stated in the DoC matches the product you are buying, and that the manufacturer name and address match the label.',
-    verifyUrl: '',
-    whyItMatters:
-      'Class I devices do not need a Notified Body, so a CE certificate from a Notified Body is not expected — but the Declaration of Conformity and technical file are mandatory and must be available to your local authority on request.',
+    type: 'qms',
+    title: 'ISO 9001:2015 — Quality management system',
+    number: '8629985173',
+    issuer: 'Huarenlian Certification Service Co., Ltd. (华认联)',
+    issued: '2025-06-19',
+    validUntil: '2028-06-18',
+    standard: 'GB/T 19001-2016 / ISO 9001:2015',
+    covers:
+      'General manufacturing quality management across the Zhongshan facility, including Class I medical device production and sales.',
+    whatItIs:
+      'Useful for tender documents, and for buyers whose customer asks for ISO 9001 specifically rather than ISO 13485.',
+    whatItIsNot:
+      'ISO 9001 alone does not satisfy medical device import requirements — if a distributor asks for 13485, this certificate will not substitute for it.',
+    verify:
+      'Same method as the 13485 certificate: number against the issuer’s register, and read the scope line, not the logo.',
+  },
+
+  // ── 产品符合性 ──
+  {
+    type: 'product',
+    title: 'EU GPSR Certificate of Compliance — CE marking',
+    number: 'TQT1520D368EC',
+    issuer: 'Shenzhen Tianqi Testing Technology Service Co., Ltd. (TQT)',
+    issued: '2026-06-10',
+    standard: 'EN 12520:2024 · EN 1728:2012 · EU GPSR 2023/988',
+    covers:
+      'Folding shower stool, main test model LM5108 (test report TQT1520D368E). The certificate states that it applies to the tested sample and does not assess the whole production.',
+    whatItIs:
+      'A product-safety conformity certificate issued under the EU General Product Safety Regulation, tested to the European seating strength and durability standards EN 12520 and EN 1728. It permits CE marking to demonstrate compliance with GPSR.',
+    whatItIsNot:
+      'It is not a medical device conformity assessment under MDR 2017/745. EN 12520 and EN 1728 are furniture seating standards, not medical device standards.',
+    verify:
+      'Ask for the certificate together with test report TQT1520D368E, then confirm the model number and the standards on the certificate match the product you are buying. The report is the evidence; the certificate is the summary.',
   },
   {
-    name: 'US FDA registration',
-    fullName: 'Establishment registration and device listing (21 CFR Part 807)',
-    number: '',
-    issuer: 'U.S. Food and Drug Administration',
-    validUntil: '',
-    scope:
-      'Manufacturing establishment registration and device listing for our rehabilitation equipment, which is regulated as Class I in the United States.',
-    howToVerify:
-      'Search our establishment registration number in the FDA’s public establishment database, and confirm each device listing separately. Registration does not equal approval — read the difference before you compare suppliers.',
-    verifyUrl: 'https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm',
-    whyItMatters:
-      'US customs and Amazon both ask for the FDA registration number. A supplier who cannot produce one is not legally able to ship medical devices into the United States on their own registration.',
+    type: 'product',
+    title: 'EU RoHS test report — bath chair series',
+    number: 'RC2503200748',
+    issuer: 'South China Technical Service Co., Ltd. (GD-SCT)',
+    issued: '2025-04-01',
+    standard: 'RoHS Directive 2011/65/EU & (EU) 2015/863',
+    covers:
+      'Bath chair, test model LM3200, covering series LM5101, LM5103, LM5104, LM3201, LM3202, LM3203, LM3004, LM3205, LM3206. Result: pass.',
+    whatItIs:
+      'Evidence that restricted substances (lead, cadmium, mercury, hexavalent chromium, PBBs, PBDEs) are within RoHS limits on the tested models.',
+    whatItIsNot:
+      'RoHS is a hazardous-substance directive, not a medical device or general product safety assessment. It is not the document a distributor means when they ask for “CE”.',
+    verify:
+      'Request the full report, check the model and series list against your order, and read the conclusion line of each test item.',
   },
   {
-    name: 'ISO 9001:2015',
-    fullName: 'Quality management systems — Requirements',
-    number: '',
-    issuer: '',
-    validUntil: '',
-    scope: 'General manufacturing quality management across the production facility.',
-    howToVerify:
-      'Same method as ISO 13485: check the number against the certification body’s register, and read the scope — a certificate that only covers “trading” does not cover manufacturing.',
-    verifyUrl: '',
-    whyItMatters:
-      'Useful for non-medical buyers and for tender documents, but on its own it does not satisfy medical device import requirements.',
+    type: 'product',
+    title: 'EU RoHS test report — commode chair series',
+    number: 'RC2503200997',
+    issuer: 'South China Technical Service Co., Ltd. (GD-SCT)',
+    issued: '2025-04-01',
+    standard: 'RoHS Directive 2011/65/EU & (EU) 2015/863',
+    covers:
+      'Commode chair, test model LM6207, covering series LM6201–LM6209 and LM252. Result: pass.',
+    whatItIs:
+      'The same substance-limit evidence as the bath chair report, applied to the commode chair series.',
+    whatItIsNot: 'Not a mechanical strength or medical device conformity document.',
+    verify:
+      'Same method as above: match the model and series list, and read the conclusion per test item.',
+  },
+
+  // ── 知识产权 ──
+  {
+    type: 'ip',
+    title: 'EUIPO registered Community design — carbon fibre cane',
+    number: '015134442-0001',
+    issuer: 'European Union Intellectual Property Office (EUIPO)',
+    issued: '2026-02-27',
+    standard: 'Registered Community design · Locarno class 03-0351 (canes)',
+    covers:
+      'The external appearance of the carbon fibre walking cane, registered to Guangdong Jinda health care Co., Ltd, with the designer named on the register.',
+    whatItIs:
+      'A registered design protects the look of the product in the EU. It matters to buyers investing in artwork, tooling or a private label range built on that shape.',
+    whatItIsNot:
+      'It is a design registration, not a patent — it protects appearance, not a technical mechanism or a material formula.',
+    verify:
+      'Search the design number in the EUIPO eSearch plus database. Registrations are public and show the holder, the designer and the renewal dates.',
+    verifyUrl: 'https://euipo.europa.eu/eSearch/',
+  },
+];
+
+/** 这组文件里没有、或需按型号/市场单独确认的 */
+export const NOT_IN_FOLDER = [
+  {
+    name: 'US FDA establishment registration / device listing',
+    status: 'Not in this folder',
+    note: 'The registration and listing numbers are not among these files. Ask us for them directly and check them in the FDA’s public databases — registration is not approval, and the difference matters for both customs and Amazon.',
+  },
+  {
+    name: 'EU MDR Declaration of Conformity',
+    status: 'Per model — confirm before ordering',
+    note: 'Not part of this set. If your market requires the product to be placed as a medical device under MDR 2017/745, tell us the model and the destination before ordering and we will confirm in writing which document exists for that product, rather than assume the GPSR certificate covers it.',
+  },
+  {
+    name: 'Mechanical strength test to a medical device standard',
+    status: 'Not in this folder',
+    note: 'The strength evidence on file is EN 12520 / EN 1728, which are furniture seating standards. If your tender or distributor specifies a medical device standard, that test has to be commissioned separately.',
+  },
+  {
+    name: 'Social compliance audit (BSCI / Sedex)',
+    status: 'On request',
+    note: 'We host buyer and third-party audits. Tell us which scheme your customer requires and we will confirm what is currently on file before you commission a new one.',
   },
 ];
 
 /** 买家拿到的文件包 —— 每个订单都随货提供 */
 export const DOC_PACKAGE = [
-  { name: 'Certificate of Conformity / DoC', desc: 'Signed declaration matching the exact model and batch shipped.' },
+  { name: 'Declaration of Conformity', desc: 'Issued for the exact model and batch shipped, not a generic template.' },
   { name: 'Batch inspection report', desc: 'Load test, visual inspection and packing check for the production batch.' },
-  { name: 'Test reports', desc: 'Load capacity, stability and material test reports where applicable.' },
+  { name: 'Test reports covering that model', desc: 'The report numbers listed on this page, where they cover the model you ordered.' },
   { name: 'Packing list & commercial invoice', desc: 'Carton dimensions, gross/net weight and HS code for customs.' },
-  { name: 'Instructions & labelling artwork', desc: 'Target-market label version, including importer block if you need it.' },
+  { name: 'Labelling artwork for your market', desc: 'Including the importer block, in the language your market requires.' },
 ];
 
 /** 四步核验流程 */
@@ -101,50 +184,49 @@ export const VERIFY_STEPS = [
   {
     step: '1',
     title: 'Ask for the document, not the logo',
-    desc: 'Every certificate claim on this site can be backed by a PDF with a number on it. If a supplier sends you a picture of a certificate with the number cropped out, treat it as unverified.',
+    desc: 'A certificate claim is only worth the PDF behind it. If a supplier sends an image with the number cropped out, treat it as unverified — that is usually deliberate.',
   },
   {
     step: '2',
     title: 'Check the number with the issuer',
-    desc: 'Use the certification body’s own register, not the certificate itself, not the supplier’s website. The number should return an active status and a scope that mentions the products you are buying.',
+    desc: 'Use the certification body’s own register, not the certificate itself and not the supplier’s website. The number should return an active status and a scope covering the products you are buying.',
   },
   {
     step: '3',
-    title: 'Match the legal entity name',
-    desc: 'The company name on the certificate, the business licence and the invoice must all be the same legal entity. This is the single most common discrepancy we see in competitor documentation packages.',
+    title: 'Read what the document actually covers',
+    desc: 'This is where most buyers get caught. A GPSR certificate, a RoHS report and an MDR declaration are all “CE” documents, and only one of them is a medical device assessment. Check the standard numbers, not the badge.',
   },
   {
     step: '4',
-    title: 'Ask what happens when the certificate expires',
-    desc: 'A certificate with three months left is a supply risk. Ask for the surveillance audit date and what the renewal plan is before you commit to a yearly programme.',
+    title: 'Match the legal entity name',
+    desc: 'The name on the certificate, the business licence and the invoice must be the same legal entity. Mismatches here are the most common problem in Chinese documentation packages.',
   },
 ];
 
-/** 本页 FAQ（同时输出 FAQPage schema） */
 export const CERT_FAQS = [
   {
-    question: 'Can you send certificate copies before we place an order?',
+    question: 'Is your CE marking a medical device certificate?',
     answer:
-      'Yes. We send the certificate PDFs, the Declaration of Conformity and the test report index before any deposit, and we expect buyers to check them against the issuer’s register rather than take our word for it.',
+      'Partly — and it matters which part. We hold a GPSR Certificate of Compliance with CE marking for the folding shower stool, tested to EN 12520:2024 and EN 1728:2012, plus RoHS test reports for the bath chair and commode chair series. Those are product-safety and hazardous-substance documents. They are not a conformity assessment under the Medical Device Regulation. If your market requires the product to be placed as a medical device, tell us the model and the destination before ordering and we will confirm in writing which document exists for that product.',
   },
   {
-    question: 'Is CE marking enough to sell rehabilitation equipment in the EU?',
+    question: 'Can you send the certificate PDFs before we place an order?',
     answer:
-      'CE marking is the manufacturer’s declaration; your obligations as importer are separate. Under Regulation (EU) 2017/745 the importer must verify the Declaration of Conformity, keep the technical documentation available, register in EUDAMED and put their own name and address on the label. We supply the documents you need for that, but the importer registration is yours.',
+      'Yes, and we expect you to check them against the issuer rather than take our word for it. Ask for the ISO 13485 certificate, the GPSR certificate with its test report, and the two RoHS reports — all four appear on this page with their numbers.',
   },
   {
-    question: 'What is the difference between FDA registration and FDA approval?',
+    question: 'The ISO 13485 certificate is issued by a Chinese certification body. Does that matter?',
     answer:
-      'Registration and device listing mean the establishment and the product are on file with the FDA. Approval would mean a cleared premarket submission. Most walking aids, walkers, commode chairs and bath safety products are Class I and 510(k)-exempt, so registration is the correct status — a supplier claiming “FDA approved” for a shower chair is usually misstating it.',
+      'It can, depending on your customer. Huarenlian is a Chinese certification body, and some EU distributors and public tenders specifically require a certificate from a body accredited under the IAF medical device scheme. Ask them which they accept before you commission anything — if they need a different body, that is a re-certification project rather than a document request.',
   },
   {
-    question: 'Do you have a factory audit report or a social compliance report?',
+    question: 'Do you have FDA registration?',
     answer:
-      'We host buyer audits and third-party inspections on request. Tell us which scheme your customer requires (BSCI, Sedex, or a specific retailer standard) and we will confirm what is currently on file before you commission a new audit.',
+      'The registration and listing numbers are not in the document set we hold, so we are not publishing a number on this page that we cannot show you. Ask us for them directly and verify them in the FDA establishment and device listing databases. Registration is not approval, and the difference matters for both customs and Amazon.',
   },
   {
-    question: 'Which documents ship with each order?',
+    question: 'What ships with each order?',
     answer:
-      'Every shipment includes the Declaration of Conformity, batch inspection report, packing list and commercial invoice with HS codes. Test reports and labelling artwork for your target market are included on request at order confirmation.',
+      'A Declaration of Conformity for the exact model and batch, the batch inspection report, packing list and commercial invoice with HS codes, and the label artwork for your market. Test reports are supplied where they cover the model you ordered — and we will tell you when they do not.',
   },
 ];
