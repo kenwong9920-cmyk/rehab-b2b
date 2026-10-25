@@ -2,7 +2,8 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import CTASection from '@/components/CTASection.astro';
 import { useTranslations } from '@/utils/i18n';
-import { SITE } from '@/utils/constants';
+import { SITE, FACTS } from '@/utils/constants';
+import { MILESTONES } from '@/data/milestones';
 
 export async function getStaticPaths() {
   return [
@@ -19,15 +20,11 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
-const milestones = [
-  { year: '2010', event: 'JinDa Rehab Medical founded in Guangdong, China' },
-  { year: '2013', event: 'First CE certification obtained for walking aids product line' },
-  { year: '2015', event: 'FDA registration approved for US market entry' },
-  { year: '2017', event: 'ISO 13485 certification achieved — medical device quality management' },
-  { year: '2019', event: 'New 15,000 m² factory facility opened with expanded production lines' },
-  { year: '2022', event: 'Expanded to 50+ export countries with dedicated OEM service division' },
-  { year: '2025', event: 'Launched new physiotherapy and smart rehabilitation product lines' },
-];
+/** {years} 占位符 → 实际经营年限（见 constants.ts 的 FACTS） */
+const tj = (key: string) => t(key).replace(/\{years\}/g, String(FACTS.yearsInBusiness));
+
+/** 公司历程按语言取，取不到回退英文，避免出现空白时间轴 */
+const milestones = MILESTONES[locale!] ?? MILESTONES.en;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -51,7 +48,7 @@ const schema = {
 };
 ---
 
-<BaseLayout title={t('about.title')} description={t('about.seoDescription')} locale={locale!} schema={schema}>
+<BaseLayout title={t('about.title')} description={tj('about.seoDescription')} locale={locale!} schema={schema}>
   <!-- Hero -->
   <section class="bg-gradient-to-br from-primary-800 to-primary-900 text-white">
     <div class="container-main py-20 text-center max-w-3xl">

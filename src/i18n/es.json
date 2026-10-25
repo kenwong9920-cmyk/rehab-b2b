@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "Fabricante profesional de equipos de rehabilitación",
-    "heroSubtitle": "Más de 15 años de experiencia en diseño y fabricación de equipos de rehabilitación de alta calidad. Fábrica certificada CE, FDA, ISO 13485 que abastece a más de 50 países.",
+    "heroSubtitle": "Más de {years} años de experiencia diseñando y fabricando equipos de rehabilitación. Certificación ISO 13485, marcado CE y registro FDA — más de 50 países.",
     "heroCTA": "Solicitar cotización",
     "heroCTA2": "Explorar productos",
     "categoriesTitle": "Nuestras categorías de productos",
     "whyUsTitle": "¿Por qué elegir JinDa Rehab Medical?",
     "certifiedFactory": "Fábrica certificada",
-    "certifiedFactoryDesc": "Instalación de fabricación aprobada ISO 13485, CE, FDA",
+    "certifiedFactoryDesc": "Planta certificada ISO 13485, con marcado CE y registrada ante la FDA",
     "oemService": "OEM y personalización",
     "oemServiceDesc": "Personalización completa — color, material, logotipo, embalaje adaptado a su marca",
     "globalShipping": "Logística global",
@@ -57,7 +57,7 @@
     "offerSupport": "Soporte Postventa",
     "offerSupportDesc": "Soporte técnico, repuestos y servicio de garantía",
     "seoTitle": "Fabricante de equipos de rehabilitación | JinDa Rehab Medical",
-    "seoDescription": "Fabricante certificado ISO 13485 de ayudas para caminar, sillas de ducha y sillas con orinal. 16+ años, CE y FDA, exportamos a más de 50 países."
+    "seoDescription": "Fabricante certificado ISO 13485 de ayudas para caminar, sillas de ducha y sillas con orinal. {years}+ años, CE y FDA, exportamos a más de 50 países."
   },
   "footer": {
     "company": "Empresa",
@@ -117,12 +117,13 @@
     "toiletSafety": "Seguridad para WC",
     "toiletSafetyDesc": "Barras de seguridad para WC, barras de apoyo y asientos de inodoro elevados",
     "walkers": "Andadores & Rollators",
-    "walkersDesc": "Andadores plegables, rollators y andadores pediátricos"
+    "walkersDesc": "Andadores plegables, rollators y andadores pediátricos",
+    "seoSuffix": "Fábrica ISO 13485, marcado CE, registro FDA. Mayorista y OEM."
   },
   "about": {
     "title": "Sobre JinDa Rehab Medical",
     "subtitle": "Su socio de confianza en la fabricación de equipos de rehabilitación",
-    "seoDescription": "Fabricante de equipos de rehabilitación con 16+ años de experiencia OEM/ODM. Fábrica de 15.000 m² en Guangdong, ISO 13485, más de 50 mercados."
+    "seoDescription": "Fabricante de equipos de rehabilitación con {years}+ años de experiencia OEM/ODM. Fábrica de 15.000 m² en Guangdong, ISO 13485, más de 50 mercados."
   },
   "factory": {
     "title": "Nuestra Fábrica",

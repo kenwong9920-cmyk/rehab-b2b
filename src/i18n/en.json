@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "Professional Rehabilitation Equipment Manufacturer",
-    "heroSubtitle": "16+ years of experience in designing and manufacturing high-quality rehabilitation and medical equipment. CE, FDA, ISO 13485 certified factory serving 50+ countries worldwide.",
+    "heroSubtitle": "{years}+ years of experience designing and manufacturing rehabilitation and medical equipment. ISO 13485 certified, CE marked, FDA registered — serving 50+ countries.",
     "heroCTA": "Request a Quote",
     "heroCTA2": "Explore Products",
     "categoriesTitle": "Our Product Categories",
     "whyUsTitle": "Why Choose JinDa Rehab Medical?",
     "certifiedFactory": "Certified Factory",
-    "certifiedFactoryDesc": "ISO 13485, CE, FDA approved manufacturing facility",
+    "certifiedFactoryDesc": "ISO 13485 certified, CE marked, FDA registered facility",
     "oemService": "OEM & Customization",
     "oemServiceDesc": "Full customization — color, material, logo, packaging tailored to your brand",
     "globalShipping": "Global Logistics",
@@ -57,7 +57,7 @@
     "offerSupport": "After-Sales Support",
     "offerSupportDesc": "Technical support, spare parts, and warranty service",
     "seoTitle": "Rehabilitation Equipment Manufacturer | JinDa Rehab Medical",
-    "seoDescription": "ISO 13485 certified manufacturer of walking aids, shower chairs and commode chairs. 16+ years, CE & FDA approved, shipping to 50+ countries."
+    "seoDescription": "ISO 13485 certified manufacturer of walking aids, shower chairs and commode chairs. {years}+ years, CE marked, FDA listed, shipping to 50+ countries."
   },
   "footer": {
     "company": "Company",
@@ -117,12 +117,13 @@
     "toiletSafety": "Toilet Safety",
     "toiletSafetyDesc": "Toilet safety rails, grab bars and elevated toilet seats",
     "walkers": "Walkers & Rollators",
-    "walkersDesc": "Folding walkers, rollators and pediatric walkers"
+    "walkersDesc": "Folding walkers, rollators and pediatric walkers",
+    "seoSuffix": "ISO 13485 certified, CE marked, FDA registered. Wholesale pricing and OEM available."
   },
   "about": {
     "title": "About JinDa Rehab Medical",
     "subtitle": "Your trusted partner in rehabilitation equipment manufacturing",
-    "seoDescription": "Rehabilitation equipment manufacturer with 16+ years of OEM/ODM experience. 15,000 m² factory in Guangdong, ISO 13485 certified, 50+ export markets."
+    "seoDescription": "Rehabilitation equipment manufacturer with {years}+ years of OEM/ODM experience. 15,000 m² factory in Guangdong, ISO 13485 certified, 50+ export markets."
   },
   "factory": {
     "title": "Our Factory",
@@ -196,7 +197,7 @@
     "pageNotFoundDesc": "The page you're looking for doesn't exist or has been moved."
   },
   "products": {
-    "seoDescription": "Wholesale rehabilitation equipment: walking aids, shower chairs, walkers, commode chairs and toilet safety. ISO 13485, CE & FDA approved factory."
+    "seoDescription": "Wholesale rehabilitation equipment: walking aids, shower chairs, walkers, commode chairs and toilet safety. ISO 13485, CE marked, FDA listed factory."
   },
   "solutions": {
     "seoDescription": "Rehabilitation equipment solutions for hospitals, care homes, distributors and home care — tailored product ranges, certifications and volume pricing."

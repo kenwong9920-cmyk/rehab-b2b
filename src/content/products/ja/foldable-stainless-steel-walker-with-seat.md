@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Premium matte black stainless steel frame — sleek, durable, and corrosion-resistant"
   - "Built-in black leather seat provides comfortable resting spot during walks"

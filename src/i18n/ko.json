@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "전문 재활 장비 제조업체",
-    "heroSubtitle": "16년 이상 고품질 재활 및 의료 장비를 설계 및 제조한 경험. CE, FDA, ISO 13485 인증 공장에서 50개국 이상에 서비스를 제공합니다.",
+    "heroSubtitle": "{years}년 이상 재활·의료 장비를 설계·제조해 왔습니다. ISO 13485 인증, CE 마킹, FDA 등록 공장으로 50개국 이상에 공급합니다.",
     "heroCTA": "견적 요청하기",
     "heroCTA2": "제품 살펴보기",
     "categoriesTitle": "제품 카테고리",
     "whyUsTitle": "JinDa Rehab Medical을 선택하는 이유",
     "certifiedFactory": "인증된 공장",
-    "certifiedFactoryDesc": "ISO 13485, CE, FDA 승인 제조 시설",
+    "certifiedFactoryDesc": "ISO 13485 인증, CE 마킹, FDA 등록 시설",
     "oemService": "OEM 및 맞춤 제작",
     "oemServiceDesc": "색상, 소재, 로고, 포장까지 귀사 브랜드에 맞춤 제작",
     "globalShipping": "글로벌 물류",
@@ -57,7 +57,7 @@
     "offerSupport": "사후 지원",
     "offerSupportDesc": "기술 지원, 예비 부품 및 보증 서비스",
     "seoTitle": "재활 장비 제조업체 | JinDa Rehab Medical",
-    "seoDescription": "보행 보조기, 샤워체어, 변기체어를 제조하는 ISO 13485 인증 공장입니다. 16년 이상의 경력, CE·FDA 인증, 50개국 이상 수출. 샘플 및 OEM 상담 환영합니다."
+    "seoDescription": "보행 보조기, 샤워체어, 변기체어를 제조하는 ISO 13485 인증 공장입니다. {years}년 이상의 경력, CE·FDA 등록, 50개국 이상 수출. 샘플 및 OEM 상담 환영합니다."
   },
   "footer": {
     "company": "회사",
@@ -117,12 +117,13 @@
     "commodeChairs": "이동식 변기",
     "commodeChairsDesc": "휴대용 접이식 변기 및 침대 옆 변기 의자",
     "walkers": "보행기 및 롤레이터",
-    "walkersDesc": "접이식 보행기, 롤레이터 및 소아용 보행기"
+    "walkersDesc": "접이식 보행기, 롤레이터 및 소아용 보행기",
+    "seoSuffix": "ISO 13485 인증, CE 마킹, FDA 등록 공장. 도매 가격 및 OEM 공급, 샘플 제공."
   },
   "about": {
     "title": "JinDa Rehab Medical 소개",
     "subtitle": "재활 장비 제조 분야의 신뢰할 수 있는 파트너",
-    "seoDescription": "16년 이상 OEM/ODM 경력을 갖춘 재활 장비 제조사입니다. 광둥 15,000㎡ 공장, ISO 13485 인증, 50개국 이상 수출 실적. 맞춤 생산과 품질 관리를 제공합니다."
+    "seoDescription": "{years}년 이상 OEM/ODM 경력을 갖춘 재활 장비 제조사입니다. 광둥 15,000㎡ 공장, ISO 13485 인증, 50개국 이상 수출 실적. 맞춤 생산과 품질 관리를 제공합니다."
   },
   "factory": {
     "title": "우리 공장",
@@ -196,7 +197,7 @@
     "pageNotFoundDesc": "찾고 계신 페이지가 존재하지 않거나 이동되었습니다."
   },
   "products": {
-    "seoDescription": "재활 장비 도매: 보행 보조기, 샤워체어, 워커, 변기체어, 화장실 안전용품. ISO 13485 인증, CE·FDA 승인 공장에서 공급합니다."
+    "seoDescription": "재활 장비 도매: 보행 보조기, 샤워체어, 워커, 변기체어, 화장실 안전용품. ISO 13485 인증, CE·FDA 등록 공장에서 공급합니다."
   },
   "solutions": {
     "seoDescription": "병원, 요양시설, 유통사, 재가돌봄을 위한 재활 장비 솔루션을 제공합니다. 맞춤 제품 구성과 인증 지원, 물량별 가격 제안까지 함께 상담해 드립니다."

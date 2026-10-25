@@ -12,10 +12,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "High-end wood grain aluminum alloy frame — moisture-resistant, easy to clean, complements bathroom decor"
   - "150 kg (330 lb) weight capacity with safe and stable construction"

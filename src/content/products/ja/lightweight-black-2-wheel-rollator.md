@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "2-wheel mobility with durable rubber wheels suitable for carpets, tile, and outdoor surfaces"
   - "Lightweight yet sturdy frame — easy to maneuver while providing reliable daily support"

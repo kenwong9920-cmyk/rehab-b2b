@@ -14,10 +14,10 @@ images:
 moq: "200 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Incredibly lightweight at just 0.33 kg — effortless to carry all day"
   - "100% pure carbon fiber tubes with 1.2mm wall thickness for durability"

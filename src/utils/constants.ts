@@ -24,7 +24,12 @@ export const SITE = {
   employees: '200+',
   factoryArea: '15,000 m²',
   exportCountries: 50,
-  certifications: ['CE', 'FDA', 'ISO 13485', 'ISO 9001'],
+  /**
+   * 认证标签 —— 对外一律用这套措辞。
+   * 「CE」必须带法规依据，「FDA」必须写成 registered / listed，
+   * 因为 FDA 不"批准"Class I 器械，写 approved 会被专业买家当场判定为不专业。
+   */
+  certifications: ['CE (EU MDR 2017/745)', 'FDA registered & listed', 'ISO 13485', 'ISO 9001'],
 } as const;
 
 /**
@@ -40,6 +45,12 @@ export const FACTS = {
   postalCode: '528400',
   /** 建立年份（首页显示的年限由此动态计算，不要写死 "15+ years"） */
   foundedYear: SITE.foundedYear,
+  /**
+   * 经营年限 —— 每年自动 +1。
+   * 文案里写 {years} 占位符，渲染时替换；禁止在 i18n 里写死 "16 年"，
+   * 否则跨年后全站七种语言同时变成假数字（这一点竞品站年年踩）。
+   */
+  yearsInBusiness: new Date().getFullYear() - SITE.foundedYear,
   factoryArea: SITE.factoryArea,
   employees: SITE.employees,
   exportCountries: SITE.exportCountries,
@@ -53,6 +64,15 @@ export const FACTS = {
   categories: 5,
   skuCount: 51,
   certifications: SITE.certifications,
+
+  /**
+   * 监管登记号 —— 买家会在 FDA 公共数据库里逐个查号，所以这里不放占位符。
+   * 留空时页面显示「随文件包提供」，填上后自动升级为可在线核验。
+   * 待补：FDA 企业注册号 / 器械列名号、各型号 MDR DoC 编号。
+   */
+  fdaRegistration: '',
+  fdaListings: [] as string[],
+  mdrDocRef: '',
 } as const;
 
 /** 对外统一承诺 —— 首屏、表单上方、产品页共用同一组措辞 */

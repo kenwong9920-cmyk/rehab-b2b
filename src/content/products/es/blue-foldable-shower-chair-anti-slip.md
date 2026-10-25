@@ -14,10 +14,10 @@ images:
 moq: "500 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Flip-back backrest design — easy to get in and out, space-saving when folded"
   - "White aluminum alloy frame with bright blue accents — high visibility in wet environments"

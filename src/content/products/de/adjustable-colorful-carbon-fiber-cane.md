@@ -14,10 +14,10 @@ images:
 moq: "200 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Vibrant color options — multiple eye-catching shades available"
   - "Carbon fiber frame with high load capacity and reinforced joints"

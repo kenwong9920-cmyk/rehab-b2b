@@ -14,10 +14,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Rust-proof galvanized steel and aluminum alloy frame — built for humid bathroom environments"
   - "265-330 lb (120-150 kg) reinforced weight capacity for reliable daily use"

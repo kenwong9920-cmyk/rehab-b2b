@@ -14,10 +14,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "12-position height adjustment ensures personalized fit for optimal ergonomic support"
   - "Premium aluminum alloy frame — strength without bulk for reliable lightweight crutches"

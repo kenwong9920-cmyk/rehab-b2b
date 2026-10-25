@@ -14,10 +14,10 @@ images:
 moq: "500 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "300 lbs (150 kg) heavy-duty high-carbon steel frame for reliable daily use"
   - "Patented flip-back backrest with 5-level height adjustment for personalized comfort"

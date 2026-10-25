@@ -14,10 +14,10 @@ images:
 moq: "50 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Adjustable height with tool-free design — customizable positioning for elderly and pregnant users"
   - "Heavy-duty high-friction rubber feet with wide stable base for grip on wet surfaces"

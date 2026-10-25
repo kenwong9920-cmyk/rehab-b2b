@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Cream matte stainless steel frame — rust-resistant, easy to clean, blends into bathroom decor"
   - "Soft fabric-covered cushioned grip absorbs moisture for comfortable, secure support"

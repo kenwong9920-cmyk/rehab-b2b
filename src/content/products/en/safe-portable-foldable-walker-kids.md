@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Durable powder-coated stainless steel frame in black and yellow — scratch-resistant and rust-proof"
   - "Soft fabric sleeve grips absorb sweat and prevent slipping for comfortable all-day use"

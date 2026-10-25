@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Anti-slip rubber tips provide reliable traction on wet and uneven surfaces"
   - "Lightweight aluminum alloy frame for easy handling and reduced user fatigue"

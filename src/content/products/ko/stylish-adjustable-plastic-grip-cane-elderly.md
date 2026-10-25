@@ -14,10 +14,10 @@ images:
 moq: "200 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Integrated LED light in handle — powered by 2 AAA batteries for night visibility"
   - "Ultra-lightweight at 0.36 kg with 100 kg max load capacity"

@@ -14,10 +14,10 @@ images:
 moq: "200 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Men-specific design — masculine proportions and grip dimensions tailored for larger hands"
   - "Aerospace-grade carbon fiber — roughly half the weight of traditional metal canes"

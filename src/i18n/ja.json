@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "専門リハビリテーション機器メーカー",
-    "heroSubtitle": "16年以上の高品質リハビリ・医療機器の設計・製造経験。CE、FDA、ISO 13485認証工場が50カ国以上にサービスを提供しています。",
+    "heroSubtitle": "{years}年以上のリハビリ・医療機器の設計・製造実績。ISO 13485認証、CEマーキング、FDA登録の工場から50カ国以上へ供給しています。",
     "heroCTA": "見積を依頼",
     "heroCTA2": "製品を見る",
     "categoriesTitle": "製品カテゴリー",
     "whyUsTitle": "JinDa Rehab Medicalを選ぶ理由",
     "certifiedFactory": "認証工場",
-    "certifiedFactoryDesc": "ISO 13485、CE、FDA承認の製造施設",
+    "certifiedFactoryDesc": "ISO 13485認証・CEマーキング・FDA登録の施設",
     "oemService": "OEMとカスタマイズ",
     "oemServiceDesc": "色、素材、ロゴ、パッケージまでブランドに合わせた完全カスタマイズ",
     "globalShipping": "グローバル物流",
@@ -57,7 +57,7 @@
     "offerSupport": "アフターサポート",
     "offerSupportDesc": "技術サポート、スペアパーツ、保証サービス",
     "seoTitle": "リハビリ機器メーカー | JinDa Rehab Medical",
-    "seoDescription": "歩行補助具、シャワーチェア、ポータブルトイレを製造するISO 13485認証工場。16年以上の実績、CE・FDA取得、50カ国以上へ輸出。OEM相談可。"
+    "seoDescription": "歩行補助具、シャワーチェア、ポータブルトイレを製造するISO 13485認証工場。{years}年以上の実績、CE・FDA登録、50カ国以上へ輸出。OEM相談可。"
   },
   "footer": {
     "company": "会社",
@@ -117,12 +117,13 @@
     "commodeChairs": "ポータブルトイレ",
     "commodeChairsDesc": "折りたたみ式ポータブルトイレとベッドサイドトイレチェア",
     "walkers": "歩行器・ロレーター",
-    "walkersDesc": "折りたたみ歩行器、ロレーター、小児用歩行器"
+    "walkersDesc": "折りたたみ歩行器、ロレーター、小児用歩行器",
+    "seoSuffix": "ISO 13485認証、CEマーキング、FDA登録の工場。卸売価格とOEM対応、サンプル提供可能。"
   },
   "about": {
     "title": "JinDa Rehab Medicalについて",
     "subtitle": "リハビリ機器製造の信頼できるパートナー",
-    "seoDescription": "OEM/ODM実績16年以上のリハビリ機器メーカー。広東省15,000㎡の工場でISO 13485認証を取得し、50カ国以上へ輸出。カスタム生産と品質管理に対応します。"
+    "seoDescription": "OEM/ODM実績{years}年以上のリハビリ機器メーカー。広東省15,000㎡の工場でISO 13485認証を取得し、50カ国以上へ輸出。カスタム生産と品質管理に対応します。"
   },
   "factory": {
     "title": "私たちの工場",
@@ -196,7 +197,7 @@
     "pageNotFoundDesc": "お探しのページは存在しないか、移動されました。"
   },
   "products": {
-    "seoDescription": "リハビリ機器の卸売：歩行補助具、シャワーチェア、歩行器、ポータブルトイレ、トイレ用手すり。ISO 13485認証、CE・FDA取得工場。"
+    "seoDescription": "リハビリ機器の卸売：歩行補助具、シャワーチェア、歩行器、ポータブルトイレ、トイレ用手すり。ISO 13485認証、CE・FDA登録工場。"
   },
   "solutions": {
     "seoDescription": "病院、介護施設、販売代理店、在宅ケア向けのリハビリ機器ソリューション。最適な製品構成、認証サポート、数量別価格のご提案まで対応します。"

@@ -14,10 +14,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Ultra-lightweight at just 1.9 kg with quick-fold design — extremely portable"
   - "AL6063 aluminum frame with 1.2mm thickness and powder-coated finish — rustproof for wet environments"

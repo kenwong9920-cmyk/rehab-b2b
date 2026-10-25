@@ -14,10 +14,10 @@ images:
 moq: "30 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Triple-function design — bedside commode, over-toilet chair, and shower chair in one"
   - "High-carbon steel frame with 150 kg capacity and 5-level height adjustment"

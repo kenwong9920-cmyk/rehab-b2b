@@ -14,10 +14,10 @@ images:
 moq: "200 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "High-strength carbon fiber construction — supports up to 100 kg at only 1.13 kg per pair"
   - "12-level pin-lock height adjustment from 91 to 118 cm for personalized fit"

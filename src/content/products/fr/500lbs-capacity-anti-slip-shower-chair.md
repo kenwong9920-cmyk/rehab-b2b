@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "High-strength aluminum alloy frame with 1.4mm wall thickness supporting up to 500 lbs"
   - "PU seat with drainage holes and slip-resistant texture — safe in wet conditions"

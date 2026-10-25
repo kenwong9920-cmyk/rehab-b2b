@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "Professioneller Hersteller von Rehabilitationsausrüstung",
-    "heroSubtitle": "Über 15 Jahre Erfahrung in der Entwicklung und Herstellung hochwertiger Rehabilitations- und Medizinausrüstung. CE-, FDA-, ISO 13485-zertifizierte Fabrik mit Lieferungen in über 50 Länder weltweit.",
+    "heroSubtitle": "Über {years} Jahre Erfahrung in Entwicklung und Fertigung hochwertiger Rehabilitations- und Medizinausrüstung. ISO 13485 zertifiziert, CE-Kennzeichnung, FDA-registriert — Lieferung in über 50 Länder.",
     "heroCTA": "Angebot anfordern",
     "heroCTA2": "Produkte entdecken",
     "categoriesTitle": "Unsere Produktkategorien",
     "whyUsTitle": "Warum JinDa Rehab Medical wählen?",
     "certifiedFactory": "Zertifizierte Fabrik",
-    "certifiedFactoryDesc": "ISO 13485, CE, FDA zugelassene Produktionsstätte",
+    "certifiedFactoryDesc": "ISO 13485 zertifizierte, CE gekennzeichnete, FDA-registrierte Produktionsstätte",
     "oemService": "OEM & Individualisierung",
     "oemServiceDesc": "Vollständige Anpassung — Farbe, Material, Logo, Verpackung maßgeschneidert für Ihre Marke",
     "globalShipping": "Globale Logistik",
@@ -57,7 +57,7 @@
     "offerSupport": "After-Sales-Support",
     "offerSupportDesc": "Technischer Support, Ersatzteile und Garantieservice",
     "seoTitle": "Hersteller von Rehabilitationsausrüstung | JinDa Rehab Medical",
-    "seoDescription": "ISO-13485-zertifizierter Hersteller von Gehhilfen, Duschstühlen und Toilettenstühlen. 16+ Jahre Erfahrung, CE und FDA, Export in über 50 Länder."
+    "seoDescription": "ISO-13485-zertifizierter Hersteller von Gehhilfen, Duschstühlen und Toilettenstühlen. {years}+ Jahre Erfahrung, CE und FDA, Export in über 50 Länder."
   },
   "footer": {
     "company": "Unternehmen",
@@ -117,12 +117,13 @@
     "toiletSafety": "WC-Sicherheit",
     "toiletSafetyDesc": "WC-Sicherheitsgriffe, Haltegriffe und erhöhte Toilettensitze",
     "walkers": "Rollatoren & Gehwagen",
-    "walkersDesc": "Faltbare Rollatoren, Gehwagen und Kinderrollatoren"
+    "walkersDesc": "Faltbare Rollatoren, Gehwagen und Kinderrollatoren",
+    "seoSuffix": "ISO 13485 zertifiziert, CE-Kennzeichnung, FDA-registriert. Großhandel & OEM."
   },
   "about": {
     "title": "Über JinDa Rehab Medical",
     "subtitle": "Ihr vertrauenswürdiger Partner für die Herstellung von Rehabilitationsausrüstung",
-    "seoDescription": "Hersteller von Rehabilitationsausrüstung mit 16+ Jahren OEM/ODM-Erfahrung. 15.000 m² Werk in Guangdong, ISO 13485 zertifiziert, 50+ Exportmärkte."
+    "seoDescription": "Hersteller von Rehabilitationsausrüstung mit {years}+ Jahren OEM/ODM-Erfahrung. 15.000 m² Werk in Guangdong, ISO 13485 zertifiziert, 50+ Exportmärkte."
   },
   "factory": {
     "title": "Unsere Fabrik",
@@ -196,7 +197,7 @@
     "pageNotFoundDesc": "Die gesuchte Seite existiert nicht oder wurde verschoben."
   },
   "products": {
-    "seoDescription": "Rehabilitationsausrüstung im Großhandel: Gehhilfen, Duschstühle, Rollatoren, Toilettenstühle und WC-Sicherheit. ISO 13485, CE und FDA zertifiziert."
+    "seoDescription": "Rehabilitationsausrüstung im Großhandel: Gehhilfen, Duschstühle, Rollatoren, Toilettenstühle und WC-Sicherheit. ISO 13485, CE-Kennzeichnung, FDA-registriert."
   },
   "solutions": {
     "seoDescription": "Lösungen für Rehabilitationsausrüstung für Kliniken, Pflegeheime, Händler und Häuspflege — passende Sortimente, Zertifikate und Staffelpreise."

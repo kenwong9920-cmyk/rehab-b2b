@@ -13,10 +13,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Adjustable height tailored to individual mobility needs for comfortable, secure experience"
   - "Reliable locking mechanism with non-slip design for steady support during transfers"

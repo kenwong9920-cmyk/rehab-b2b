@@ -14,10 +14,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "High-carbon steel welded frame with white powder-coated finish — durable and corrosion-resistant"
   - "Patented flip-back backrest with adjustable angles — seamless waterproof gray leather, high-frequency sealed"

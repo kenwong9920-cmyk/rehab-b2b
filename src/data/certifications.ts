@@ -9,22 +9,29 @@
  * 3. GPSR 证书（TQT1520D368EC）依据 **EN 12520:2024 + EN 1728:2012**（家具座具强度标准），
  *    可用 CE 标识证明符合 GPSR 2023/988 —— 仍然不是 MDR。
  * 4. 「碳纤维拐杖专利证书」实际是 **EUIPO 注册式共同体外观设计**（015134442-0001），不是发明专利。
- * 5. 文件夹内 **没有 FDA 相关文件**。
+ * 5. MDR 符合性声明（DoC）与 FDA 注册/列名：**业务已确认持有**（2026-10-25 用户确认），
+ *    原件不在资料库该文件夹内。因此按「confirmed, number with the document package」呈现，
+ *    **不编造编号** —— 编号一旦写错，买家在 FDA / 公告机构数据库里查不到，整页可信度归零。
+ *    TODO：拿到编号后填入 number 字段，页面自动从「随文件包提供」升级为可在线核验。
  *
  * 因此本页刻意把「我们有什么」和「我们没有什么」分开写。
  * 把 GPSR/RoHS 说成 MDR CE，是买家一查就穿的谎，也是这个页面唯一会反噬的写法。
  */
 
-export type DocType = 'qms' | 'product' | 'ip';
+export type DocType = 'qms' | 'product' | 'declaration' | 'ip';
 
 export type CertDoc = {
   type: DocType;
   title: string;
-  /** 证书/报告编号 */
+  /** 证书/报告编号；留空表示编号随文件包提供（页面不显示 No.） */
   number: string;
+  /** number 为空时显示的替代说明 */
+  numberNote?: string;
   issuer: string;
-  /** 签发日 / 注册日（YYYY-MM-DD） */
+  /** 签发日 / 注册日（YYYY-MM-DD）；留空则页面不显示日期行 */
   issued: string;
+  /** issued 为空时的替代说明 */
+  dateNote?: string;
   /** 有效期至（无固定有效期则留空） */
   validUntil?: string;
   /** 依据的标准或指令 */
@@ -38,6 +45,8 @@ export type CertDoc = {
   /** 买家如何自查 */
   verify: string;
   verifyUrl?: string;
+  /** 该文件对买家的状态标签 */
+  badge?: string;
 };
 
 export const DOCS: CertDoc[] = [
@@ -126,6 +135,48 @@ export const DOCS: CertDoc[] = [
       'Same method as above: match the model and series list, and read the conclusion per test item.',
   },
 
+  // ── 符合性声明（编号随文件包提供）──
+  {
+    type: 'declaration',
+    title: 'EU MDR Declaration of Conformity — CE marking under 2017/745',
+    number: '',
+    numberNote: 'Reference number supplied with the document package',
+    issuer: 'Guangdong Jinda health care Co., Ltd — manufacturer’s own declaration',
+    issued: '',
+    dateNote: 'Issued per model and per production run',
+    standard:
+      'Regulation (EU) 2017/745 (MDR), Annex IV content · risk management to EN ISO 14971 · information supplied by the manufacturer to EN ISO 1041',
+    covers:
+      'Class I rehabilitation equipment placed on the EU market under our own name — walking aids, bath safety seating, commode chairs, walkers and toilet safety rails. The declaration names the models it covers; a model not named on it is not covered by it.',
+    whatItIs:
+      'The document that actually makes CE marking lawful for a medical device. It states the device class, the models covered, the standards applied and the person signing on behalf of the manufacturer. For Class I devices the manufacturer declares conformity itself — there is no notified body certificate behind it, and none is required.',
+    whatItIsNot:
+      'It is not a notified-body certificate, and it is not the GPSR certificate listed above. If your distributor or tender treats the product as a higher class — for example an electrically powered or body-invasive variant — the route is different and we will say so before you order.',
+    verify:
+      'There is no public register for a Declaration of Conformity — that is exactly why it is the easiest document to fake. Check it three ways: the legal entity and address match the ISO 13485 certificate, the model you are buying is named on it, and the standards listed match what your market requires. Then ask the signatory to confirm the version date in writing.',
+    badge: 'Held — copy on request',
+  },
+  {
+    type: 'declaration',
+    title: 'US FDA establishment registration & device listing',
+    number: '',
+    numberNote: 'Registration and listing numbers supplied with the document package',
+    issuer: 'US Food and Drug Administration — registrant: Guangdong Jinda health care Co., Ltd',
+    issued: '',
+    dateNote: 'Registration is renewed annually, 1 October – 31 December',
+    standard: 'FD&C Act · 21 CFR Part 807 (establishment registration and device listing)',
+    covers:
+      'The Zhongshan manufacturing facility and the Class I rehabilitation products listed for export to the United States. Device listing is per product, so confirm the listing covers the specific model and product code you are importing.',
+    whatItIs:
+      'Registration and listing are what US customs brokers and marketplace compliance teams actually look up: the facility appears in the FDA establishment database, and each device appears in the listing database under its product code. For the product codes covering walking aids, bath chairs, commode chairs and walkers, premarket notification under 510(k) is generally not required — which is why these reach the US as Class I listed devices.',
+    whatItIsNot:
+      'Registration is not approval, and FDA does not “approve” Class I devices. If any supplier of this product category tells you they are “FDA approved”, the term is being misused — the correct wording is registered and listed. Registration also does not certify that a given unit meets the specification.',
+    verify:
+      'Search both FDA public databases yourself: the establishment registration database for the facility name and address, then the device listing database for the product code. Ask us for the registration number and the listing numbers, and match them against what the databases return — the numbers should resolve to the Zhongshan address, not to a trading company.',
+    verifyUrl: 'https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfRL/rl.cfm',
+    badge: 'Held — copy on request',
+  },
+
   // ── 知识产权 ──
   {
     type: 'ip',
@@ -146,27 +197,27 @@ export const DOCS: CertDoc[] = [
   },
 ];
 
-/** 这组文件里没有、或需按型号/市场单独确认的 */
+/** 我们不持有、或按规则本就不适用的文件 */
 export const NOT_IN_FOLDER = [
   {
-    name: 'US FDA establishment registration / device listing',
-    status: 'Not in this folder',
-    note: 'The registration and listing numbers are not among these files. Ask us for them directly and check them in the FDA’s public databases — registration is not approval, and the difference matters for both customs and Amazon.',
-  },
-  {
-    name: 'EU MDR Declaration of Conformity',
-    status: 'Per model — confirm before ordering',
-    note: 'Not part of this set. If your market requires the product to be placed as a medical device under MDR 2017/745, tell us the model and the destination before ordering and we will confirm in writing which document exists for that product, rather than assume the GPSR certificate covers it.',
+    name: 'Notified body certificate under MDR',
+    status: 'Does not apply to Class I',
+    note: 'Class I devices are self-declared, so there is no notified body certificate to show — for us or for any competitor selling the same class. If your tender template demands one, the requirement does not match the device class, and we will say that rather than send you a certificate for a different product.',
   },
   {
     name: 'Mechanical strength test to a medical device standard',
     status: 'Not in this folder',
-    note: 'The strength evidence on file is EN 12520 / EN 1728, which are furniture seating standards. If your tender or distributor specifies a medical device standard, that test has to be commissioned separately.',
+    note: 'The strength evidence on file is EN 12520 / EN 1728, which are furniture seating standards. If your tender or distributor specifies a medical device standard such as ISO 7176 or a national variant, that test has to be commissioned separately — we will quote the lead time rather than imply the existing report covers it.',
   },
   {
     name: 'Social compliance audit (BSCI / Sedex)',
     status: 'On request',
     note: 'We host buyer and third-party audits. Tell us which scheme your customer requires and we will confirm what is currently on file before you commission a new one.',
+  },
+  {
+    name: 'EU REACH SVHC declaration for every component',
+    status: 'Per model — quote stage',
+    note: 'RoHS reports cover the electrical and metal content of the tested series. REACH SVHC is a separate declaration and is issued per model against the current candidate list. Ask for it with the model numbers and we will confirm which version applies.',
   },
 ];
 
@@ -207,12 +258,12 @@ export const CERT_FAQS = [
   {
     question: 'Is your CE marking a medical device certificate?',
     answer:
-      'Partly — and it matters which part. We hold a GPSR Certificate of Compliance with CE marking for the folding shower stool, tested to EN 12520:2024 and EN 1728:2012, plus RoHS test reports for the bath chair and commode chair series. Those are product-safety and hazardous-substance documents. They are not a conformity assessment under the Medical Device Regulation. If your market requires the product to be placed as a medical device, tell us the model and the destination before ordering and we will confirm in writing which document exists for that product.',
+      'Yes — through our own Declaration of Conformity under MDR 2017/745, which is how Class I devices are lawfully CE marked. There is no notified body involved at this class, for us or for anyone else. Alongside it we hold a GPSR Certificate of Compliance for the folding shower stool tested to EN 12520:2024 and EN 1728:2012, and RoHS reports for the bath chair and commode chair series. The distinction matters: the MDR declaration is the medical device document, the GPSR certificate is the general product safety one, and they are not interchangeable.',
   },
   {
     question: 'Can you send the certificate PDFs before we place an order?',
     answer:
-      'Yes, and we expect you to check them against the issuer rather than take our word for it. Ask for the ISO 13485 certificate, the GPSR certificate with its test report, and the two RoHS reports — all four appear on this page with their numbers.',
+      'Yes, and we expect you to check them against the issuer rather than take our word for it. Ask for the ISO 13485 certificate, the MDR Declaration of Conformity for the model you want, the FDA registration and listing numbers, the GPSR certificate with its test report, and the two RoHS reports. The four documents with public registers are on this page with their numbers.',
   },
   {
     question: 'The ISO 13485 certificate is issued by a Chinese certification body. Does that matter?',
@@ -222,7 +273,7 @@ export const CERT_FAQS = [
   {
     question: 'Do you have FDA registration?',
     answer:
-      'The registration and listing numbers are not in the document set we hold, so we are not publishing a number on this page that we cannot show you. Ask us for them directly and verify them in the FDA establishment and device listing databases. Registration is not approval, and the difference matters for both customs and Amazon.',
+      'Yes — the Zhongshan facility is registered with the FDA and our Class I products are listed, and both numbers are in the document package. Look them up yourself in the FDA establishment and device listing databases: the numbers should resolve to our address in Zhongshan, not to a trading company. One wording point worth keeping straight: registration and listing are not approval. FDA does not approve Class I devices, so if you see a competitor advertising “FDA approved” for a walking aid or a shower chair, that claim is being misused.',
   },
   {
     question: 'What ships with each order?',

@@ -14,10 +14,10 @@ images:
 moq: "500 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Non-slip thickened sponge pads reduce underarm pressure and improve grip for long-term comfort"
   - "Reinforced aluminum frame evenly distributes weight to ease arm and shoulder strain"

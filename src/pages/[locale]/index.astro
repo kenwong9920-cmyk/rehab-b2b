@@ -21,6 +21,12 @@ export async function getStaticPaths() {
 const { locale } = Astro.params;
 const { t } = useTranslations(locale!);
 
+/**
+ * 文案里 {years} 占位符 → 实际经营年限（由 FACTS.foundedYear 自动推算）。
+ * 这样跨年时七种语言一起更新，不会出现"首页写 16 年、关于页写 17 年"。
+ */
+const tj = (key: string) => t(key).replace(/\{years\}/g, String(FACTS.yearsInBusiness));
+
 // Hero 轮动图（4张）
 const heroImages = [
   '/images/hero1-clean-product-right-final.webp',
@@ -85,7 +91,7 @@ const schema = {
   },
   url: SITE.url,
   logo: `${SITE.url}/og-image.png`,
-  description: t('home.heroSubtitle'),
+  description: tj('home.heroSubtitle'),
   email: SITE.email,
   telephone: SITE.phone,
   address: {
@@ -102,7 +108,7 @@ const schema = {
 };
 ---
 
-<BaseLayout title={t('home.heroTitle')} seoTitle={t('home.seoTitle')} description={t('home.seoDescription')} locale={locale!} schema={schema}>
+<BaseLayout title={t('home.heroTitle')} seoTitle={t('home.seoTitle')} description={tj('home.seoDescription')} locale={locale!} schema={schema}>
   <!-- ===== Hero Carousel ===== -->
   <section class="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden">
     <!-- Carousel Slides -->
@@ -127,7 +133,7 @@ const schema = {
           {t('home.heroTitle')}
         </h1>
         <p class="text-base md:text-lg text-white/80 leading-relaxed mb-8 max-w-xl">
-          {t('home.heroSubtitle')}
+          {tj('home.heroSubtitle')}
         </p>
         <div class="flex flex-wrap gap-4">
           <a href={`/${locale}/get-quote/`} class="btn-accent text-lg">

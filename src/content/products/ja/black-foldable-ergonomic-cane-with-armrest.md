@@ -14,10 +14,10 @@ images:
 moq: "300 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "100% pure carbon fiber tube — lightweight at 0.75 kg yet supports up to 100 kg"
   - "Built-in retractable PP armrest for additional support and comfort"

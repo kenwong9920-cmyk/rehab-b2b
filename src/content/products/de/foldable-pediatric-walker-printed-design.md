@@ -14,10 +14,10 @@ images:
 moq: "100 units"
 deliveryTime: "15-30 days"
 certifications:
-  - "CE"
-  - "FDA"
-  - "ISO 9001"
+  - "CE marking (EU MDR 2017/745)"
+  - "FDA registration"
   - "ISO 13485"
+  - "ISO 9001"
 features:
   - "Stainless steel powder-coated frame — lightweight and rust-resistant for daily adventures"
   - "Carbon fiber legs with playful printed patterns — strong, light, and child-friendly aesthetics"

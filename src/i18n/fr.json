@@ -18,13 +18,13 @@
   },
   "home": {
     "heroTitle": "Fabricant professionnel d'équipement de réadaptation",
-    "heroSubtitle": "Plus de 15 ans d'expérience dans la conception et la fabrication d'équipements de réadaptation de haute qualité. Usine certifiée CE, FDA, ISO 13485 desservant plus de 50 pays.",
+    "heroSubtitle": "Plus de {years} ans de conception et fabrication d’équipements de réadaptation. Usine certifiée ISO 13485, marquage CE, enregistrée FDA — plus de 50 pays desservis.",
     "heroCTA": "Demander un devis",
     "heroCTA2": "Découvrir nos produits",
     "categoriesTitle": "Nos catégories de produits",
     "whyUsTitle": "Pourquoi choisir JinDa Rehab Medical ?",
     "certifiedFactory": "Usine certifiée",
-    "certifiedFactoryDesc": "Installation de fabrication approuvée ISO 13485, CE, FDA",
+    "certifiedFactoryDesc": "Site certifié ISO 13485, marquage CE, enregistré FDA",
     "oemService": "OEM et personnalisation",
     "oemServiceDesc": "Personnalisation complète — couleur, matériau, logo, emballage adaptés à votre marque",
     "globalShipping": "Logistique mondiale",
@@ -57,7 +57,7 @@
     "offerSupport": "Support Après-Vente",
     "offerSupportDesc": "Support technique, pièces détachées et service de garantie",
     "seoTitle": "Fabricant d'équipements de réadaptation | JinDa Rehab",
-    "seoDescription": "Fabricant certifié ISO 13485 d'aides à la marche, de chaises de douche et de chaises percées. 16 ans d'expérience, CE et FDA, export dans plus de 50 pays."
+    "seoDescription": "Fabricant certifié ISO 13485 d'aides à la marche, de chaises de douche et de chaises percées. expérience de {years} ans, CE et FDA, export dans plus de 50 pays."
   },
   "footer": {
     "company": "Entreprise",
@@ -117,12 +117,13 @@
     "toiletSafety": "Sécurité WC",
     "toiletSafetyDesc": "Barres de sécurité WC, barres d'appui et sièges de toilette surélevés",
     "walkers": "Déambulateurs & Rollators",
-    "walkersDesc": "Déambulateurs pliants, rollators et déambulateurs pédiatriques"
+    "walkersDesc": "Déambulateurs pliants, rollators et déambulateurs pédiatriques",
+    "seoSuffix": "Usine ISO 13485, marquage CE, enregistrée FDA. Prix de gros et OEM."
   },
   "about": {
     "title": "À propos de JinDa Rehab Medical",
     "subtitle": "Votre partenaire de confiance en fabrication d'équipement de réadaptation",
-    "seoDescription": "Fabricant d'équipements de réadaptation, 16 ans d'expérience OEM/ODM. Usine de 15 000 m² dans le Guangdong, certifiée ISO 13485, présente dans 50+ pays."
+    "seoDescription": "Fabricant d'équipements de réadaptation, {years} ans d'expérience OEM/ODM. Usine de 15 000 m² dans le Guangdong, certifiée ISO 13485, présente dans 50+ pays."
   },
   "factory": {
     "title": "Notre Usine",
