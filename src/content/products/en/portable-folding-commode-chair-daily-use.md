@@ -1,6 +1,6 @@
 ---
 title: "Portable Folding Commode Chair for Daily Use"
-description: "Versatile high-carbon steel folding commode chair with 150kg capacity. Functions as bedside commode, over-toilet chair, and shower chair. Features seamless waterproof leather seat, adjustable-angle backrest, removable PP bucket, anti-slip rubber feet with metal washers, and 5-level height adjustment."
+description: "Three-in-one high-carbon steel commode: bedside chair, over-toilet frame and shower chair. 150 kg capacity, five height levels, from 30 units per model."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/a8/c8/a0/4e41e8659dd549881c675bff4d.jpg"
 images:

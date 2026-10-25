@@ -1,6 +1,6 @@
 ---
 title: "Adjustable 150kg Foldable Commode Chair"
-description: "Durable stainless steel folding commode chair with 150kg capacity. Features patented flip-adjust leather backrest, double-layer HD-PE flip-up seat, PP armrests, 5-level height adjustment, and anti-slip rubber feet with reinforced metal inserts. Quick-fold corrosion-resistant frame for bedside and elderly care."
+description: "Stainless steel commode chair rated 150 kg, with a patented flip-adjust leather backrest and a double-layer HD-PE flip-up seat. Five height levels, anti-slip feet."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

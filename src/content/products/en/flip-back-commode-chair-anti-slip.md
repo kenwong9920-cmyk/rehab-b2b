@@ -1,6 +1,6 @@
 ---
 title: "Flip-Back Commode Chair with Anti-Slip Feet"
-description: "High-carbon steel white powder-coated folding commode chair with patented flip-back adjustable leather backrest, contoured gray leather seat, PP armrests, and removable oval PP bucket (33×28×13cm). 5-level height adjustment, anti-slip rubber feet with metal washers. Supports bedside, portable, and elderly care use."
+description: "White powder-coated steel commode chair with a patented flip-back leather backrest and an oval PP bucket, 33x28x13 cm. Five height levels, anti-slip feet."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:
