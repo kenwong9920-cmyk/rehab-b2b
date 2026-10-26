@@ -2,6 +2,7 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { useTranslations } from '@/utils/i18n';
 import { PRODUCT_CATEGORIES, SITE } from '@/utils/constants';
+import { CATEGORY_SEO } from '@/data/category-seo';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -48,20 +49,59 @@ const products = [...allProducts].sort((a, b) => (a.data.order || 99) - (b.data.
 
 const categoryName = t(categoryMeta.nameKey);
 const categoryDesc = t(categoryMeta.descriptionKey);
-const pageTitle = `${categoryName} — ${t('nav.products')}`;
 
-// SEO: breadcrumb structured data
-const schema = {
+// 定向 SEO 覆盖（只对 category-seo.ts 里登记过的 locale × category 生效）
+const seoOverride = CATEGORY_SEO[locale!]?.[category!];
+
+const pageTitle = seoOverride?.title ?? `${categoryName} — ${t('nav.products')}`;
+const pageDescription =
+  seoOverride?.description ??
+  `${categoryName} — ${categoryDesc}. ${t('categories.seoSuffix')}`;
+
+const pageUrl = `${SITE.url}/${locale}/products/category/${category}/`;
+
+// SEO: 面包屑 + CollectionPage（+ 定向页的 FAQPage）
+const schema: Record<string, unknown> = {
   '@context': 'https://schema.org',
-  '@type': 'CollectionPage',
-  name: pageTitle,
-  description: `${categoryName} — ${categoryDesc}. High-quality rehabilitation equipment by ${SITE.name}, ISO 13485 certified factory.`,
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: pageTitle,
+      description: pageDescription,
+      url: pageUrl,
+      inLanguage: locale,
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: products.length,
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: t('nav.home'), item: `${SITE.url}/${locale}/` },
+        { '@type': 'ListItem', position: 2, name: t('nav.products'), item: `${SITE.url}/${locale}/products/` },
+        { '@type': 'ListItem', position: 3, name: categoryName },
+      ],
+    },
+  ],
 };
+
+// FAQPage：问答必须与页面可见 FAQ 区块严格一致，否则视为欺骗性标记
+if (seoOverride?.faqs?.length) {
+  (schema['@graph'] as Record<string, unknown>[]).push({
+    '@type': 'FAQPage',
+    mainEntity: seoOverride.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
 ---
 
 <BaseLayout
   title={pageTitle}
-  description={`${categoryName} — ${categoryDesc}. ${t('categories.seoSuffix')}`}
+  description={pageDescription}
   locale={locale!}
   schema={schema}
 >
@@ -84,6 +124,9 @@ const schema = {
           <p class="text-neutral-600 mt-1 max-w-2xl">{categoryDesc}</p>
         </div>
       </div>
+      {seoOverride?.intro && (
+        <p class="text-neutral-700 leading-relaxed max-w-3xl mt-5 mb-0">{seoOverride.intro}</p>
+      )}
       <div class="flex flex-wrap gap-4 mt-4 text-sm text-neutral-500">
         <span class="inline-flex items-center gap-1">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
@@ -146,7 +189,7 @@ const schema = {
     {products.length === 0 ? (
       <div class="text-center py-20">
         <span class="text-5xl block mb-4">📭</span>
-        <p class="text-neutral-500 text-lg mb-4">No products in this category yet.</p>
+        <p class="text-neutral-500 text-lg mb-4">{t('categories.emptyState', 'No products in this category yet.')}</p>
         <a href={`/${locale}/products/`} class="btn-outline inline-flex">
           {t('product.allProducts')}
         </a>
@@ -177,7 +220,7 @@ const schema = {
               <div class="flex items-center justify-between pt-3 border-t border-neutral-100">
                 {product.data.moq && <span class="text-xs text-neutral-500">MOQ: {product.data.moq}</span>}
                 <a href={`/${locale}/products/${product.id.split('/').pop()}/`} class="btn-primary btn-sm ml-auto">
-                  View Details
+                  {t('categories.viewDetails', 'View details')}
                 </a>
               </div>
             </div>
@@ -186,11 +229,31 @@ const schema = {
       </div>
     )}
 
+    {/* FAQ（仅定向优化页渲染；与上方 FAQPage schema 严格一一对应） */}
+    {seoOverride?.faqs?.length ? (
+      <section class="mt-16">
+        <h2 class="text-2xl mb-6">{t('product.faq', 'FAQ')}</h2>
+        <div class="space-y-3 max-w-3xl">
+          {seoOverride.faqs.map((f) => (
+            <details class="group bg-white border border-neutral-200 rounded-xl overflow-hidden">
+              <summary class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-neutral-50 transition-colors list-none">
+                <span class="font-medium text-neutral-900 pr-4">{f.q}</span>
+                <span class="text-neutral-400 group-open:rotate-180 transition-transform shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </span>
+              </summary>
+              <div class="px-6 pb-4 text-sm text-neutral-600 leading-relaxed">{f.a}</div>
+            </details>
+          ))}
+        </div>
+      </section>
+    ) : null}
+
     {/* CTA */}
     <div class="mt-16 text-center bg-neutral-50 rounded-2xl p-10">
       <h3 class="mb-2">{t('contact.title', 'Need a Custom Solution?')}</h3>
       <p class="text-neutral-600 mb-6 max-w-xl mx-auto">
-        We provide OEM and ODM services to tailor {categoryName.toLowerCase()} to your specific requirements. Contact us for a personalized quote.
+        {t('categories.ctaText', 'We manufacture {category} as OEM and ODM to your specification. Request a tailored quote.').replace(/\{category\}/g, categoryName)}
       </p>
       <a href={`/${locale}/get-quote/`} class="btn-accent">
         {t('nav.getQuote')} →
