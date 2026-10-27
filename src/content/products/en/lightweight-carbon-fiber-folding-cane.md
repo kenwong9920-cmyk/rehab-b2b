@@ -1,6 +1,6 @@
 ---
-title: "Lightweight Carbon Fiber Folding Walking Cane"
-description: "Premium carbon fiber folding cane for seniors — ultra-lightweight, adjustable height, ergonomic non-slip grip, and stable anti-slip base. Perfect for daily mobility and travel."
+title: "Wholesale Carbon Fiber Folding Cane, Rosewood Handle"
+description: "100% carbon fiber folding cane with rosewood handle, 10-level height adjustment 72.5-95.5 cm, TPR tip with metal insert. Folds for travel; MOQ 300 pcs, OEM logo."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

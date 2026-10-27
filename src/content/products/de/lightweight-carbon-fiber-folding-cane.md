@@ -1,6 +1,6 @@
 ---
-title: "Leichter Faltstock aus Kohlefaser für Senioren"
-description: "Ultraleichter 100% Kohlefaser-Faltstock mit ergonomischem Rosenholzgriff. 10-fach höhenverstellbar (72,5–95,5cm), rutschfeste TPR-Basis mit Metalleinsatz für maximale Stabilität. Perfekt für Reisen."
+title: "Faltbarer Kohlefaser-Gehstock, 10-fach höhenverstellbar"
+description: "Ultraleichter Kohlefaser-Gehstock mit Rosenholzgriff, 10-fach höhenverstellbar (72,5–95,5cm) und TPR-Fuß mit Metalleinsatz. Faltbar für Reisen. Ab 300 Stück."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

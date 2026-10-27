@@ -34,7 +34,7 @@ Our carbon fiber canes span five sub-series, each serving distinct user demograp
 
 **LED-Handle Two-Section Canes (LM4904 Series):** The same platform, with a built-in LED light in the handle — practical illumination for navigating dim hallways or doorsteps at night. Same weight, same adjustment range.
 
-**Hardwood-Handle Two-Section Canes (LM4907/4908 Series):** Genuine hardwood handles — rosewood or sapele, both oil-impregnated and polished — paired with a leather wrist strap. These are the top-selling models at the uppermost tier of the premium market. Net weight approximately 250 grams. The handle develops a distinctive patina with use over time, and experienced retailers know this detail is a decisive factor in closing sales with discerning customers.
+**Hardwood-Handle Two-Section Canes (LM4907/4908 Series):** Genuine hardwood handles — rosewood or sapele, both oil-impregnated and polished — paired with a leather wrist strap. These are the top-selling models at the uppermost tier of the premium market. Net weight approximately 250 grams. The handle develops a distinctive patina with use over time, and experienced retailers know this detail is a decisive factor in closing sales with discerning customers. The folding variant of the same series is the [LM4908TA PLUS carbon fiber folding cane with rosewood handle](/en/products/lightweight-carbon-fiber-folding-cane/), which pairs that handle with a folding shaft for travel retail.
 
 **Four-Section Folding Canes:** The pinnacle of portability. Four precision-machined tube segments connected by an internal elastic cord with a push-button locking mechanism. Folds to approximately 35 cm — fits into a handbag or overcoat pocket. 5-position height adjustment. Net weight 330–360 grams depending on handle type. Packaging is designed to meet Amazon FBA small standard-size requirements, saving approximately USD $6 per unit in shipping compared to standard-size packaging. For high-volume sellers, this packaging detail alone can save five figures annually.
 
@@ -75,6 +75,7 @@ A: Our products are manufactured in an ISO 13485-certified facility. FDA registr
 
 ## Learn More About JinDa Rehab Medical
 
+- [Wholesale carbon fiber folding cane, rosewood handle, MOQ 300 pcs →](/en/products/lightweight-carbon-fiber-folding-cane/)
 - [Browse all walking aids products →](/en/products/?category=walking-aids)
 - [Request a wholesale quotation →](/en/get-quote/)
 - [Contact our sales team →](/en/contact/)
