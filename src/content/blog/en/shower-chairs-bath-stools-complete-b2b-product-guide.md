@@ -37,7 +37,7 @@ The LM5200 folding shower chair series features aluminum alloy main frames with 
 
 ### Wide Heavy-Duty & Cross-Border Compact Packaging Series
 
-The LM5105/5106 series supports a 500 lb weight capacity — targeting the bariatric market, featuring 1.4mm wall-thickness aluminum tubing, PU seat cushion, and 7-level height adjustment.
+The LM5105/5106 series supports a 500 lb weight capacity — targeting the bariatric market, featuring 1.4mm wall-thickness aluminum tubing, PU seat cushion, and 7-level height adjustment. Above it sit the two 350 kg (770 lb) stainless models, which is where most tender specifications land: the full load ladder, from a 1.3 kg folding stool to the 770 lb extra-wide chair, is listed on the [bath and shower safety category page](/en/products/category/bath-safety/).
 
 Our cross-border compact packaging series (LM5107–5110) is purpose-designed for Amazon FBA and direct-to-consumer e-commerce. The reduced carton dimensions meet small standard-size tier requirements, reducing logistics costs by approximately $5–7 per unit. The model range spans from basic stools with armrests to heavy-duty chairs with flat-foot reinforced tubing supporting a 350 kg weight capacity.
 
@@ -53,12 +53,13 @@ A: Aluminum alloy main frames are inherently corrosion-resistant and will not ru
 
 **Q: What certifications do your shower chairs carry?**
 
-A: CE certification covers the entire range. ISO 13485 covers our manufacturing facility. Select models hold additional certifications — please contact us with your market access requirements.
+A: CE marking under EU MDR 2017/745 covers the entire range as our own Class I manufacturer declaration. ISO 13485 covers our manufacturing facility. Select models hold additional certification — please contact us with your market access requirements.
 
 ---
 
 ## Learn More About JinDa Rehab Medical
 
-- [Browse all bath safety products →](/en/products/?category=bath-safety)
+- [Browse all bath safety products →](/en/products/category/bath-safety/)
+- [Compare the 150–350 kg load ratings →](/en/blog/shower-chair-load-ratings-150-350-kg-b2b-guide/)
 - [Request a wholesale quotation →](/en/get-quote/)
 - [Contact our sales team →](/en/contact/)

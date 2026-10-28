@@ -17,6 +17,8 @@ The rated load on a shower chair is a static figure for the frame and seat assem
 
 ## The ratings in the range
 
+Six models in the [bath and shower safety range](/en/products/category/bath-safety/) carry a published load rating with a seat width and height range to match. These are the ones worth quoting against a tender:
+
 | Model | Frame | Rated load | Height settings | Seat | MOQ |
 |---|---|---|---|---|---|
 | [LM5109D-S](/en/products/white-extra-wide-heavy-duty-shower-chair/) | Reinforced white stainless steel | 350 kg / 770 lb | 6 levels, flat tube | White blow-moulded, extra wide | 100 |

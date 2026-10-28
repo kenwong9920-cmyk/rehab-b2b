@@ -30,6 +30,49 @@ export interface CategorySeo {
 }
 
 export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
+  en: {
+    /*
+     * GSC 实测（90 天 2026-07-27~10-25）：/en/products/category/bath-safety/ 54 展现 · 0 点击 · 加权 19.0 位
+     * 是全站剩余的第 2 页页面里展现第二多的一页（仅次于手杖产品页 85 展现）。
+     * 原 title 是模板生成的 "Bath & Shower Safety — Products"，"Products" 对采购者无信息量；
+     * 改为承接 manufacturer 商业意图，H1 仍保留品类名 "Bath & Shower Safety"，不丢品类词。
+     * description 首句给这一分类真正的差异化：1.3 kg 到 350 kg(770 lb) 的承重跨度 ——
+     * 竞品通常只有 120–150 kg 一档。FAQ 全部取自已上线产品的真实规格，未编造任何数值。
+     */
+    'bath-safety': {
+      title: 'Bath Safety Shower Chair Manufacturer',
+      description:
+        'From a 1.3 kg folding shower stool to a 350 kg (770 lb) bariatric chair, made in our Zhongshan plant: 5–7 height levels, aluminium or stainless frames. MOQ 30.',
+      intro:
+        'A range built around one variable: the load. It starts at a 1.3 kg folding stainless stool for home care and travel, steps through 150 kg aluminium chairs with foam armrests or flip-back leather backrests, and ends at two 350 kg (770 lb) extra-wide chairs with a 6-level flat-tube frame and a reinforced cross bar. Frames are AL6063 aluminium at 1.2 mm or powder-coated stainless steel, seats are blow-moulded HDPE or PU with drainage holes, and every model folds flat for storage.',
+      faqs: [
+        {
+          q: 'What load ratings are available in this range?',
+          a: 'Rated loads run from 120 kg to 350 kg (265 lb to 770 lb). The aluminium LM5101D and the flip-back LM5205CK are rated 150 kg (330 lb), the LM5106KD is rated 500 lb (227 kg), and the two extra-wide LM5109 stainless models are rated 350 kg (770 lb). These are static frame and seat figures, not medical device test results.',
+        },
+        {
+          q: 'Which model is the lightest for home care and travel?',
+          a: 'The LM5101KD-S folding stainless steel chair at 1.3 kg (2.9 lb), with a 51 × 40 cm seat and a 74–86 cm height range. The LM5101D bath stool is 1.9 kg and the LM3202KD chair with foam armrests is 3.2 kg.',
+        },
+        {
+          q: 'How many height settings does each chair have?',
+          a: 'Five to seven, set with push-button spring pins. The LM5205CK flip-back chair has 5 levels, the LM5101D and both LM5109 models have 6, and the LM5106KD has 7.',
+        },
+        {
+          q: 'Are the frames rust-proof in a wet bathroom?',
+          a: 'Aluminium alloy frames — AL6063 at a 1.2 mm to 1.4 mm wall — do not rust, and the stainless steel frames are powder-coated for permanent humidity. Seats are blow-moulded HDPE or PU with drainage holes, so water runs off instead of pooling.',
+        },
+        {
+          q: 'What is the minimum order quantity and lead time?',
+          a: 'MOQ is set per SKU and per colour: 30 units on the LM6108F foldable toilet chair, 100 on the LM5106KD and both LM5109 models, up to 500 on the LM5205CK and LM5205LK. Lead time is 15–30 days from order confirmation, and quotes are answered within 24 hours.',
+        },
+        {
+          q: 'Which certifications ship with an order?',
+          a: 'CE marking under EU MDR 2017/745 as a Class I manufacturer declaration, FDA registration, ISO 13485 and ISO 9001. Strength evidence on file for the LM5108 stool is to EN 12520:2024 and EN 1728:2012 — furniture seating standards, not medical device tests.',
+        },
+      ],
+    },
+  },
   de: {
     /*
      * GSC 实测（90 天）：/de/products/category/walkers/ 63 展现 · 0 点击 · 加权 11.1 位
