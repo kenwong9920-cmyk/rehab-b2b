@@ -91,7 +91,7 @@ Die vollständige Dokumentenliste mit den Nummern, die Sie selbst prüfen könne
 
 Bauen Sie die Akte vor der Bestellung. Konkret: Konformitätserklärung mit den exakten Modellen Ihrer Bestellung, ISO-13485-Zertifikat und die Prüfberichte, die diese Modelle abdecken — und ein Lieferant, der die Normen auf dem eigenen Zertifikat nicht benennen kann, ist noch nicht abschließend geprüft.
 
-Klären Sie die Normfrage früh. Verlangt Ihr Großhändler oder die Ausschreibung EN ISO 11334-1, beauftragen Sie die Prüfung mit dem ersten Produktionslauf und rechnen Sie sie über den Container; akzeptiert er den EN-12520-Nachweis plus Konformitätserklärung, sind Sie bereits vollständig. Die Serie von den [Unterarmgehstützen LM4401](/de/products/carbon-fiber-elbow-crutches-fracture-support/) mit 200 Stück Mindestbestellmenge bis zur [Achselstütze in Mehrgrößen-Ausführung](/de/products/adjustable-aluminum-crutch/) teilt sich ein Dokumentenpaket pro Plattform — das macht eine gemischte erste Bestellung praktikabel. Die Modellliste steht in der [Gehhilfen-Kategorie](/de/products/category/crutches/).
+Klären Sie die Normfrage früh. Verlangt Ihr Großhändler oder die Ausschreibung EN ISO 11334-1, beauftragen Sie die Prüfung mit dem ersten Produktionslauf und rechnen Sie sie über den Container; akzeptiert er den EN-12520-Nachweis plus Konformitätserklärung, sind Sie bereits vollständig. Die Serie von den [Unterarmgehstützen LM4401](/de/products/carbon-fiber-elbow-crutches-fracture-support/) mit 200 Stück Mindestbestellmenge bis zur [Achselstütze in Mehrgrößen-Ausführung](/de/products/adjustable-aluminum-crutch/) teilt sich ein Dokumentenpaket pro Plattform — das macht eine gemischte erste Bestellung praktikabel. Die Modellliste steht in der [Gehhilfen-Kategorie](/de/products/category/crutches/). Welche Plattform für Ihr Regal die richtige ist — Kohlefaser oder Aluminium, Unterarm- oder Achselstütze — rechnen wir im [Vergleich der Gehstützen-Werkstoffe](/de/blog/elbow-axillary-crutches-carbon-fiber-vs-aluminum-b2b-guide/) durch.
 
 ## FAQ
 
@@ -113,4 +113,5 @@ Ja, als separate Beauftragung. Wir nennen Vorlaufzeit und Kosten bezogen auf Ihr
 
 - [Gesamte Gehhilfen-Serie ansehen →](/de/products/category/crutches/)
 - [Carbonfaser-Unterarmgehstütze LM4401 ansehen →](/de/products/carbon-fiber-elbow-crutches-fracture-support/)
+- [Unterarmgehstützen: Carbon vs. Aluminium im Vergleich →](/de/blog/elbow-axillary-crutches-carbon-fiber-vs-aluminum-b2b-guide/)
 - [Angebot mit Dokumentenpaket anfordern →](/de/get-quote/)

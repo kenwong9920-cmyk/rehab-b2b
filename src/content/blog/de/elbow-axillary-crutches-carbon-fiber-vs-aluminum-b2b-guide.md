@@ -1,50 +1,88 @@
 ---
-title: "Elbow & Axillary Crutches — Carbon Fiber vs. Aluminum: A B2B Comparison Guide"
-description: "A deep comparison of carbon fiber vs aluminum crutches for B2B buyers. Carbon fiber crutches weigh 570g per unit — 330g lighter than aluminum — with premium custom-print capabilities. Covers the full elbow and axillary crutch lineup."
+title: "Unterarmgehstützen: Carbon vs. Aluminium"
+description: "570 g pro Carbonfaser-Unterarmgehstütze gegen rund 900 g bei Aluminium: 12 Raststufen, 91–118 cm, 100 kg Traglast pro Paar. Vergleich für den Einkauf."
 date: 2026-05-30
 image: "https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg"
+category: "Gehhilfen"
+tags:
+  - "Unterarmgehstützen"
+  - "Carbonfaser"
+  - "Achselstützen"
+  - "Großhandel"
 ---
 
-Elbow & Axillary Crutches — Carbon Fiber vs. Aluminum: A B2B Comparison Guide
+![Carbonfaser-Unterarmgehstützen mit offener Manschette und TPR-Fußspitze](https://bsg-i.nbxc.com/product/a3/c0/26/5aa46080796e92eaa6c5128fad.jpg)
 
-Elbow crutches serve a very specific user group: people with long-term mobility impairments who rely on crutches daily for extended periods. These users prioritize weight, ergonomics, and durability above all else, because this product is not an occasional aid — it is an extension of the body for hours at a time. For B2B buyers, the category divides into two clear tiers: carbon fiber for the premium segment, aluminum for the value segment.
+Unterarmgehstützen bedienen eine enge Nutzergruppe: Menschen mit dauerhafter Gehbehinderung, die täglich über Stunden auf die Stütze angewiesen sind. Für sie ist das Produkt kein gelegentliches Hilfsmittel, sondern eine Verlängerung des Körpers — Gewicht, Ergonomie und Haltbarkeit entscheiden darüber, ob es akzeptiert oder in die Ecke gestellt wird. Für den Einkauf teilt sich die Kategorie deshalb in zwei sauber getrennte Segmente: **Kohlefaser für das Premiumregal, Aluminium für das Volumengeschäft.** Der Unterschied liegt bei rund 330 Gramm pro Stütze — und diese 330 Gramm entscheiden in der Praxis, ob ein Sanitätshaus das Modell als Aufpreisartikel oder als Kassenartikel führt.
 
-### Carbon Fiber Elbow Crutches: The Premium Tier
+Alle Modelle dieser Kategorie mit Maßangaben: [Gehhilfen im Überblick](/de/products/category/crutches/).
 
-Our carbon fiber elbow crutches (LM4401 Series) feature three-section folding shafts — the same 3K pure carbon fiber technology used in our premium cane line. Sold as a pair (two units) or individually. Net weight approximately 570 grams per single crutch. By comparison, a typical aluminum elbow crutch of equivalent dimensions weighs around 900 grams. Over hours of daily use, a 330-gram difference per crutch is not incremental — it is transformational.
+## Kohlefaser-Unterarmgehstützen: das Premiumsegment
 
-The adjustment range spans 12 positions, accommodating users from approximately 150 cm to 195 cm in height. The forearm cradle features an ergonomic contoured design with an open structure, allowing users to don the crutch without assistance. The grip angle follows the natural wrist position, reducing wrist strain during extended use.
+Unsere [Kohlefaser-Unterarmgehstützen der Reihe LM4401](/de/products/carbon-fiber-elbow-crutches-fracture-support/) arbeiten mit einem dreiteiligen Faltgestell aus 3K-Reincarbon — dieselbe Fasertechnik wie in unserer Gehstocklinie. **570 g pro Stütze, 1,13 kg pro Paar.** Eine Aluminium-Unterarmgehstütze gleicher Baulänge liegt bei **rund 900 g**; der Unterschied beträgt also etwa **330 g pro Stütze**. Bei jedem Schritt muss der Schultergürtel dieses Zusatzgewicht zusätzlich beschleunigen und wieder abbremsen, über Tausende Schritte am Tag. Das ist keine Bequemlichkeitsfrage, sondern der Grund, warum Carbonmodelle bei langfristiger Nutzung überhaupt durchgesetzt werden.
 
-The carbon fiber shaft is available in glossy or matte finish and — critically — carries the same custom-print capability found in our cane line. A carbon fiber elbow crutch with a brand-exclusive printed pattern has no direct competitor in the current market.
+Der Verstellbereich umfasst **12 Raststufen** über **91 bis 118 cm** Gestelllänge und deckt damit Anwendergrößen von etwa 150 bis 195 cm ab. Die Unterarmmanschette ist offen konstruiert und ergonomisch konturiert, sodass sie sich ohne fremde Hilfe anlegen lässt; der Griffwinkel folgt der natürlichen Handhaltung und nimmt Druck vom Handgelenk. Traglast **100 kg** pro Paar, gefaltetes Packmaß **44,5 × 15 × 17 cm** — die Zahl, die über Frachtkosten im Cross-Border-Versand entscheidet.
 
-### Aluminum Elbow Crutches: The Value Tier
+Der Schaft ist wahlweise hochglänzend oder matt lieferbar und trägt — entscheidend für Händler mit eigenem Markenauftritt — dieselbe **Digitaldruck-Option** wie unsere Gehstöcke. Eine Unterarmgehstütze aus Carbon mit markenexklusivem Druckmuster hat im aktuellen Markt keinen direkten Wettbewerber.
 
-Our aluminum elbow crutches (LM4202 Series) feature matte-finish aluminum three-section folding shafts with the same 12-position adjustment system. Sold as a pair or individually. Tip options include standard single tip, quad tip, and 360° swivel tip — the swivel tip provides superior ground compliance on uneven terrain. The aluminum construction adds approximately 300 grams per crutch compared to carbon fiber but reduces unit cost by roughly 50%, making it ideal for buyers building a "Good–Better–Best" product ladder.
+## Aluminium-Unterarmgehstützen: das Volumensegment
 
-### Axillary Crutches: Volume and Reliability
+Die [Aluminium-Unterarmgehstützen LM4202A](/de/products/lightweight-aluminum-elbow-crutches-senior/) verwenden dasselbe **12-Stufen-Rastsystem** und dieselbe offene Manschette aus ergonomischem PP, aber ein mattes Aluminiumgestell. Sie sind rund 300 g schwerer pro Stütze und senken den Stückpreis um etwa **50 %**. Für eine Good-Better-Best-Staffel ist das die entscheidende Konstellation: identische Ergonomie und identisches Zubehör, halber Einkaufspreis — und Carbon als Aufpreisargument im Regal darüber, ohne dass Sie zwei verschiedene Grifflösungen erklären müssen.
 
-The business logic behind axillary crutches is different — higher volumes, lower unit prices, driven by institutional and insurance procurement. Our product line spans the full spectrum:
+Fußspitzen: verstärktes TPR mit Eiseneinsatz. Beide Reihen sind werkzeuglos per Druckknopf verstellbar, beide falten sich für Transport und Lagerung.
 
-**Aluminum Woodgrain Axillary Crutches (LM4203/4204/4205/4206/4207 Series):** The flagship line. Woodgrain-finished aluminum tubing paired with a patented folding-storage three-way connector joint for collapsible storage. Available in two-section and three-section configurations, sizes Small through Large, with five connector color options: Cream White, Light Tan, Light Gray, Fluorescent Green, and Pink Purple. Standard single tip with optional quad tip. The woodgrain finish is the key visual differentiator — in a category where most products are bare aluminum or steel, it immediately signals quality.
+## Achselstützen: Volumen und Ausschreibungsgeschäft
 
-**High-Carbon Steel + Stainless Steel Folding Axillary Crutches (LM4311/4312 Series):** Heavier-duty options with a folding mechanism. LM4311: three-section folding; LM4312: two-section folding. Both are available with an optional built-in shock-absorbing spring mechanism — a rarity at this price point and a tangible selling point for joint-sensitive users. These crutches can stand independently, eliminating the need for the user to bend down and retrieve them.
+Die Geschäftslogik ist eine andere — höhere Stückzahlen, niedrigere Einzelpreise, getrieben durch Kliniken, Pflegeheime und Kostenträger. Drei Linien deckt der Katalog ab:
 
-**Classic Aluminum and Stainless Steel Models:** Entry-level options for bulk tenders and institutional supply. Simple, robust, proven.
+**Aluminium mit Holzmaserung, faltbar.** Die [faltbaren Achselgehstützen LM4205](/de/products/aluminum-axillary-foldable-under-arm-crutches-rehabilitation/) laufen auf einem 22,2-mm-Rohr mit 1,2 mm Wandstärke, sind in drei Größen von 95–115, 115–135 und 135–155 cm lieferbar und falten sich für den Versand. Die Holzmaserung ist das visuelle Unterscheidungsmerkmal in einem Regal, das sonst aus blankem Aluminium und Stahl besteht.
 
-### Materials & Certifications
+**Dreiteilig faltbar, Doppelstütz-Design.** Die [Achselstützen mit Doppelstütz-Aufbau](/de/products/armpit-support-walking-aid-crutches/) verteilen die Last auf zwei Streben und reduzieren den Druck unter der Achsel — relevant für Anwender, die die Stütze über Wochen tragen. Rutschfeste Gummifüße, höhenverstellbar.
 
-All crutch products are manufactured under ISO 9001 and ISO 13485 quality management systems. CE certification covers the entire range. TUV and Intertek factory audit reports are available for buyer qualification reviews.
+**Klassische Aluminium- und Stahlmodelle** für Ausschreibungen und institutionelle Versorgung. Einfach, robust, ohne Erklärungsbedarf.
 
-### FAQ
+## Werkstoff, Nachweise und was im Angebot stehen sollte
 
-**Q: What is the MOQ for mixed crutch orders?**
+Gehhilfen sind nicht invasiv und fallen nach MDR Anhang VIII in **Klasse I**. Daraus folgt der Punkt, an dem im Einkauf am häufigsten falsch geprüft wird: In dieser Kette gibt es **keine Benannte Stelle**. Die Konformität wird vom Hersteller in eigener Verantwortung erklärt. Ein Zertifikat einer Benannten Stelle für eine Unterarmgehstütze ist deshalb kein Qualitätsnachweis, sondern ein Hinweis darauf, dass der Anbieter die eigene Klassifizierung nicht sauber hat.
 
-A: You may mix elbow crutches, axillary crutches, and accessories within a single purchase order. The standard MOQ for mixed orders is 100 units total.
+Was tatsächlich mit der Lieferung kommt:
 
-**Q: How do I choose between two-section and three-section axillary crutches?**
+| Nachweis | Status |
+|---|---|
+| CE-Kennzeichnung nach EU MDR 2017/745 | Herstellererklärung, Klasse I |
+| FDA-Registrierung | vorhanden |
+| ISO 13485 und ISO 9001 | zertifiziertes QM-System |
+| TÜV- und Intertek-Auditberichte | auf Anfrage für Lieferantenqualifizierung |
 
-A: Two-section models are simpler, lighter, and slightly less expensive. Three-section models fold more compactly — the reduced package dimensions lower per-unit freight costs for cross-border e-commerce. For Amazon FBA sellers, the compact packaging of the three-section model is generally the better choice.
+## Kohlefaser oder Aluminium: die Entscheidung in einer Tabelle
 
-**Q: Are your crutches sold by the pair or individually?**
+| Kriterium | Kohlefaser LM4401 | Aluminium LM4202A |
+|---|---|---|
+| Gewicht pro Stütze | 570 g | rund 870–900 g |
+| Paargewicht | 1,13 kg | rund 1,8 kg |
+| Höhenstufen | 12 | 12 |
+| Gestelllänge | 91–118 cm | 12 Stufen, faltbar |
+| Traglast | 100 kg pro Paar | siehe Datenblatt |
+| Einkaufspreis | Referenz | etwa 50 % darunter |
+| Druckmuster nach Marke | ja | ja |
+| Typischer Einsatz | Langzeitnutzung, Direktvertrieb, Premiumhandel | Ausschreibung, Volumen, Kassenversorgung |
 
-A: Elbow crutches: available as a pair or individually. Axillary crutches: sold by the pair. Please specify your preference when requesting a quote.
+## FAQ
+
+**Frage: Wie hoch ist die Mindestbestellmenge bei gemischten Gehhilfen-Bestellungen?**
+
+Antwort: Die Mindestbestellmenge wird **je Modell** festgelegt und steht auf der jeweiligen Produktseite. Unterarmgehstützen, Achselstützen und Zubehör lassen sich in einer Bestellung mischen — bei Mischaufträgen rechnen wir die Untergrenzen über die Positionen und nennen Ihnen die konkrete Zahl im Angebot.
+
+**Frage: Wann sind zwei- und wann dreiteilige Achselstützen die bessere Wahl?**
+
+Antwort: Zweiteilige Modelle sind einfacher, leichter und etwas günstiger. Dreiteilige Modelle falten kompakter; die kleineren Packmaße senken die Frachtkosten pro Stück im Cross-Border-Versand. Für den Versandhandel und für Marktplätze mit Volumengewicht ist das dreiteilige Modell in der Regel die günstigere Rechnung.
+
+**Frage: Werden Gehhilfen paarweise oder einzeln geliefert?**
+
+Antwort: Unterarmgehstützen liefern wir paarweise oder einzeln — bitte bei der Anfrage angeben. Achselstützen werden paarweise geliefert.
+
+**Frage: Sind Sonderfarben und eigenes Branding möglich?**
+
+Antwort: Ja. Bei der Carbonfaser-Reihe sind Oberflächenfinish (glänzend oder matt), Manschettendesign, Logodruck und Verpackung anpassbar; bei den Achselstützen aus Aluminium zusätzlich die Verbindungsfarbe. Die Mindestbestellmenge je Modell bleibt dabei unverändert.
+
+Muster, Preise und Lieferzeit für eine konkrete Konfiguration: [Angebot anfordern](/de/get-quote/) — Antwort innerhalb von 24 Stunden.
