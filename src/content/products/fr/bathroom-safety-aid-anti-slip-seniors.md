@@ -1,6 +1,6 @@
 ---
 title: "Barre d'Appui de Sécurité Antidérapante pour Seniors"
-description: "Barre de sécurité WC violette réglable en hauteur avec poignée profilée antidérapante. Cadre renforcé haute capacité, compatibilité universelle avec WC standards, installation sans outil. Conçue pour réduire les risques de chute et favoriser l'autonomie des seniors."
+description: "Barre de sécurité WC violette réglable en hauteur avec poignée profilée antidérapante. Cadre renforcé haute capacité, compatibilité universelle avec WC standards."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/84/8a/280bdc130d732a79bf9b11d2dc.jpg"
 images:

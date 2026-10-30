@@ -1,6 +1,6 @@
 ---
 title: "Sturdy Aluminum Axillary Crutches for Everyday Use"
-description: "High-strength lightweight aluminum alloy axillary crutches with ergonomic textured grips, non-slip rubber tips for all-terrain safety, and corrosion-resistant finish. Foldable for travel and storage. Ideal for post-injury recovery and daily mobility."
+description: "High-strength lightweight aluminum alloy axillary crutches with ergonomic textured grips, non-slip rubber tips for all-terrain safety."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/41/06/2a/26e2ccd50e984e2c5a627b2015.jpg"
 images:

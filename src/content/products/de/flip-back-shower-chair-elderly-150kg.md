@@ -1,6 +1,6 @@
 ---
 title: "Duschstuhl mit Umklappbarer Rückenlehne 150kg für Senioren"
-description: "Faltbarer Duschstuhl mit umklappbarer Rückenlehne und orangefarbenen Akzenten, 150kg Kapazität. Weißer Aluminiumrahmen, orangefarbene klappbare Lederrückenlehne, weißer Kunststoffsitz, 5 Höhenstufen und orangefarbene rutschfeste Pads."
+description: "Faltbarer Duschstuhl mit umklappbarer Rückenlehne und orangefarbenen Akzenten, 150kg Kapazität. Weißer Aluminiumrahmen, orangefarbene klappbare Lederrückenlehne."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/3c/bb/65/c85e7aea78c427b2b179b288d4.jpg"
 images:

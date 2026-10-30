@@ -1,6 +1,6 @@
 ---
 title: "Langlebiger 150kg Faltbarer Duschsitz"
-description: "1,9kg leichter Aluminium-Faltduschsitz mit 150kg Kapazität. Pulverbeschichteter AL6063-Rahmen, rutschfester HDPE-Sitz, 6-fach verstellbare Beine, reibungsstarke Gummifüße mit Stahleinsätzen. Werkzeugloses Schnellfaltsystem."
+description: "1,9kg leichter Aluminium-Faltduschsitz mit 150kg Kapazität. Pulverbeschichteter AL6063-Rahmen, rutschfester HDPE-Sitz, 6-fach verstellbare Beine."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

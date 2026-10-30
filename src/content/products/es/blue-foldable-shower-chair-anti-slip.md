@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha Plegable Azul Antideslizante"
-description: "Silla de ducha plegable ligera con marco de aluminio blanco, respaldo de cuero abatible azul y asiento de plástico moldeado blanco. 5 niveles de altura ajustables, almohadillas antideslizantes azules, diseño de respaldo abatible y materiales impermeables."
+description: "Silla de ducha plegable ligera con marco de aluminio blanco, respaldo de cuero abatible azul y asiento de plástico moldeado blanco."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Canne Ergonomique Pliante Noire avec Accoudoir"
-description: "Canne pliante en fibre de carbone premium avec accoudoir PP rétractable et poignée en bois de rose naturel. 10 réglages de hauteur (74,5–97,5cm), 0,75kg, charge max 100kg. Options de base TPR renforcées pour stabilité optimale."
+description: "Canne pliante en fibre de carbone premium avec accoudoir PP rétractable et poignée en bois de rose naturel. 10 réglages de hauteur (74, 5–97, 5cm), 0, 75kg."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

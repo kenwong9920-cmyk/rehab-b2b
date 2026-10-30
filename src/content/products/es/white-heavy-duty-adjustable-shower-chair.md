@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha Blanca Ajustable Reforzada"
-description: "Silla de ducha robusta de acero inoxidable blanco con capacidad 350kg. Respaldo de cuero blanco, asiento moldeado blanco, puños de tela gris, ajuste de altura de 6 niveles, pies antideslizantes angulados y alfombrilla térmica EVA. Barra de acero gris metálico reforzada."
+description: "Silla de ducha robusta de acero inoxidable blanco con capacidad 350kg. Respaldo de cuero blanco, asiento moldeado blanco, puños de tela gris."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/7f/69/ec/ae51380653fa33c76a0e22e7e0.jpg"
 images:

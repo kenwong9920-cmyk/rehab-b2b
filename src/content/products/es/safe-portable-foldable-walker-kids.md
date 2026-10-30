@@ -1,6 +1,6 @@
 ---
 title: "Andador Plegable Portátil y Seguro para Niños"
-description: "Andador plegable pediátrico con marco de acero inoxidable con recubrimiento en polvo resistente a arañazos en negro y amarillo. Puños de tela suave, tapas antideslizantes y diseño plegable compacto. Construcción ligera para movilidad infantil segura."
+description: "Andador plegable pediátrico con marco de acero inoxidable con recubrimiento en polvo resistente a arañazos en negro y amarillo."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:

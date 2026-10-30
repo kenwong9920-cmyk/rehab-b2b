@@ -1,6 +1,6 @@
 ---
 title: "Tragbarer Faltbarer Toilettenstuhl für Heimgebrauch"
-description: "Schwerlast-Falttoilettenstuhl aus Kohlenstoffstahl mit extra-breitem doppelschichtigem HD-PE-Sitz für bariatrische Nutzer. 150kg Kapazität, PP-Armlehnen, 5-fache Höhenverstellung und rutschfeste Gummifüße mit Metallplatten."
+description: "Schwerlast-Falttoilettenstuhl aus Kohlenstoffstahl mit extra-breitem doppelschichtigem HD-PE-Sitz für bariatrische Nutzer."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

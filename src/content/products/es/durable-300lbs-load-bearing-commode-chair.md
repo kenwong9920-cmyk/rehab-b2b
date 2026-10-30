@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño Robusta con Capacidad 300lbs"
-description: "Silla de baño resistente de acero al carbono con capacidad 150kg. Respaldo abatible patentado, asiento de cuero impermeable, ajuste de altura de 5 niveles, pies de goma antideslizantes y cubo extraíble. Plegado sin herramientas a 17cm para cuidados portátiles junto a la cama."
+description: "Silla de baño resistente de acero al carbono con capacidad 150kg. Respaldo abatible patentado, asiento de cuero impermeable, ajuste de altura de 5 niveles."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/b5/7b/e1/8bfaf98185f4faa41bf6dd7476.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Béquilles d'Avant-Bras en Fibre de Carbone pour Support de Fracture"
-description: "Béquilles d'avant-bras en fibre de carbone haute résistance supportant jusqu'à 100kg pour seulement 1,13kg la paire. Réglage 12 niveaux (91-118cm), coque PP ergonomique, embouts TPR épaissis avec inserts acier. Pliée à 44,5×15×17cm."
+description: "Béquilles d'avant-bras en fibre de carbone haute résistance supportant jusqu'à 100kg pour seulement 1,13kg la paire. Réglage 12 niveaux (91-118cm)."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

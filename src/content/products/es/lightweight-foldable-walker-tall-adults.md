@@ -1,6 +1,6 @@
 ---
 title: "Andador Plegable Ligero para Adultos Altos"
-description: "Andador plegable de altura extendida diseñado para adultos altos. Doble función como marco de marcha y silla de entrenamiento. Asiento acolchado suave, mangos ajustables, puntas de goma antideslizantes y plegado rápido."
+description: "Andador plegable de altura extendida diseñado para adultos altos. Doble función como marco de marcha y silla de entrenamiento."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:

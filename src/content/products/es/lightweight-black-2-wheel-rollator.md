@@ -1,6 +1,6 @@
 ---
 title: "Rollator Ligero Negro de 2 Ruedas para Adultos y Mayores"
-description: "Rollator ligero de 2 ruedas con ruedas de goma aptas para alfombras, baldosas y superficies exteriores. Mangos ajustables en altura, asiento acolchado, sistema de freno manual y plegado rápido. Ideal para mayores y adultos con movilidad reducida."
+description: "Rollator ligero de 2 ruedas con ruedas de goma aptas para alfombras, baldosas y superficies exteriores. Mangos ajustables en altura, asiento acolchado."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ca/7a/2b/13ecba8608845251139a5080f6.jpg"
 images:

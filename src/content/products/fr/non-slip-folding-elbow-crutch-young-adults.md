@@ -1,6 +1,6 @@
 ---
 title: "Béquille d'Avant-Bras Pliante Antidérapante pour Jeunes Adultes"
-description: "Béquilles d'avant-bras en alliage d'aluminium à double support combinant coussin axillaire et béquille d'avant-bras. Réglage 8 niveaux, rembourrage respirant, poignées texturées antidérapantes et embouts multicouches. Pour jeunes adultes actifs jusqu'à 100kg."
+description: "Béquilles d'avant-bras en alliage d'aluminium à double support combinant coussin axillaire et béquille d'avant-bras. Réglage 8 niveaux, rembourrage respirant."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/5a/19/ce/7a8d9f77fadf1072d646b6b8e9.jpg"
 images:

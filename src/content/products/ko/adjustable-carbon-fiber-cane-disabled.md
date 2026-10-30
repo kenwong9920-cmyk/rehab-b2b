@@ -1,6 +1,6 @@
 ---
 title: "장애인용 조절식 탄소 섬유 지팡이"
-description: "장애인 사용자를 위해 설계된 100% 순수 탄소 섬유 접이식 지팡이. 도구 없이 푸시 버튼 높이 조절, 손바닥 압력을 줄이는 해부학적 그립, 컴팩트 접이식 디자인 및 고광택 카본 마감."
+description: "장애인 사용자를 위해 설계된 100% 순수 탄소 섬유 접이식 지팡이. 도구 없이 푸시 버튼 높이 조절, 손바닥 압력을 줄이는 해부학적 그립. MOQ 200 개, 납기 15-30 일."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:

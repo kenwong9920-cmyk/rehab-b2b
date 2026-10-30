@@ -1,6 +1,6 @@
 ---
 title: "Carbon Fiber Elbow Crutches for Fracture Support"
-description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm), ergonomic PP elbow rest, thickened TPR tips with steel inserts. Folds to 44.5×15×17cm for travel."
+description: "High-strength carbon fiber elbow crutches supporting up to 100kg at just 1.13kg per pair. Features 12-level pin-lock height adjustment (91-118cm)."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

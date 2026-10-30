@@ -1,6 +1,6 @@
 ---
 title: "Chaise Percée Pliante Réglable 150kg"
-description: "Chaise percée pliante en acier inoxydable durable avec capacité 150kg. Dossier cuir rabattable breveté, siège HD-PE double couche relevable, accoudoirs PP, réglage hauteur 5 niveaux et pieds caoutchouc antidérapants avec inserts métalliques renforcés."
+description: "Chaise percée pliante en acier inoxydable durable avec capacité 150kg. Dossier cuir rabattable breveté, siège HD-PE double couche relevable, accoudoirs PP."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

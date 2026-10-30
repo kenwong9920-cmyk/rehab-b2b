@@ -1,6 +1,6 @@
 ---
 title: "Toilettenstuhl mit Umklappbarer Rückenlehne und Rutschfesten Füßen"
-description: "Faltbarer Kohlenstoffstahl-Toilettenstuhl mit patentierter klappbarer Lederrückenlehne, grauem Ledersitz, PP-Armlehnen und herausnehmbarem ovalem PP-Eimer (33×28×13cm). 5-fache Höhenverstellung, rutschfeste Gummifüße mit Metallscheiben."
+description: "Faltbarer Kohlenstoffstahl-Toilettenstuhl mit patentierter klappbarer Lederrückenlehne, grauem Ledersitz. Mindestbestellmenge 300 Stück, Lieferzeit 15-30 Tage."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Carbon Fiber 100kg Load Capacity Outdoor Cane"
-description: "Incredibly lightweight carbon fiber outdoor cane at just 0.36kg with 100kg max load. Features premium rosewood handle, 5-height push-button adjustment, 34.5cm folded length, and TPR ferrule with internal steel plate for maximum grip."
+description: "Incredibly lightweight carbon fiber outdoor cane at just 0.36kg with 100kg max load. Features premium rosewood handle, 5-height push-button adjustment."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Bastón Elegante Ajustable con Empuñadura de Plástico para Mayores"
-description: "Bastón plegable ligero de fibra de carbono de 0,36kg con luz LED integrada en la empuñadura. Ajuste de 5 alturas con pulsador, empuñadura PP ergonómica, longitud plegada 34,5cm y contera TPR reforzada. Perfecto para mayores que necesitan visibilidad nocturna."
+description: "Bastón plegable ligero de fibra de carbono de 0,36kg con luz LED integrada en la empuñadura. Ajuste de 5 alturas con pulsador, empuñadura PP ergonómica."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/09/a4/6e/61ee2620443facf6773d9eb2c0.jpg"
 images:

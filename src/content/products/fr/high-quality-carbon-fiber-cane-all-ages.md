@@ -1,6 +1,6 @@
 ---
 title: "Canne en Fibre de Carbone Haute Qualité pour Tous les Âges"
-description: "Canne pliante polyvalente en fibre de carbone aérospatiale pour tous les groupes d'âge. Poignée ergonomique, design compact pliable, embout caoutchouc antidérapant à traction maximale, hauteur réglable et finition moderne prête pour B2B."
+description: "Canne pliante polyvalente en fibre de carbone aérospatiale pour tous les groupes d'âge. Poignée ergonomique, design compact pliable."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:

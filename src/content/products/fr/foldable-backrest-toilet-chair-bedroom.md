@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Toilette Pliante avec Dossier pour Chambre"
-description: "Chaise percée pliante en acier haute teneur en carbone avec dossier rabattable breveté, siège cuir imperméable et capacité 150kg. Réglage hauteur 5 niveaux, pliage sans outil à seulement 17cm de largeur et seau amovible. Solution toilette de chevet idéale."
+description: "Chaise percée pliante en acier haute teneur en carbone avec dossier rabattable breveté, siège cuir imperméable et capacité 150kg."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/1e/fc/d8/c012e65601ee1808db5641221c.jpg"
 images:

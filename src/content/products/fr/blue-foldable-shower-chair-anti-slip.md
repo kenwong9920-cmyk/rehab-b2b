@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Douche Pliante Bleue Antidérapante"
-description: "Chaise de douche pliante légère avec cadre aluminium blanc, dossier cuir rabattable bleu et siège plastique moulé blanc. 5 niveaux de hauteur réglables, patins antidérapants bleus, design à dossier rabattable et matériaux imperméables."
+description: "Chaise de douche pliante légère avec cadre aluminium blanc, dossier cuir rabattable bleu et siège plastique moulé blanc."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

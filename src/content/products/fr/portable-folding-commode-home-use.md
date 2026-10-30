@@ -1,6 +1,6 @@
 ---
 title: "Chaise Percée Pliante Portable pour Usage Domestique"
-description: "Chaise percée pliante robuste en acier haute teneur en carbone avec siège extra-large HD-PE double couche moulé pour utilisateurs bariatriques. Capacité 150kg, accoudoirs PP, réglage hauteur 5 niveaux et pieds caoutchouc antidérapants avec plaques métalliques."
+description: "Chaise percée pliante robuste en acier haute teneur en carbone avec siège extra-large HD-PE double couche moulé pour utilisateurs bariatriques."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

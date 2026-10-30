@@ -1,6 +1,6 @@
 ---
 title: "Barre de Sécurité WC Haute Capacité avec Poignée Rembourrée"
-description: "Barre de sécurité WC en acier inoxydable crème mat avec poignée gainée tissu doux. Double pince sans outil, pieds filetés antidérapants, design anti-basculement réglable et sangle de renfort incluse. S'intègre discrètement au décor de la salle de bain."
+description: "Barre de sécurité WC en acier inoxydable crème mat avec poignée gainée tissu doux. Double pince sans outil, pieds filetés antidérapants."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/b9/63/06/a7136a408771e0558b070902b2.jpg"
 images:

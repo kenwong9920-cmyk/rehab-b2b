@@ -1,6 +1,6 @@
 ---
 title: "Stilvoller Verstellbarer Kunststoffgriff-Gehstock für Senioren"
-description: "Leichter 0,36kg Kohlefaser-Faltstock mit integriertem LED-Licht im Griff. 5-fache Druckknopf-Höhenverstellung, ergonomischer PP-Griff, 34,5cm gefaltet und verstärkte TPR-Ferrule. Perfekt für Senioren mit Nachtsichtbarkeit."
+description: "Leichter 0,36kg Kohlefaser-Faltstock mit integriertem LED-Licht im Griff. 5-fache Druckknopf-Höhenverstellung, ergonomischer PP-Griff, 34."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/09/a4/6e/61ee2620443facf6773d9eb2c0.jpg"
 images:

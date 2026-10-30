@@ -1,6 +1,6 @@
 ---
 title: "Blue Foldable Shower Chair for Elderly Anti-Slip"
-description: "Lightweight foldable shower chair with white aluminum frame, blue flip-back leather backrest, and white molded plastic seat. Features 5 adjustable height levels, blue non-slip pads, flip-back backrest design, and waterproof materials. Bright blue color for visibility in wet environments."
+description: "Lightweight foldable shower chair with white aluminum frame, blue flip-back leather backrest, and white molded plastic seat. MOQ 500 pcs, 15-30 days lead time."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

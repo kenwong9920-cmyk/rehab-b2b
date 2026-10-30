@@ -1,6 +1,6 @@
 ---
 title: "Canne Pliante Moderne en Fibre de Carbone pour Hommes"
-description: "Canne pliante au design masculin avec dimensions de poignée adaptées aux grandes mains. Fibre de carbone aérospatiale ultra-légère, pliée à ~35cm, multiples finitions dont tissage carbone et tons métalliques. Accessoire de mobilité élégant."
+description: "Canne pliante au design masculin avec dimensions de poignée adaptées aux grandes mains. Fibre de carbone aérospatiale ultra-légère, pliée à ~35cm."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:

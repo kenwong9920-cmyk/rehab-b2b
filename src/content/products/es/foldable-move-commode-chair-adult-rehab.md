@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño Plegable Multi-Uso para Rehabilitación Adulta"
-description: "Silla combinada plegable para baño y ducha lista para usar — sin instalación. Pies antideslizantes, marco robusto reforzado, asiento ancho con respaldo ajustable, superficies impermeables y cubeta extraíble. Diseño plegable ligero para uso portátil en cama, baño y viajes."
+description: "Silla combinada plegable para baño y ducha lista para usar — sin instalación. Pies antideslizantes, marco robusto reforzado, asiento ancho con respaldo ajustable."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/99/d7/b1/06f9f457e6a53e7875aee36a7d.jpg"
 images:

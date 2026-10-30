@@ -1,6 +1,6 @@
 ---
 title: "Blauer Faltbarer Duschstuhl Rutschfest"
-description: "Leichter faltbarer Duschstuhl mit weißem Aluminiumrahmen, blauer klappbarer Lederrückenlehne und weißem Kunststoffsitz. 5 verstellbare Höhen, blaue rutschfeste Pads, umklappbare Rückenlehne und wasserdichte Materialien."
+description: "Leichter faltbarer Duschstuhl mit weißem Aluminiumrahmen, blauer klappbarer Lederrückenlehne und weißem Kunststoffsitz. 5 verstellbare Höhen, blaue rutschfeste Pads."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/72/f0/60/f191f6801f90f674b97890a7d7.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Durable and Comfortable Aluminum Axillary Crutches"
-description: "Lightweight aluminum alloy axillary crutches with padded armpit rests and handles. Adjustable height for various users, non-slip rubber tips for stability on all surfaces, and ergonomic design promoting natural gait. Rust-resistant frame for long service life."
+description: "Lightweight aluminum alloy axillary crutches with padded armpit rests and handles. Adjustable height for various users. MOQ 300 pcs, 15-30 days lead time."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:

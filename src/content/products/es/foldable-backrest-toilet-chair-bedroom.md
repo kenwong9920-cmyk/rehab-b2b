@@ -1,6 +1,6 @@
 ---
 title: "Silla de WC Plegable con Respaldo para Dormitorio"
-description: "Silla de baño plegable de acero al carbono con respaldo abatible patentado, asiento de cuero impermeable y capacidad 150kg. Ajuste de altura de 5 niveles, plegado sin herramientas a solo 17cm de ancho y cubo extraíble. Solución ideal para WC junto a la cama."
+description: "Silla de baño plegable de acero al carbono con respaldo abatible patentado, asiento de cuero impermeable y capacidad 150kg."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/1e/fc/d8/c012e65601ee1808db5641221c.jpg"
 images:

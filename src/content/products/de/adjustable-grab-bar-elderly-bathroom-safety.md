@@ -1,6 +1,6 @@
 ---
 title: "Verstellbarer Haltegriff für Senioren-Badsicherheit"
-description: "Moderner verchromter höhenverstellbarer Haltegriff mit 150kg Belastbarkeit. 4kg mit werkzeugloser Installation, zuverlässigem Verriegelungsmechanismus, rutschfester Basis und fleckenfreier Oberfläche. 1 Jahr Garantie — ideal für Zuhause und Pflegeeinrichtungen."
+description: "Moderner verchromter höhenverstellbarer Haltegriff mit 150kg Belastbarkeit. 4kg mit werkzeugloser Installation, zuverlässigem Verriegelungsmechanismus."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/aa/80/004cf025a288c796e6ba868930.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Muletas de Antebrazo de Fibra de Carbono para Soporte de Fracturas"
-description: "Muletas de antebrazo de fibra de carbono de alta resistencia que soportan hasta 100kg con solo 1,13kg por par. Ajuste de 12 niveles (91-118cm), reposacodo PP ergonómico, puntas TPR engrosadas con insertos de acero. Plegada a 44,5×15×17cm."
+description: "Muletas de antebrazo de fibra de carbono de alta resistencia que soportan hasta 100kg con solo 1,13kg por par. Ajuste de 12 niveles (91-118cm)."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/7d/a1/5c/6ad30c43c8c5326b59018d25e1.jpg"
 images:

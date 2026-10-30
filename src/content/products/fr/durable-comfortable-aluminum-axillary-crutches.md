@@ -1,6 +1,6 @@
 ---
 title: "Béquilles Axillaires Durables et Confortables en Aluminium"
-description: "Béquilles axillaires légères en alliage d'aluminium avec repose-aisselles et poignées rembourrés. Hauteur réglable, embouts caoutchouc antidérapants pour stabilité sur toutes surfaces, design ergonomique favorisant une démarche naturelle. Cadre antirouille."
+description: "Béquilles axillaires légères en alliage d'aluminium avec repose-aisselles et poignées rembourrés. Hauteur réglable. Commande minimum 300 pièces, délai 15-30 jours."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/18/43/34/e64cf317b2dca7f161a194b326.jpg"
 images:

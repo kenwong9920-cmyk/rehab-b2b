@@ -1,6 +1,6 @@
 ---
 title: "Hochwertiger Verstellbarer Faltstock aus Kohlefaser"
-description: "Premium Kohlefaser-Faltstock mit ergonomischem Griff, höhenverstellbar und mehreren Farboptionen. Rutschfeste Gummispitze, kompaktes Faltdesign für Reisen, verschleißfester und korrosionsbeständiger Rahmen."
+description: "Premium Kohlefaser-Faltstock mit ergonomischem Griff, höhenverstellbar und mehreren Farboptionen. Rutschfeste Gummispitze, kompaktes Faltdesign für Reisen."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/20/f6/33/45ce94875df7df2c424ef76143.png"
 images:

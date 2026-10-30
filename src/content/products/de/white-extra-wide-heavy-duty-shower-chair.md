@@ -1,6 +1,6 @@
 ---
 title: "Weißer Extra-Breiter Schwerlast-Duschstuhl aus Edelstahl"
-description: "Extra-breiter Bariatric-Duschstuhl mit verstärktem weißem Edelstahlrahmen für bis zu 350kg. Weißer Kunststoffsitz, weißer Lederrücken, graue Stoffgriffe, 6-fache Höhenverstellung, abgewinkelte rutschfeste Füße und EVA-Thermomatte."
+description: "Extra-breiter Bariatric-Duschstuhl mit verstärktem weißem Edelstahlrahmen für bis zu 350kg. Weißer Kunststoffsitz, weißer Lederrücken, graue Stoffgriffe."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a6/3d/33/02de2dee49aba871ef7a9dbc38.jpg"
 images:

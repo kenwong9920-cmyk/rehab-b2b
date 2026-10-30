@@ -1,6 +1,6 @@
 ---
 title: "Leichter Schwarzer 2-Rad-Rollator für Erwachsene und Senioren"
-description: "Leichter 2-Rad-Rollator mit Gummirädern für Teppiche, Fliesen und Außenflächen. Höhenverstellbare Griffe, gepolsterter Sitz, Handbremssystem und Schnellfaltung. Ideal für Senioren und Erwachsene mit eingeschränkter Mobilität."
+description: "Leichter 2-Rad-Rollator mit Gummirädern für Teppiche, Fliesen und Außenflächen. Höhenverstellbare Griffe, gepolsterter Sitz, Handbremssystem und Schnellfaltung."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ca/7a/2b/13ecba8608845251139a5080f6.jpg"
 images:

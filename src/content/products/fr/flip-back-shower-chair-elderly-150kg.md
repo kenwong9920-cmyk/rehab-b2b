@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Douche à Dossier Rabattable 150kg pour Seniors"
-description: "Chaise de douche pliante avec dossier rabattable et accents orange, capacité 150kg. Cadre aluminium blanc, dossier cuir orange rabattable, siège moulé blanc, 5 niveaux de hauteur et patins antidérapants orange. Couleurs vives pour visibilité."
+description: "Chaise de douche pliante avec dossier rabattable et accents orange, capacité 150kg. Cadre aluminium blanc, dossier cuir orange rabattable, siège moulé blanc."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/3c/bb/65/c85e7aea78c427b2b179b288d4.jpg"
 images:

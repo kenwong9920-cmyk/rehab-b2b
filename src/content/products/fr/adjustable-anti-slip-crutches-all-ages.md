@@ -1,6 +1,6 @@
 ---
 title: "Béquilles Réglables Antidérapantes pour Tous les Âges"
-description: "Béquilles axillaires légères en alliage d'aluminium avec multiples positions de hauteur pour tous les âges. Embouts caoutchouc antidérapants, poignées ergonomiques profilées, design pliable. Idéal pour patients post-opératoires, seniors et récupération."
+description: "Béquilles axillaires légères en alliage d'aluminium avec multiples positions de hauteur pour tous les âges. Embouts caoutchouc antidérapants."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:

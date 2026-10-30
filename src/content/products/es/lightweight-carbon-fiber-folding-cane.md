@@ -1,6 +1,6 @@
 ---
 title: "Bastón Plegable de Fibra de Carbono para Personas Mayores"
-description: "Bastón plegable ultraligero de fibra de carbono 100%. Mango ergonómico de palo de rosa, ajuste de altura de 10 niveles (72,5–95,5cm), base antideslizante TPR con inserto metálico para máxima estabilidad. Compañero de viaje ideal."
+description: "Bastón plegable ultraligero de fibra de carbono 100%. Mango ergonómico de palo de rosa, ajuste de altura de 10 niveles (72, 5–95, 5cm)."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

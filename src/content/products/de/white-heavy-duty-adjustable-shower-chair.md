@@ -1,6 +1,6 @@
 ---
 title: "Weißer Schwerlast-Verstellbarer Duschstuhl"
-description: "Robuster weißer Edelstahl-Duschstuhl mit 350kg Kapazität. Weißer Lederrücken, weißer Kunststoffsitz, graue Stoffgriffe, 6-fache Höhenverstellung, abgewinkelte rutschfeste Füße und EVA-Thermomatte. Verstärkte metallic-graue Stahlstange."
+description: "Robuster weißer Edelstahl-Duschstuhl mit 350kg Kapazität. Weißer Lederrücken, weißer Kunststoffsitz, graue Stoffgriffe, 6-fache Höhenverstellung."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/7f/69/ec/ae51380653fa33c76a0e22e7e0.jpg"
 images:

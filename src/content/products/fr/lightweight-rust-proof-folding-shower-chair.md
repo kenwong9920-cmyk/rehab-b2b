@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Douche Pliante Légère Antirouille"
-description: "Chaise de douche pliante en alliage d'aluminium antirouille avec capacité 265-330 lbs. Siège ergonomique profilé, accoudoirs antidérapants, larges pieds antidérapants et cadre acier galvanisé/aluminium pour environnements humides. Montage sans outil."
+description: "Chaise de douche pliante en alliage d'aluminium antirouille avec capacité 265-330 lbs. Siège ergonomique profilé, accoudoirs antidérapants."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/74/16/49/6e4c7af599fef88a821d8b4b7c.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Bastón Plegable Moderno de Fibra de Carbono para Hombres"
-description: "Bastón plegable de diseño masculino con dimensiones de empuñadura adaptadas a manos grandes. Fibra de carbono aeroespacial ultraligera, plegado a ~35cm, múltiples acabados incluyendo tejido de carbono y tonos metálicos. Un accesorio de movilidad con estilo."
+description: "Bastón plegable de diseño masculino con dimensiones de empuñadura adaptadas a manos grandes. Fibra de carbono aeroespacial ultraligera, plegado a ~35cm."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/da/b5/10/4b48ac0d916ffac659d0e64ab8.png"
 images:

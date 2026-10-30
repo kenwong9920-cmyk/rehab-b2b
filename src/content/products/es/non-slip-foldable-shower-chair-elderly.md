@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha Plegable Antideslizante para Mayores"
-description: "Silla de ducha plegable con marco antideslizante reforzado que soporta 300 lbs. Superficie de asiento antideslizante, materiales anticorrosión, diseño ergonómico ajustable en altura y almacenamiento plegable compacto. Ideal para seguridad e independencia de mayores."
+description: "Silla de ducha plegable con marco antideslizante reforzado que soporta 300 lbs. Superficie de asiento antideslizante, materiales anticorrosión."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/55/75/da/39ac28cf8e4f4f849159a07b68.jpg"
 images:

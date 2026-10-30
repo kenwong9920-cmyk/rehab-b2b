@@ -1,6 +1,6 @@
 ---
 title: "Verstellbarer 150kg Faltbarer Toilettenstuhl"
-description: "Langlebiger faltbarer Edelstahl-Toilettenstuhl mit 150kg Kapazität. Patentierte klappbare Lederrückenlehne, hochklappbarer Doppelschicht-HD-PE-Sitz, PP-Armlehnen, 5-fache Höhenverstellung und rutschfeste Gummifüße mit verstärkten Metalleinsätzen."
+description: "Langlebiger faltbarer Edelstahl-Toilettenstuhl mit 150kg Kapazität. Patentierte klappbare Lederrückenlehne, hochklappbarer Doppelschicht-HD-PE-Sitz, PP-Armlehnen."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Faltbarer Toilettenstuhl mit Rückenlehne fürs Schlafzimmer"
-description: "Faltbarer Kohlenstoffstahl-Toilettenstuhl mit patentierter klappbarer Rückenlehne, wasserdichtem Ledersitz und 150kg Kapazität. 5-fache Höhenverstellung, werkzeugloses Falten auf nur 17cm Breite und herausnehmbarer Eimer. Ideale Bett-Toilettenlösung."
+description: "Faltbarer Kohlenstoffstahl-Toilettenstuhl mit patentierter klappbarer Rückenlehne, wasserdichtem Ledersitz und 150kg Kapazität."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/1e/fc/d8/c012e65601ee1808db5641221c.jpg"
 images:

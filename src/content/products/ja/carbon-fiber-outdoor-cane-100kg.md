@@ -1,6 +1,6 @@
 ---
 title: "カーボンファイバー100kg荷重アウトドア杖"
-description: "わずか0.36kgの驚くほど軽量なカーボンファイバーアウトドア杖、最大荷重100kg。プレミアム紫檀ハンドル、5段階プッシュボタン高さ調節、34.5cm折りたたみ長、内部鋼板付きTPRフェルール。"
+description: "わずか0.36kgの驚くほど軽量なカーボンファイバーアウトドア杖、最大荷重100kg。プレミアム紫檀ハンドル、5段階プッシュボタン高さ調節、34.5cm折りたたみ長。"
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Canne Pliante en Fibre de Carbone pour Seniors"
-description: "Canne pliante ultra-légère en fibre de carbone 100% pour seniors. Poignée ergonomique en bois de rose, réglage en hauteur 10 positions (72,5–95,5cm), base antidérapante TPR avec insert métallique pour une stabilité maximale. Compagnon de voyage idéal."
+description: "Canne pliante ultra-légère en fibre de carbone 100% pour seniors. Poignée ergonomique en bois de rose, réglage en hauteur 10 positions (72, 5–95, 5cm)."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/4d/b7/68cd6f13d00b156bbd4e896ae4.jpg"
 images:

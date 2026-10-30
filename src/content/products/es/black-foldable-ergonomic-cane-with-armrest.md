@@ -1,6 +1,6 @@
 ---
 title: "Bastón Ergonómico Plegable Negro con Reposabrazos"
-description: "Bastón plegable de fibra de carbono premium con reposabrazos PP retráctil y mango de palo de rosa natural. 10 ajustes de altura (74,5–97,5cm), 0,75kg, carga máxima 100kg. Opciones de base TPR reforzadas para estabilidad óptima."
+description: "Bastón plegable de fibra de carbono premium con reposabrazos PP retráctil y mango de palo de rosa natural. 10 ajustes de altura (74, 5–97, 5cm), 0, 75kg."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño Plegable Ajustable 150kg"
-description: "Silla de baño plegable de acero inoxidable duradera con capacidad 150kg. Respaldo de cuero abatible patentado, asiento HD-PE de doble capa abatible, reposabrazos PP, ajuste de altura de 5 niveles y pies de goma antideslizantes con insertos metálicos reforzados."
+description: "Silla de baño plegable de acero inoxidable duradera con capacidad 150kg. Respaldo de cuero abatible patentado, asiento HD-PE de doble capa abatible, reposabrazos PP."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Déambulateur Pliant en Acier Inoxydable pour Récupération Infantile"
-description: "Déambulateur pliant pédiatrique en acier inoxydable conçu pour la récupération après blessure, chirurgie et troubles neurologiques. Poignées caoutchouc antidérapantes, hauteur réglable, cadre pliant compact et ergonomie adaptée aux enfants."
+description: "Déambulateur pliant pédiatrique en acier inoxydable conçu pour la récupération après blessure, chirurgie et troubles neurologiques."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/d7/5b/47/eb5968961c015029c01cb38fe3.jpg"
 images:

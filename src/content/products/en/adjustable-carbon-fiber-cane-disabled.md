@@ -1,6 +1,6 @@
 ---
 title: "Adjustable Carbon Fiber Walking Cane for Disabled Users"
-description: "100% pure carbon fiber folding cane designed specifically for disabled users. Features tool-free push-button height adjustment, anatomically contoured grip to reduce palm pressure, compact foldable design, and high-gloss carbon fiber luxury finish."
+description: "100% pure carbon fiber folding cane designed specifically for disabled users. Features tool-free push-button height adjustment. MOQ 200 pcs, 15-30 days lead time."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:

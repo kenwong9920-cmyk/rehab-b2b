@@ -1,6 +1,6 @@
 ---
 title: "Tabouret de Douche Ergonomique avec Dossier Rabattable et Siège en U"
-description: "Tabouret de douche innovant avec siège en U, dossier rabattable, surfaces antidérapantes, hauteur réglable et large base renforcée. Matériaux résistants à l'humidité anti-moisissures. Design léger et robuste compatible avec la plupart des salles de bain."
+description: "Tabouret de douche innovant avec siège en U, dossier rabattable, surfaces antidérapantes, hauteur réglable et large base renforcée."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/0c/9e/16/3dc2fafa54f643a81f97f1d90f.jpg"
 images:

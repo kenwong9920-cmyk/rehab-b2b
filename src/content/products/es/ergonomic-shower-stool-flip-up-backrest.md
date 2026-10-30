@@ -1,6 +1,6 @@
 ---
 title: "Taburete de Ducha Ergonómico con Respaldo Abatible y Asiento en U"
-description: "Taburete de ducha innovador con asiento en U, respaldo abatible, superficies antideslizantes, altura ajustable y base ancha reforzada. Materiales resistentes a la humedad antimoho. Diseño ligero y robusto compatible con la mayoría de baños."
+description: "Taburete de ducha innovador con asiento en U, respaldo abatible, superficies antideslizantes, altura ajustable y base ancha reforzada."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/0c/9e/16/3dc2fafa54f643a81f97f1d90f.jpg"
 images:

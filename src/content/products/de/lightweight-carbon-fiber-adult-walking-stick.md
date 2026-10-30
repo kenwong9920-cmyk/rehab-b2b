@@ -1,6 +1,6 @@
 ---
 title: "Leichter Kohlefaser-Gehstock für Erwachsene"
-description: "Ultraleichter 0,33kg Kohlefaser-Gehstock mit 100kg Belastbarkeit. 5-fache Druckknopf-Höhenverstellung, 34cm gefaltet, ergonomischer PP-Griff und TPR-Spitze mit Stahleinsatz. Ideal für Alltag und Reisen."
+description: "Ultraleichter 0,33kg Kohlefaser-Gehstock mit 100kg Belastbarkeit. 5-fache Druckknopf-Höhenverstellung, 34cm gefaltet. MOQ 200 Stück."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Douche Sécurisée Réglable en Hauteur pour Seniors"
-description: "Chaise de douche à hauteur réglable avec support dorsal conçue pour seniors et femmes enceintes. Pieds caoutchouc haute friction robustes, siège ergonomique profilé, réglage sans outil et large base stable. Sécurité et confort pour le bain quotidien."
+description: "Chaise de douche à hauteur réglable avec support dorsal conçue pour seniors et femmes enceintes. Pieds caoutchouc haute friction robustes, siège ergonomique profilé."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/24/b2/41/bbb0d7c58eb07700973203a543.jpeg"
 images:

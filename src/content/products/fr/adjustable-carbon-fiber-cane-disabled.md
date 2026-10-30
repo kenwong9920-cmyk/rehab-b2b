@@ -1,6 +1,6 @@
 ---
 title: "Canne en Fibre de Carbone Réglable pour Personnes Handicapées"
-description: "Canne pliante en fibre de carbone 100% pure conçue pour les utilisateurs handicapés. Réglage en hauteur par bouton-poussoir sans outil, poignée anatomique réduisant la pression de la paume, design compact pliable et finition carbone brillant de luxe."
+description: "Canne pliante en fibre de carbone 100% pure conçue pour les utilisateurs handicapés. Réglage en hauteur par bouton-poussoir sans outil."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:

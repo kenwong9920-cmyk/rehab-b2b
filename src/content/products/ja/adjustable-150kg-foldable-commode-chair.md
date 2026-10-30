@@ -1,6 +1,6 @@
 ---
 title: "調節式150kg折りたたみポータブルトイレ"
-description: "150kg容量の耐久性のあるステンレススチール折りたたみポータブルトイレ。特許取得済みフリップ調節レザーバックレスト、二層HD-PEフリップアップシート、PPアームレスト、5段階高さ調節、強化金属インサート付き滑り止めゴム足。"
+description: "150kg容量の耐久性のあるステンレススチール折りたたみポータブルトイレ。特許取得済みフリップ調節レザーバックレスト、二層HD-PEフリップアップシート、PPアームレスト。"
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

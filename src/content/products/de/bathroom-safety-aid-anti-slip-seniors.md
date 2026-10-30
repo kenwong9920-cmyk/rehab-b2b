@@ -1,6 +1,6 @@
 ---
 title: "Rutschfeste Badsicherheitshilfe für Senioren"
-description: "Lila höhenverstellbarer WC-Sicherheitsgriff mit rutschfestem Griff. Verstärkter Hochleistungsrahmen, universelle Kompatibilität mit Standard-WCs, werkzeuglose Installation. Entwickelt zur Sturzprävention und Förderung der Unabhängigkeit von Senioren."
+description: "Lila höhenverstellbarer WC-Sicherheitsgriff mit rutschfestem Griff. Verstärkter Hochleistungsrahmen, universelle Kompatibilität mit Standard-WCs."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/d3/84/8a/280bdc130d732a79bf9b11d2dc.jpg"
 images:

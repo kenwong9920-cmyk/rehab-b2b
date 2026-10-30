@@ -1,6 +1,6 @@
 ---
 title: "軽量ブラック折りたたみエルゴノミック杖"
-description: "わずか0.42kgの超軽量100%カーボンファイバー折りたたみ杖。天然紫檀エルゴノミックハンドル、10段階高さ調節(72.5-95.5cm)、金属インサート付きTPR滑り止めベース。完璧な旅行のお供。"
+description: "わずか0.42kgの超軽量100%カーボンファイバー折りたたみ杖。天然紫檀エルゴノミックハンドル、10段階高さ調節(72.5-95.5cm)、金属インサート付きTPR滑り止めベース。"
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

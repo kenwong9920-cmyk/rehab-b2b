@@ -1,6 +1,6 @@
 ---
 title: "成人用軽量カーボンファイバーウォーキングスティック"
-description: "0.33kg超軽量カーボンファイバーウォーキングスティック、最大荷重100kg。5段階プッシュボタン高さ調節、34cm折りたたみ長、エルゴノミックPPグリップ、スチールインサート付きTPRフェルール。日常使用と旅行に最適。"
+description: "0.33kg超軽量カーボンファイバーウォーキングスティック、最大荷重100kg。5段階プッシュボタン高さ調節、34cm折りたたみ長、エルゴノミックPPグリップ。"
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:

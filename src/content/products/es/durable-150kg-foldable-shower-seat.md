@@ -1,6 +1,6 @@
 ---
 title: "Asiento de Ducha Plegable Duradero 150kg"
-description: "Asiento de ducha plegable de aluminio de 1,9kg con capacidad 150kg. Marco AL6063 con recubrimiento en polvo, asiento HDPE moldeado antideslizante, patas ajustables 6 niveles, pies de goma de alta fricción con insertos de acero. Plegado rápido sin herramientas."
+description: "Asiento de ducha plegable de aluminio de 1,9kg con capacidad 150kg. Marco AL6063 con recubrimiento en polvo, asiento HDPE moldeado antideslizante."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

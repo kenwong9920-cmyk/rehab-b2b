@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Bain Réglable en Aluminium pour Seniors"
-description: "Chaise de bain pliante légère de 3,2kg en aluminium avec accoudoirs rembourrés en mousse. Cadre AL6063 revêtu par poudre, siège et dossier HDPE moulé, pieds réglables 6 niveaux, pieds caoutchouc inclinés avec inserts acier. Montage sans outil."
+description: "Chaise de bain pliante légère de 3,2kg en aluminium avec accoudoirs rembourrés en mousse. Cadre AL6063 revêtu par poudre, siège et dossier HDPE moulé."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/47/9b/ab/eed408f65ce659f67b288020c8.jpg"
 images:

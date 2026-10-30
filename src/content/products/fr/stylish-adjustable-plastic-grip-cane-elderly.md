@@ -1,6 +1,6 @@
 ---
 title: "Canne Élégante Réglable avec Poignée Plastique pour Seniors"
-description: "Canne pliante légère en fibre de carbone de 0,36kg avec lampe LED intégrée dans la poignée. Réglage 5 hauteurs par bouton-poussoir, poignée PP ergonomique, longueur pliée 34,5cm et embout TPR renforcé. Parfait pour les seniors ayant besoin de visibilité nocturne."
+description: "Canne pliante légère en fibre de carbone de 0,36kg avec lampe LED intégrée dans la poignée. Réglage 5 hauteurs par bouton-poussoir, poignée PP ergonomique."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/09/a4/6e/61ee2620443facf6773d9eb2c0.jpg"
 images:

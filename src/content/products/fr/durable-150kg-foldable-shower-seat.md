@@ -1,6 +1,6 @@
 ---
 title: "Siège de Douche Pliable Durable 150kg"
-description: "Siège de douche pliant en aluminium de 1,9kg avec capacité 150kg. Cadre AL6063 revêtu par poudre, siège HDPE moulé antidérapant, pieds réglables 6 niveaux, pieds caoutchouc haute friction avec inserts acier. Pliage rapide sans outil."
+description: "Siège de douche pliant en aluminium de 1,9kg avec capacité 150kg. Cadre AL6063 revêtu par poudre, siège HDPE moulé antidérapant, pieds réglables 6 niveaux."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

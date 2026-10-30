@@ -1,6 +1,6 @@
 ---
 title: "Sicherer Tragbarer Faltrollator für Kinder"
-description: "Pädiatrischer Faltrollator mit kratzfestem pulverbeschichtetem Edelstahlrahmen in Schwarz und Gelb. Weiche Stoffgriffe, rutschfeste Kappen und kompaktes Faltdesign. Leichte Konstruktion für sichere Kindermobilität."
+description: "Pädiatrischer Faltrollator mit kratzfestem pulverbeschichtetem Edelstahlrahmen in Schwarz und Gelb. Weiche Stoffgriffe, rutschfeste Kappen und kompaktes Faltdesign."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/ea/40/be/84a1894bb8909b7d6f68662976.jpg"
 images:

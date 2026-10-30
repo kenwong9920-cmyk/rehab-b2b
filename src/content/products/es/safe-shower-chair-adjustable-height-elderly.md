@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha Segura con Altura Ajustable para Mayores"
-description: "Silla de ducha de altura ajustable con respaldo diseñada para mayores y mujeres embarazadas. Pies de goma de alta fricción robustos, asiento ergonómico contorneado, ajuste sin herramientas y base ancha estable. Seguridad y confort para el baño diario."
+description: "Silla de ducha de altura ajustable con respaldo diseñada para mayores y mujeres embarazadas. Pies de goma de alta fricción robustos, asiento ergonómico contorneado."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/24/b2/41/bbb0d7c58eb07700973203a543.jpeg"
 images:

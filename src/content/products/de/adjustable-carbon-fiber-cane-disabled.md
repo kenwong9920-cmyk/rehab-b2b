@@ -1,6 +1,6 @@
 ---
 title: "Verstellbarer Kohlefaser-Gehstock für Behinderte"
-description: "100% reiner Kohlefaser-Faltstock speziell für behinderte Nutzer. Werkzeuglose Druckknopf-Höhenverstellung, anatomisch geformter Griff zur Druckentlastung, kompaktes Faltsystem und hochglänzendes Kohlefaser-Luxusfinish."
+description: "100% reiner Kohlefaser-Faltstock speziell für behinderte Nutzer. Werkzeuglose Druckknopf-Höhenverstellung, anatomisch geformter Griff zur Druckentlastung."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a1/a8/6e/39080f912497392457badfcefb.png"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Muletas Antideslizantes Ajustables para Todas las Edades"
-description: "Muletas axilares ligeras de aleación de aluminio con múltiples ajustes de altura para todas las edades. Puntas de goma antideslizantes, mangos ergonómicos contorneados, diseño plegable. Ideal para pacientes postoperatorios, ancianos y recuperación."
+description: "Muletas axilares ligeras de aleación de aluminio con múltiples ajustes de altura para todas las edades. Puntas de goma antideslizantes."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/35/2c/2d/d30d5a06eadbb7d1dfd8eaef86.jpg"
 images:

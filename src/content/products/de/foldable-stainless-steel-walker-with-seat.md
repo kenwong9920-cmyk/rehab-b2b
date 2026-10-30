@@ -1,6 +1,6 @@
 ---
 title: "Faltbarer Medizinischer Edelstahl-Rollator mit Sitz"
-description: "Premium matt-schwarzer Edelstahl-Rollator mit integriertem Ledersitz. Marineblaue Stoffgriffe, stabile Beine für Innen-/Außenstabilität und Schnellfaltung. Ideal für Senioren, postoperative Genesung und Gleichgewichtsunterstützung."
+description: "Premium matt-schwarzer Edelstahl-Rollator mit integriertem Ledersitz. Marineblaue Stoffgriffe, stabile Beine für Innen-/Außenstabilität und Schnellfaltung."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/aa/ba/08/5854412fe24b42e1892d3ddca9.jpg"
 images:

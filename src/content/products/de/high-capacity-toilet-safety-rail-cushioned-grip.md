@@ -1,6 +1,6 @@
 ---
 title: "Hochleistungs-WC-Sicherheitsgriff mit Gepolstertem Griff"
-description: "Cremefarbener matter Edelstahl-WC-Sicherheitsgriff mit weichem stoffbezogenem Griff. Werkzeuglose Doppelklemm-Montage, rutschfeste Gewindefüße, einstellbares kippfreies Design und Verstärkungsgurt. Fügt sich dezent ins Badezimmerdekor ein."
+description: "Cremefarbener matter Edelstahl-WC-Sicherheitsgriff mit weichem stoffbezogenem Griff. Werkzeuglose Doppelklemm-Montage, rutschfeste Gewindefüße."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/b9/63/06/a7136a408771e0558b070902b2.jpg"
 images:

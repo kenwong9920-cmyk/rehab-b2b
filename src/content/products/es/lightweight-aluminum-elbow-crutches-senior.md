@@ -1,6 +1,6 @@
 ---
 title: "Muletas de Antebrazo Ligeras de Aluminio para Personas Mayores"
-description: "Muletas de antebrazo plegables de aleación de aluminio premium con ajuste de 12 posiciones, almohadillas de codo PP ergonómicas, puntas TPR reforzadas con insertos de hierro y diseño plegable compacto. Ligeras pero duraderas para mayores y pacientes."
+description: "Muletas de antebrazo plegables de aleación de aluminio premium con ajuste de 12 posiciones, almohadillas de codo PP ergonómicas."
 category: "crutches"
 image: "https://bsg-i.nbxc.com/product/36/01/17/afec7268e388311a1fbc1de18e.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Leichter Faltbarer Kohlefaserstock für Schwere Lasten"
-description: "Verstärkter Kohlefaser-Faltstock mit 100kg Belastbarkeit bei Ultraleichtgewicht. Ergonomischer Griff für Arthritis-Patienten, übergroße rutschfeste Gummispitze, flach faltbar auf ~35cm."
+description: "Verstärkter Kohlefaser-Faltstock mit 100kg Belastbarkeit bei Ultraleichtgewicht. Ergonomischer Griff für Arthritis-Patienten, übergroße rutschfeste Gummispitze."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/4f/4a/44/4242f34a39a0656466dd780259.png"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Black Foldable Ergonomic Cane with Armrest"
-description: "Premium carbon fiber folding cane with retractable PP armrest and natural rosewood handle. 10 height settings (74.5–97.5cm), 0.75kg weight, 100kg max load. Multiple reinforced TPR base options for enhanced stability."
+description: "Premium carbon fiber folding cane with retractable PP armrest and natural rosewood handle. 10 height settings (74.5–97.5cm), 0.75kg weight, 100kg max load."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/31/91/e1/18dbef157c67aa2687e349b1b7.jpg"
 images:

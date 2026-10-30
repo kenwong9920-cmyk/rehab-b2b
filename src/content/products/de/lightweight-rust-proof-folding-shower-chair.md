@@ -1,6 +1,6 @@
 ---
 title: "Leichter Rostfreier Faltbarer Duschstuhl"
-description: "Rostfreier Aluminium-Faltduschstuhl mit 265-330 lbs Belastbarkeit. Ergonomisch geformter Sitz, rutschfeste Armlehnen, breite rutschfeste Füße und verzinkter Stahl-/Aluminiumrahmen für feuchte Umgebungen. Werkzeuglose Montage."
+description: "Rostfreier Aluminium-Faltduschstuhl mit 265-330 lbs Belastbarkeit. Ergonomisch geformter Sitz, rutschfeste Armlehnen. MOQ 300 Stück."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/74/16/49/6e4c7af599fef88a821d8b4b7c.jpg"
 images:

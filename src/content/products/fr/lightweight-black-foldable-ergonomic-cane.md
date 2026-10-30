@@ -1,6 +1,6 @@
 ---
 title: "Canne Ergonomique Pliante Noire Légère"
-description: "Canne pliante en fibre de carbone 100% ultra-légère à seulement 0,42kg. Poignée ergonomique en bois de rose naturel, réglage hauteur 10 niveaux (72,5–95,5cm), base antidérapante TPR avec insert métallique. Compagnon de voyage parfait."
+description: "Canne pliante en fibre de carbone 100% ultra-légère à seulement 0,42kg. Poignée ergonomique en bois de rose naturel, réglage hauteur 10 niveaux (72, 5–95, 5cm)."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/8d/9f/90/f6bc2dddbc4e6d409d72d00794.jpg"
 images:

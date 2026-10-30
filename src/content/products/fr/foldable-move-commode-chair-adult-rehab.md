@@ -1,6 +1,6 @@
 ---
 title: "Chaise Percée Pliable Multi-Usage pour Rééducation Adulte"
-description: "Chaise combinée percée et douche pliante prête à l'emploi — sans installation. Pieds antidérapants, cadre robuste renforcé, large siège avec dossier réglable, surfaces hydrofuges et bassine amovible. Design pliable léger pour usage portable au chevet, salle de bain et voyage."
+description: "Chaise combinée percée et douche pliante prête à l'emploi — sans installation. Pieds antidérapants, cadre robuste renforcé, large siège avec dossier réglable."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/99/d7/b1/06f9f457e6a53e7875aee36a7d.jpg"
 images:

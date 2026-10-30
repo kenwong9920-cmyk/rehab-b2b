@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño Plegable Portátil para Uso Doméstico"
-description: "Silla de baño plegable resistente de acero al carbono con asiento extra ancho HD-PE de doble capa moldeado para usuarios bariátricos. Capacidad 150kg, reposabrazos PP, ajuste de altura de 5 niveles y pies de goma antideslizantes con placas metálicas."
+description: "Silla de baño plegable resistente de acero al carbono con asiento extra ancho HD-PE de doble capa moldeado para usuarios bariátricos."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/5e/94/b5/19f9d84303e4eed564515131ea.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño con Respaldo Abatible y Pies Antideslizantes"
-description: "Silla de baño plegable de acero al carbono con respaldo de cuero abatible patentado, asiento de cuero gris perfilado, reposabrazos PP y cubo PP ovalado extraíble (33×28×13cm). Ajuste de 5 niveles, pies de goma antideslizantes con arandelas metálicas."
+description: "Silla de baño plegable de acero al carbono con respaldo de cuero abatible patentado, asiento de cuero gris perfilado. Pedido mínimo 300 unidades, plazo 15-30 días."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

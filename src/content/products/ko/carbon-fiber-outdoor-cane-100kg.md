@@ -1,6 +1,6 @@
 ---
 title: "탄소 섬유 100kg 하중 야외용 지팡이"
-description: "0.36kg의 놀라울 정도로 가벼운 탄소 섬유 야외용 지팡이, 최대 하중 100kg. 프리미엄 자단나무 손잡이, 5단계 푸시 버튼 높이 조절, 34.5cm 접이식 길이, 내부 강판이 있는 TPR 페럴."
+description: "0.36kg의 놀라울 정도로 가벼운 탄소 섬유 야외용 지팡이, 최대 하중 100kg. 프리미엄 자단나무 손잡이, 5단계 푸시 버튼 높이 조절, 34.5cm 접이식 길이."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/ba/ce/04/2580977d751f56f435ae273bb9.jpg"
 images:

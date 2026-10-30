@@ -1,6 +1,6 @@
 ---
 title: "Canne Colorée Réglable en Fibre de Carbone Haute Qualité"
-description: "Canne pliante en fibre de carbone multicolore avec joints renforcés et haute capacité de charge. Poignée ergonomique antidérapante, hauteur réglable, design compact pliable et finition résistante à l'usure et à la corrosion. Pour tous les âges."
+description: "Canne pliante en fibre de carbone multicolore avec joints renforcés et haute capacité de charge. Poignée ergonomique antidérapante, hauteur réglable."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:

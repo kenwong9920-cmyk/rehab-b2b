@@ -1,6 +1,6 @@
 ---
 title: "내구성 있는 150kg 접이식 샤워 시트"
-description: "150kg 용량의 1.9kg 경량 알루미늄 접이식 샤워 시트. 분체 도장 AL6063 프레임, 블로우 몰드 HDPE 미끄럼 방지 시트, 6단계 높이 조절, 강철 인서트가 있는 고마찰 고무 발. 빠른 접이식, 도구 불필요."
+description: "150kg 용량의 1.9kg 경량 알루미늄 접이식 샤워 시트. 분체 도장 AL6063 프레임, 블로우 몰드 HDPE 미끄럼 방지 시트, 6단계 높이 조절, 강철 인서트가 있는 고마찰 고무 발."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/09/96/81/7fa096aad7c07f1616ba3cd9b5.jpg"
 images:

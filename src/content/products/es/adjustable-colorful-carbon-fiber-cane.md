@@ -1,6 +1,6 @@
 ---
 title: "Bastón de Fibra de Carbono de Colores Ajustable de Alta Calidad"
-description: "Bastón plegable de fibra de carbono multicolor con alta capacidad de carga y juntas reforzadas. Empuñadura ergonómica antideslizante, altura ajustable, diseño compacto plegable y acabado resistente al desgaste y corrosión. Para todas las edades."
+description: "Bastón plegable de fibra de carbono multicolor con alta capacidad de carga y juntas reforzadas. Empuñadura ergonómica antideslizante, altura ajustable."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/47/84/e1/218508ce9b5eb1513465ea94ac.png"
 images:

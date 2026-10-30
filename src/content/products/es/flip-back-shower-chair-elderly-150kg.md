@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha con Respaldo Abatible 150kg para Mayores"
-description: "Silla de ducha plegable con respaldo abatible y acentos naranjas, capacidad 150kg. Marco de aluminio blanco, respaldo de cuero naranja abatible, asiento moldeado blanco, 5 niveles de altura y almohadillas antideslizantes naranjas. Colores vivos para visibilidad."
+description: "Silla de ducha plegable con respaldo abatible y acentos naranjas, capacidad 150kg. Marco de aluminio blanco, respaldo de cuero naranja abatible."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/3c/bb/65/c85e7aea78c427b2b179b288d4.jpg"
 images:

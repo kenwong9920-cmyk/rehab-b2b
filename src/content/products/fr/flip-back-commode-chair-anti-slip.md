@@ -1,6 +1,6 @@
 ---
 title: "Chaise Percée à Dossier Rabattable avec Pieds Antidérapants"
-description: "Chaise percée pliante en acier haute teneur en carbone avec dossier cuir rabattable breveté, siège cuir gris profilé, accoudoirs PP et seau PP ovale amovible (33×28×13cm). Réglage 5 niveaux, pieds caoutchouc antidérapants avec rondelles métalliques."
+description: "Chaise percée pliante en acier haute teneur en carbone avec dossier cuir rabattable breveté, siège cuir gris profilé. Commande minimum 300 pièces, délai 15-30 jours."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
 images:

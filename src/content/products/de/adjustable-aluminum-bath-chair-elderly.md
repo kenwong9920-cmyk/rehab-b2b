@@ -1,6 +1,6 @@
 ---
 title: "Verstellbarer Aluminium-Badestuhl für Senioren"
-description: "Leichter 3,2kg Aluminium-Faltbadestuhl mit schaumgepolsterten Armlehnen. Pulverbeschichteter AL6063-Rahmen, HDPE-Sitz und Rückenlehne, 6-fach verstellbare Beine, abgewinkelte Gummifüße mit Stahleinsätzen. Werkzeuglose Montage."
+description: "Leichter 3,2kg Aluminium-Faltbadestuhl mit schaumgepolsterten Armlehnen. Pulverbeschichteter AL6063-Rahmen, HDPE-Sitz und Rückenlehne, 6-fach verstellbare Beine."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/47/9b/ab/eed408f65ce659f67b288020c8.jpg"
 images:

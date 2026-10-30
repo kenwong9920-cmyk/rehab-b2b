@@ -1,6 +1,6 @@
 ---
 title: "Chaise de Douche Antidérapante Capacité 500lbs"
-description: "Chaise de douche robuste en alliage d'aluminium supportant jusqu'à 500 lbs. Siège PU avec trous de drainage et texture antidérapante, dossier PU réglable 2 niveaux, accoudoirs en mousse, pieds réglables 7 niveaux et patins caoutchouc antidérapants inclinés."
+description: "Chaise de douche robuste en alliage d'aluminium supportant jusqu'à 500 lbs. Siège PU avec trous de drainage et texture antidérapante, dossier PU réglable 2 niveaux."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a0/53/4b/73101d2742f62b421068596f2b.jpg"
 images:

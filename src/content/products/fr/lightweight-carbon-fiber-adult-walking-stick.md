@@ -1,6 +1,6 @@
 ---
 title: "Canne de Marche Légère en Fibre de Carbone pour Adultes"
-description: "Canne de marche ultra-légère de 0,33kg en fibre de carbone avec charge max 100kg. Réglage 5 hauteurs par bouton-poussoir, longueur pliée 34cm, poignée PP ergonomique et embout TPR avec insert acier. Idéale pour usage quotidien et voyage."
+description: "Canne de marche ultra-légère de 0,33kg en fibre de carbone avec charge max 100kg. Réglage 5 hauteurs par bouton-poussoir, longueur pliée 34cm."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/0a/31/cb/71fa1f3823aa157ab44850e80e.jpg"
 images:

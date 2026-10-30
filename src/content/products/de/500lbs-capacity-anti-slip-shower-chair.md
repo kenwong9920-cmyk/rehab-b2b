@@ -1,6 +1,6 @@
 ---
 title: "Rutschfester Duschstuhl mit 500lbs Kapazität"
-description: "Schwerlast-Aluminium-Duschstuhl für bis zu 500 lbs. PU-Sitz mit Drainagelöchern und rutschfester Textur, PU-Rückenlehne 2-fach verstellbar, schaumstoffummantelte Armlehnen, 7-fach verstellbare Beine und abgeschrägte rutschfeste Gummifüße."
+description: "Schwerlast-Aluminium-Duschstuhl für bis zu 500 lbs. PU-Sitz mit Drainagelöchern und rutschfester Textur, PU-Rückenlehne 2-fach verstellbar."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a0/53/4b/73101d2742f62b421068596f2b.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Ergonomischer Duschhocker mit Hochklappbarer Rückenlehne und U-Sitz"
-description: "Innovativer Duschhocker mit U-Sitz, hochklappbarer Rückenlehne, rutschfesten Oberflächen, höhenverstellbar und breiter verstärkter Basis. Feuchtigkeitsbeständige, schimmelresistente Materialien. Leichtes robustes Design für die meisten Badezimmer."
+description: "Innovativer Duschhocker mit U-Sitz, hochklappbarer Rückenlehne, rutschfesten Oberflächen, höhenverstellbar und breiter verstärkter Basis."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/0c/9e/16/3dc2fafa54f643a81f97f1d90f.jpg"
 images:

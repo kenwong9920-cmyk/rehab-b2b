@@ -1,6 +1,6 @@
 ---
 title: "Silla de Baño Ajustable de Aluminio para Mayores"
-description: "Silla de baño plegable ligera de 3,2kg en aluminio con reposabrazos acolchados de espuma. Marco AL6063 con recubrimiento en polvo, asiento y respaldo HDPE moldeado, patas ajustables 6 niveles, pies de goma angulados con insertos de acero. Montaje sin herramientas."
+description: "Silla de baño plegable ligera de 3,2kg en aluminio con reposabrazos acolchados de espuma. Marco AL6063 con recubrimiento en polvo, asiento y respaldo HDPE moldeado."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/47/9b/ab/eed408f65ce659f67b288020c8.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Barra de Seguridad para WC de Alta Capacidad con Empuñadura Acolchada"
-description: "Barra de seguridad para WC en acero inoxidable crema mate con empuñadura forrada de tela suave. Pinza doble sin herramientas, pies roscados antideslizantes, diseño ajustable antivuelco y correa de refuerzo incluida. Se integra discretamente en la decoración del baño."
+description: "Barra de seguridad para WC en acero inoxidable crema mate con empuñadura forrada de tela suave. Pinza doble sin herramientas, pies roscados antideslizantes."
 category: "toilet-safety"
 image: "https://bsg-i.nbxc.com/product/b9/63/06/a7136a408771e0558b070902b2.jpg"
 images:

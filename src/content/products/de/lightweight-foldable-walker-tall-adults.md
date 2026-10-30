@@ -1,6 +1,6 @@
 ---
 title: "Leichter Faltbarer Rollator für Große Erwachsene"
-description: "Faltbarer Rollator mit erweiterter Höhe für große Erwachsene. Doppelfunktion als Gehrahmen und Trainingsstuhl. Weicher gepolsterter Sitz, höhenverstellbare Griffe, rutschfeste Gummifüße und Schnellfaltung."
+description: "Faltbarer Rollator mit erweiterter Höhe für große Erwachsene. Doppelfunktion als Gehrahmen und Trainingsstuhl. Weicher gepolsterter Sitz, höhenverstellbare Griffe."
 category: "walkers"
 image: "https://bsg-i.nbxc.com/product/00/12/ad/c0900ea02729e124e7a4d1fc8d.jpg"
 images:

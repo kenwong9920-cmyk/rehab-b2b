@@ -1,6 +1,6 @@
 ---
 title: "Hochwertiger Kohlefaser-Gehstock für Alle Altersgruppen"
-description: "Vielseitiger Luftfahrt-Kohlefaser-Faltstock für alle Altersgruppen. Ergonomischer Griff, kompaktes Faltdesign, rutschfeste Gummispitze mit maximaler Traktion, höhenverstellbar und modernes B2B-Finish."
+description: "Vielseitiger Luftfahrt-Kohlefaser-Faltstock für alle Altersgruppen. Ergonomischer Griff, kompaktes Faltdesign, rutschfeste Gummispitze mit maximaler Traktion."
 category: "walking-canes"
 image: "https://bsg-i.nbxc.com/product/a2/b1/7a/965fa66627608a679c6cff682c.png"
 images:

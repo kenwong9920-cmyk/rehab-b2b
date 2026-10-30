@@ -1,6 +1,6 @@
 ---
 title: "Tragbarer Faltbarer Toilettenstuhl für Täglichen Gebrauch"
-description: "Vielseitiger faltbarer Kohlenstoffstahl-Toilettenstuhl mit 150kg Kapazität. Funktioniert als Bett-Toilettenstuhl, Über-WC-Stuhl und Duschstuhl. Wasserdichter Ledersitz, verstellbare Rückenlehne, herausnehmbarer PP-Eimer und rutschfeste Füße."
+description: "Vielseitiger faltbarer Kohlenstoffstahl-Toilettenstuhl mit 150kg Kapazität. Funktioniert als Bett-Toilettenstuhl, Über-WC-Stuhl und Duschstuhl."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/a8/c8/a0/4e41e8659dd549881c675bff4d.jpg"
 images:

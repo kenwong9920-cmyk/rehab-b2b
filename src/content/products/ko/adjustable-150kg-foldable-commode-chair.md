@@ -1,6 +1,6 @@
 ---
 title: "조절식 150kg 접이식 변기 의자"
-description: "150kg 용량의 내구성 있는 스테인리스 스틸 접이식 변기 의자. 특허 받은 플립 조절 가죽 등받이, 이중층 HD-PE 플립업 시트, PP 팔걸이, 5단계 높이 조절, 강화 금속 인서트가 있는 미끄럼 방지 고무 발."
+description: "150kg 용량의 내구성 있는 스테인리스 스틸 접이식 변기 의자. 특허 받은 플립 조절 가죽 등받이, 이중층 HD-PE 플립업 시트, PP 팔걸이, 5단계 높이 조절."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/fc/57/4b/1ffd3b1baf3eda83b1b872aa34.jpg"
 images:

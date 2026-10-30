@@ -1,6 +1,6 @@
 ---
 title: "Chaise Percée Robuste Capacité 300lbs"
-description: "Chaise percée robuste en acier haute teneur en carbone avec capacité 150kg. Dossier rabattable breveté, siège cuir imperméable, réglage hauteur 5 niveaux, pieds caoutchouc antidérapants et seau amovible. Pliage sans outil à 17cm pour soins portables au chevet."
+description: "Chaise percée robuste en acier haute teneur en carbone avec capacité 150kg. Dossier rabattable breveté, siège cuir imperméable, réglage hauteur 5 niveaux."
 category: "commode-chairs"
 image: "https://bsg-i.nbxc.com/product/b5/7b/e1/8bfaf98185f4faa41bf6dd7476.jpg"
 images:

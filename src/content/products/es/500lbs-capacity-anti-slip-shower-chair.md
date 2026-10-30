@@ -1,6 +1,6 @@
 ---
 title: "Silla de Ducha Antideslizante Capacidad 500lbs"
-description: "Silla de ducha resistente de aleación de aluminio que soporta hasta 500 lbs. Asiento PU con orificios de drenaje y textura antideslizante, respaldo PU ajustable 2 niveles, reposabrazos de espuma, patas ajustables 7 niveles y patas de goma antideslizantes inclinadas."
+description: "Silla de ducha resistente de aleación de aluminio que soporta hasta 500 lbs. Asiento PU con orificios de drenaje y textura antideslizante."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/a0/53/4b/73101d2742f62b421068596f2b.jpg"
 images:

@@ -1,6 +1,6 @@
 ---
 title: "Rutschfester Faltbarer Duschstuhl für Senioren"
-description: "Faltbarer Duschstuhl mit verstärktem rutschfestem Rahmen für 300 lbs. Rutschfeste Sitzfläche, korrosionsbeständige Materialien, höhenverstellbares ergonomisches Design und kompakte Faltlagerung. Ideal für Sicherheit und Unabhängigkeit von Senioren."
+description: "Faltbarer Duschstuhl mit verstärktem rutschfestem Rahmen für 300 lbs. Rutschfeste Sitzfläche, korrosionsbeständige Materialien."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/55/75/da/39ac28cf8e4f4f849159a07b68.jpg"
 images:

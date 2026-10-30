@@ -1,6 +1,6 @@
 ---
 title: "Stilvoller Faltbarer Duschstuhl 150kg"
-description: "Eleganter schwarzer Faltduschstuhl mit hochwertigem Holzmaserung-Aluminiumrahmen. 150kg Belastbarkeit, rutschfeste Oberflächen, einfacher Faltmechanismus, höhenverstellbar und feuchtigkeitsbeständige Oberfläche. Sicherheit trifft Premium-Ästhetik."
+description: "Eleganter schwarzer Faltduschstuhl mit hochwertigem Holzmaserung-Aluminiumrahmen. 150kg Belastbarkeit, rutschfeste Oberflächen, einfacher Faltmechanismus."
 category: "bath-safety"
 image: "https://bsg-i.nbxc.com/product/ad/bd/3f/b177b6a7f160022521e2d7e7df.jpg"
 images:
