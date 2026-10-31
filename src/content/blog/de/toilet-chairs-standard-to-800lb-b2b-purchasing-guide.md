@@ -1,48 +1,94 @@
 ---
-title: "Toilet Chairs — From Standard to 800 lb Capacity: The Complete Purchasing Guide"
-description: "Our toilet chair line spans four tiers — from standard stainless steel to 800 lb bariatric models. This guide helps wholesale buyers build a complete product matrix covering multiple price points and user requirements."
+title: "Toilettenstuhl: 7 Modelle, 150 kg, 17 cm"
+description: "Sieben Toilettenstühle, fünf davon mit 150 kg Traglast, zwei nur 17 cm breit gefaltet. Welches Modell für Pflegeheim, Sanitätshaus oder Reise taugt."
 date: 2026-05-30
 image: "https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg"
+category: "Toilettenstühle"
+tags:
+  - "Toilettenstuhl"
+  - "Nachtstuhl"
+  - "Pflege"
+  - "Großhandel"
 ---
 
-Toilet Chairs — From Standard to 800 lb Capacity: The Complete Purchasing Guide
+![Faltbarer Toilettenstuhl mit klappbarer Lederrückenlehne](https://bsg-i.nbxc.com/product/e1/04/af/9f5972100ec3d03bd45ad565a5.jpg)
 
-In the toilet chair category, the manufacturers that truly stand apart are those that solve specific user problems — not those racing to the lowest price. Our product line spans four tiers — standard stainless steel, high-carbon steel, welded premium, and 800 lb bariatric — each engineered for a distinct market positioning. Understanding these distinctions is critical for wholesale buyers who need to build a product matrix covering multiple price points and user requirements.
+Ein Toilettenstuhl wird nicht nach dem Stückpreis verkauft, sondern nach drei Maßen: Faltbreite, Sitzhöhe und Rückenlehne. Wer diese drei Größen im Katalog richtig angibt, verkauft in dieser Kategorie nahezu ohne Rücksendung — wer sie weglässt, bekommt sie zurück, weil der Stuhl nicht durch die Badezimmertür passt oder der Nutzer nicht selbstständig aufsteht. Sechs unserer sieben Modelle arbeiten mit **fünf Höhenstufen**; unterschieden werden sie über Faltmaß, Sitzform, Rahmenmaterial und Funktion.
 
-### Standard Stainless Steel Toilet Chairs: The Volume Tier
+## Die sieben Modelle in einer Tabelle
 
-Our stainless steel toilet chairs (LM6202–6209 series) offer the widest range of configuration options. Seat shapes include U-shape, round, gourd-shape, and dual-layer blow-molded. Backrest choices span fixed leather, reversible leather, and injection-molded plastic. 5-level height adjustment. Standard color options cover grey, black, blue, purple, and pink leather upholstery, paired with stainless steel main frames.
+| Modell | Rahmen | Traglast | Faltbreite | Funktion | Mindestbestellmenge |
+|---|---|---|---|---|---|
+| [LM6108F-157](/de/products/durable-300lbs-load-bearing-commode-chair/) | Kohlenstoffstahl | 150 kg / 300 lbs | **17 cm** | Toiletten- und Nachtstuhl | 500 |
+| [LM6108F-2727](/de/products/foldable-backrest-toilet-chair-bedroom/) | Kohlenstoffstahl | 150 kg | **17 cm** | Nachtstuhl mit klappbarer Lehne | 30 |
+| [LM6108F-2298](/de/products/portable-folding-commode-chair-daily-use/) | Kohlenstoffstahl | 150 kg | k. A. | Toilette, Über-WC-Stuhl, Duschstuhl | 30 |
+| [LM6207L](/de/products/portable-folding-commode-home-use/) | Kohlenstoffstahl | 150 kg | k. A. | extra breiter Doppelschicht-Sitz | 300 |
+| [LM6209KL](/de/products/adjustable-150kg-foldable-commode-chair/) | Edelstahl | 150 kg | k. A. | Klappsitz aus HD-PE, PP-Armlehnen | 300 |
+| [LM6301KG](/de/products/flip-back-commode-chair-anti-slip/) | Kohlenstoffstahl, weiß pulverbeschichtet | k. A. im Datenblatt | k. A. | konturierter Leder-Sitz, PP-Eimer 33 × 28 × 13 cm | 300 |
+| [LM502-S](/de/products/foldable-move-commode-chair-adult-rehab/) | Stahl, faltbar | k. A. im Datenblatt | k. A. | Kombi Toiletten- und Duschstuhl, ohne Montage | 100 |
 
-The key differentiator at this tier is the reversible backrest (K-series). A fixed backrest limits the chair to toileting use only. A reversible backrest allows the chair to serve as both a toilet chair and a shower chair — dual functionality that meaningfully expands the addressable market for the product.
+Drei Zeilen enthalten bewusst keine Zahl. Beim LM6301KG und beim LM502-S weist das Datenblatt keine Traglast aus, beim Faltmaß der Klappmodelle gibt der Katalog keine Breite an. Eine leere Zelle ist im Einkauf unangenehmer als eine runde Zahl — aber sie ist die einzige Angabe, die im Angebot später auch hält. Alle Werte, die in der Tabelle stehen, stammen aus den technischen Daten der jeweiligen Produktseite.
 
-### High-Carbon Steel Toilet Chairs: Greater Strength at a Moderate Cost
+## Warum 17 cm das wichtigste Maß der Kategorie ist
 
-High-carbon steel (LM6208 series) delivers higher weight capacity than stainless steel with a modest cost increase. Available in white or black powder-coated finish, matched with same-color leather upholstery. Reversible backrest variants (LM6208KB/KG/KL) bring shower-toileting dual functionality into the mid-range tier. This series is frequently selected by buyers serving home care and medical device retail channels.
+Der LM6108F-157 und der LM6108F-2727 falten sich auf **17 cm Breite** — das ist der Abstand einer Handbreite, nicht eines Stuhls. Für Pflegeheime und Sanitätshäuser entscheidet dieses Maß über drei Dinge gleichzeitig: ob das Gerät in einem Wohnungsbad hinter der Tür stehen kann, ob es im Lagerregal überhaupt einen Platz belegt, und wie viel Karton pro Container verloren geht. Ein Toilettenstuhl, der sich zwar falten lässt, gefaltet aber die Tiefe eines Klappstuhls behält, löst im Alltag kein Problem — er erfüllt eine Zeile im Prospekt.
 
-### Welded Premium Toilet Chairs: Craftsmanship You Can See
+Dazu kommen **fünf Höhenstufen**, die werkzeugfrei über Druckknöpfe gesetzt werden. Eine feste Sitzhöhe ist in einer Einrichtung mit vielen Bewohnern für einen Teil der Nutzer immer falsch — und ein falsch eingestellter Toilettenstuhl ist eine der häufigsten Ursachen dafür, dass ein eigentlich geeignetes Hilfsmittel nicht angenommen wird. Fünf Stufen sind der Kompromiss, der ohne Werkzeug und ohne Messteile auskommt.
 
-The LM6108 series represents a meaningful step up in structural engineering. Front and rear crossbars are welded rather than bolted — eliminating the joint loosening that gradually develops in assembled frames over time. Armrests are integrated directly into the frame rather than clamped on. Leather color options include apple green, blue, red, and orange, paired with a cream-white main frame and matching armrests. Backrest choices include a welded semi-circular fixed version or a reversible version. This product wins on in-person inspection — when a buyer or end user physically handles this chair, the rigidity difference is immediately apparent.
+## Die klappbare Rückenlehne trennt zwei Absatzkanäle
 
-### 800 lb Bariatric Toilet Chair: In a Class of Its Own
+Eine feste Rückenlehne legt das Produkt auf einen einzigen Verwendungszweck fest. Die **patentierte klappbare Lederrückenlehne** — serienmäßig in LM6108F-157, LM6108F-2727, LM6108F-2298 und LM6301KG — verändert den Charakter des Geräts: hochgeklappt lässt sich der Stuhl als Duschstuhl und als Über-WC-Stuhl nutzen, heruntergeklappt als Toiletten- oder Nachtstuhl. Für Händler heißt das ein Artikel im Regal statt drei, für Pflegeeinrichtungen ein Gerät pro Bewohnerzimmer statt zwei.
 
-The LM6301 series supports an 800 lb (363 kg) static load rating. This is not a marketing figure extrapolated from a lower rating — the frame is purpose-built for this weight class. High-carbon steel construction, welded joints. Gourd-shaped leather seat cushion in grey or black, with a reversible backrest. 5-level height adjustment. Two commode buckets included per chair.
+Der LM6108F-2298 führt diese Logik am weitesten: Er ist ausdrücklich für drei Funktionen gebaut — Toilettenstuhl, Über-WC-Stuhl und Duschstuhl — und kommt ohne Montage aus. Das ist das Modell für Reha-Kliniken, Sanitätshäuser mit Verleih und den Versandhandel, weil es die Lagerhaltung auf eine Variante reduziert.
 
-Globally, the number of manufacturers offering a genuine 800 lb-rated toilet chair with leather seating and a reversible backrest can be counted on one hand. For B2B buyers serving the bariatric care market, this product faces virtually no direct competition at its price point.
+Wer die Sitzfläche beurteilt, sollte auf das Material achten: wasserdichtes Leder lässt sich abwischen, ein Doppelschicht-Sitz aus HD-PE ist formstabiler und nimmt kein Wasser auf. Der LM6207L ist die extra breite Variante dieser Bauart und der einzige Kandidat der Serie für Nutzer, die beim Umsetzen seitlich Druck aufbauen.
 
-### Packaging & Logistics
+## 150 kg: was die Zahl abdeckt und wo sie nicht reicht
 
-Our toilet chairs ship in flat-fold packaging optimized for container loading. Standard folded toilet chair carton dimensions are approximately 58 × 19–22 × 72–80 cm, depending on the model. No tools required for assembly — all components connect via push-button locks and hand-tightened fasteners. Illustrated instructions support 8 languages, eliminating translation dependency.
+150 kg ist in dieser Kategorie die Standardangabe, und sie ist eine statische Last für Rahmen und Sitz — kein Nachweis nach einer Medizinproduktnorm. Für den täglichen Gebrauch empfehlen wir 20 bis 30 % Reserve, ein 110-kg-Nutzer liegt mit einem 150-kg-Modell also am oberen Rand und nicht im Zentrum der Auslegung.
 
-### FAQ
+Wir sagen offen, wo unsere Serie endet: **Über 150 kg haben wir in der Toilettenstuhl-Linie kein Modell.** Für bariatrische Nutzer verweisen wir auf die Duschstuhl-Serie mit 350 kg Traglast, die mit sechs Höhenstufen und verstärktem Rahmen gebaut ist — die Traglastleiter dieser Modelle steht im Beitrag [Schwerlast-Duschstuhl: 350 kg Traglast](/de/blog/shower-chair-load-ratings-150-350-kg-b2b-guide/). Ein Anbieter, der Ihnen in dieser Kategorie deutlich mehr Traglast auf einem gefalteten Rohrrahmen mit Handbreite Packmaß verspricht, hat entweder das Packmaß oder die Traglast nicht gemessen.
 
-**Q: In humid environments, is stainless steel or high-carbon steel the better choice?**
+## Mindestbestellmenge: 30 bis 500 Stück
 
-A: Stainless steel offers inherently superior corrosion resistance. However, our high-carbon steel chairs undergo a multi-stage powder coating process including phosphate pretreatment, providing excellent corrosion protection for normal bathroom environments. For coastal or consistently high-humidity settings, stainless steel is recommended.
+Die Spreizung innerhalb einer einzigen Kategorie ist groß und folgt der Werkzeugfrage, nicht der Kulanz:
 
-**Q: Can replacement parts be ordered?**
+- **30 Stück** — LM6108F-2298 und LM6108F-2727. Beide laufen auf einer Plattform, deren Vorrichtungen bereits existieren.
+- **100 Stück** — der Kombistuhl LM502-S, der als Toiletten- und Duschstuhl in einem Gehäuse gebaut ist und ohne Montage auskommt.
+- **300 Stück** — LM6207L, LM6209KL und LM6301KG. Sitzform und Polsterung sind hier modellspezifisch.
+- **500 Stück** — LM6108F-157, weil das 17-cm-Faltmaß eine eigene Gelenkgeometrie verlangt.
 
-A: Yes. We maintain inventory of all components — seats, backrests, foot pads, commode buckets — which can ship alongside your next bulk order or as a standalone shipment.
+Die Mindestmenge gilt **pro Modell und pro Farbe**, nicht pro Bestellung. Gemischte Container über Toilettenstühle, Duschstühle und Gehhilfen sind der Normalfall — wie sich Mindestmengen über Kategorien hinweg kombinieren lassen, steht im Beitrag [Mindestbestellmenge: 30 vs. 500 Stück](/de/blog/moq-mobility-aids-30-vs-500-units-b2b-guide/).
 
-**Q: What's the difference between gourd-shaped and U-shaped seats?**
+## Lieferzeit, Verpackung, Zahlung
 
-A: The gourd shape follows the natural seated body contour, providing better weight distribution and comfort during extended use. The U-shape offers a more open front, which some users find easier for cleaning. Both shapes are available across multiple models.
+Die Produktion dauert **15 bis 30 Tage ab Auftragsbestätigung**, üblich sind 30 % Anzahlung und Restzahlung vor Verschiffung. Toilettenstühle werden flach gefaltet im Exportkarton versandt; Bruttogewicht und Kartonmaße stehen auf der Packliste und gehören in jede Landed-Cost-Rechnung, weil die Kategorie über Volumen und nicht über Gewicht kalkuliert wird. Der Aufbau ist werkzeugfrei: Alle Verbindungen rasten über Druckknöpfe ein, die bebilderte Anleitung liegt in acht Sprachen bei.
+
+## Dokumente, die zur Lieferung gehören
+
+Jedes Modell trägt die **CE-Kennzeichnung nach EU MDR 2017/745** auf Basis unserer eigenen Konformitätserklärung als Klasse-I-Hersteller — ohne Benannte Stelle, weil bei Klasse I keine beteiligt ist. Dazu kommen **ISO 13485** für das QM-System, die FDA-Establishment-Registrierung und das Device Listing für den US-Markt sowie die technische Dokumentation mit GSPR-Checkliste. Was in der EU bei Ihnen als Importeur bleibt — verantwortliche Person nach GPSR, EUDAMED-Registrierung, UDI und Etikett — ist im Beitrag [CE-Kennzeichnung für Gehhilfen: Klasse I](/de/blog/ce-marking-walking-aids-mdr-class-i-b2b-guide/) im Detail beschrieben. Die Dokumentenliste mit prüfbaren Nummern erhalten Sie über [Downloads](/de/downloads/).
+
+## Häufige Fragen
+
+**Toilettenstuhl oder Nachtstuhl — wo liegt der Unterschied?**
+Technisch keiner: Es ist dasselbe Gerät. „Nachtstuhl" beschreibt den Einsatz am Bett, „Toilettenstuhl" das Gerät. Für die Katalogstruktur ist die Unterscheidung trotzdem nützlich, weil Suchende beide Begriffe verwenden — führen Sie das Modell unter beiden.
+
+**Kann ein Toilettenstuhl als Duschstuhl genutzt werden?**
+Nur mit klappbarer Lehne und wasserfestem Sitz. Der LM6108F-2298 ist ausdrücklich für Toilette, Über-WC und Dusche gebaut; LM6108F-157, LM6108F-2727 und LM6301KG arbeiten mit wasserdichtem Leder und lassen sich ebenfalls im feuchten Bereich einsetzen. Ein Modell ohne diese beiden Merkmale gehört nicht in die Dusche.
+
+**Welches Modell passt bei einem Nutzer über 150 kg?**
+Keines dieser Serie. Wir verweisen dann auf die Duschstuhl-Serie bis 350 kg, die für höhere Lasten und breitere Sitzflächen gebaut ist — nicht auf ein Toilettenstuhl-Modell mit hochgesetzter Angabe.
+
+**Ab welcher Menge kann ich bestellen?**
+Ab 30 Stück pro Modell und Farbe beim LM6108F-2298 und LM6108F-2727, 100 Stück beim LM502-S, 300 bei den drei Polstermodellen und 500 beim LM6108F-157. Die Staffel steht auf jeder Produktseite.
+
+**Sind Ersatzteile nachbestellbar?**
+Ja. Sitzflächen, Rückenlehnen, Fußkappen und Eimer führen wir als eigenständige Positionen und liefern sie mit der nächsten Bestellung oder separat.
+
+---
+
+## Mehr über JinDa Rehab Medical
+
+- [Alle Toilettenstühle ansehen →](/de/products/category/commode-chairs/)
+- [Toilettenstuhl mit 17 cm Faltmaß →](/de/products/durable-300lbs-load-bearing-commode-chair/)
+- [Großhandelsangebot anfordern →](/de/get-quote/)

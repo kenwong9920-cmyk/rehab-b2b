@@ -82,7 +82,7 @@ Drei Pflichten liegen bei Ihnen als Importeur und werden bei der Kalkulation reg
 
 Die Struktur, die den Kontakt mit einem echten Markt übersteht: **30 Stück des faltbaren LM6108F-2298** als Einstiegsartikel, **100–300 Stück eines höhenverstellbaren Modells** als Volumenlinie und **ein Lauf über 300 Stück des LM6209KL**, wenn Ihre Kunden Pflegeheime sind, die Edelstahl und Klappsitz vorgeben. Drei Artikel, drei unterschiedliche Untergrenzen, eine Sendung.
 
-Behandeln Sie die Mindestmenge danach als Signal, nicht als Hindernis. Ein Modell, das 30 Stück nennt, sagt Ihnen, dass es vorhandene Werkzeuge nutzt — und dass es am unwahrscheinlichsten ausläuft. Genau das ist der sicherste Artikel für einen ersten Container. Die Modellliste steht in der [Toilettenstuhl-Kategorie](/de/products/category/commode-chairs/), die Preisbänder und Lieferzeiten auf der [Produktübersicht](/de/products/).
+Behandeln Sie die Mindestmenge danach als Signal, nicht als Hindernis. Ein Modell, das 30 Stück nennt, sagt Ihnen, dass es vorhandene Werkzeuge nutzt — und dass es am unwahrscheinlichsten ausläuft. Genau das ist der sicherste Artikel für einen ersten Container. Die Modellliste steht in der [Toilettenstuhl-Kategorie](/de/products/category/commode-chairs/), welches der sieben Modelle zu welchem Absatzkanal passt — mit Faltmaß und Traglast — im Beitrag [Toilettenstuhl: 7 Modelle, 150 kg, 17 cm](/de/blog/toilet-chairs-standard-to-800lb-b2b-purchasing-guide/), die Preisbänder und Lieferzeiten auf der [Produktübersicht](/de/products/).
 
 ## FAQ
 

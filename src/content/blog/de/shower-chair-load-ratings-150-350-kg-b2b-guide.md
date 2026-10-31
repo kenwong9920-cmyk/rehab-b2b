@@ -71,7 +71,7 @@ Die **Lieferzeit beträgt 15–30 Tage** ab Auftragsbestätigung, üblich sind 3
 
 ## Empfehlung für den Markteintritt
 
-Für einen ersten Badsicherheits-Katalog im DACH-Raum ist die effiziente Struktur: der 150-kg-LM5101D als Volumenmodell, der 500-lb-LM5106KD als Stufe mit Rücken- und Armlehne, und ein 350-kg-LM5109 als Ausschreibungs- und Bariatrieoption. Drei Modelle, jedes an seiner eigenen Mindestmenge, in einem gemischten Container. Vor der Unterschrift: Konformitätserklärung mit den exakten Modellnummern, die Prüfberichte, die diese Modelle abdecken, und das Etikettenlayout mit Ihrem Importeur-Block anfordern. Welche Dokumente Sie einreichen und welche wir liefern, halten wir im Angebot fest — [Angebot anfordern](/de/get-quote/).
+Für einen ersten Badsicherheits-Katalog im DACH-Raum ist die effiziente Struktur: der 150-kg-LM5101D als Volumenmodell, der 500-lb-LM5106KD als Stufe mit Rücken- und Armlehne, und ein 350-kg-LM5109 als Ausschreibungs- und Bariatrieoption. Drei Modelle, jedes an seiner eigenen Mindestmenge, in einem gemischten Container. Soll das Sortiment auch Toilettenstühle umfassen, steht die Auswahl dieser Serie — sieben Modelle, Faltmaß bis 17 cm, Funktionen bis zum Kombistuhl — im Beitrag [Toilettenstuhl: 7 Modelle, 150 kg, 17 cm](/de/blog/toilet-chairs-standard-to-800lb-b2b-purchasing-guide/). Vor der Unterschrift: Konformitätserklärung mit den exakten Modellnummern, die Prüfberichte, die diese Modelle abdecken, und das Etikettenlayout mit Ihrem Importeur-Block anfordern. Welche Dokumente Sie einreichen und welche wir liefern, halten wir im Angebot fest — [Angebot anfordern](/de/get-quote/).
 
 ## Häufige Fragen
 
