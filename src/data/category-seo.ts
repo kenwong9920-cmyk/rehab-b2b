@@ -115,4 +115,131 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
       ],
     },
   },
+
+  /*
+   * ko /walking-aids/ —— 父分类，聚合 crutches(21) + walking-canes(22) = 43 个产品。
+   * GSC 实测（近 14 天，2026-10-23~11-05 探针）：41 展现 · 0 点击 · 加权 15.9 位
+   * → 韩语展现最高的单页，也是全站剩余「第 2 页」里最大的一块，且 43 个产品已在库。
+   * 原 title/description 由模板生成（分类名 + "제품"），"제품" 对采购者零信息量；
+   * 改为承接 도매(批发) / 제조 공장(工厂) 的采购意图，description 首句给 120 g–155 cm 的规格跨度。
+   * FAQ 全部取自已上线 SKU 的真实规格；LM4201/LM4208 数据表无载荷值 → 明确写「표기 없음」，不编。
+   */
+  ko: {
+    'walking-aids': {
+      title: '목발·지팡이 도매 제조 공장 | OEM·ODM',
+      description:
+        'LM4914TA 카본 지팡이 120 g부터 겨드랑이 목발 95–155 cm까지 43종을 자체 공장에서 생산합니다. MOQ 100개, 15–30일 출고, CE 마킹·FDA 등록·ISO 13485.',
+      intro:
+        '진다(JinDa)는 중산 공장에서 목발 21종과 보행 지팡이 22종을 생산합니다. 프레임은 알루미늄 합금 또는 100% 카본파이버이며, LM4914TA 카본 지팡이는 120 g, LM4907TB는 0.42 kg, 겨드랑이 목발 LM4206은 0.95 kg, LM4208은 1.15 kg입니다. 높이는 지팡이 72–96.5 cm(10단), 겨드랑이 목발 95–155 cm, 전완 목발 91–118 cm(12단)까지 조절됩니다. 모델별 MOQ 100–500개, 납기 15–30일.',
+      faqs: [
+        {
+          q: '어떤 목발과 지팡이를 생산하나요?',
+          a: '목발 21종(겨드랑이·전완·팔꿈치형)과 보행 지팡이 22종, 총 43종입니다. 대표 모델은 겨드랑이 목발 LM4201·LM4208, 전완 목발 LM4202A·LM4401, 카본 지팡이 LM4907TB·LM4914TA입니다.',
+        },
+        {
+          q: '프레임 재질과 무게는 어떻게 되나요?',
+          a: '프레임은 알루미늄 합금 또는 100% 카본파이버입니다. LM4914TA 카본 지팡이는 120 g, LM4907TB는 0.42 kg, LM4206 겨드랑이 목발은 0.95 kg, LM4208은 1.15 kg, 전완 목발 LM4401은 1쌍 1.13 kg입니다.',
+        },
+        {
+          q: '최대 하중은 얼마인가요?',
+          a: '카본 지팡이 LM4907TB·LM4903TAZ·LM4914TA와 전완 목발 LM4401은 최대 100 kg, 이중 목발 LM4202B는 200 lb(약 90 kg)입니다. 알루미늄 겨드랑이 목발 LM4201·LM4208은 데이터시트에 하중 값이 표기되어 있지 않습니다.',
+        },
+        {
+          q: '키에 맞춰 높이를 조절할 수 있나요?',
+          a: '지팡이는 72–96.5 cm 구간에서 10단, 겨드랑이 목발은 95–155 cm, 전완 목발 LM4401은 91–118 cm 구간에서 12단으로 조절됩니다. 모두 버튼식 스프링 핀 방식이라 공구 없이 조절할 수 있습니다.',
+        },
+        {
+          q: 'MOQ와 납기는 어떻게 되나요?',
+          a: '모델별 MOQ는 100–500개입니다. 대부분 200개, LM4201·LM4202A·LM4202B는 300개, 아마핏 서포트 목발과 이중 지팡이 서포트는 500개입니다. 납기는 주문 확정 후 15–30일이며 견적은 24시간 이내에 회신합니다.',
+        },
+        {
+          q: '인증과 OEM 대응 범위는 어떻게 되나요?',
+          a: 'EU MDR 2017/745에 따른 CE 마킹(Class I 제조사 자기선언), FDA 등록, ISO 13485, ISO 9001 문서가 제공됩니다. OEM은 프레임 색상, 손잡이 재질(천연 로즈우드·PP), 팁 교체, 브랜드 포장까지 가능하며 MOQ는 모델당 100개부터입니다.',
+        },
+      ],
+    },
+  },
+
+  /*
+   * ja /walkers/ —— 6 个机型全部在库。
+   * GSC 实测（近 14 天）：10 展现 · 加权 8.4 位 → 位置已在首页边缘，问题在 SERP 呈现与点击，不在相关性。
+   * 因此 title 保留分类词（歩行器）并补 卸売製造元 / OEM，FAQ 用富摘要抢点击；正文语言本身已是日语。
+   */
+  ja: {
+    walkers: {
+      title: '歩行器・ロレーター 卸売製造元・OEM対応',
+      description:
+        'ステンレス製歩行器から2輪ロレーターまで6機種を中山工場で製造。LM2005Tは脚部カーボン、シート付き折りたたみ、MOQ 100台、納期15–30日、CE・FDA・ISO 13485。',
+      intro:
+        '金达（JinDa）は中山工場で歩行器・ロレーター6機種を製造しています。大人用は3機種 —— ハンドブレーキとパッド入りシートを備えた2輪ロレーター LM2002-S-W1、レザーシート内蔵のステンレス折りたたみ式 LM2002-S、高身長向けに設計した LM2002-S-W1-FS —— 、小児用は折りたたみ式3機種（LM2005B-S、LM2005T、LM2005L-S）です。フレームは粉体塗装ステンレス、LM2005T は脚部にカーボンファイバーを使用しています。MOQ は1モデル100台、納期は15–30日です。',
+      faqs: [
+        {
+          q: 'どのような歩行器・ロレーターを製造していますか？',
+          a: '大人用3機種と小児用3機種の計6機種です。LM2002-S-W1 は2輪ロレーターでハンドブレーキとパッド入りシート付き、LM2002-S はレザーシート内蔵のステンレス折りたたみ式、LM2002-S-W1-FS は高身長向けの延長フレーム仕様です。',
+        },
+        {
+          q: 'フレームの素材は何ですか？',
+          a: 'フレームは粉体塗装ステンレススチールです。小児用 LM2005T はフレームが粉体塗装ステンレス、脚部がカーボンファイバー製で、軽量かつ腐食しない構成です。',
+        },
+        {
+          q: '小児用の歩行器はありますか？',
+          a: '3機種あります。LM2005B-S（ブラック／イエロー）、LM2005T（プリントデザイン、脚部カーボン）、LM2005L-S（折りたたみ・高さ調整式）で、いずれもステンレスフレームの折りたたみ式です。',
+        },
+        {
+          q: 'MOQ と納期を教えてください。',
+          a: 'MOQ は1モデル100台です。納期は注文確定後15–30日、見積回答は24時間以内です。',
+        },
+        {
+          q: 'どのような認証が付きますか？',
+          a: 'EU MDR 2017/745 に基づく CE マーキング（Class I の製造者自己宣言）、FDA 登録、ISO 13485、ISO 9001 です。書類一式は出荷時に同梱できます。',
+        },
+        {
+          q: 'OEM ではどこまでカスタマイズできますか？',
+          a: 'フレームの色、シートの素材と色、グリップ形状、キャスターの種類、ロゴ入り梱包まで対応します。MOQ は1モデル100台のままです。',
+        },
+      ],
+    },
+  },
+
+  /*
+   * es /walkers/ —— 6 个机型全部在库。
+   * GSC 实测（近 14 天）：10 展现 · 加权 24.9 位 → 在第 3 页，相关性与内容厚度都不足。
+   * 因此不只是改 meta：补 intro（6 机型 + 材质 + MOQ）与 6 条西语 FAQ，扩大页面可被匹配的语义面积。
+   */
+  es: {
+    walkers: {
+      title: 'Fabricante de Andadores y Rollators',
+      description:
+        'Acero inoxidable y 6 modelos: andador plegable con asiento de piel, rollator de 2 ruedas con freno de mano y tres andadores pediátricos. MOQ 100 uds, 15–30 días.',
+      intro:
+        'JinDa fabrica en Zhongshan seis modelos de andadores y rollators: tres para adultos — el rollator de 2 ruedas LM2002-S-W1 con freno de mano y asiento acolchado, el andador plegable LM2002-S con asiento de piel integrado y el LM2002-S-W1-FS con chasis extendido para usuarios altos — y tres andadores pediátricos plegables (LM2005B-S, LM2005T, LM2005L-S). Los chasis son de acero inoxidable con pintura en polvo; el LM2005T lleva las patas de fibra de carbono. MOQ 100 unidades por modelo, entrega en 15–30 días.',
+      faqs: [
+        {
+          q: '¿Qué modelos de andadores y rollators fabrican?',
+          a: 'Seis modelos: el rollator de 2 ruedas LM2002-S-W1 con freno de mano y asiento acolchado, el andador plegable LM2002-S de acero inoxidable con asiento de piel, el LM2002-S-W1-FS de altura extendida para adultos altos y los tres pediátricos LM2005B-S, LM2005T y LM2005L-S.',
+        },
+        {
+          q: '¿De qué material es el chasis?',
+          a: 'Todos los chasis son de acero inoxidable con pintura en polvo. En el LM2005T las patas son de fibra de carbono, lo que reduce el peso y evita la corrosión.',
+        },
+        {
+          q: '¿Hay modelos para niños?',
+          a: 'Sí, tres: LM2005B-S (negro/amarillo), LM2005T (diseño impreso, patas de carbono) y LM2005L-S (plegable y con altura ajustable). Los tres son plegables y de acero inoxidable.',
+        },
+        {
+          q: '¿Cuál es el pedido mínimo y el plazo de entrega?',
+          a: 'MOQ de 100 unidades por modelo. El plazo es de 15–30 días desde la confirmación del pedido y la cotización se responde en menos de 24 horas.',
+        },
+        {
+          q: '¿Qué certificaciones se entregan con el pedido?',
+          a: 'Marcado CE según EU MDR 2017/745 como declaración del fabricante de Clase I, registro FDA, ISO 13485 e ISO 9001. El paquete documental acompaña al envío.',
+        },
+        {
+          q: '¿Se puede personalizar el producto en régimen OEM?',
+          a: 'Sí: color del chasis, material y color del asiento, diseño del puño, tipo de rueda y embalaje con su marca. El MOQ se mantiene en 100 unidades por modelo.',
+        },
+      ],
+    },
+  },
 };
+
