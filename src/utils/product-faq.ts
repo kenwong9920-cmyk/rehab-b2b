@@ -136,6 +136,36 @@ function fill(tpl: string, vars: Record<string, string>): string {
 }
 
 /**
+ * 产品 frontmatter 的 moq / deliveryTime 是英文源值（"200 units" / "15-30 days"），
+ * 直接插进已本地化的句式会出现「Die Mindestbestellmenge beträgt 200 units」这种混杂。
+ * 这里只替换单位词，数值一字不改（不影响任何技术参数与合规表述）。
+ * ar 已暂停投入，故意不列入 → 阿拉伯语页面保持原状。
+ */
+const UNIT_WORDS: Record<string, { moq: string; days: string }> = {
+  en: { moq: 'units', days: 'days' },
+  fr: { moq: 'unités', days: 'jours' },
+  de: { moq: 'Stück', days: 'Tage' },
+  es: { moq: 'unidades', days: 'días' },
+  ko: { moq: '개', days: '일' },
+  ja: { moq: '個', days: '日' },
+};
+
+function localizeUnit(raw: string, locale: string, kind: 'moq' | 'days'): string {
+  const u = UNIT_WORDS[locale];
+  if (!u) return raw;
+  // 日语/韩语的量词紧贴数字，不带空格（100個 / 100개）
+  const zip = locale === 'ja' || locale === 'ko';
+  const word = kind === 'moq' ? u.moq : u.days;
+  const src = kind === 'moq' ? 'units?' : 'days?';
+  const re = new RegExp(zip ? `\\s*\\b${src}\\b` : `\\b${src}\\b`, 'gi');
+  const out = raw.replace(re, word);
+  return locale === 'ja' ? out.replace(/(\d)-(\d)/g, '$1〜$2') : out;
+}
+
+/** 只有这些语种在句内嵌定制项时需要小写化；德语名词必须首字母大写，不能碰 */
+const LOWERCASE_CUSTOM: string[] = ['en', 'fr', 'es'];
+
+/**
  * 生成产品 FAQ 列表。顺序固定，便于 schema 与页面一致。
  */
 export function buildProductFaqs(p: ProductLike, locale: string): Faq[] {
@@ -149,14 +179,14 @@ export function buildProductFaqs(p: ProductLike, locale: string): Faq[] {
   if (p.moq) {
     out.push({
       question: fill(c.moqQ, { title: p.title }),
-      answer: fill(c.moqA, { moq: p.moq }),
+      answer: fill(c.moqA, { moq: localizeUnit(p.moq, locale, 'moq') }),
     });
   }
 
   if (p.deliveryTime) {
     out.push({
       question: fill(c.leadQ, { title: p.title }),
-      answer: fill(c.leadA, { lead: p.deliveryTime }),
+      answer: fill(c.leadA, { lead: localizeUnit(p.deliveryTime, locale, 'days') }),
     });
   }
 
@@ -168,10 +198,11 @@ export function buildProductFaqs(p: ProductLike, locale: string): Faq[] {
   }
 
   if (p.customOptions && p.customOptions.length > 0) {
+    const rawCustom = p.customOptions.slice(0, 4).join(sep);
     out.push({
       question: fill(c.customQ, { title: p.title }),
       answer: fill(c.customA, {
-        custom: p.customOptions.slice(0, 4).join(sep).toLowerCase(),
+        custom: LOWERCASE_CUSTOM.includes(locale) ? rawCustom.toLowerCase() : rawCustom,
       }),
     });
   }
