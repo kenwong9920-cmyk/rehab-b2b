@@ -20,9 +20,13 @@ export interface CategoryFaq {
 }
 
 export interface CategorySeo {
-  /** 不含品牌后缀 */
-  title: string;
-  description: string;
+  /**
+   * 不含品牌后缀。**可省略** —— 页面已排在首页（1–10 位）时不改 meta，只补 intro / faqs，
+   * 省略即回退到 i18n 默认 title，避免动到已有排名。
+   */
+  title?: string;
+  /** 同上，省略则回退 i18n 默认 description */
+  description?: string;
   /** 页面正文导语：给页面提供产品网格之外的实质内容与硬参数 */
   intro?: string;
   /** 渲染为页面可见 FAQ 区块，同时输出 FAQPage schema */
@@ -72,6 +76,47 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         },
       ],
     },
+
+    /*
+     * en /walkers/ —— 6 个机型全部在库（3 成人 + 3 儿童）。
+     * GSC 实测（28 天 2026-10-14~11-10）：7 展现 · 加权 5.3 位 · 0 点击。
+     * 位置已在第 1 页前段，**因此 title 一字不动**（动 meta 有丢排名风险），只做加法：
+     * 重写 description（原句复述品类 + "Products"，对采购者零信息量）、补 intro 与 6 条 FAQ。
+     * 所有数值取自 en 产品 md（LM2002-S-W1 / LM2002-S / LM2002-S-W1-FS / LM2005B-S / LM2005T / LM2005L-S），
+     * 未标注的项一律写 "not stated in the datasheet"，不编造。
+     */
+    walkers: {
+      description:
+        'Six folding walkers and rollators, built in Zhongshan: stainless steel frames, carbon fibre legs on the LM2005T, leather seat on the LM2002-S. MOQ 100, 15–30 days.',
+      intro:
+        'The range splits into three adult and three pediatric models. For adults: the LM2002-S-W1 two-wheel rollator with hand-operated brakes and a padded seat, the LM2002-S folding walker with a built-in leather seat, and the LM2002-S-W1-FS with an extended frame for tall users. For children: the LM2005B-S (black/yellow), the LM2005T with carbon fibre legs and a printed tube design, and the LM2005L-S with a height-adjustable folding frame. Every frame is powder-coated stainless steel; every model folds flat for transport.',
+      faqs: [
+        {
+          q: 'Which walker and rollator models do you manufacture?',
+          a: 'Six: the LM2002-S-W1 two-wheel rollator, the LM2002-S folding walker with leather seat, the LM2002-S-W1-FS extended-height walker, and the pediatric LM2005B-S, LM2005T and LM2005L-S.',
+        },
+        {
+          q: 'What are the frames made of?',
+          a: 'Powder-coated stainless steel on all six models. The LM2005T is the exception on its legs: they are carbon fibre, which cuts weight and does not corrode. The frame of the LM2005T stays powder-coated stainless steel.',
+        },
+        {
+          q: 'Do you have walkers for children?',
+          a: 'Three pediatric folding walkers: LM2005B-S in black and yellow, LM2005T with a printed tube design and carbon fibre legs, and LM2005L-S with a height-adjustable folding frame. All three are stainless steel and fold flat.',
+        },
+        {
+          q: 'What is the minimum order quantity and lead time?',
+          a: 'MOQ is 100 units per model across all six walkers and rollators. Lead time is 15–30 days from order confirmation, and quotes are answered within 24 hours.',
+        },
+        {
+          q: 'Are load ratings published for these walkers?',
+          a: 'No kg rating is stated in the datasheet for the six walker models — they are supplied as walking aids with a frame rated for adult or pediatric user weight, not as bariatric equipment. If your tender needs a stated maximum user weight, request it per model before ordering.',
+        },
+        {
+          q: 'Which certifications and OEM options ship with an order?',
+          a: 'CE marking under EU MDR 2017/745 as a Class I manufacturer declaration, FDA registration, ISO 13485 and ISO 9001. OEM covers frame colour, seat material and colour, grip shape, castor type and branded packaging, at the same 100-unit MOQ.',
+        },
+      ],
+    },
   },
   de: {
     /*
@@ -111,6 +156,45 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         {
           q: 'Sind die Rollatoren für drinnen und draußen geeignet?',
           a: 'Der LM2002-S-W1 läuft auf Gummirädern über Teppich, Fliesen und Außenflächen. Die Faltmodelle mit Gummifüßen sind für den Innenbereich und befestigte Wege ausgelegt.',
+        },
+      ],
+    },
+
+    /*
+     * de /toilet-safety/ —— 4 个机型全部在库（LM112H / LM135A-WY / LM1101 / LM1103-S）。
+     * GSC 实测（28 天 2026-10-14~11-10）：3 展现 · 加权 5.0 位（前 28 天 1 展现 / 19.0）。
+     * 位置已在前 5，**title / description 一字不动**，只补 intro 与 6 条德语 FAQ —— 目的是拿富摘要，
+     * 不是改排名。德语是本站排名最好的语种（62 展现 / 加权 10.0），这项属于低成本加固。
+     * 数值全部取自 de 产品 md；只有 LM135A-WY 有 150 kg 与 4 kg 的公开数据，其余机型
+     * 数据表未给 kg 值 —— FAQ 里明写「keine kg-Angabe im Datenblatt」，不编造。
+     */
+    'toilet-safety': {
+      intro:
+        'Vier Modelle für dasselbe Problem, aber drei verschiedene Bauarten: der erhöhte Toilettenstuhlrahmen LM112H (Aufsatzrahmen, der den Sitz anhebt und das Aufstehen aus der Hocke verkürzt), der höhenverstellbare Haltegriff LM135A-WY aus verchromtem Stahl mit 150 kg Belastbarkeit und 4 kg Eigengewicht, der lila WC-Sicherheitsgriff LM1101 mit rutschfestem Griffprofil sowie der WC-Sicherheitsgriff LM1103-S aus mattem Edelstahl mit gepolsterter Griffauflage und Doppelklemmen zur werkzeugfreien Montage. Beide Griffe werden ohne Bohren am WC-Becken klemmend befestigt.',
+      faqs: [
+        {
+          q: 'Welche Produkte umfasst die Kategorie WC-Sicherheit?',
+          a: 'Vier Modelle: LM112H (erhöhter Toilettenstuhlrahmen), LM135A-WY (höhenverstellbarer Haltegriff, verchromter Stahl), LM1101 (rutschfester WC-Sicherheitsgriff, lila) und LM1103-S (WC-Sicherheitsgriff aus mattem Edelstahl mit gepolsterter Griffauflage).',
+        },
+        {
+          q: 'Wie hoch ist die Belastbarkeit der Modelle?',
+          a: 'Für den Haltegriff LM135A-WY sind 150 kg maximale Belastung und 4 kg Eigengewicht im Datenblatt angegeben. Für LM112H, LM1101 und LM1103-S nennt das Datenblatt keine kg-Angabe — fordern Sie den Wert modellbezogen an, bevor Sie eine Ausschreibung damit bestücken.',
+        },
+        {
+          q: 'Muss für die Montage gebohrt werden?',
+          a: 'Nein. Der LM1103-S wird mit einem Doppelklemmsystem werkzeugfrei am Becken befestigt, der LM135A-WY ebenfalls werkzeugfrei montiert, und der LM1101 lässt sich werkzeugfrei einstellen und anbringen. Kein Modell dieser Kategorie verlangt Bohrlöcher im Fliesenbelag.',
+        },
+        {
+          q: 'Wie hoch ist der Mindestauftrag und die Lieferzeit?',
+          a: 'Der Mindestauftrag liegt modellabhängig bei 50 Stück (LM112H), 100 Stück (LM135A-WY und LM1103-S) oder 300 Stück (LM1101). Die Lieferzeit beträgt 15–30 Tage ab Auftragsbestätigung, Angebote werden innerhalb von 24 Stunden beantwortet.',
+        },
+        {
+          q: 'Welche Nachweise liegen bei?',
+          a: 'CE-Kennzeichnung nach EU MDR 2017/745 als Herstellererklärung für Klasse I, FDA-Registrierung, ISO 13485 und ISO 9001. Die Dokumente gehen als Paket mit der Lieferung.',
+        },
+        {
+          q: 'Lässt sich die Farbe an das Bad anpassen?',
+          a: 'Ja. Angeboten werden Rahmenfarbe, Griffmaterial und Griffdesign, Logodruck und Verpackung mit eigenem Branding. Der Mindestauftrag pro Modell bleibt dabei unverändert.',
         },
       ],
     },
@@ -237,6 +321,51 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         {
           q: '¿Se puede personalizar el producto en régimen OEM?',
           a: 'Sí: color del chasis, material y color del asiento, diseño del puño, tipo de rueda y embalaje con su marca. El MOQ se mantiene en 100 unidades por modelo.',
+        },
+      ],
+    },
+  },
+
+  /*
+   * fr /walkers/ —— 6 个机型全部在库（3 成人 + 3 儿童）。
+   * GSC 实测（28 天 2026-10-14~11-10）：6 展现 · 加权 31.0 位（前 28 天 0 展现）
+   * → 刚进索引就落在第 4 页，是最典型的「页面已存在、内容和标题都没承接查询」。
+   * 因此这里 meta 也改（title 原为模板生成的 "Déambulateurs & Rollators — Produits"，
+   * "Produits" 对采购者零信息量）：改为承接 fabricant / gros 的采购意图，保留两个品类词，
+   * description 首句给材质与型号硬参数；另补 intro + 6 条法语 FAQ。
+   * 数值取自 fr 产品 md（6 个型号 MOQ 均为 100 units），未标注项明写「non indiqué」，不编造。
+   */
+  fr: {
+    walkers: {
+      title: 'Fabricant de déambulateurs et rollators',
+      description:
+        'Six déambulateurs et rollators fabriqués à Zhongshan : châssis acier inoxydable, jambes carbone sur le LM2005T, siège cuir sur le LM2002-S. MOQ 100, 15–30 jours.',
+      intro:
+        "La gamme comprend trois modèles adultes et trois modèles enfants. Côté adultes : le rollator 2 roues LM2002-S-W1 avec freins à main et assise rembourrée, le déambulateur pliable LM2002-S à siège cuir intégré, et le LM2002-S-W1-FS à châssis surélevé pour utilisateurs de grande taille. Côté enfants : le LM2005B-S (noir/jaune), le LM2005T à jambes en fibre de carbone et tubes imprimés, et le LM2005L-S à hauteur réglable. Tous les châssis sont en acier inoxydable thermolaqué et tous les modèles se plient à plat.",
+      faqs: [
+        {
+          q: 'Quels modèles de déambulateurs et rollators fabriquez-vous ?',
+          a: 'Six modèles : le rollator 2 roues LM2002-S-W1, le déambulateur pliable LM2002-S à siège cuir, le LM2002-S-W1-FS à châssis surélevé, ainsi que les trois modèles pédiatriques LM2005B-S, LM2005T et LM2005L-S.',
+        },
+        {
+          q: 'En quel matériau sont les châssis ?',
+          a: "Acier inoxydable thermolaqué sur les six modèles. Seul le LM2005T diffère par ses jambes en fibre de carbone, plus légères et insensibles à la corrosion ; son châssis reste en acier inoxydable thermolaqué.",
+        },
+        {
+          q: 'Proposez-vous des déambulateurs pour enfants ?',
+          a: 'Trois modèles pédiatriques pliants : LM2005B-S noir et jaune, LM2005T à tubes imprimés et jambes carbone, et LM2005L-S à hauteur réglable. Tous trois sont en acier inoxydable et se plient à plat.',
+        },
+        {
+          q: 'Quel est le minimum de commande et le délai ?',
+          a: "Le MOQ est de 100 unités par modèle sur les six références. Le délai est de 15 à 30 jours après confirmation de commande, et le devis est renvoyé sous 24 heures.",
+        },
+        {
+          q: 'Les charges maximales sont-elles indiquées ?',
+          a: "Aucune charge maximale en kg n'est indiquée dans la fiche technique des six modèles : ce sont des aides à la marche pour utilisateur adulte ou enfant, pas du matériel bariatrique. Si votre appel d'offres exige une charge maximale, demandez-la modèle par modèle avant commande.",
+        },
+        {
+          q: 'Quelles certifications et options OEM accompagnez-vous ?',
+          a: "Marquage CE selon EU MDR 2017/745 en tant que déclaration fabricant de classe I, enregistrement FDA, ISO 13485 et ISO 9001. L'OEM couvre la couleur du châssis, le matériau et la couleur de l'assise, la forme des poignées, le type de roues et l'emballage à votre marque, sans changer le MOQ de 100 unités.",
         },
       ],
     },
