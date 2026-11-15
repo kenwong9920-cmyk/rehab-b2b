@@ -117,6 +117,45 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         },
       ],
     },
+
+    /*
+     * en /walking-canes/ —— 22 个机型在库。
+     * GSC 实测（近 28 天 2026-10-16~11-12）：2 展现 · 加权 65.0 位 · 0 点击。
+     * 位次 65 说明不是 SERP 呈现问题而是相关性/内容厚度不足 → **不改 meta**（1–2 次展现无从评估，
+     * 且本站已有两次「改已排名页反而掉」的先例），只做加法：补 intro 与 6 条 FAQ 扩大语义覆盖面。
+     * 数值全部取自 en 产品 md（LM4914TA / LM4907 / LM4903TAZ / LM4907TAZ / LM4907TB / LM4907TCF /
+     * LM4807TA / LM4205AS2 / LM4204TA…）；无载荷标注的机型一律写「no rating stated」，不编造。
+     */
+    'walking-canes': {
+      intro:
+        'The category carries 22 cane listings, and the specification that separates them is the shaft, not the handle. Carbon fibre runs from the LM4914TA at 120 g to the 1.2 mm-wall LM4903TAZ at 0.33 kg; the aluminium alloy end lands at the same 165 g net weight as the carbon LM4907. Every model that states a load rating states 100 kg. Height range runs 72 to 97.5 cm across ten push-button steps, and the four-section folding models pack down to 34–34.5 cm. Quad and tripod bases (LM4205AS2) and an LED-shaft cane (LM4904TA) cover the stability and night-use ends of the range.',
+      faqs: [
+        {
+          q: 'What are the shafts and handles made of?',
+          a: 'Shafts are 100% carbon fibre on the LM4914TA, LM4907TB, LM4907TCF and LM4907TAZ, 1.2 mm-wall carbon fibre on the LM4903TAZ and LM4904TAZ, and aluminium alloy on the LM4807TA and the LM4205AS2 quad cane. Handles are natural wood on the LM4907 and sapele wood on the LM4907TA-YH00042; the rest are moulded ergonomic grips.',
+        },
+        {
+          q: 'How much do the canes weigh?',
+          a: 'From 120 g on the LM4914TA to 0.75 kg on the LM4907TCF, which carries an armrest. Most carbon folding models sit at 165 g / 0.36 lb, and the aluminium LM4807TA matches that at 165 g.',
+        },
+        {
+          q: 'What user weight is each cane rated for?',
+          a: '100 kg on every model that publishes a rating in its datasheet — LM4907TAZ, LM4907TB, LM4907TCF, LM4903TAZ and YH00069. Several listings carry no stated maximum; if your tender needs a declared figure, request it per model before ordering.',
+        },
+        {
+          q: 'What height range and how many settings?',
+          a: 'Across the range the handle adjusts between 72 and 97.5 cm: 72–95.5 cm on the LM4907, 72–96.5 cm on the LM4807TA, 72.5–96.5 cm on the LM4907TA-YH00042 and 74.5–97.5 cm on the LM4907TCF. The adjustable models use ten push-button steps, tool-free.',
+        },
+        {
+          q: 'How small do the folding models pack?',
+          a: 'The four-section fold brings the LM4903TAZ to 34 cm and the LM4907TAZ to 34.5 cm; the YH00069 folds to roughly 14 inches. Folded canes travel in a 35 × 16 × 7.5 cm carton.',
+        },
+        {
+          q: 'What is the MOQ, lead time and certification?',
+          a: 'MOQ is 200 units per SKU, and 300 on the three folding models LM4908TA PLUS, LM4907TB and LM4907TCF. Lead time is 15–30 days from order confirmation. Documentation is CE marking under EU MDR 2017/745 as a Class I manufacturer declaration, FDA registration, ISO 13485 and ISO 9001; the LM4208TAZ is built to MZ/T 199-2023.',
+        },
+      ],
+    },
   },
   de: {
     /*
@@ -242,6 +281,45 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         },
       ],
     },
+
+    /*
+     * ko /bath-safety/ —— 14 个机型在库（샤워체어 · 샤워스툴 · 욕조의자 + 접이식 변기 의자 1）。
+     * GSC 实测（近 28 天 2026-10-16~11-12）：1 展现 · 加权 2.0 位 · 0 点击。
+     * 位次 2.0 但仅 1 次展现 → 相关性别已够，缺的是「可被更多查询命中」的语义面积。
+     * 因此 **不改 meta**（无排名可护也无数据可评），只补 intro + 6 条韩语 FAQ。
+     * 数值全部取自 ko 제품 md（LM5101D / LM5106KD / LM5109D-S / LM5109KD-S-SRB / LM5205CK / LM3202KD …），
+     * 데이터시트에 하중 표기가 없는 기종은「표기 없음」으로 명시, 수치를 만들지 않음。
+     */
+    'bath-safety': {
+      intro:
+        '이 카테고리에는 샤워체어·샤워스툴·욕조의자 14종이 있습니다. 최대 하중은 150 kg(LM5101D·LM5205CK)에서 350 kg/770 lb(LM5109D-S·LM5109KD-S-SRB)까지이며, 500 lbs 기종(LM5106KD)은 알루미늄 1.4 mm 프레임에 배수홀이 있는 PU 좌판(42.5×32.5×3 cm)을 씁니다. 프레임은 AL6063 알루미늄 1.2 mm, 스테인리스, 아연도금 강판이고, 좌판은 HDPE 또는 PU 성형품이라 물이 고이지 않습니다. 자체 중량은 1.3 kg(LM5101KD-S)에서 3.2 kg(LM3202KD), 높이는 5~7단계로 조절됩니다. 접이식 변기 의자 LM6108F-2727(고탄소강, 150 kg)도 이 카테고리에 포함됩니다.',
+      faqs: [
+        {
+          q: '최대 하중은 기종별로 어떻게 되나요?',
+          a: '150 kg은 LM5101D와 LM5205CK, 120–150 kg은 LM5103D, 150 kg/330 lb는 LM5103KD, 300 lbs는 LM5109D-S-SRB, 350 kg/770 lb는 LM5109D-S와 LM5109KD-S-SRB, 500 lbs는 LM5106KD입니다. 데이터시트에 하중 표기가 없는 기종은 주문 전에 모델별로 확인해 주세요.',
+        },
+        {
+          q: '프레임 소재와 두께는 어떻게 되나요?',
+          a: 'AL6063 알루미늄 1.2 mm(LM3202KD·LM5101D·LM5103D)와 1.4 mm(LM5106KD), 백색 스테인리스(LM5109D-S·LM5109KD-S-SRB), 알루미늄·아연도금 강판 혼용(LM5103D)입니다. 알루미늄은 녹슬지 않고, 스테인리스는 분체 도장으로 습한 욕실 환경을 견딥니다.',
+        },
+        {
+          q: '좌판에 물이 고이지 않나요?',
+          a: '좌판은 배수홀이 뚫린 HDPE 블로우 성형품이거나 PU 성형품입니다. LM5106KD는 PU 좌판 42.5×32.5×3 cm에 배수홀이 있고, 등받이는 38.5×19.5×2.5 cm 2단 구조입니다.',
+        },
+        {
+          q: '높이 조절은 몇 단계인가요?',
+          a: '5~7단계이며 푸시버튼 스프링핀 방식입니다. LM5205CK는 5단계, LM5101D와 LM5109 두 기종은 6단계, LM5106KD는 7단계입니다.',
+        },
+        {
+          q: 'MOQ와 납기는 어떻게 되나요?',
+          a: 'SKU·색상별로 30개(LM6108F-2727)에서 500개(LM5205LK·LM5205CK)까지입니다. LM5206K-S·LM5109-D-S는 50개, LM5106KD·LM5109D-S·LM5109D-S-SRB·LM5109KD-S-SRB는 100개, LM5101KD-S는 200개, LM3202KD·LM5101D·LM5103D·LM5103KD는 300개입니다. 납기는 주문 확정 후 15–30일입니다.',
+        },
+        {
+          q: '인증과 강도 시험 근거는 무엇인가요?',
+          a: 'EU MDR 2017/745에 따른 CE 마킹(Class I 제조사 자기선언), FDA 등록, ISO 13485, ISO 9001입니다. LM5108 스툴의 강도 근거는 EN 12520:2024와 EN 1728:2012이며, 이는 가구용 좌석 기준이지 의료기기 시험이 아닙니다.',
+        },
+      ],
+    },
   },
 
   /*
@@ -280,6 +358,45 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         {
           q: 'OEM ではどこまでカスタマイズできますか？',
           a: 'フレームの色、シートの素材と色、グリップ形状、キャスターの種類、ロゴ入り梱包まで対応します。MOQ は1モデル100台のままです。',
+        },
+      ],
+    },
+
+    /*
+     * ja /toilet-safety/ —— 4 个机型在库（高位トイレ用フレーム + 手すり 3）。
+     * GSC 实测（近 28 天 2026-10-16~11-12）：1 展现 · 加权 6.0 位 · 0 点击。
+     * 位次 6.0 已在首页、但仅 1 次展现 → 同样是「语义面积不足」，不是 SERP 呈现问题。
+     * 因此 **不改 meta**，只补 intro + 6 条日语 FAQ。
+     * 数值全部取自 ja 製品 md（LM135A-WY / LM1103-S / LM1101 / LM112H）；
+     * 荷重がデータシートに無い機種は「記載なし」と明記し、数値を作らない。
+     */
+    'toilet-safety': {
+      intro:
+        'トイレ用手すり・補助フレーム4機種を中山工場で製造しています。LM135A-WY はクロームメッキ鋼の手すりで重量4 kg、最大荷重150 kg、1年保証付きです。LM1103-S はクリーム色マットステンレス鋼に布張りクッショングリップを巻き、二重クランプ式で工具なしで取り付けられます。LM1101 は高さ調整式で滑り止めグリップ付き、LM112H は高さ調整できる高位トイレ用フレームです。MOQ は機種ごとに50〜300台、納期は注文確定後15〜30日です。',
+      faqs: [
+        {
+          q: '最大荷重はどのくらいですか？',
+          a: 'LM135A-WY は最大荷重150 kgです。LM1103-S・LM1101・LM112H はデータシートに荷重値の記載がないため、入札や仕様書で最大使用者体重の明示が必要な場合は、発注前に機種ごとにご確認ください。',
+        },
+        {
+          q: '取り付けは工具が必要ですか？',
+          a: 'LM1103-S は二重クランプ式で、工具を使わずに取り付けられます。LM1101 は高さ調整式の手すり、LM112H は高さ調整式の高位トイレ用フレームで、いずれも既存の便器まわりに設置する前提の設計です。',
+        },
+        {
+          q: '素材は何ですか？',
+          a: 'LM135A-WY はクロームメッキ鋼、LM1103-S はクリーム色マットステンレス鋼に布張りクッションのグリップ、LM1101 は滑り止めグリップ付きの手すりです。ステンレスとクロームメッキは浴室の湿気に耐える仕上げです。',
+        },
+        {
+          q: '高さ調整はできますか？',
+          a: 'LM1101 は高さ調整式の手すり、LM112H は調整式・人間工学設計の高位トイレ用フレームです。LM1103-S と LM135A-WY は固定位置での取り付けを前提としています。',
+        },
+        {
+          q: 'MOQ と納期を教えてください。',
+          a: 'MOQ は LM112H が50台、LM135A-WY と LM1103-S が100台、LM1101 が300台です。納期は注文確定後15〜30日、見積回答は24時間以内です。',
+        },
+        {
+          q: 'どのような認証が付きますか？',
+          a: 'EU MDR 2017/745 に基づく CE マーキング（Class I の製造者自己宣言）、FDA 登録、ISO 13485、ISO 9001 です。書類一式は出荷時に同梱できます。',
         },
       ],
     },
