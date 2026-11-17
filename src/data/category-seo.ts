@@ -237,6 +237,89 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         },
       ],
     },
+
+    /*
+     * de /crutches/ —— 21 个机型在库。
+     * GSC 实测（28 天 2026-11-01~11-14）：1 展现 · 加权 7.0 位。
+     * 位次已在前 10，但展现量极小 —— 属「已排上首页却没语义面积」的形态，
+     * 因此 **title / description 一字不动**，只补 intro 与 6 条德语 FAQ（只做加法）。
+     * 数值全部取自 de 产品 md：LM4401 碳纤维前臂拐 1,13 kg/对、100 kg、91–118 cm、12 档、
+     * 折叠 44,5 × 15 × 17 cm；YC8200C 前臂拐 0,49 kg、10 档；LM4206 青少年腋拐 0,95 kg、95–155 cm；
+     * 腋下拐（dreiteiliges Faltdesign）折叠长度 45 cm。其余机型数据表无 kg 值 → 明写「keine kg-Angabe」。
+     */
+    crutches: {
+      intro:
+        '21 Modelle in drei Bauarten: Achselgehstützen (Führung unter der Achsel), Unterarmgehstützen (Manschette am Unterarm) und Doppelstützen für Erwachsene. Alle Rahmen bestehen aus Aluminiumlegierung mit ergonomisch konturierten Griffen. Die Kohlefaser-Unterarmstütze LM4401 wiegt 1,13 kg pro Paar und ist mit 100 kg angegeben, die Unterarmstütze YC8200C mit 0,49 kg, die Jugend-Achselstütze LM4206 mit 0,95 kg bei 95–155 cm Höhenbereich. Mindestbestellmenge 100 bis 500 Stück je Modell, Lieferzeit 15–30 Tage.',
+      faqs: [
+        {
+          q: 'Welche Bauarten von Gehstützen fertigt JinDa?',
+          a: 'Drei Bauarten über 21 Modelle: Achselgehstützen mit Auflage unter der Achsel (darunter LM4206S2, LM4206 für Jugendliche und die dreiteilig faltbare Ausführung mit 45 cm Faltlänge), Unterarmgehstützen mit Manschette am Unterarm (YC8200C, LM4401 aus Kohlefaser, LM4402) sowie Doppelstützen für Erwachsene. Alle Rahmen sind Aluminiumlegierung, beim LM4401 Kohlefaser mit 1,2 mm Wandstärke.',
+        },
+        {
+          q: 'Wie schwer sind die Gehstützen?',
+          a: 'Die Kohlefaser-Unterarmstütze LM4401 wiegt 1,13 kg pro Paar, die Unterarmstütze YC8200C 0,49 kg und die Jugend-Achselstütze LM4206 0,95 kg. Für die übrigen Modelle nennt das Datenblatt kein Gewicht — fordern Sie den Wert modellbezogen an, wenn Sie ihn für die Ausschreibung brauchen.',
+        },
+        {
+          q: 'Welche maximale Belastung ist angegeben?',
+          a: 'Für die Kohlefaser-Unterarmstütze LM4401 sind 100 kg maximale Belastung im Datenblatt angegeben. Für alle anderen Modelle dieser Kategorie enthält das Datenblatt keine kg-Angabe; wir nennen Ihnen den Wert auf Anfrage modellbezogen, statt eine Zahl zu schätzen.',
+        },
+        {
+          q: 'Welche Höhenbereiche und Verstellstufen gibt es?',
+          a: 'Der LM4401 deckt 91–118 cm in 12 Stufen ab, die Jugend-Achselstütze LM4206 95–155 cm, die Unterarmstütze YC8200C bietet 10 Höhenstufen, der LM4206S2 ist mehrstufig verstellbar. Damit lassen sich Erwachsenen-, Jugend- und Kindergrößen in einer Bestellung abdecken.',
+        },
+        {
+          q: 'Lassen sich die Gehstützen für den Versand falten?',
+          a: 'Ja, zwei Modelle: der LM4401 hat ein Faltmaß von 44,5 × 15 × 17 cm, die faltbare Achselgehstütze ein dreiteiliges Faltdesign mit 45 cm Faltlänge. Beide senken das Packvolumen deutlich, was sich bei Sammelcontainern auf die Frachtkosten auswirkt. Die übrigen Modelle werden montiert geliefert.',
+        },
+        {
+          q: 'Mindestbestellmenge, Lieferzeit und Nachweise?',
+          a: 'Der Mindestauftrag liegt modellabhängig zwischen 100 und 500 Stück, die Lieferzeit beträgt 15–30 Tage ab Auftragsbestätigung, Angebote beantworten wir innerhalb von 24 Stunden. Beigefügt sind CE-Kennzeichnung nach EU MDR 2017/745 als Herstellererklärung für Klasse I, FDA-Registrierung, ISO 13485 und ISO 9001.',
+        },
+      ],
+    },
+
+    /*
+     * de /walking-canes/ —— 22 个机型在库。
+     * GSC 实测（28 天 2026-11-01~11-14）：1 展现 · 加权 44.0 位
+     * → 落在第 5 页，属「页面存在但标题不承接查询」，因此这里 meta 也改：
+     * 原 title 是模板生成的 "Gehstöcke — Produkte"，"Produkte" 对采购者零信息量，
+     * 改为承接 Großhandel 采购意图并保留品牌语种里真实的材质词 Kohlefaser（德语区也搜 Carbon）。
+     * 数值取自 de 产品 md：LM4914TA 120 g / 72–95 cm；LM4907TAZ 0,36 kg / 100 kg / 折叠 34,5 cm /
+     * 管径 22,2 与 19,1 mm / 玫瑰木柄；LM4807TA 铝 165 g / 5 档 / 72–96,5 cm；MOQ 200–300。
+     */
+    'walking-canes': {
+      title: 'Gehstöcke aus Kohlefaser — Großhandel',
+      description:
+        '22 Gehstock-Modelle ab 200 Stück: Kohlefaser ab 120 g, Aluminium mit 5 Höhenstufen, Faltsysteme mit 34,5 cm Packmaß, Höhen 72–96,5 cm. Lieferung 15–30 Tage.',
+      intro:
+        '22 Modelle in zwei Materialien: Kohlefaser und Aluminiumlegierung. Der LM4914TA wiegt 120 g bei 72–95 cm Höhenbereich, der LM4907TAZ 0,36 kg bei 100 kg angegebener Belastung und 34,5 cm Faltlänge, der LM4807TA aus Aluminium 165 g mit 5 Höhenstufen und 72–96,5 cm. Die Griffe gibt es in Ergonomie-, T- und D-Form, auf Wunsch in Rosenholz oder Sapeli; alle Modelle laufen auf rutschfesten Gummikappen. Mindestbestellmenge 200 bis 300 Stück je Modell, Lieferzeit 15–30 Tage.',
+      faqs: [
+        {
+          q: 'Welche Gehstock-Modelle fertigt JinDa?',
+          a: '22 Modelle, unterteilt nach Material und Bauart: Kohlefaser und Aluminiumlegierung, faltbar und durchgehend, mit D-Griff, T-Griff, Ergonomiegriff oder Holzgriff. Beispiele sind der LM4914TA mit 120 g, der faltbare LM4907TAZ mit 34,5 cm Packmaß, der LM4807TA aus Aluminium mit 5 Höhenstufen und der LM4908TA PLUS als faltbarer Reisegehstock mit ergonomischem T-Griff.',
+        },
+        {
+          q: 'Wie leicht ist der leichteste Gehstock?',
+          a: 'Der LM4914TA aus vollständiger Kohlefaser wiegt 120 g bei einem Höhenbereich von 72–95 cm. Die Aluminiumausführung LM4807TA wiegt 165 g, der faltbare Carbonstock LM4907TAZ 0,36 kg. Leichtgewicht ist bei Gehstöcken der direkte Hebel für die Akzeptanz beim Endnutzer.',
+        },
+        {
+          q: 'Welche Belastung ist angegeben?',
+          a: 'Für den LM4907TAZ sind 100 kg maximale Belastung im Datenblatt angegeben. Für die übrigen Modelle dieser Kategorie enthält das Datenblatt keine kg-Angabe — wir nennen den Wert modellbezogen auf Anfrage, statt eine Zahl zu schätzen.',
+        },
+        {
+          q: 'Welche Modelle eignen sich für Reise und Versand?',
+          a: 'Der LM4907TAZ faltet auf 34,5 cm, der LM4908TA PLUS ist als faltbarer Reisegehstock mit ergonomischem T-Griff und rutschfesten Gummikappen ausgeführt. Beide passen in Handgepäck und senken das Packvolumen bei Sammelcontainern; die übrigen Modelle werden durchgehend geliefert.',
+        },
+        {
+          q: 'Welche Höhen und Verstellstufen gibt es?',
+          a: 'Der LM4914TA deckt 72–95 cm ab, der LM4807TA 72–96,5 cm in 5 Höhenstufen, der faltbare LM4908TA PLUS ist mehrfach höhenverstellbar. Damit sind Körpergrößen von etwa 1,50 m bis 1,90 m abgedeckt; für Zwischengrößen empfehlen wir den mehrstufig verstellbaren Faltstock.',
+        },
+        {
+          q: 'Mindestbestellmenge, Lieferzeit und Nachweise?',
+          a: 'Der Mindestauftrag liegt bei 200 Stück, bei einigen Modellen bei 300 Stück; die Lieferzeit beträgt 15–30 Tage ab Auftragsbestätigung, Angebote beantworten wir innerhalb von 24 Stunden. Beigefügt sind CE-Kennzeichnung nach EU MDR 2017/745 als Herstellererklärung für Klasse I, FDA-Registrierung, ISO 13485 und ISO 9001. OEM umfasst Rahmenfarbe, Griffmaterial und -form, Logodruck und Verpackung mit eigenem Branding.',
+        },
+      ],
+    },
   },
 
   /*
@@ -483,6 +566,46 @@ export const CATEGORY_SEO: Record<string, Record<string, CategorySeo>> = {
         {
           q: 'Quelles certifications et options OEM accompagnez-vous ?',
           a: "Marquage CE selon EU MDR 2017/745 en tant que déclaration fabricant de classe I, enregistrement FDA, ISO 13485 et ISO 9001. L'OEM couvre la couleur du châssis, le matériau et la couleur de l'assise, la forme des poignées, le type de roues et l'emballage à votre marque, sans changer le MOQ de 100 unités.",
+        },
+      ],
+    },
+
+    /*
+     * fr /toilet-safety/ —— 4 个机型全部在库（LM112H / LM135A-WY / LM1101 / LM1103-S）。
+     * GSC 实测（28 天 2026-11-01~11-14）：1 展现 · 加权 4.0 位。
+     * 位次已在前 5，**title / description 一字不动**，只补 intro 与 6 条法语 FAQ（只做加法）。
+     * 数值全部取自 fr 产品 md：LM135A-WY 150 kg / 4 kg / acier chromé / garantie 1 an；
+     * LM1103-S acier inoxydable mat crème + poignée rembourrée + double pince sans outil；
+     * MOQ 50 (LM112H) / 100 (LM135A-WY, LM1103-S) / 300 (LM1101)。
+     * LM112H 与 LM1101 的数据表无 kg 值 → 明写「non indiquée」，不编造。
+     */
+    'toilet-safety': {
+      intro:
+        "Quatre modèles pour sécuriser les toilettes — aucun ne demande de percer le carrelage. Le cadre surélevé LM112H rehausse l'assise pour raccourcir le passage de la position assise à la position debout, la barre d'appui réglable LM135A-WY est en acier chromé (150 kg, 4 kg, garantie 1 an), la barre antidérapante LM1101 se règle en hauteur, et la LM1103-S associe un acier inoxydable mat crème à une poignée rembourrée gainée de tissu et à une double pince sans outil. Le MOQ va de 50 à 300 unités selon le modèle.",
+      faqs: [
+        {
+          q: 'Quels produits comprend la catégorie sécurité WC ?',
+          a: "Quatre références : LM112H (cadre de chaise de toilette surélevé et réglable), LM135A-WY (barre d'appui réglable en acier chromé), LM1101 (barre de sécurité antidérapante réglable en hauteur) et LM1103-S (barre de sécurité en acier inoxydable mat crème avec poignée rembourrée).",
+        },
+        {
+          q: 'Quelle est la charge maximale supportée ?',
+          a: "Pour la barre d'appui LM135A-WY, la fiche technique indique 150 kg de charge maximale pour 4 kg de poids propre. Pour les trois autres modèles, aucune charge maximale en kg n'est indiquée : demandez la valeur modèle par modèle avant de monter un appel d'offres dessus.",
+        },
+        {
+          q: 'Faut-il percer pour la fixation ?',
+          a: "Non. La LM1103-S se fixe par double pince sans outil, la LM135A-WY se monte également sans outil, et la LM1101 se règle et s'installe sans outil. Aucun modèle de cette catégorie n'exige de perçage dans le carrelage, ce qui compte pour les locations et les établissements qui ne peuvent pas modifier leurs sanitaires.",
+        },
+        {
+          q: 'Quel est le minimum de commande et le délai ?',
+          a: "Le MOQ est de 50 unités pour le LM112H, 100 unités pour le LM135A-WY et la LM1103-S, et 300 unités pour la LM1101. Le délai est de 15 à 30 jours après confirmation de commande, avec un devis renvoyé sous 24 heures.",
+        },
+        {
+          q: 'Quels justificatifs accompagnent la livraison ?',
+          a: "Marquage CE selon EU MDR 2017/745 en tant que déclaration fabricant de classe I, enregistrement FDA, ISO 13485 et ISO 9001. Ces documents partent en un seul dossier avec la marchandise, ce qui évite de les redemander plus tard pour un référencement.",
+        },
+        {
+          q: 'Peut-on adapter la couleur ou la finition ?',
+          a: "Oui : couleur du cadre, matériau et forme de la poignée, impression du logo et emballage à votre marque, avec ou sans rembourrage selon le modèle. Le minimum de commande par modèle reste inchangé.",
         },
       ],
     },
