@@ -5,18 +5,52 @@ import { useTranslations } from '@/utils/i18n';
 const locale = Astro.url.pathname.split('/')[1] || 'en';
 const { t } = useTranslations(locale);
 
+/**
+ * 资料描述文案本地化。资料名（Product Catalog 2026 / Company Profile）与 PDF 实际文件名
+ * 保持一致，故保留英文；只翻描述句。
+ * ar 已暂停投入（2026-10-30 用户确认）→ 故意不列入，ar 回落到英文，保持现状。
+ */
+const DESC: Record<string, { catalog: string; profile: string }> = {
+  en: {
+    catalog: 'Complete product catalog with specifications and pricing guide.',
+    profile: 'Company introduction, certifications, and factory overview.',
+  },
+  de: {
+    catalog: 'Vollständiger Produktkatalog mit Spezifikationen und Preisübersicht.',
+    profile: 'Unternehmensvorstellung, Zertifizierungen und Werksübersicht.',
+  },
+  fr: {
+    catalog: 'Catalogue produits complet avec spécifications et guide tarifaire.',
+    profile: 'Présentation de l’entreprise, certifications et aperçu de l’usine.',
+  },
+  es: {
+    catalog: 'Catálogo completo de productos con especificaciones y guía de precios.',
+    profile: 'Presentación de la empresa, certificaciones y descripción de la fábrica.',
+  },
+  ko: {
+    catalog: '제품 사양과 가격 안내를 포함한 전체 제품 카탈로그.',
+    profile: '회사 소개, 인증 현황, 공장 개요.',
+  },
+  ja: {
+    catalog: '仕様と価格ガイドを掲載した製品カタログ全套。',
+    profile: '会社紹介、認証、工場概要。',
+  },
+};
+
+const dl = DESC[locale] || DESC.en;
+
 const downloads = [
   {
     icon: '📄',
     title: 'Product Catalog 2026',
-    desc: 'Complete product catalog with specifications and pricing guide.',
+    desc: dl.catalog,
     size: 'PDF · 8.2 MB',
     slug: 'product-catalog-2026',
   },
   {
     icon: '📋',
     title: 'Company Profile',
-    desc: 'Company introduction, certifications, and factory overview.',
+    desc: dl.profile,
     size: 'PDF · 3.1 MB',
     slug: 'company-profile',
   },

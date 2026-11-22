@@ -17,6 +17,152 @@ const formSource = source || (() => {
   if (path.includes('/contact/')) return 'contact-page';
   return path.replace(/^\/[a-z]{2}\//, '').replace(/\/$/, '') || 'page';
 })();
+
+/**
+ * 表单 UI 文案本地化。
+ * 这张表单渲染在所有产品页、制造商页、contact、get-quote 底部 —— 非英语页面此前
+ * 全部显示英文 label（Full Name / Company / Submit Inquiry），等于询盘最后一步
+ * 突然切换成外语，直接压制非英语流量的转化。
+ *
+ * ar 已暂停投入（2026-10-30 用户确认）→ 故意不列入，ar 页面回落到英文，保持现状。
+ * placeholder 只举例品类、不举例型号，避免出现站上不存在的 SKU。
+ */
+const COPY: Record<string, Record<string, string>> = {
+  en: {
+    name: 'Full Name',
+    email: 'Email',
+    company: 'Company',
+    phone: 'Phone / WhatsApp',
+    product: 'Product of Interest',
+    quantity: 'Estimated Quantity',
+    message: 'Your Requirements',
+    submit: 'Submit Inquiry →',
+    privacy: 'We respect your privacy. Your information will never be shared with third parties.',
+    phName: 'John Smith',
+    phEmail: 'john@company.com',
+    phCompany: 'Your Company Ltd.',
+    phPhone: '+1 (555) 000-0000',
+    phProduct: 'e.g., Electric Wheelchair EW-2000',
+    phQuantity: 'e.g., 100 units',
+    phMessage: 'Tell us about your needs, target market, custom requirements...',
+    sending: 'Sending...',
+    successTitle: 'Thank You!',
+    successBody: 'We will contact you within 24 hours.',
+    error: 'Something went wrong. Please try again or email us directly at info@jdrehab.com',
+  },
+  de: {
+    name: 'Vollständiger Name',
+    email: 'E-Mail',
+    company: 'Unternehmen',
+    phone: 'Telefon / WhatsApp',
+    product: 'Gewünschtes Produkt',
+    quantity: 'Geschätzte Menge',
+    message: 'Ihre Anforderungen',
+    submit: 'Anfrage senden →',
+    privacy: 'Wir respektieren Ihre Privatsphäre. Ihre Daten werden nicht an Dritte weitergegeben.',
+    phName: 'Max Mustermann',
+    phEmail: 'max@firma.de',
+    phCompany: 'Ihre Firma GmbH',
+    phPhone: '+49 000 000000',
+    phProduct: 'z. B. Faltrollator',
+    phQuantity: 'z. B. 100 Stück',
+    phMessage: 'Beschreiben Sie Ihren Bedarf, Zielmarkt und gewünschte Anpassungen...',
+    sending: 'Wird gesendet...',
+    successTitle: 'Vielen Dank!',
+    successBody: 'Wir melden uns innerhalb von 24 Stunden bei Ihnen.',
+    error: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an info@jdrehab.com',
+  },
+  fr: {
+    name: 'Nom complet',
+    email: 'E-mail',
+    company: 'Société',
+    phone: 'Téléphone / WhatsApp',
+    product: 'Produit souhaité',
+    quantity: 'Quantité estimée',
+    message: 'Vos exigences',
+    submit: 'Envoyer la demande →',
+    privacy: 'Nous respectons votre vie privée. Vos informations ne seront jamais transmises à des tiers.',
+    phName: 'Jean Dupont',
+    phEmail: 'jean@societe.fr',
+    phCompany: 'Votre Société SARL',
+    phPhone: '+33 1 00 00 00 00',
+    phProduct: 'ex. : déambulateur pliant',
+    phQuantity: 'ex. : 100 unités',
+    phMessage: 'Décrivez vos besoins, votre marché cible et vos exigences de personnalisation...',
+    sending: 'Envoi en cours...',
+    successTitle: 'Merci !',
+    successBody: 'Nous vous contacterons sous 24 heures.',
+    error: 'Une erreur est survenue. Veuillez réessayer ou nous écrire à info@jdrehab.com',
+  },
+  es: {
+    name: 'Nombre completo',
+    email: 'Correo electrónico',
+    company: 'Empresa',
+    phone: 'Teléfono / WhatsApp',
+    product: 'Producto de interés',
+    quantity: 'Cantidad estimada',
+    message: 'Sus requisitos',
+    submit: 'Enviar consulta →',
+    privacy: 'Respetamos su privacidad. Su información nunca se compartirá con terceros.',
+    phName: 'Juan García',
+    phEmail: 'juan@empresa.es',
+    phCompany: 'Su Empresa S.L.',
+    phPhone: '+34 600 000 000',
+    phProduct: 'p. ej., andador plegable',
+    phQuantity: 'p. ej., 100 unidades',
+    phMessage: 'Cuéntenos sus necesidades, mercado objetivo y requisitos de personalización...',
+    sending: 'Enviando...',
+    successTitle: '¡Gracias!',
+    successBody: 'Nos pondremos en contacto en un plazo de 24 horas.',
+    error: 'Algo salió mal. Inténtelo de nuevo o escríbanos a info@jdrehab.com',
+  },
+  ko: {
+    name: '성함',
+    email: '이메일',
+    company: '회사명',
+    phone: '전화 / WhatsApp',
+    product: '관심 제품',
+    quantity: '예상 수량',
+    message: '요구 사항',
+    submit: '문의 보내기 →',
+    privacy: '개인정보를 존중합니다. 입력하신 정보는 제3자와 공유되지 않습니다.',
+    phName: '홍길동',
+    phEmail: 'hong@company.co.kr',
+    phCompany: '귀사명',
+    phPhone: '+82 10 0000 0000',
+    phProduct: '예: 접이식 보행기',
+    phQuantity: '예: 100개',
+    phMessage: '필요 사항, 목표 시장, 맞춤 요구 사항을 알려주십시오...',
+    sending: '전송 중...',
+    successTitle: '감사합니다!',
+    successBody: '24시간 이내에 연락드리겠습니다.',
+    error: '문제가 발생했습니다. 다시 시도하시거나 info@jdrehab.com 으로 문의해 주십시오.',
+  },
+  ja: {
+    name: 'お名前',
+    email: 'メールアドレス',
+    company: '会社名',
+    phone: '電話 / WhatsApp',
+    product: 'ご希望の製品',
+    quantity: '予定数量',
+    message: 'ご要望',
+    submit: 'お問い合わせを送信 →',
+    privacy: '個人情報は大切に扱います。ご入力いただいた情報を第三者と共有することはありません。',
+    phName: '山田 太郎',
+    phEmail: 'taro@company.co.jp',
+    phCompany: '御社名',
+    phPhone: '+81 90 0000 0000',
+    phProduct: '例：折りたたみ歩行器',
+    phQuantity: '例：100個',
+    phMessage: 'ご要望、対象市場、カスタマイズのご希望をお聞かせください...',
+    sending: '送信中...',
+    successTitle: 'ありがとうございます',
+    successBody: '24時間以内にご連絡いたします。',
+    error: '送信に失敗しました。もう一度お試しいただくか、info@jdrehab.com までご連絡ください。',
+  },
+};
+
+const c = COPY[locale] || COPY.en;
 ---
 
 <form
@@ -24,6 +170,10 @@ const formSource = source || (() => {
   action="https://api.web3forms.com/submit"
   method="POST"
   class="space-y-5"
+  data-msg-sending={c.sending}
+  data-msg-success-title={c.successTitle}
+  data-msg-success-body={c.successBody}
+  data-msg-error={c.error}
 >
   <!-- Web3Forms Access Key - Replace with your own -->
   <input type="hidden" name="access_key" value="f76d4663-7486-4058-a0b7-8c9e11cb5f79" />
@@ -41,7 +191,7 @@ const formSource = source || (() => {
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
     <div>
       <label for="name" class="block text-sm font-medium text-neutral-700 mb-1.5">
-        Full Name <span class="text-red-500">*</span>
+        {c.name} <span class="text-red-500">*</span>
       </label>
       <input
         type="text"
@@ -49,12 +199,12 @@ const formSource = source || (() => {
         name="name"
         required
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="John Smith"
+        placeholder={c.phName}
       />
     </div>
     <div>
       <label for="email" class="block text-sm font-medium text-neutral-700 mb-1.5">
-        Email <span class="text-red-500">*</span>
+        {c.email} <span class="text-red-500">*</span>
       </label>
       <input
         type="email"
@@ -62,66 +212,66 @@ const formSource = source || (() => {
         name="email"
         required
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="john@company.com"
+        placeholder={c.phEmail}
       />
     </div>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
     <div>
-      <label for="company" class="block text-sm font-medium text-neutral-700 mb-1.5">Company</label>
+      <label for="company" class="block text-sm font-medium text-neutral-700 mb-1.5">{c.company}</label>
       <input
         type="text"
         id="company"
         name="company"
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="Your Company Ltd."
+        placeholder={c.phCompany}
       />
     </div>
     <div>
       <label for="phone" class="block text-sm font-medium text-neutral-700 mb-1.5">
-        Phone / WhatsApp
+        {c.phone}
       </label>
       <input
         type="tel"
         id="phone"
         name="phone"
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="+1 (555) 000-0000"
+        placeholder={c.phPhone}
       />
     </div>
   </div>
 
   {showProductField && (
     <div>
-      <label for="product" class="block text-sm font-medium text-neutral-700 mb-1.5">Product of Interest</label>
+      <label for="product" class="block text-sm font-medium text-neutral-700 mb-1.5">{c.product}</label>
       <input
         type="text"
         id="product"
         name="product"
         value={productName}
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="e.g., Electric Wheelchair EW-2000"
+        placeholder={c.phProduct}
       />
     </div>
   )}
 
   {showQuantityField && (
     <div>
-      <label for="quantity" class="block text-sm font-medium text-neutral-700 mb-1.5">Estimated Quantity</label>
+      <label for="quantity" class="block text-sm font-medium text-neutral-700 mb-1.5">{c.quantity}</label>
       <input
         type="text"
         id="quantity"
         name="quantity"
         class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm"
-        placeholder="e.g., 100 units"
+        placeholder={c.phQuantity}
       />
     </div>
   )}
 
   <div>
     <label for="message" class="block text-sm font-medium text-neutral-700 mb-1.5">
-      Your Requirements <span class="text-red-500">*</span>
+      {c.message} <span class="text-red-500">*</span>
     </label>
     <textarea
       id="message"
@@ -129,16 +279,16 @@ const formSource = source || (() => {
       rows="4"
       required
       class="w-full px-4 py-2.5 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow text-sm resize-y"
-      placeholder="Tell us about your needs, target market, custom requirements..."
+      placeholder={c.phMessage}
     ></textarea>
   </div>
 
   <button type="submit" class="btn-accent w-full text-lg py-3.5">
-    Submit Inquiry →
+    {c.submit}
   </button>
 
   <p class="text-xs text-neutral-400 text-center">
-    We respect your privacy. Your information will never be shared with third parties.
+    {c.privacy}
   </p>
 </form>
 
@@ -149,8 +299,13 @@ const formSource = source || (() => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
     const originalText = btn?.textContent || 'Submit';
+    // 本地化提示文案走 data-* 传递，避免在客户端脚本里写死英文
+    const sendingText = form.dataset.msgSending || 'Sending...';
+    const successTitle = form.dataset.msgSuccessTitle || 'Thank You!';
+    const successBody = form.dataset.msgSuccessBody || 'We will contact you within 24 hours.';
+    const errorText = form.dataset.msgError || 'Something went wrong. Please try again.';
     if (btn) {
-      btn.textContent = 'Sending...';
+      btn.textContent = sendingText;
       btn.disabled = true;
     }
 
@@ -171,7 +326,19 @@ const formSource = source || (() => {
       });
 
       if (response.ok) {
-        form.innerHTML = '<div class="text-center py-8"><div class="text-4xl mb-4">✅</div><h3 class="text-xl font-semibold text-accent-700 mb-2">Thank You!</h3><p class="text-neutral-600">We will contact you within 24 hours.</p></div>';
+        const box = document.createElement('div');
+        box.className = 'text-center py-8';
+        const icon = document.createElement('div');
+        icon.className = 'text-4xl mb-4';
+        icon.textContent = '✅';
+        const h3 = document.createElement('h3');
+        h3.className = 'text-xl font-semibold text-accent-700 mb-2';
+        h3.textContent = successTitle;
+        const p = document.createElement('p');
+        p.className = 'text-neutral-600';
+        p.textContent = successBody;
+        box.append(icon, h3, p);
+        form.replaceChildren(box);
       } else {
         throw new Error('Submission failed');
       }
@@ -180,7 +347,7 @@ const formSource = source || (() => {
         btn.textContent = originalText;
         btn.disabled = false;
       }
-      alert('Something went wrong. Please try again or email us directly at info@jdrehab.com');
+      alert(errorText);
     }
   });
 </script>
