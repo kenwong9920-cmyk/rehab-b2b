@@ -61,6 +61,7 @@
   },
   "footer": {
     "company": "Entreprise",
+    "aboutStatement": "Fabricant de matériel de rééducation. Marquage CE (règlement UE 2017/745), enregistré et répertorié FDA, usine certifiée ISO 13485 et ISO 9001, {area}.",
     "products": "Produits",
     "resources": "Ressources",
     "contact": "Contactez-nous",

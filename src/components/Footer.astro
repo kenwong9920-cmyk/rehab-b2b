@@ -37,6 +37,16 @@ const productLinks = PRODUCT_CATEGORIES.slice(0, 4).map((cat) => ({
 }));
 
 const certifications = SITE.certifications.join(' · ');
+
+/**
+ * 公司说明句（页脚左上）—— 全站每一页都渲染，是语言信号与合规措辞的公共出口。
+ * 旧写法 `{certs} certified factory` 把 "certified" 挂到了 CE 与 FDA 上，等于对外宣称
+ * 「CE certified / FDA certified」，与合规红线冲突（CE 是 EU MDR 2017/745 自我声明，
+ * FDA 是企业注册＋器械列名）。此处拆开：CE 用 marking、FDA 用 registered & listed，
+ * certified 只留给真正的第三方认证（ISO 13485 / ISO 9001）。
+ * 面积走 {area} 占位，数值仍只从 SITE.factoryArea 取，不在文案里写死。
+ */
+const factoryStatement = t('footer.aboutStatement').replace('{area}', SITE.factoryArea);
 ---
 
 <footer class="bg-neutral-900 text-neutral-300">
@@ -46,7 +56,7 @@ const certifications = SITE.certifications.join(' · ');
       <div>
         <h4 class="text-white text-lg font-semibold mb-4 font-sans">{SITE.name}</h4>
         <p class="text-sm text-neutral-400 leading-relaxed mb-4">
-          {SITE.tagline}. {SITE.certifications.join(' / ')} certified factory with {SITE.factoryArea} facility.
+          {factoryStatement}
         </p>
         <div class="flex items-center gap-3">
           {SITE.social.linkedin && (

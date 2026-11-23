@@ -61,6 +61,7 @@
   },
   "footer": {
     "company": "회사",
+    "aboutStatement": "재활 의료기기 전문 제조사. CE 마킹(EU MDR 2017/745), FDA 등록 및 기기 등재, ISO 13485·ISO 9001 인증 공장, {area}.",
     "products": "제품",
     "resources": "자료",
     "contact": "문의하기",
