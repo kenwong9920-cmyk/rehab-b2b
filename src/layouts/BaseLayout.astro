@@ -40,10 +40,40 @@ const origin = Astro.url.origin;
 const currentPath = Astro.url.pathname;
 const pathWithoutLocale = currentPath.replace(new RegExp(`^/${locale}`), '') || '/';
 const locales = ['en', 'fr', 'de', 'es', 'ko', 'ja', 'ar'] as const;
-/** 只对这些语言输出 hreflang（未提供则全部） */
+
+/**
+ * 构建期枚举内容文件，用于把 hreflang 收窄到「真实存在」的语言版本。
+ * 背景：博客/产品模板是内容驱动的，getStaticPaths 只产出实际存在的页面，
+ * 但 BaseLayout 默认输出全部 7 种语言 → 缺失的语种会生成指向 404 的 hreflang，
+ * 而 hreflang 指向 404 会让 Google 忽略整组标注（比缺 hreflang 更伤）。
+ * 现状：ar 缺 14 个博客 slug → 84 个博客页各带 1 条 404 的 ar hreflang。
+ * 只在「能确定这是内容页」时收窄；识别不到就保持原行为（全部语种），不会误删。
+ */
+const contentFiles = import.meta.glob('@/content/**/*.md');
+const existByType: Record<string, Record<string, Set<string>>> = { blog: {}, products: {} };
+for (const key of Object.keys(contentFiles)) {
+  const m = key.match(/content\/(blog|products)\/([a-z]{2})\/(.+)\.md$/);
+  if (!m) continue;
+  const [, type, loc, slug] = m;
+  (existByType[type][loc] ||= new Set()).add(slug);
+}
+
+function localesExistingForPath(p: string): string[] | null {
+  // 仅匹配 /blog/{slug}/ 与 /products/{slug}/（/products/category/xxx/ 为 3 段，不匹配）
+  const m = p.match(/^\/(blog|products)\/([^/]+)\/?$/);
+  if (!m) return null;
+  const [, type, slug] = m;
+  const sets = existByType[type];
+  if (!sets || !Object.keys(sets).length) return null;
+  const found = locales.filter((l) => sets[l]?.has(slug));
+  // 兜底：一个都没匹配到（例如 slug 与文件名不同）就退回全部语种
+  return found.length ? found : null;
+}
+
+/** 只对这些语言输出 hreflang（未提供则全部；内容页按实际存在的版本收窄） */
 const hreflangLocales = (availableLocales && availableLocales.length
   ? availableLocales
-  : [...locales]) as readonly string[];
+  : (localesExistingForPath(pathWithoutLocale) ?? [...locales])) as readonly string[];
 ---
 
 <!DOCTYPE html>
