@@ -1,7 +1,55 @@
 ---
 // LanguageSwitcher — 语言切换下拉菜单
+//
+// 只列出「该页面真实存在」的语言版本。
+// 背景：此前无条件渲染全部 7 种语言，而博客/产品/部分静态页是内容或路由驱动的，
+// getStaticPaths 只产出实际存在的页面 → 缺失语种的菜单项指向 404（用户点「日本語」直接掉 404）。
+// 与 BaseLayout 的 hreflang 收窄同一套判据，保证「菜单里的语言」= 「hreflang 声明的语言」。
+// 识别不到具体页型时退回全部语种，不会误删选项。
 import { LANGUAGES, type LocaleCode } from '@/utils/constants';
+
 const currentLocale = Astro.url.pathname.split('/')[1] || 'en';
+const pathParts = Astro.url.pathname.split('/').filter(Boolean);
+const pathWithoutLocale = '/' + pathParts.slice(1).join('/');
+
+/** 构建期枚举内容文件，得到 页型 → 语种 → slug 集合 */
+const contentFiles = import.meta.glob('@/content/**/*.md');
+const existByType: Record<string, Record<string, Set<string>>> = { blog: {}, products: {} };
+for (const key of Object.keys(contentFiles)) {
+  const m = key.match(/content\/(blog|products)\/([a-z]{2})\/(.+)\.md$/);
+  if (!m) continue;
+  const [, type, loc, slug] = m;
+  (existByType[type][loc] ||= new Set()).add(slug);
+}
+
+/** 只在 /en/ 下生成的四类页面（见项目约定） */
+const EN_ONLY = ['certifications', 'moq-pricing', 'markets', 'manufacturers'];
+
+const ALL = LANGUAGES.map((l) => l.code) as LocaleCode[];
+
+function localesForCurrentPage(): LocaleCode[] {
+  const seg = pathParts.slice(1); // 去掉 locale
+
+  // 1) 仅 en 存在的静态页
+  if (seg.length && EN_ONLY.includes(seg[0])) return ['en'];
+
+  // 2) 内容页：/blog/{slug}/ 与 /products/{slug}/
+  const m = pathWithoutLocale.match(/^\/(blog|products)\/([^/]+)\/?$/);
+  if (m) {
+    const [, type, slug] = m;
+    const sets = existByType[type];
+    const found = ALL.filter((l) => sets[l]?.has(slug));
+    if (found.length) return found;
+  }
+
+  return ALL;
+}
+
+const available = localesForCurrentPage();
+// 当前语种即使判据失准也要保底出现，避免「无高亮项」
+const options = LANGUAGES.filter(
+  (l) => available.includes(l.code as LocaleCode) || l.code === currentLocale
+);
 ---
 
 <div class="relative group" id="lang-switcher">
@@ -21,9 +69,7 @@ const currentLocale = Astro.url.pathname.split('/')[1] || 'en';
   <div
     class="absolute right-0 top-full mt-1 bg-white rounded-lg shadow-lg border border-neutral-200 py-1 w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
   >
-    {LANGUAGES.map((lang) => {
-      const pathParts = Astro.url.pathname.split('/').filter(Boolean);
-      // 替换第一个路径段（locale）为目标语言
+    {options.map((lang) => {
       const remaining = pathParts.slice(1).join('/');
       const targetPath = remaining ? `/${lang.code}/${remaining}/` : `/${lang.code}/`;
       const isActive = lang.code === currentLocale;
